@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OzCoinTrail | Crypto Exchanges, AUD Transfers & Tax Guides Australia</title>
+  <meta name="description" content="Independent Australian crypto guides covering Binance, OKX, CoinSpot, Swyftx, AUD deposits, PayID, crypto transfers, USDT, tax and regulation." />
+  <link rel="canonical" href="https://ozcointrail.com/" />
+
+  <!-- Favicon & theme -->
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#0F5A46" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="OzCoinTrail" />
+  <meta property="og:title" content="OzCoinTrail | Crypto Exchanges, AUD Transfers &amp; Tax Guides Australia" />
+  <meta property="og:description" content="Independent Australian crypto guides covering Binance, OKX, CoinSpot, Swyftx, AUD deposits, PayID, transfers, USDT, tax and regulation." />
+  <meta property="og:url" content="https://ozcointrail.com/" />
+  <meta property="og:image" content="https://ozcointrail.com/og-cover.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="OzCoinTrail | Crypto Exchanges, AUD Transfers &amp; Tax Guides Australia" />
+  <meta name="twitter:description" content="Independent Australian crypto guides covering Binance, OKX, CoinSpot, Swyftx, AUD deposits, PayID, transfers, USDT, tax and regulation." />
+  <meta name="twitter:image" content="https://ozcointrail.com/og-cover.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ozcointrail.com/#org",
+        "name": "OzCoinTrail",
+        "url": "https://ozcointrail.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ozcointrail.com/logo.svg"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ozcointrail.com/#website",
+        "url": "https://ozcointrail.com/",
+        "name": "OzCoinTrail",
+        "publisher": { "@id": "https://ozcointrail.com/#org" },
+        "inLanguage": "en-AU"
+      }
+    ]
+  }
+  </script>
+  <style>
+    :root {
+      --color-primary: #0F5A46;        /* Eucalyptus Deep Green */
+      --color-primary-dark: #083B32;   /* Deep Forest */
+      --color-accent: #E2B63F;         /* Wheat Gold (stabilised) */
+      --color-accent-dark: #D9A91A;    /* Warm Gold */
+      --color-background: #FAF7F1;     /* Coastal Sand (brightened) */
+      --color-surface: #FFFEFA;        /* Warm White */
+      --color-text: #17211E;           /* Charcoal */
+      --color-text-secondary: #5F6B66; /* Gum Grey */
+      --color-border: #DDE5E0;         /* Soft Sage */
+      --color-info: #236B8E;           /* Ocean Blue */
+      --color-success: #23855B;
+      --color-warning: #C98520;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .logo-mark {
+      display: inline-flex;
+      flex-shrink: 0;
+      color: var(--color-primary);
+    }
+    .logo-mark svg { width: 30px; height: 30px; }
+    .logo .oz { color: var(--color-primary); }
+    .logo .trail { color: var(--color-accent-dark); }
+
+    .nav {
+      display: flex;
+      gap: 22px;
+      flex: 1;
+      justify-content: center;
+    }
+    .nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text);
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .nav a:hover {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-accent);
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+      border: 1px solid var(--color-primary);
+    }
+    .btn-primary:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 1.5px solid var(--color-primary);
+    }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+    .btn-lg { padding: 14px 28px; font-size: 1rem; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      background: var(--color-background);
+      padding: 84px 24px 72px;
+      text-align: center;
+    }
+    .hero-inner { max-width: 780px; margin: 0 auto; }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent-dark);
+      margin-bottom: 20px;
+    }
+    .hero-eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+    .hero h1 .hl { color: var(--color-primary); }
+
+    .hero p.subtitle {
+      font-size: 1.18rem;
+      color: var(--color-text-secondary);
+      max-width: 640px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .hero-search {
+      max-width: 520px;
+      margin: 0 auto 28px;
+      display: flex;
+      align-items: center;
+      background: var(--color-surface);
+      border: 1px solid #C9D4CD;
+      border-radius: 10px;
+      padding: 6px 6px 6px 18px;
+      box-shadow: 0 1px 3px rgba(23, 33, 30, 0.06);
+    }
+    .hero-search .icon { color: var(--color-text-secondary); font-size: 1rem; }
+    .hero-search input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 0.98rem;
+      padding: 10px 12px;
+      color: var(--color-text);
+    }
+    .hero-search input::placeholder { color: #7d8a84; }
+
+    .trust-line {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #4A5550;
+    }
+    .trust-line span { color: var(--color-accent-dark); }
+
+    /* ---------- Sections ---------- */
+    .section { padding: 72px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .section h2 {
+      font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .section-intro {
+      text-align: center;
+      color: var(--color-text-secondary);
+      font-size: 1.05rem;
+      max-width: 680px;
+      margin: 0 auto 48px;
+    }
+
+    /* ---------- Exchange cards ---------- */
+    .exchange-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .exchange-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 32px 28px 28px;
+      display: flex;
+      flex-direction: column;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .exchange-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .card-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .ex-logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background: var(--color-primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #B8891A;
+      background: rgba(226, 182, 63, 0.16);
+      padding: 4px 10px;
+      border-radius: 999px;
+      text-align: right;
+      line-height: 1.3;
+    }
+    .exchange-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .card-points {
+      list-style: none;
+      margin: 0 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+    .card-points li {
+      font-size: 0.92rem;
+      color: var(--color-text-secondary);
+      padding-left: 20px;
+      position: relative;
+    }
+    .card-points li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent);
+    }
+    .btn-card {
+      background: var(--color-primary);
+      color: #fff;
+      border: 1px solid var(--color-primary);
+      width: 100%;
+    }
+    .btn-card:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    .section-cta { text-align: center; }
+
+    /* ---------- Payment cards ---------- */
+    .pay-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .pay-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 32px 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .pay-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .pay-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(15, 90, 70, 0.08);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pay-icon svg {
+      width: 26px;
+      height: 26px;
+    }
+    .pay-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+    .pay-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #B8891A;
+      background: rgba(226, 182, 63, 0.16);
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .pay-card p {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    /* ---------- Transfer cards ---------- */
+    .transfer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .transfer-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 36px 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .transfer-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .tf-path {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--color-text);
+    }
+    .tf-arrow { color: var(--color-accent-dark); font-size: 1.2rem; }
+    .tf-note {
+      font-size: 0.82rem;
+      color: var(--color-text-secondary);
+    }
+
+    /* ---------- Tax section ---------- */
+    .section-tax { background: #EEF5F1; }
+    .section-tax h2 { color: var(--color-primary); }
+    .tax-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .tax-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .tax-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .tax-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+    .tax-card p {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    /* ---------- Stablecoin section ---------- */
+    .stable-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .stable-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .stable-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .stable-icon {
+      color: #5F6B66;
+      display: flex;
+    }
+    .stable-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+    .stable-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .stable-card p {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    /* ---------- Regulation section ---------- */
+    .section-reg { background: #F2F6F7; }
+    .reg-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .reg-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 14px;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .reg-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .reg-icon { display: flex; }
+    .reg-icon svg { width: 24px; height: 24px; }
+    .reg-icon.blue { color: var(--color-info); }
+    .reg-icon.green { color: var(--color-primary); }
+    .reg-icon.grey { color: var(--color-text-secondary); }
+    .reg-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+    }
+    .reg-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      letter-spacing: 0.02em;
+    }
+    .reg-card p {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    /* ---------- SMSF strip ---------- */
+    .smsf-strip {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 16px;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .smsf-body { flex: 1.3; }
+    .smsf-body h2 {
+      text-align: left;
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .smsf-body p { color: var(--color-text-secondary); font-size: 0.98rem; }
+    .smsf-links {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .smsf-links a {
+      color: var(--color-primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .smsf-links a:hover { text-decoration: underline; }
+    .smsf-cta { flex-shrink: 0; }
+
+    /* ---------- Recently verified ---------- */
+    .verified-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .verified-card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      padding: 22px 22px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+    }
+    .verified-card:hover {
+      box-shadow: 0 8px 24px rgba(23, 33, 30, 0.08);
+      transform: translateY(-2px);
+      border-color: #C9D4CD;
+    }
+    .verified-card h3 {
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--color-text);
+      line-height: 1.35;
+    }
+    .verified-meta {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-success);
+    }
+    .verified-meta svg { width: 15px; height: 15px; }
+
+    /* ---------- How we review ---------- */
+    .section-review {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+    }
+    .review-wrap {
+      display: flex;
+      gap: 56px;
+      align-items: flex-start;
+    }
+    .review-copy { flex: 1.2; }
+    .review-copy h2 {
+      text-align: left;
+      margin-bottom: 14px;
+    }
+    .review-copy p {
+      color: var(--color-text-secondary);
+      font-size: 0.98rem;
+      margin-bottom: 20px;
+    }
+    .review-list {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .review-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .ri-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      background: rgba(15, 90, 70, 0.08);
+      color: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .ri-icon svg { width: 18px; height: 18px; }
+    .review-item h4 {
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .review-item p {
+      font-size: 0.88rem;
+      color: var(--color-text-secondary);
+      line-height: 1.45;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--color-primary-dark);
+      color: #DCE7E1;
+      padding: 64px 24px 32px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo {
+      color: #fff;
+      margin-bottom: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .footer-brand .logo-mark { color: #fff; }
+    .footer-brand .logo .oz { color: #fff; }
+    .footer-brand .logo .trail { color: var(--color-accent); }
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: #A8B8B0;
+      line-height: 1.55;
+    }
+    .footer-cols {
+      display: flex;
+      gap: 56px;
+      flex-wrap: wrap;
+    }
+    .footer-col h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      letter-spacing: 0.02em;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 0.88rem;
+      color: #A8B8B0;
+      margin-bottom: 10px;
+      transition: color 0.15s ease;
+    }
+    .footer-col a:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: #8CA099;
+    }
+    .footer-bottom a { color: #8CA099; }
+    .footer-bottom a:hover { color: var(--color-accent); }
+    .footer-disclaimer {
+      max-width: 760px;
+      font-size: 0.78rem;
+      color: #7E938B;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .header-inner { gap: 16px; }
+      .logo { flex: 1; }
+      .exchange-grid { grid-template-columns: repeat(2, 1fr); }
+      .pay-grid { grid-template-columns: repeat(2, 1fr); }
+      .transfer-grid { grid-template-columns: repeat(2, 1fr); }
+      .tax-grid { grid-template-columns: repeat(2, 1fr); }
+      .stable-grid { grid-template-columns: repeat(2, 1fr); }
+      .smsf-strip { flex-direction: column; align-items: flex-start; gap: 24px; }
+      .verified-grid { grid-template-columns: repeat(2, 1fr); }
+      .review-wrap { flex-direction: column; gap: 32px; }
+    }
+    @media (max-width: 560px) {
+      .exchange-grid { grid-template-columns: 1fr; }
+      .pay-grid { grid-template-columns: 1fr; }
+      .transfer-grid { grid-template-columns: 1fr; }
+      .tax-grid { grid-template-columns: 1fr; }
+      .stable-grid { grid-template-columns: 1fr; }
+      .reg-grid { grid-template-columns: 1fr; }
+      .verified-grid { grid-template-columns: 1fr; }
+      .hero { padding: 56px 20px 48px; }
+      .section { padding: 56px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+        <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="/exchanges/">Exchanges</a>
+        <a href="/buy-crypto/">Buy Crypto</a>
+        <a href="/transfers/">Transfers</a>
+        <a href="/crypto-tax/">Tax</a>
+        <a href="/usdt/">USDT</a>
+        <a href="/regulation/">Regulation</a>
+        <a href="/learn/">Learn</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/exchanges/" class="btn btn-primary">Compare Exchanges</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Australian Crypto Guides</span>
+      <h1>Crypto Exchanges &amp; Guides<br />for <span class="hl">Australians</span></h1>
+      <p class="subtitle">Compare crypto exchanges, AUD deposit methods, fees, transfers, tax rules and Australian crypto regulation.</p>
+
+      <div class="hero-cta">
+        <a href="/exchanges/" class="btn btn-primary btn-lg">Compare Exchanges</a>
+        <a href="/buy-crypto/" class="btn btn-outline btn-lg">How to Buy Crypto</a>
+      </div>
+
+      <div class="hero-search">
+        <span class="icon">🔍</span>
+        <input type="search" placeholder="Search Binance, CoinSpot, USDT, tax..." />
+      </div>
+
+      <p class="trust-line"><span>Independent guides</span> · Australian-focused · Regularly verified</p>
+    </div>
+  </section>
+
+  <!-- Section 2: Compare Exchanges -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>Compare Crypto Exchanges in Australia</h2>
+      <p class="section-intro">Not every crypto exchange works the same way for Australian users. Compare AUD funding methods, trading fees, supported assets and key features before choosing a platform.</p>
+
+      <div class="exchange-grid">
+        <div class="exchange-card">
+          <div class="card-head">
+            <span class="ex-logo">B</span>
+            <span class="tag">Deep Liquidity</span>
+          </div>
+          <h3>Binance</h3>
+          <ul class="card-points">
+            <li>Large global trading market</li>
+            <li>Broad crypto selection</li>
+            <li>Advanced trading tools</li>
+          </ul>
+          <a href="/exchanges/binance/" class="btn btn-card">Binance Australia Guide</a>
+        </div>
+
+        <div class="exchange-card">
+          <div class="card-head">
+            <span class="ex-logo">O</span>
+            <span class="tag">AUD Support</span>
+          </div>
+          <h3>OKX</h3>
+          <ul class="card-points">
+            <li>Australian-focused services</li>
+            <li>AUD funding options</li>
+            <li>Spot and advanced trading</li>
+          </ul>
+          <a href="/exchanges/okx/" class="btn btn-card">OKX Australia Guide</a>
+        </div>
+
+        <div class="exchange-card">
+          <div class="card-head">
+            <span class="ex-logo">C</span>
+            <span class="tag">Popular in Australia</span>
+          </div>
+          <h3>CoinSpot</h3>
+          <ul class="card-points">
+            <li>AUD support</li>
+            <li>Beginner-friendly</li>
+            <li>Australian-focused platform</li>
+          </ul>
+          <a href="/exchanges/coinspot/" class="btn btn-card">CoinSpot Guide</a>
+        </div>
+
+        <div class="exchange-card">
+          <div class="card-head">
+            <span class="ex-logo">S</span>
+            <span class="tag">Beginner Friendly</span>
+          </div>
+          <h3>Swyftx</h3>
+          <ul class="card-points">
+            <li>AUD funding</li>
+            <li>Beginner-oriented interface</li>
+            <li>Australian users</li>
+          </ul>
+          <a href="/exchanges/swyftx/" class="btn btn-card">Swyftx Guide</a>
+        </div>
+      </div>
+
+      <div class="section-cta">
+        <a href="/exchanges/" class="btn btn-outline">Compare All Crypto Exchanges</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Buy Crypto with AUD -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>Buy Crypto with Australian Dollars</h2>
+      <p class="section-intro">Compare common ways to fund a crypto account in Australia, including PayID, bank transfer, debit cards and AUD-to-USDT options.</p>
+
+      <div class="pay-grid">
+        <a href="/buy-crypto/aud/buy-crypto-payid/" class="pay-card">
+          <span class="pay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></span>
+          <h3>PayID</h3>
+          <span class="pay-tag">Fast AUD funding</span>
+          <p>Learn how PayID deposits work across supported crypto exchanges.</p>
+        </a>
+        <a href="/buy-crypto/aud/" class="pay-card">
+          <span class="pay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg></span>
+          <h3>Bank Transfer</h3>
+          <span class="pay-tag">Low-cost option</span>
+          <p>Deposit AUD from an Australian bank account and compare processing times.</p>
+        </a>
+        <a href="/buy-crypto/aud/" class="pay-card">
+          <span class="pay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></span>
+          <h3>Debit Card</h3>
+          <span class="pay-tag">Quick purchase</span>
+          <p>Buy crypto with an Australian debit card and understand the fees that may apply.</p>
+        </a>
+        <a href="/buy-crypto/usdt/" class="pay-card">
+          <span class="pay-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4"></path><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><path d="M7 23l-4-4 4-4"></path><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></span>
+          <h3>AUD to USDT</h3>
+          <span class="pay-tag">Trading &amp; transfers</span>
+          <p>Compare ways to convert Australian dollars into USDT for trading or moving funds between exchanges.</p>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a href="/buy-crypto/aud/" class="btn btn-outline">View All AUD Funding Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Transfer Guides -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>Moving Crypto Between Exchanges?</h2>
+      <p class="section-intro">Already using CoinSpot or Swyftx? Follow step-by-step guides for transferring crypto to Binance, OKX and other exchanges.</p>
+
+      <div class="transfer-grid">
+        <a href="/transfers/exchanges/coinspot-to-binance/" class="transfer-card">
+          <div class="tf-path"><span>CoinSpot</span><span class="tf-arrow">→</span><span>Binance</span></div>
+          <span class="tf-note">Step-by-step transfer guide</span>
+        </a>
+        <a href="/transfers/exchanges/coinspot-to-okx/" class="transfer-card">
+          <div class="tf-path"><span>CoinSpot</span><span class="tf-arrow">→</span><span>OKX</span></div>
+          <span class="tf-note">Step-by-step transfer guide</span>
+        </a>
+        <a href="/transfers/exchanges/swyftx-to-binance/" class="transfer-card">
+          <div class="tf-path"><span>Swyftx</span><span class="tf-arrow">→</span><span>Binance</span></div>
+          <span class="tf-note">Step-by-step transfer guide</span>
+        </a>
+        <a href="/transfers/exchanges/binance-to-coinspot/" class="transfer-card">
+          <div class="tf-path"><span>Binance</span><span class="tf-arrow">→</span><span>CoinSpot</span></div>
+          <span class="tf-note">Step-by-step transfer guide</span>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a href="/transfers/" class="btn btn-outline">View Transfer Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Crypto Tax -->
+  <section class="section section-tax">
+    <div class="section-inner">
+      <h2>Crypto Tax in Australia</h2>
+      <p class="section-intro">Crypto transactions can create Australian tax and record-keeping obligations. Learn how capital gains, exchange records and ATO reporting work before tax time.</p>
+
+      <div class="tax-grid">
+        <a href="/crypto-tax/crypto-tax-australia/" class="tax-card">
+          <h3>Crypto Tax Australia</h3>
+          <p>Learn the basics of how crypto may be taxed in Australia.</p>
+        </a>
+        <a href="/crypto-tax/basics/crypto-capital-gains-tax-australia/" class="tax-card">
+          <h3>Capital Gains Tax</h3>
+          <p>Understand when disposing of crypto may trigger a CGT event.</p>
+        </a>
+        <a href="/crypto-tax/ato/how-to-report-crypto-tax-return/" class="tax-card">
+          <h3>ATO Reporting</h3>
+          <p>Learn about records, reporting and common tax questions.</p>
+        </a>
+        <a href="/crypto-tax/exchanges/" class="tax-card">
+          <h3>Exchange Records</h3>
+          <p>Find out how to export transaction history from crypto exchanges.</p>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a href="/crypto-tax/" class="btn btn-outline">Explore Crypto Tax Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: USDT & Stablecoins -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>USDT &amp; Stablecoins</h2>
+      <p class="section-intro">Learn how Australians buy, transfer and store USDT, including network fees and the differences between major stablecoins.</p>
+
+      <div class="stable-grid">
+        <a href="/usdt/buy/" class="stable-card">
+          <span class="stable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg></span>
+          <h3>Buy USDT</h3>
+          <p>Learn how Australians can buy USDT using AUD.</p>
+        </a>
+        <a href="/usdt/safety/usdt-vs-usdc/" class="stable-card">
+          <span class="stable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="12" r="6"></circle><circle cx="15" cy="12" r="6"></circle></svg></span>
+          <h3>USDT vs USDC</h3>
+          <p>Compare the two largest dollar stablecoins.</p>
+        </a>
+        <a href="/usdt/transfer/best-network-for-usdt/" class="stable-card">
+          <span class="stable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg></span>
+          <h3>Best Network for USDT</h3>
+          <p>Understand TRC20, ERC20 and other common networks.</p>
+        </a>
+        <a href="/usdt/transfer/usdt-transfer-fees/" class="stable-card">
+          <span class="stable-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg></span>
+          <h3>USDT Transfer Fees</h3>
+          <p>See how USDT transfer costs vary by network.</p>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a href="/usdt/" class="btn btn-outline">Explore USDT Guides</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 7: Crypto Regulation -->
+  <section class="section section-reg">
+    <div class="section-inner">
+      <h2>Crypto Regulation in Australia</h2>
+      <p class="section-intro">Understand the roles of AUSTRAC and ASIC, and learn how to check the regulatory status of crypto platforms used by Australians.</p>
+
+      <div class="reg-grid">
+        <a href="/regulation/austrac/" class="reg-card">
+          <span class="reg-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+          <h3>AUSTRAC</h3>
+          <span class="reg-label">AML/CTF &amp; Registration</span>
+          <p>Understand AUSTRAC's role in crypto registration and anti-money laundering obligations.</p>
+        </a>
+        <a href="/regulation/asic/" class="reg-card">
+          <span class="reg-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg></span>
+          <h3>ASIC</h3>
+          <span class="reg-label">Financial Services Regulation</span>
+          <p>Learn how ASIC regulates financial services and certain crypto-related products in Australia.</p>
+        </a>
+        <a href="/regulation/exchanges/" class="reg-card">
+          <span class="reg-icon grey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+          <h3>Exchange Status</h3>
+          <span class="reg-label">Check a Platform</span>
+          <p>Check the regulatory and operating status of Binance, OKX and other crypto platforms.</p>
+        </a>
+      </div>
+
+      <div class="section-cta">
+        <a href="/regulation/" class="btn btn-outline">Explore Australian Crypto Regulation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 8: SMSF -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="smsf-strip">
+        <div class="smsf-body">
+          <h2>Crypto &amp; SMSFs</h2>
+          <p>Australians using an SMSF to invest in digital assets face additional custody, record-keeping and compliance considerations.</p>
+        </div>
+        <div class="smsf-links">
+          <a href="/smsf/can-smsf-invest-in-crypto/">Can an SMSF Invest in Crypto?</a>
+          <a href="/smsf/best-crypto-exchange-for-smsf/">Best Crypto Exchange for SMSF</a>
+          <a href="/smsf/smsf-crypto-tax/">SMSF Crypto Tax</a>
+        </div>
+        <div class="smsf-cta">
+          <a href="/smsf/" class="btn btn-outline">Explore SMSF Crypto Guides</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 9: Recently Verified -->
+  <section class="section">
+    <div class="section-inner">
+      <h2>Recently Verified Guides</h2>
+      <p class="section-intro">Guides are checked against current exchange fees, deposit methods and Australian rules, and carry the date they were last verified.</p>
+
+      <div class="verified-grid">
+        <a href="/exchanges/best-crypto-exchanges-australia/" class="verified-card">
+          <h3>Best Crypto Exchanges in Australia</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+        <a href="/exchanges/binance/" class="verified-card">
+          <h3>Binance Australia Review</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+        <a href="/exchanges/okx/" class="verified-card">
+          <h3>OKX Australia Review</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+        <a href="/exchanges/binance-vs-coinspot/" class="verified-card">
+          <h3>CoinSpot vs Binance</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+        <a href="/buy-crypto/usdt/" class="verified-card">
+          <h3>How to Buy USDT in Australia</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+        <a href="/crypto-tax/crypto-tax-australia/" class="verified-card">
+          <h3>Crypto Tax in Australia</h3>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 10: How We Review -->
+  <section class="section section-review">
+    <div class="section-inner">
+      <div class="review-wrap">
+        <div class="review-copy">
+          <h2>How OzCoinTrail Reviews Exchanges &amp; Guides</h2>
+          <p>OzCoinTrail is an independent guide for Australians using crypto. We research fees, AUD funding and regulation as they actually apply in Australia — not from overseas templates — and we keep a clear record of when each guide was checked.</p>
+          <a href="/how-we-review/" class="btn btn-outline">Read Our Review Method</a>
+        </div>
+        <div class="review-list">
+          <div class="review-item">
+            <span class="ri-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg></span>
+            <div>
+              <h4>Australian-focused</h4>
+              <p>AUD funding, PayID, ATO rules and local exchanges first.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <span class="ri-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+            <div>
+              <h4>Fact-checked</h4>
+              <p>Fees and regulatory status checked against official sources.</p>
+            </div>
+          </div>
+          <div class="review-item">
+            <span class="ri-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>
+            <div>
+              <h4>Regularly verified</h4>
+              <p>Guides carry a last-verified date and are revised when things change.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+            <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+          </a>
+          <p>Independent crypto guides for Australians — exchanges, AUD deposits, transfers, USDT, tax and regulation.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Exchanges</h4>
+            <a href="/exchanges/binance/">Binance</a>
+            <a href="/exchanges/okx/">OKX</a>
+            <a href="/exchanges/coinspot/">CoinSpot</a>
+            <a href="/exchanges/swyftx/">Swyftx</a>
+            <a href="/exchanges/compare/">Compare Exchanges</a>
+          </div>
+          <div class="footer-col">
+            <h4>Guides</h4>
+            <a href="/buy-crypto/">Buy Crypto</a>
+            <a href="/transfers/">Transfers</a>
+            <a href="/crypto-tax/">Crypto Tax</a>
+            <a href="/usdt/">USDT</a>
+            <a href="/regulation/">Regulation</a>
+            <a href="/learn/">Learn</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/how-we-review/">How We Review</a>
+            <a href="/editorial-policy/">Editorial Policy</a>
+            <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Crypto is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting.</p>
+        </div>
+        <div>
+          <p>&copy; 2026 OzCoinTrail · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/disclaimer/">Disclaimer</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
