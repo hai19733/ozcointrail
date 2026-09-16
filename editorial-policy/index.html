@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editorial Policy | OzCoinTrail</title>
+  <meta name="description" content="The editorial standards OzCoinTrail applies when choosing, researching, writing, reviewing and updating content: accuracy, independence, transparency, sources, corrections and reader safety." />
+  <link rel="canonical" href="https://ozcointrail.com/editorial-policy/" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1B2A4A" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="OzCoinTrail" />
+  <meta property="og:title" content="Editorial Policy | OzCoinTrail" />
+  <meta property="og:description" content="The editorial standards OzCoinTrail applies when choosing, researching, writing, reviewing and updating content." />
+  <meta property="og:url" content="https://ozcointrail.com/editorial-policy/" />
+  <meta property="og:image" content="https://ozcointrail.com/og-cover.png" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Editorial Policy | OzCoinTrail" />
+  <meta name="twitter:description" content="The editorial standards OzCoinTrail applies when choosing, researching, writing, reviewing and updating content." />
+  <meta name="twitter:image" content="https://ozcointrail.com/og-cover.png" />
+  <style>
+    :root {
+      --color-primary: #1B2A4A;
+      --color-primary-dark: #12203A;
+      --color-accent: #E2B63F;
+      --color-accent-dark: #D9A91A;
+      --color-background: #FAF7F1;
+      --color-surface: #FFFEFA;
+      --color-text: #17211E;
+      --color-text-secondary: #5F646B;
+      --color-border: #DDE2E4;
+      --color-info: #236B8E;
+      --color-success: #23855B;
+      --color-warning: #C98520;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .logo-mark { display: inline-flex; flex-shrink: 0; color: var(--color-primary); }
+    .logo-mark svg { width: 30px; height: 30px; }
+    .logo .oz { color: var(--color-primary); }
+    .logo .trail { color: var(--color-accent-dark); }
+    .nav { display: flex; gap: 22px; flex: 1; justify-content: center; }
+    .nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text);
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .nav a:hover { color: var(--color-primary); border-bottom-color: var(--color-accent); }
+    .header-actions { display: flex; align-items: center; gap: 16px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary { background: var(--color-primary); color: #fff; border: 1px solid var(--color-primary); }
+    .btn-primary:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    .btn-outline { background: transparent; color: var(--color-primary); border: 1.5px solid var(--color-primary); }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+
+    /* ---------- Page layout ---------- */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--color-primary); }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .page h1 {
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .page .lead {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: var(--color-text);
+      margin-bottom: 28px;
+    }
+    .page h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin: 40px 0 16px;
+      color: var(--color-text);
+    }
+    .page h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin: 24px 0 10px;
+      color: var(--color-text);
+    }
+    .page p { margin-bottom: 16px; color: var(--color-text); }
+    .page ul, .page ol { margin: 0 0 16px 22px; }
+    .page li { margin-bottom: 8px; }
+    .page a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .page a:hover { color: var(--color-primary-dark); }
+
+    .last-reviewed {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-top: 8px;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--color-primary-dark);
+      color: #DCE2E6;
+      padding: 64px 24px 32px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 9px; }
+    .footer-brand .logo-mark { color: #fff; }
+    .footer-brand .logo .oz { color: #fff; }
+    .footer-brand .logo .trail { color: var(--color-accent); }
+    .footer-brand p { font-size: 0.88rem; color: #A8B0B8; line-height: 1.55; }
+    .footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
+    .footer-col h4 { color: #fff; font-size: 0.9rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.02em; }
+    .footer-col a { display: block; font-size: 0.88rem; color: #A8B0B8; margin-bottom: 10px; transition: color 0.15s ease; }
+    .footer-col a:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: #8C94A0;
+    }
+    .footer-bottom a { color: #8C94A0; }
+    .footer-bottom a:hover { color: var(--color-accent); }
+    .footer-disclaimer { max-width: 760px; font-size: 0.78rem; color: #7E8793; line-height: 1.6; }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .logo { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+        <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/exchanges/">Exchanges</a>
+        <a href="/buy-crypto/">Buy Crypto</a>
+        <a href="/transfers/">Transfers</a>
+        <a href="/crypto-tax/">Tax</a>
+        <a href="/usdt/">USDT</a>
+        <a href="/regulation/">Regulation</a>
+        <a href="/learn/">Learn</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/exchanges/" class="btn btn-primary">Compare Exchanges</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <nav class="breadcrumb"><a href="/">Home</a> &rsaquo; Editorial Policy</nav>
+
+    <h1>Editorial Policy</h1>
+
+    <p class="lead">This page sets out the standards OzCoinTrail applies when choosing, researching, writing, reviewing and updating content.</p>
+    <p>Our goal is to publish clear, useful and well-supported information for Australian readers interested in cryptocurrency exchanges, transfers and digital assets.</p>
+
+    <h2>Our editorial principles</h2>
+    <p>Four principles guide what we publish.</p>
+
+    <h3>Accuracy first</h3>
+    <p>We would rather leave something out than publish a figure, rule or claim we cannot support.</p>
+    <p>Information that can materially affect a reader &mdash; such as fees, eligibility requirements, regulatory status or transfer rules &mdash; should be checked against an appropriate primary source wherever practical.</p>
+
+    <h3>Editorial independence</h3>
+    <p>Our editorial conclusions are made separately from our commercial relationships.</p>
+    <p>The existence or value of an affiliate partnership does not determine whether we cover a platform or what we say about it.</p>
+
+    <h3>Transparency</h3>
+    <p>We disclose relevant affiliate relationships and distinguish commercial arrangements from editorial assessment.</p>
+    <p>Where information comes directly from a platform and cannot be independently verified, we aim to make that clear rather than presenting the claim as independently established fact.</p>
+
+    <h3>Written for Australia</h3>
+    <p>OzCoinTrail is written for Australian readers.</p>
+    <p>That means we focus on matters such as:</p>
+    <ul>
+      <li>AUD deposits and withdrawals;</li>
+      <li>PayID and Australian bank transfers;</li>
+      <li>Australian regulatory requirements;</li>
+      <li>Australian taxation; and</li>
+      <li>the availability of products and services to Australian users.</li>
+    </ul>
+    <p>We use Australian English and generally express Australian-dollar amounts as <strong>A$</strong> or <strong>AUD</strong> rather than using a bare dollar sign where the currency could be unclear.</p>
+
+    <h2>What we choose to publish</h2>
+    <p>We focus on information an Australian reader may need before using a cryptocurrency platform or moving money into, between or out of crypto services.</p>
+    <p>Topics may include:</p>
+    <ul>
+      <li>cryptocurrency exchange reviews and comparisons;</li>
+      <li>AUD deposits and withdrawals;</li>
+      <li>transfers between exchanges and wallets;</li>
+      <li>transaction fees and network selection;</li>
+      <li>stablecoins such as USDT and USDC;</li>
+      <li>account security;</li>
+      <li>Australian cryptocurrency taxation; and</li>
+      <li>Australian regulation affecting crypto users and service providers.</li>
+    </ul>
+    <p>Topics are selected according to their usefulness and relevance to readers.</p>
+    <p>We do not choose subjects simply because a platform offers a higher affiliate commission.</p>
+
+    <h2>Sources and fact-checking</h2>
+    <p>We prefer primary sources wherever they are available.</p>
+    <p>These may include:</p>
+    <ul>
+      <li>official platform websites and apps;</li>
+      <li>fee schedules;</li>
+      <li>help-centre documentation;</li>
+      <li>terms and conditions;</li>
+      <li>regulatory registers and guidance;</li>
+      <li>Australian legislation; and</li>
+      <li>official information from organisations such as ASIC, AUSTRAC and the Australian Taxation Office.</li>
+    </ul>
+    <p>We do not rely on a single news article, comparison website or affiliate page for an important factual claim.</p>
+    <p>Where sources conflict, we generally give greater weight to the relevant regulator, legislation, formal contractual terms or the provider&rsquo;s current official documentation.</p>
+    <p>Our detailed approach to reviewing and checking cryptocurrency platforms is explained on our <a href="/how-we-review/">How We Review</a> page.</p>
+
+    <h2>First-hand testing</h2>
+    <p>Where practical, OzCoinTrail may test parts of a platform or process directly, such as:</p>
+    <ul>
+      <li>account navigation;</li>
+      <li>deposit or withdrawal flows;</li>
+      <li>fee previews;</li>
+      <li>transfer screens; or</li>
+      <li>other features available to us.</li>
+    </ul>
+    <p>When we describe something as tested or observed first-hand, we aim to make clear what was tested and when.</p>
+    <p>A limited test of one feature should not be interpreted as an audit or comprehensive assessment of the entire platform.</p>
+    <p>Where we have not tested something directly, we rely on documented sources rather than presenting the information as first-hand experience.</p>
+
+    <h2>Use of AI and automated tools</h2>
+    <p>OzCoinTrail may use software, research tools or artificial-intelligence tools to assist with tasks such as research organisation, drafting, editing or identifying information that requires verification.</p>
+    <p>These tools do not replace editorial review.</p>
+    <p>Material factual claims should be checked against appropriate sources before publication, and we do not intentionally publish unverified AI-generated statements as established facts.</p>
+    <p>Responsibility for the final published content remains with OzCoinTrail.</p>
+
+    <h2>Editorial independence</h2>
+    <p>OzCoinTrail earns revenue through affiliate partnerships with some of the platforms mentioned on this website.</p>
+    <p>These commercial relationships do not determine our editorial conclusions.</p>
+    <p>We do not:</p>
+    <ul>
+      <li>rank a platform more favourably because it pays a higher commission;</li>
+      <li>remove or deliberately soften a material negative finding because a platform is an affiliate partner;</li>
+      <li>accept payment in exchange for a positive review; or</li>
+      <li>guarantee that an affiliate platform is suitable for every Australian user.</li>
+    </ul>
+    <p>For more information, read our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+
+    <h2>Sponsored and paid content</h2>
+    <p>Affiliate marketing and sponsored content are different.</p>
+    <p>An affiliate relationship means OzCoinTrail may receive a commission when a reader uses certain links and completes an eligible action. It does not give the advertiser control over our editorial conclusions.</p>
+    <p>Sponsored content involves payment or another commercial arrangement specifically connected to the publication or placement of content.</p>
+    <p>OzCoinTrail does not currently publish sponsored or paid-for editorial articles.</p>
+    <p>If we introduce sponsored, advertising or partner content in the future, we will identify it clearly using labels such as <strong>Sponsored</strong>, <strong>Advertisement</strong> or <strong>Partner Content</strong>, as appropriate.</p>
+    <p>Sponsored content will not be presented as an independent OzCoinTrail review.</p>
+
+    <h2>Corrections</h2>
+    <p>We aim to publish accurate information, but mistakes can happen and cryptocurrency services can change quickly.</p>
+    <p>If we identify a material factual error, we correct it.</p>
+    <p>Where an article has been materially reviewed or updated, we may update its <strong>Last reviewed</strong>, <strong>Last updated</strong> or <strong>Last verified</strong> date.</p>
+    <p>We do not change publication or review dates simply to make unchanged content appear more recent.</p>
+    <p>If you believe something on OzCoinTrail is inaccurate or outdated, please tell us which page and statement you are referring to so we can review it against the relevant sources.</p>
+    <p>See our <a href="/contact/">Contact</a> page to report a correction.</p>
+
+    <h2>Reader safety</h2>
+    <p>OzCoinTrail will never ask readers to send us cryptocurrency or provide:</p>
+    <ul>
+      <li>seed phrases;</li>
+      <li>private keys;</li>
+      <li>exchange passwords;</li>
+      <li>two-factor authentication codes; or</li>
+      <li>remote access to a device or account.</li>
+    </ul>
+    <p>Never disclose a seed phrase or private key to someone claiming to represent OzCoinTrail.</p>
+    <p>OzCoinTrail provides general information only. We do not provide personalised financial, legal or tax advice.</p>
+
+    <h2>Language and localisation</h2>
+    <p>OzCoinTrail is written primarily in Australian English for Australian readers.</p>
+    <p>We aim to use language, payment methods, regulatory references and examples that make sense in an Australian context.</p>
+    <p>Where a platform&rsquo;s terminology differs between countries or regions, we try to distinguish the Australian offering from the provider&rsquo;s global service.</p>
+
+    <h2>Feedback</h2>
+    <p>We welcome factual corrections, suggestions and feedback about our content.</p>
+    <p>You can contact us through the details on our <a href="/contact/">Contact</a> page.</p>
+    <p>For information about the scope and limitations of our content, read our <a href="/disclaimer/">Disclaimer</a>.</p>
+    <p>For information about how we handle personal information, read our <a href="/privacy/">Privacy Policy</a>.</p>
+    <p>For the rules governing use of this website, read our <a href="/terms/">Terms of Use</a>.</p>
+
+    <p class="last-reviewed"><strong>Last reviewed: September 2026</strong></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+            <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+          </a>
+          <p>Independent crypto guides for Australians &mdash; exchanges, AUD deposits, transfers, USDT, tax and regulation.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Exchanges</h4>
+            <a href="/exchanges/binance/">Binance</a>
+            <a href="/exchanges/okx/">OKX</a>
+            <a href="/exchanges/coinspot/">CoinSpot</a>
+            <a href="/exchanges/swyftx/">Swyftx</a>
+            <a href="/exchanges/compare/">Compare Exchanges</a>
+          </div>
+          <div class="footer-col">
+            <h4>Guides</h4>
+            <a href="/buy-crypto/">Buy Crypto</a>
+            <a href="/transfers/">Transfers</a>
+            <a href="/crypto-tax/">Crypto Tax</a>
+            <a href="/usdt/">USDT</a>
+            <a href="/regulation/">Regulation</a>
+            <a href="/learn/">Learn</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/how-we-review/">How We Review</a>
+            <a href="/editorial-policy/">Editorial Policy</a>
+            <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Crypto is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting.</p>
+        </div>
+        <div>
+          <p>&copy; 2026 OzCoinTrail &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
