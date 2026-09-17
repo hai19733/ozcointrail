@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Tax in Australia: CGT, Staking &amp; 2027 Changes | OzCoinTrail</title>
+  <meta name="description" content="How crypto is taxed in Australia — CGT when you sell, swap or spend, staking as income, the 50% discount, and the 2027 changes to long-term gains." />
+  <link rel="canonical" href="https://ozcointrail.com/crypto-tax/crypto-tax-australia/" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1B2A4A" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="OzCoinTrail" />
+  <meta property="og:title" content="Crypto Tax in Australia: CGT, Staking &amp; 2027 Changes" />
+  <meta property="og:description" content="How crypto is taxed in Australia — CGT when you sell, swap or spend, staking as income, the 50% discount, and the 2027 changes to long-term gains." />
+  <meta property="og:url" content="https://ozcointrail.com/crypto-tax/crypto-tax-australia/" />
+  <meta property="og:image" content="https://ozcointrail.com/og-cover.png" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Crypto Tax in Australia: CGT, Staking &amp; 2027 Changes" />
+  <meta name="twitter:description" content="How crypto is taxed in Australia — CGT when you sell, swap or spend, staking as income, the 50% discount, and the 2027 changes to long-term gains." />
+  <meta name="twitter:image" content="https://ozcointrail.com/og-cover.png" />
+  <style>
+    :root {
+      --color-primary: #1B2A4A;
+      --color-primary-dark: #12203A;
+      --color-accent: #E2B63F;
+      --color-accent-dark: #D9A91A;
+      --color-background: #FAF7F1;
+      --color-surface: #FFFEFA;
+      --color-text: #17211E;
+      --color-text-secondary: #5F646B;
+      --color-border: #DDE2E4;
+      --color-info: #236B8E;
+      --color-success: #23855B;
+      --color-warning: #C98520;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .logo-mark { display: inline-flex; flex-shrink: 0; color: var(--color-primary); }
+    .logo-mark svg { width: 30px; height: 30px; }
+    .logo .oz { color: var(--color-primary); }
+    .logo .trail { color: var(--color-accent-dark); }
+    .nav { display: flex; gap: 22px; flex: 1; justify-content: center; }
+    .nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text);
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .nav a:hover { color: var(--color-primary); border-bottom-color: var(--color-accent); }
+    .header-actions { display: flex; align-items: center; gap: 16px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary { background: var(--color-primary); color: #fff; border: 1px solid var(--color-primary); }
+    .btn-primary:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    .btn-outline { background: transparent; color: var(--color-primary); border: 1.5px solid var(--color-primary); }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+
+    /* ---------- Article layout ---------- */
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--color-primary); }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article h1 {
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 32px;
+    }
+    .article-meta .verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      color: var(--color-success);
+    }
+    .article-meta .verified svg { width: 15px; height: 15px; }
+
+    .article .lead {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: var(--color-text);
+      margin-bottom: 28px;
+    }
+    .article h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin: 40px 0 16px;
+      color: var(--color-text);
+    }
+    .article h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 28px 0 10px;
+    }
+    .article p { margin-bottom: 16px; color: var(--color-text); }
+    .article ul, .article ol { margin: 0 0 16px 22px; }
+    .article li { margin-bottom: 8px; }
+    .article a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .article a:hover { color: var(--color-primary-dark); }
+
+    /* ---------- Table ---------- */
+    .table-wrap { overflow-x: auto; margin: 20px 0 24px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: top;
+    }
+    th {
+      background: #ECF1F7;
+      color: var(--color-primary-dark);
+      font-weight: 700;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-weight: 600; white-space: nowrap; }
+
+    /* ---------- Callouts ---------- */
+    .callout {
+      background: #F2F6F7;
+      border-left: 4px solid var(--color-info);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin: 24px 0;
+    }
+    .callout h4 { color: var(--color-info); font-size: 0.95rem; margin-bottom: 8px; }
+    .callout p { font-size: 0.92rem; margin: 0 0 8px; color: var(--color-text); }
+    .callout p:last-child { margin-bottom: 0; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
+
+    /* ---------- FAQ ---------- */
+    .faq { margin: 24px 0; }
+    .faq details {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    .faq summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--color-text);
+    }
+    .faq details p { margin: 12px 0 0; font-size: 0.95rem; }
+
+    /* ---------- CTA ---------- */
+    .cta-box {
+      background: var(--color-primary);
+      border-radius: 16px;
+      padding: 32px;
+      margin: 32px 0;
+      color: #fff;
+    }
+    .cta-box h3 { color: #fff; margin: 0 0 10px; font-size: 1.25rem; }
+    .cta-box p { color: #DCE2E6; margin: 0 0 20px; }
+    .cta-box .btn { background: var(--color-accent); color: var(--color-primary-dark); border: none; }
+    .cta-box .btn:hover { background: #F2C94C; }
+    .cta-box .fine { font-size: 0.78rem; color: #A8B0B8; margin-top: 14px; }
+
+    .disclaimer {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      border-top: 1px solid var(--color-border);
+      padding-top: 20px;
+      margin-top: 32px;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--color-primary-dark);
+      color: #DCE2E6;
+      padding: 64px 24px 32px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 9px; }
+    .footer-brand .logo-mark { color: #fff; }
+    .footer-brand .logo .oz { color: #fff; }
+    .footer-brand .logo .trail { color: var(--color-accent); }
+    .footer-brand p { font-size: 0.88rem; color: #A8B0B8; line-height: 1.55; }
+    .footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
+    .footer-col h4 { color: #fff; font-size: 0.9rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.02em; }
+    .footer-col a { display: block; font-size: 0.88rem; color: #A8B0B8; margin-bottom: 10px; transition: color 0.15s ease; }
+    .footer-col a:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: #8C94A0;
+    }
+    .footer-bottom a { color: #8C94A0; }
+    .footer-bottom a:hover { color: var(--color-accent); }
+    .footer-disclaimer { max-width: 760px; font-size: 0.78rem; color: #7E8793; line-height: 1.6; }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .logo { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+        <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/exchanges/">Exchanges</a>
+        <a href="/buy-crypto/">Buy Crypto</a>
+        <a href="/transfers/">Transfers</a>
+        <a href="/crypto-tax/">Tax</a>
+        <a href="/usdt/">USDT</a>
+        <a href="/regulation/">Regulation</a>
+        <a href="/learn/">Learn</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/exchanges/" class="btn btn-primary">Compare Exchanges</a>
+      </div>
+    </div>
+  </header>
+
+  <article class="article">
+    <nav class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/crypto-tax/">Tax</a> &rsaquo; Crypto Tax Australia</nav>
+
+    <h1>Crypto Tax in Australia</h1>
+
+    <div class="article-meta">
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 18 September 2026</span>
+      <span>&middot;</span>
+      <span>By OzCoinTrail Editorial Team</span>
+    </div>
+
+    <p class="lead">For most Australians, crypto is taxed in two ways: <strong>capital gains tax (CGT)</strong> when you sell, swap or spend it, and <strong>ordinary income tax</strong> on things like staking rewards and airdrops. There's no separate &ldquo;crypto tax rate&rdquo; &mdash; your net gain is added to your other income and taxed at your marginal rate, with a 50% CGT discount if you held the asset for 12 months or more. <strong>That discount is changing: from 1 July 2027 it's replaced by inflation-based cost-base indexation and a 30% minimum tax on real gains.</strong></p>
+    <p>Two rules trip people up most: moving crypto between your own wallets is <em>not</em> a disposal, but swapping one coin for another &mdash; even into a stablecoin &mdash; usually <em>is</em>. And if you hold crypto across 1 July 2027, keeping a defensible AUD value for it around that date can be important when you later split the gain between the old and new rules.</p>
+
+    <h2>At a glance</h2>
+    <div class="table-wrap">
+      <table>
+        <tbody>
+          <tr><td>How crypto is treated</td><td>As a CGT asset (property) for most investors</td></tr>
+          <tr><td>Taxable events</td><td>Selling for AUD, swapping one coin for another, spending, gifting</td></tr>
+          <tr><td>Not a taxable event</td><td>Moving crypto between your own wallets or accounts</td></tr>
+          <tr><td>Current CGT discount</td><td>50% if you hold the asset 12 months or more</td></tr>
+          <tr><td>From 1 July 2027</td><td>50% discount replaced by cost-base indexation + 30% minimum tax on real gains</td></tr>
+          <tr><td>Taxed as income</td><td>Staking, airdrops, interest/yield, referral rewards</td></tr>
+          <tr><td>Tax year &amp; deadline</td><td>1 July &ndash; 30 June; self-lodged returns due 31 October</td></tr>
+          <tr><td>Keep records for</td><td>At least 5 years</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>How the ATO sees your crypto</h2>
+    <p>The ATO treats cryptocurrency as <strong>property, not as a foreign currency</strong>, and that single decision drives almost everything else. For most people, crypto is a CGT asset: you make a capital gain or loss when you dispose of it. For a smaller number who trade in a business-like way &mdash; frequent, organised, profit-driven &mdash; crypto can instead be treated as trading stock or business income. The line between the two isn't a checkbox; it turns on how you actually use the asset. The rest of this guide assumes the more common investor position, which is how the ATO frames crypto for most individuals.</p>
+
+    <h2>What triggers a capital gain (or loss)</h2>
+    <p>A CGT event happens when you dispose of crypto. The common triggers are:</p>
+    <ul>
+      <li><strong>Selling crypto for AUD</strong> (or another fiat currency).</li>
+      <li><strong>Swapping one coin for another</strong> &mdash; crypto-to-crypto trades, including swapping into a stablecoin like USDT, are each treated as a disposal. So buying USDT with Bitcoin, then later back to AUD, can be two separate CGT events.</li>
+      <li><strong>Using crypto to buy goods or services.</strong></li>
+      <li><strong>Gifting crypto</strong>, in most cases.</li>
+      <li><strong>Adding or removing liquidity, wrapping or bridging tokens</strong>, where the transaction amounts to a disposal.</li>
+    </ul>
+    <p>Moving crypto between wallets or accounts you control is <strong>not</strong> a disposal, because ownership hasn't changed. Sending coins from CoinSpot to Binance, for example, is a transfer, not a sale &mdash; we walk through that distinction in our <a href="/transfers/exchanges/coinspot-to-binance/">CoinSpot to Binance transfer guide</a>.</p>
+    <p>Your capital gain is <strong>proceeds minus your cost base</strong>, where the cost base is roughly what you paid plus any fees, commissions or gas costs incurred to buy and sell. Capital losses can offset capital gains, but they can't be deducted against your salary or other ordinary income &mdash; any unused loss carries forward to future years.</p>
+
+    <h2>What's taxed as income instead</h2>
+    <p>Some crypto you receive is ordinary income, taxed at its AUD market value on the day you receive it, with no CGT discount. The main examples:</p>
+    <ul>
+      <li><strong>Staking rewards.</strong></li>
+      <li><strong>Airdrops</strong> of established tokens (some initial-allocation airdrops may not be income).</li>
+      <li><strong>Mining rewards</strong>, where the activity amounts to a business.</li>
+      <li><strong>Interest and yield</strong> from lending or DeFi platforms.</li>
+      <li><strong>Liquidity-mining rewards</strong> and <strong>referral bonuses</strong>.</li>
+      <li><strong>Salary or payments received in crypto.</strong></li>
+    </ul>
+    <p>Whether something is income or a capital gain matters, because the treatment changes both <em>when</em> it's taxed and <em>how much</em> of it is taxed.</p>
+
+    <h2>The 50% CGT discount (and how it works today)</h2>
+    <p>Until 30 June 2027, individuals and trusts who hold a crypto asset for <strong>12 months or more</strong> before disposing of it can discount the capital gain by 50% &mdash; so only half the gain is taxed. Companies don't get the discount. The 12-month period runs from the day you acquired the asset to the day of the CGT event, and the discount is applied <em>after</em> any capital losses have been netted against gains.</p>
+    <p>A simple example: you buy A$10,000 of Bitcoin, hold it for 14 months, then sell for A$16,000. Your capital gain is A$6,000. With the 50% discount, only A$3,000 is added to your assessable income. That A$3,000 is then taxed at whatever marginal rate applies to your total income for the year.</p>
+
+    <h2>The 2027 change: what replaces the 50% discount</h2>
+    <p>This is the biggest shift in how long-term crypto gains are taxed in Australia in decades, and it's worth understanding now because it affects the value you'll need to record in mid-2027.</p>
+    <div class="callout">
+      <h4>The change in one paragraph</h4>
+      <p>From <strong>1 July 2027</strong>, the existing 50% CGT discount is replaced for relevant gains of Australian resident individuals and trusts, including gains attributable to individuals through partnerships. The new system uses <strong>cost-base indexation</strong> to remove inflation from the taxable gain and introduces a <strong>30% minimum tax rate</strong> on qualifying real capital gains. The legislation received Royal Assent on 26 June 2026 (<a href="https://treasury.gov.au/policy-topics/taxation/budget2026-27" rel="noopener noreferrer" target="_blank">Treasury's Budget 2026-27 measures</a>).</p>
+    </div>
+    <p>Companies are treated differently. Companies generally do not qualify for the 50% CGT discount that applies to eligible individuals and trusts, so the replacement of that discount is primarily relevant to those taxpayers rather than companies.</p>
+    <p>Complying superannuation funds are also treated separately under the CGT rules and are not brought into the new individual 30% minimum-tax regime in the same way. If you hold crypto through an SMSF, the fund's tax treatment should therefore be considered separately from the individual rules described in this guide.</p>
+    <p>The reform applies to all CGT assets &mdash; property, shares and crypto &mdash; but not to the main residence exemption.</p>
+
+    <h3>Three buckets decide your treatment</h3>
+    <p>The transitional rules split your holdings into three groups, depending on when you buy and sell relative to 1 July 2027:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Bucket</th><th>What it covers</th><th>Treatment</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A</td><td>Bought <em>and</em> sold before 1 July 2027</td><td>50% discount still applies</td></tr>
+          <tr><td>B</td><td>Held before 1 July 2027, sold after</td><td>Transitional rules apply: eligible pre-2027 gains retain the old treatment, while gains accruing from 1 July 2027 fall under the new indexation and minimum-tax rules</td></tr>
+          <tr><td>C</td><td>Bought on or after 1 July 2027</td><td>New rules only</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>If you hold crypto across 1 July 2027, preserve a valuation</h3>
+    <p>The transitional rules distinguish gains that accrued before 1 July 2027 from gains accruing afterwards. For crypto you continue to hold across that date, keeping a defensible AUD market-value record as at the transition date can be important when working out the pre- and post-2027 components of a later gain.</p>
+    <p>The legislation contains specific deemed-sale, reacquisition and apportionment rules, so the exact calculation may depend on your circumstances rather than simply subtracting one snapshot price.</p>
+    <div class="callout warn">
+      <h4>Action before tax time</h4>
+      <p>If you still hold crypto around 1 July 2027, retain exchange statements, wallet records and reliable AUD market-price evidence covering the transition date. This will make it much easier to substantiate the calculation if you later dispose of the asset.</p>
+    </div>
+
+    <h3>The 30% minimum, and who it doesn't hit</h3>
+    <p>The 30% minimum applies <em>even where a taxpayer's marginal rate would otherwise be below 30%</em> &mdash; so a low-income holder can't simply pay 16% on a large real gain. There are carve-outs: the minimum does not apply to taxpayers who received prescribed Commonwealth payments (such as the Age Pension, Disability Support Pension, JobSeeker or Family Tax Benefit) at any time during the income year. The detail is still being settled through ATO guidance, so if you're near the boundary, this is one to check with a registered tax agent rather than self-assess.</p>
+
+    <h2>How much tax you'll actually pay</h2>
+    <p>There is no separate crypto rate. Your net capital gain and any crypto income are added to your assessable income and taxed at the individual marginal rates below (plus the 2% Medicare levy for most taxpayers).</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Taxable income (2025&ndash;26)</th><th>Tax on this income</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A$0 &ndash; A$18,200</td><td>Nil</td></tr>
+          <tr><td>A$18,201 &ndash; A$45,000</td><td>16c for each A$1 over A$18,200</td></tr>
+          <tr><td>A$45,001 &ndash; A$135,000</td><td>A$4,288 plus 30c for each A$1 over A$45,000</td></tr>
+          <tr><td>A$135,001 &ndash; A$190,000</td><td>A$31,288 plus 37c for each A$1 over A$135,000</td></tr>
+          <tr><td>A$190,001 and over</td><td>A$51,638 plus 45c for each A$1 over A$190,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The exact figures change with each Federal Budget, so treat the table as the current-year guide and confirm against the ATO's published rates when you lodge.</p>
+
+    <h2>What records to keep</h2>
+    <p>The ATO expects you to keep records for <strong>at least five years</strong> &mdash; and potentially longer where the records support an asset you continue to hold, a carried-forward capital loss, or an assessment that can still be amended. It's the area where people most often come unstuck years after the fact (see the <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO's crypto record-keeping guidance</a>). Keep:</p>
+    <ul>
+      <li>Receipts and the date, time and AUD value of every transaction.</li>
+      <li>Exchange statements and trade histories &mdash; <strong>export them regularly before you close an account</strong>, since platforms can restrict access to old history. If you use Binance, our <a href="/exchanges/binance/">Binance Australia review</a> covers the account and what you can export from it.</li>
+      <li>Wallet addresses, transaction IDs and other records needed to establish ownership and transaction history.</li>
+      <li>Fees, commissions and network/gas costs, which form part of your cost base.</li>
+      <li>Records of staking, airdrops and other income received.</li>
+    </ul>
+
+    <h2>How to report crypto on your tax return</h2>
+    <p>You report crypto in two places, depending on what happened:</p>
+    <ul>
+      <li><strong>Capital gains and losses</strong> go in the Capital gains section of myTax, or question 18 on the paper supplementary section (NAT 2679).</li>
+      <li><strong>Staking, airdrops and other crypto income</strong> go under Other income &mdash; question 24 on the paper form.</li>
+    </ul>
+    <p>The Australian tax year runs 1 July to 30 June, and self-lodged returns are due by <strong>31 October</strong>. The ATO has run a crypto-asset data-matching program since 2019, matching returns against data from exchanges, so omitting a year of trades is increasingly likely to be picked up. Separately, Australia's expanded <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AML/CTF Travel Rule</a> requires relevant virtual asset service providers to collect and, in applicable transfers, pass on prescribed payer, payee and wallet information. Transfers involving self-hosted wallets have specific exceptions to what information must be passed between institutions, although providers may still have collection and verification obligations. That rule is an AML/CTF obligation administered by AUSTRAC rather than a tax-reporting rule itself, but it reinforces the broader trend toward greater identification and record-keeping around crypto transfers.</p>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>Do I pay tax just for holding crypto?</summary>
+        <p>No. Simply holding crypto is not taxable. Tax is triggered when you dispose of it (creating a capital gain or loss) or when you receive crypto as income, such as staking rewards or airdrops.</p>
+      </details>
+      <details>
+        <summary>Is swapping one coin for another taxable?</summary>
+        <p>Yes. A crypto-to-crypto swap &mdash; including into a stablecoin &mdash; is a disposal, so you may realise a capital gain or loss on the coin you swapped out. Only transfers between your own wallets avoid this.</p>
+      </details>
+      <details>
+        <summary>What happens if I held crypto across 1 July 2027?</summary>
+        <p>Your holding falls into Bucket B: the gain is split at 1 July 2027. The pre-2027 portion keeps the 50% discount, and the post-2027 portion is indexed and subject to the 30% minimum. Keeping a defensible AUD market-value record around the transition date makes this split much easier to substantiate.</p>
+      </details>
+      <details>
+        <summary>Is staking taxed?</summary>
+        <p>Yes. Staking rewards are generally treated as ordinary income, taxed at their AUD market value when you receive them, with no CGT discount.</p>
+      </details>
+      <details>
+        <summary>Is moving crypto between my own wallets taxable?</summary>
+        <p>No. Transferring crypto between wallets or accounts you control is not a disposal, because ownership doesn't change. It becomes taxable only when you later sell, swap or spend it.</p>
+      </details>
+      <details>
+        <summary>How long do I need to keep records?</summary>
+        <p>At least five years. Keep transaction history, dates, AUD values, exchange statements and records of any staking or airdrops, and export your exchange history before closing an account.</p>
+      </details>
+    </div>
+
+    <div class="cta-box">
+      <h3>Trading on Binance?</h3>
+      <p>When tax time comes, the first thing you'll need is a complete trade history. Binance lets you export your transaction record from your account &mdash; and you can open an account through our link, which earns us a commission at no extra cost to you.</p>
+      <a href="https://www.binance.com/join?ref=HRYMM0AG" class="btn" rel="nofollow sponsored">Sign up to Binance</a>
+      <p class="fine">We may earn a commission when you sign up through this link. This never affects our assessment or the price you pay.</p>
+    </div>
+
+    <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Tax rules &mdash; including the 2027 CGT changes described above &mdash; are subject to change and to ATO guidance that is still being finalised. Cryptocurrency is volatile and may be unregulated in some circumstances. Consider your own circumstances and seek advice from a registered tax agent before acting on anything here. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+            <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+          </a>
+          <p>Independent crypto guides for Australians &mdash; exchanges, AUD deposits, transfers, USDT, tax and regulation.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Exchanges</h4>
+            <a href="/exchanges/binance/">Binance</a>
+            <a href="/exchanges/okx/">OKX</a>
+            <a href="/exchanges/coinspot/">CoinSpot</a>
+            <a href="/exchanges/swyftx/">Swyftx</a>
+            <a href="/exchanges/compare/">Compare Exchanges</a>
+          </div>
+          <div class="footer-col">
+            <h4>Guides</h4>
+            <a href="/buy-crypto/">Buy Crypto</a>
+            <a href="/transfers/">Transfers</a>
+            <a href="/crypto-tax/">Crypto Tax</a>
+            <a href="/usdt/">USDT</a>
+            <a href="/regulation/">Regulation</a>
+            <a href="/learn/">Learn</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/how-we-review/">How We Review</a>
+            <a href="/editorial-policy/">Editorial Policy</a>
+            <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Crypto is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting.</p>
+        </div>
+        <div>
+          <p>&copy; 2026 OzCoinTrail &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
