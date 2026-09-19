@@ -253,6 +253,15 @@
 
     /* ---------- Sections ---------- */
     .section { padding: 72px 24px; }
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--color-accent-dark);
+      margin-bottom: 12px;
+    }
     .section-inner { max-width: 1200px; margin: 0 auto; }
     .section h2 {
       font-size: clamp(1.7rem, 3.5vw, 2.3rem);
@@ -453,6 +462,7 @@
     /* ---------- Tax section ---------- */
     .section-tax { background: #ECF1F7; }
     .section-tax h2 { color: var(--color-primary); }
+    .section-stable { background: #F7F4EC; }
     .tax-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -644,8 +654,26 @@
 
     /* ---------- How we review ---------- */
     .section-review {
-      background: var(--color-surface);
-      border-top: 1px solid var(--color-border);
+      background: var(--color-primary);
+      border-top: none;
+    }
+    .section-review .review-copy h2 { color: #fff; }
+    .section-review .review-copy p { color: #DCE2E6; }
+    .section-review .review-item h4 { color: #fff; }
+    .section-review .review-item p { color: #C9D0D4; }
+    .section-review .ri-icon {
+      background: rgba(226, 182, 63, 0.16);
+      color: var(--color-accent);
+    }
+    .section-review .section-eyebrow { color: var(--color-accent); }
+    .section-review .btn-outline {
+      color: #fff;
+      border-color: var(--color-accent);
+    }
+    .section-review .btn-outline:hover {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: var(--color-primary-dark);
     }
     .review-wrap {
       display: flex;
@@ -841,6 +869,7 @@
   <!-- Section 2: Compare Exchanges -->
   <section class="section">
     <div class="section-inner">
+      <span class="section-eyebrow">Exchanges</span>
       <h2>Compare Crypto Exchanges in Australia</h2>
       <p class="section-intro">Not every crypto exchange works the same way for Australian users. Compare AUD funding methods, trading fees, supported assets and key features before choosing a platform.</p>
 
@@ -911,6 +940,7 @@
   <!-- Section 3: Buy Crypto with AUD -->
   <section class="section">
     <div class="section-inner">
+      <span class="section-eyebrow">AUD Funding</span>
       <h2>Buy Crypto with Australian Dollars</h2>
       <p class="section-intro">Compare common ways to fund a crypto account in Australia, including PayID, bank transfer, debit cards and AUD-to-USDT options.</p>
 
@@ -970,6 +1000,7 @@
   <!-- Section 4: Transfer Guides -->
   <section class="section">
     <div class="section-inner">
+      <span class="section-eyebrow">Transfers</span>
       <h2>Moving Crypto Between Exchanges?</h2>
       <p class="section-intro">Already using CoinSpot or Swyftx? Follow step-by-step guides for transferring crypto to Binance, OKX and other exchanges.</p>
 
@@ -1001,6 +1032,7 @@
   <!-- Section 5: Crypto Tax -->
   <section class="section section-tax">
     <div class="section-inner">
+      <span class="section-eyebrow">Tax</span>
       <h2>Crypto Tax in Australia</h2>
       <p class="section-intro">Crypto transactions can create Australian tax and record-keeping obligations. Learn how capital gains, exchange records and ATO reporting work before tax time.</p>
 
@@ -1030,8 +1062,9 @@
   </section>
 
   <!-- Section 6: USDT & Stablecoins -->
-  <section class="section">
+  <section class="section section-stable">
     <div class="section-inner">
+      <span class="section-eyebrow">Stablecoins</span>
       <h2>USDT &amp; Stablecoins</h2>
       <p class="section-intro">Learn how Australians buy, transfer and store USDT, including network fees and the differences between major stablecoins.</p>
 
@@ -1067,6 +1100,7 @@
   <!-- Section 7: Crypto Regulation -->
   <section class="section section-reg">
     <div class="section-inner">
+      <span class="section-eyebrow">Regulation</span>
       <h2>Crypto Regulation in Australia</h2>
       <p class="section-intro">Understand the roles of AUSTRAC and ASIC, and learn how to check the regulatory status of crypto platforms used by Australians.</p>
 
@@ -1102,6 +1136,7 @@
     <div class="section-inner">
       <div class="smsf-strip">
         <div class="smsf-body">
+          <span class="section-eyebrow">SMSF</span>
           <h2>Crypto &amp; SMSFs</h2>
           <p>Australians using an SMSF to invest in digital assets face additional custody, record-keeping and compliance considerations.</p>
         </div>
@@ -1120,33 +1155,34 @@
   <!-- Section 9: Recently Verified -->
   <section class="section">
     <div class="section-inner">
+      <span class="section-eyebrow">Recently Verified</span>
       <h2>Recently Verified Guides</h2>
       <p class="section-intro">Guides are checked against current exchange fees, deposit methods and Australian rules, and carry the date they were last verified.</p>
 
       <div class="verified-grid">
         <a href="/exchanges/best-crypto-exchanges-australia/" class="verified-card">
           <h3>Best Crypto Exchanges in Australia</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
         </a>
         <a href="/exchanges/binance/" class="verified-card">
           <h3>Binance Australia Review</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
         </a>
         <a href="/exchanges/okx/" class="verified-card">
           <h3>OKX Australia Review</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
         </a>
         <a href="/exchanges/binance-vs-coinspot/" class="verified-card">
           <h3>CoinSpot vs Binance</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
         </a>
         <a href="/buy-crypto/usdt/" class="verified-card">
           <h3>How to Buy USDT in Australia</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 18 September 2026</span>
         </a>
         <a href="/crypto-tax/crypto-tax-australia/" class="verified-card">
           <h3>Crypto Tax in Australia</h3>
-          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 15 September 2026</span>
+          <span class="verified-meta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 18 September 2026</span>
         </a>
       </div>
     </div>
@@ -1157,6 +1193,7 @@
     <div class="section-inner">
       <div class="review-wrap">
         <div class="review-copy">
+          <span class="section-eyebrow">Our Method</span>
           <h2>How OzCoinTrail Reviews Exchanges &amp; Guides</h2>
           <p>OzCoinTrail is an independent guide for Australians using crypto. We research fees, AUD funding and regulation as they actually apply in Australia — not from overseas templates — and we keep a clear record of when each guide was checked.</p>
           <a href="/how-we-review/" class="btn btn-outline">Read Our Review Method</a>
