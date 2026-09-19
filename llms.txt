@@ -1,0 +1,30 @@
+# OzCoinTrail
+
+> Independent crypto guides for Australians — exchanges, AUD deposits, transfers, USDT, tax and regulation.
+
+OzCoinTrail publishes Australia-specific guides on crypto exchanges (Binance, OKX, CoinSpot, Swyftx), AUD deposits and withdrawals (PayID, bank transfer), buying USDT, crypto tax and regulation (AUSTRAC, ASIC, ATO). Every review is fact-checked against official sources and carries a "Last verified" date. Fees, funding methods and regulatory arrangements can change, so figures are verified against the source before publication.
+
+## Exchanges
+
+- [Crypto Exchanges in Australia](https://ozcointrail.com/exchanges/): Hub comparing Binance, OKX, CoinSpot and Swyftx.
+- [Best Crypto Exchanges in Australia](https://ozcointrail.com/exchanges/best-crypto-exchanges-australia/): Side-by-side comparison of Australian and global platforms — fees, AUD deposits, regulation.
+- [Binance Australia Review](https://ozcointrail.com/exchanges/binance/): Spot fees, the current PayID status, AUSTRAC registration and liquidity.
+- [OKX Australia Review](https://ozcointrail.com/exchanges/okx/): AUD trading pairs, spot fees and licensed derivatives.
+- [CoinSpot Review 2026](https://ozcointrail.com/exchanges/coinspot/): The 1% Instant Buy fee vs the 0.10% Markets fee, and what AFSL 562554 covers.
+- [Swyftx Review 2026](https://ozcointrail.com/exchanges/swyftx/): The 0.6% fee plus a separate spread, and what AFSL 568543 covers.
+- [Binance vs CoinSpot](https://ozcointrail.com/exchanges/binance-vs-coinspot/): Comparing fees, AUD funding and regulation.
+- [OKX vs CoinSpot](https://ozcointrail.com/exchanges/okx-vs-coinspot/): Fees, safety, AUD deposits and derivatives.
+- [Is Binance Legal in Australia?](https://ozcointrail.com/exchanges/is-binance-legal-in-australia/): AUSTRAC registration vs an AFSL.
+
+## Buy, transfer & tax
+
+- [How to Buy USDT in Australia](https://ozcointrail.com/buy-crypto/usdt/): Cheapest route and fees compared.
+- [CoinSpot to Binance Australia](https://ozcointrail.com/transfers/exchanges/coinspot-to-binance/): How to transfer crypto safely.
+- [Crypto Tax in Australia](https://ozcointrail.com/crypto-tax/crypto-tax-australia/): CGT, staking and the 2027 changes.
+
+## More
+
+- Transfers: https://ozcointrail.com/transfers/
+- USDT: https://ozcointrail.com/usdt/
+- Regulation: https://ozcointrail.com/regulation/
+- Learn: https://ozcointrail.com/learn/
