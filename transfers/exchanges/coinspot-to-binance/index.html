@@ -292,6 +292,32 @@
       .nav { display: none; }
       .logo { flex: 1; }
     }
+  
+    /* ---------- Author box ---------- */
+    .author-box {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .author-avatar {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .author-info .author-name { font-weight: 700; margin-bottom: 6px; color: var(--color-text); }
+    .author-info .author-bio { font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .author-info .author-more { font-size: 0.9rem; }
+    .author-box a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .author-box a:hover { color: var(--color-primary-dark); }
+    .article-meta a { color: var(--color-primary); font-weight: 600; }
+    .article-meta a:hover { text-decoration: underline; }
   </style>
 
   <script type="application/ld+json">
@@ -303,8 +329,9 @@
             "headline": "CoinSpot to Binance Australia: How to Transfer Crypto Safely (2026)",
             "description": "Learn how to transfer crypto from CoinSpot to Binance Australia, including network selection, CoinSpot sending fees, Binance deposit checks and the new 2026 sender-information requirement.",
             "author": {
-                "@type": "Organization",
-                "name": "OzCoinTrail Editorial Team"
+                "@type": "Person",
+                "name": "James Walker",
+                "url": "https://ozcointrail.com/author/james-walker/"
             },
             "publisher": {
                 "@type": "Organization",
@@ -405,7 +432,7 @@
     <div class="article-meta">
       <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 17 September 2026</span>
       <span>&middot;</span>
-      <span>By OzCoinTrail Editorial Team</span>
+      <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">Sending crypto from CoinSpot to Binance Australia is a standard withdrawal on one side and a standard deposit on the other. <strong>CoinSpot charges a transaction (mining) fee when you send crypto to an external wallet</strong> &mdash; the amount depends on the coin and network and is shown before you confirm &mdash; while Binance does not charge to receive crypto deposits. The network has to match on both sides, and since 1 July 2026 Binance may ask for sender details before a deposit is credited.</p>
@@ -535,6 +562,15 @@
     </div>
 
     <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial advice. Cryptocurrency is volatile and may be unregulated in some circumstances. Always double-check the coin and network on both sides before sending, and consider your own circumstances and, where needed, seek professional advice before acting. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
+      <div class="author-box">
+      <img class="author-avatar" src="/img/authors/james-walker.webp" alt="James Walker" />
+      <div class="author-info">
+        <p class="author-name"><a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</p>
+        <p class="author-bio">James Walker covers Australian crypto exchanges, AUD funding methods, transfers and crypto regulation for OzCoinTrail. He verifies guides using official exchange documentation and AUSTRAC, ASIC and ATO sources.</p>
+        <p class="author-more"><a href="/author/james-walker/">View all articles by James Walker &rarr;</a></p>
+      </div>
+    </div>
+
   </article>
 
   <footer class="site-footer">
@@ -568,6 +604,7 @@
           <div class="footer-col">
             <h4>Company</h4>
             <a href="/about/">About</a>
+            <a href="/author/james-walker/">Our Editor</a>
             <a href="/how-we-review/">How We Review</a>
             <a href="/editorial-policy/">Editorial Policy</a>
             <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
