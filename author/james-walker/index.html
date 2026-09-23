@@ -174,13 +174,13 @@
     /* ---------- Author hero ---------- */
     .author-hero {
       display: flex;
-      gap: 20px;
+      gap: 24px;
       align-items: center;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
     .author-avatar-lg {
-      width: 96px;
-      height: 96px;
+      width: 100px;
+      height: 100px;
       border-radius: 50%;
       object-fit: cover;
       flex-shrink: 0;
@@ -192,9 +192,23 @@
       font-weight: 600;
       color: var(--color-text-secondary);
     }
+    .author-tagline {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      margin-top: 2px;
+    }
+    .last-reviewed {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin: 0 0 24px;
+    }
 
     .guides-list { list-style: none; margin-left: 0; }
     .guides-list li { margin-bottom: 10px; }
+
+    @media (max-width: 600px) {
+      .author-avatar-lg { width: 88px; height: 88px; }
+    }
 
     /* ---------- Footer ---------- */
     .site-footer {
@@ -268,29 +282,62 @@
 
     <div class="author-hero">
       <img class="author-avatar-lg" src="/img/authors/james-walker.webp" alt="James Walker" />
-      <div>
+      <div class="author-hero-text">
         <h1>James Walker</h1>
         <p class="author-role">Editor, OzCoinTrail</p>
+        <p class="author-tagline">Australian crypto exchanges, AUD payments &amp; transfers</p>
       </div>
     </div>
 
-    <p class="lead">James researches cryptocurrency exchanges, AUD deposit methods, crypto transfers and Australian regulation for OzCoinTrail.</p>
+    <p class="last-reviewed"><strong>Last reviewed: September 2026</strong></p>
+
+    <p class="lead">James Walker is an editor at <strong>OzCoinTrail</strong>, where he researches and maintains practical guides for Australians using cryptocurrency exchanges.</p>
+
+    <p>His work focuses on Australian crypto exchanges, AUD deposit methods, PayID, crypto transfers, stablecoins and Australian crypto regulation.</p>
+
+    <p>Rather than relying only on secondary articles, James prioritises official exchange documentation and Australian regulatory sources when researching and updating OzCoinTrail guides.</p>
 
     <h2>Areas of coverage</h2>
+    <p>James primarily covers:</p>
     <ul>
-      <li>Australian crypto exchanges</li>
-      <li>AUD deposits and PayID</li>
-      <li>Binance / OKX / CoinSpot / Swyftx</li>
-      <li>Crypto transfers and withdrawal networks</li>
-      <li>Stablecoins</li>
-      <li>Australian crypto regulation</li>
+      <li>Australian cryptocurrency exchanges</li>
+      <li>AUD deposits, bank transfers and PayID</li>
+      <li>Binance, OKX, CoinSpot and Swyftx</li>
+      <li>Crypto deposits, withdrawals and exchange-to-exchange transfers</li>
+      <li>Blockchain networks and transfer fees</li>
+      <li>USDT and other stablecoins</li>
+      <li>Australian cryptocurrency regulation</li>
     </ul>
 
     <h2>How James researches guides</h2>
-    <p>James prepares OzCoinTrail guides using primary sources wherever possible, including AUSTRAC, ASIC, ATO and official exchange documentation. Platform screens, fees and account flows are checked directly when access is available. Where a feature has not been independently tested, the article clearly identifies the information as documentation-based rather than first-hand testing.</p>
+    <p>James prepares OzCoinTrail guides using primary sources wherever possible.</p>
+    <p>Depending on the topic, sources may include:</p>
+    <ul>
+      <li><strong>AUSTRAC</strong> registration and regulatory information</li>
+      <li><strong>ASIC</strong> registers, regulatory guidance and public notices</li>
+      <li><strong>Australian Taxation Office (ATO)</strong> guidance</li>
+      <li>Official cryptocurrency exchange help centres and fee schedules</li>
+      <li>Platform account screens and transaction flows when direct access is available</li>
+    </ul>
+    <p>Exchange fees, deposit methods, withdrawal options and account procedures can change over time. OzCoinTrail therefore reviews important guides periodically and updates them when material changes are identified.</p>
+    <p>Where a platform feature has been checked directly, the article may describe it as tested or observed.</p>
+    <p>Where direct testing has not been possible, the guide clearly relies on official documentation rather than presenting the information as first-hand testing.</p>
+
+    <h2>Editorial approach</h2>
+    <p>James focuses on explaining how cryptocurrency platforms work rather than telling readers which assets to buy or sell.</p>
+    <p>OzCoinTrail aims to distinguish between:</p>
+    <ul>
+      <li>exchange marketing claims,</li>
+      <li>documented platform features,</li>
+      <li>Australian regulatory status,</li>
+      <li>and practical observations from platform use.</li>
+    </ul>
+    <p>Where availability, fees or account features can vary by user, location or account status, guides note those limitations rather than presenting them as universal.</p>
 
     <h2>What we do not claim</h2>
-    <p>James is not a financial adviser, tax agent or lawyer. OzCoinTrail provides educational information and does not provide personal financial, legal or tax advice.</p>
+    <p>James Walker is <strong>not a financial adviser, tax agent or lawyer</strong>.</p>
+    <p>OzCoinTrail provides educational information only and does not provide personal financial, investment, legal or tax advice.</p>
+    <p>For tax, legal or financial decisions that depend on your personal circumstances, consider consulting an appropriately qualified Australian professional.</p>
 
     <h2>Latest guides by James Walker</h2>
     <ul class="guides-list">
