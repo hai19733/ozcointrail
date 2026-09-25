@@ -15,6 +15,7 @@ OzCoinTrail publishes Australia-specific guides on crypto exchanges (Binance, OK
 - [Binance vs CoinSpot](https://ozcointrail.com/exchanges/binance-vs-coinspot/): Comparing fees, AUD funding and regulation.
 - [OKX vs CoinSpot](https://ozcointrail.com/exchanges/okx-vs-coinspot/): Fees, safety, AUD deposits and derivatives.
 - [Is Binance Legal in Australia?](https://ozcointrail.com/exchanges/is-binance-legal-in-australia/): AUSTRAC registration vs an AFSL.
+- [Is OKX Legal in Australia?](https://ozcointrail.com/exchanges/is-okx-legal-in-australia/): AUSTRAC registration vs the AFSL OKX actually holds, retail 2x leverage and how it differs from Binance.
 
 ## Buy, transfer & tax
 
