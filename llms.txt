@@ -14,6 +14,7 @@ OzCoinTrail publishes Australia-specific guides on crypto exchanges (Binance, OK
 - [Swyftx Review 2026](https://ozcointrail.com/exchanges/swyftx/): The 0.6% fee plus a separate spread, and what AFSL 568543 covers.
 - [Binance vs CoinSpot](https://ozcointrail.com/exchanges/binance-vs-coinspot/): Comparing fees, AUD funding and regulation.
 - [OKX vs CoinSpot](https://ozcointrail.com/exchanges/okx-vs-coinspot/): Fees, safety, AUD deposits and derivatives.
+- [Binance vs OKX Australia](https://ozcointrail.com/exchanges/binance-vs-okx-australia/): Binance's 0.10% spot fee vs OKX's 0.70% retail rate, derivatives and AUD funding.
 - [Is Binance Legal in Australia?](https://ozcointrail.com/exchanges/is-binance-legal-in-australia/): AUSTRAC registration vs an AFSL.
 - [Is OKX Legal in Australia?](https://ozcointrail.com/exchanges/is-okx-legal-in-australia/): AUSTRAC registration vs the AFSL OKX actually holds, retail 2x leverage and how it differs from Binance.
 
