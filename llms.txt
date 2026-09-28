@@ -10,6 +10,7 @@ OzCoinTrail publishes Australia-specific guides on crypto exchanges (Binance, OK
 - [Best Crypto Exchanges in Australia](https://ozcointrail.com/exchanges/best-crypto-exchanges-australia/): Side-by-side comparison of Australian and global platforms — fees, AUD deposits, regulation.
 - [Binance Australia Review](https://ozcointrail.com/exchanges/binance/): Spot fees, the current PayID status, AUSTRAC registration and liquidity.
 - [OKX Australia Review](https://ozcointrail.com/exchanges/okx/): AUD trading pairs, spot fees and licensed derivatives.
+- [OKX Fees in Australia](https://ozcointrail.com/exchanges/okx-fees/): The 0.70% retail spot fee (not the 0.08% quoted elsewhere), AUD deposit and withdrawal fees, VIP tiers and the wholesale schedule.
 - [CoinSpot Review 2026](https://ozcointrail.com/exchanges/coinspot/): The 1% Instant Buy fee vs the 0.10% Markets fee, and what AFSL 562554 covers.
 - [Swyftx Review 2026](https://ozcointrail.com/exchanges/swyftx/): The 0.6% fee plus a separate spread, and what AFSL 568543 covers.
 - [Binance vs CoinSpot](https://ozcointrail.com/exchanges/binance-vs-coinspot/): Comparing fees, AUD funding and regulation.
