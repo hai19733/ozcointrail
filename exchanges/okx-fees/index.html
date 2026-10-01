@@ -352,6 +352,44 @@
     .author-box a:hover { color: var(--color-primary-dark); }
     .article-meta a { color: var(--color-primary); font-weight: 600; }
     .article-meta a:hover { text-decoration: underline; }
+  
+    /* ---------- Intro reco bar ---------- */
+    .reco {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 22px 0;
+    }
+    .reco-ic { flex-shrink: 0; width: 40px; height: 40px; }
+    .reco-ic img, .reco-ic svg { width: 40px; height: 40px; border-radius: 8px; display: block; }
+    .reco-body { flex: 1; min-width: 0; }
+    .reco-label { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 2px; }
+    .reco-body p { margin: 0; font-size: 0.92rem; line-height: 1.45; }
+    .reco-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: var(--color-primary);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid var(--color-primary);
+      white-space: nowrap;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .reco-btn:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    @media (max-width: 560px) {
+      .reco { flex-wrap: wrap; }
+      .reco-btn { width: 100%; justify-content: center; }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -470,6 +508,15 @@
     </div>
 
     <p class="lead">If you've seen websites saying OKX charges <strong>0.08%</strong> for spot trading, that figure is real &mdash; but it is <strong>not the standard rate for most Australian retail users</strong>. For a regular OKX Australia retail account, the standard spot trading fee is <strong>0.70% maker and 0.70% taker</strong>, apart from designated zero-fee pairs. Lower rates apply as you move through the VIP tiers, while OKX also maintains a separate fee schedule for eligible wholesale clients. This guide explains what Australians actually pay for spot trading, AUD deposits and withdrawals, crypto withdrawals, and how the retail and wholesale fee schedules differ. For a broader look at the platform, see our <a href="/exchanges/okx/">full OKX review</a>.</p>
+
+    <div class="reco">
+      <span class="reco-ic"><img src="/img/okx-logo.png" alt="OKX" /></span>
+      <div class="reco-body">
+        <span class="reco-label">Our pick</span>
+        <p><strong>OKX</strong> — our pick for licensed retail derivatives — just mind the 0.70% spot fee.</p>
+      </div>
+      <a href="https://okx.com/join/OK800" class="reco-btn" rel="nofollow sponsored">Sign up</a>
+    </div>
 
     <h2>The short answer</h2>
     <div class="stat-grid">

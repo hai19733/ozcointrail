@@ -352,6 +352,44 @@
     .author-box a:hover { color: var(--color-primary-dark); }
     .article-meta a { color: var(--color-primary); font-weight: 600; }
     .article-meta a:hover { text-decoration: underline; }
+  
+    /* ---------- Intro reco bar ---------- */
+    .reco {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 22px 0;
+    }
+    .reco-ic { flex-shrink: 0; width: 40px; height: 40px; }
+    .reco-ic img, .reco-ic svg { width: 40px; height: 40px; border-radius: 8px; display: block; }
+    .reco-body { flex: 1; min-width: 0; }
+    .reco-label { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 2px; }
+    .reco-body p { margin: 0; font-size: 0.92rem; line-height: 1.45; }
+    .reco-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: var(--color-primary);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid var(--color-primary);
+      white-space: nowrap;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .reco-btn:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    @media (max-width: 560px) {
+      .reco { flex-wrap: wrap; }
+      .reco-btn { width: 100%; justify-content: center; }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -470,6 +508,15 @@
     </div>
 
     <p class="lead">If you're comparing Australian exchanges, Binance's <strong>0.10%</strong> standard spot trading fee is among the lowest you'll find. But it comes with a catch for Australian users: direct AUD deposits via PayID or BSB bank transfer are <strong>still marked temporarily unavailable</strong>. The headline fee is cheap, but how you get Australian dollars into your account can add cost and friction. This guide breaks down Binance Australia's actual fees for spot trading, deposits, withdrawals and crypto transfers in 2026 &mdash; and how they compare with CoinSpot, OKX and Swyftx. For a broader look at the platform, see our <a href="/exchanges/binance/">full Binance Australia review</a>.</p>
+
+    <div class="reco">
+      <span class="reco-ic"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0B0E11"/><path d="M20 7 L33 20 L20 33 L7 20 Z" fill="#F0B90B"/></svg></span>
+      <div class="reco-body">
+        <span class="reco-label">Our pick</span>
+        <p><strong>Binance</strong> — the low-fee benchmark for Australian spot trading at 0.10%.</p>
+      </div>
+      <a href="https://www.binance.com/join?ref=HRYMM0AG" class="reco-btn" rel="nofollow sponsored">Sign up</a>
+    </div>
 
     <h2>The short answer</h2>
     <div class="stat-grid">

@@ -339,6 +339,44 @@
     .author-box a:hover { color: var(--color-primary-dark); }
     .article-meta a { color: var(--color-primary); font-weight: 600; }
     .article-meta a:hover { text-decoration: underline; }
+  
+    /* ---------- Intro reco bar ---------- */
+    .reco {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 22px 0;
+    }
+    .reco-ic { flex-shrink: 0; width: 40px; height: 40px; }
+    .reco-ic img, .reco-ic svg { width: 40px; height: 40px; border-radius: 8px; display: block; }
+    .reco-body { flex: 1; min-width: 0; }
+    .reco-label { display: block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--color-text-secondary); margin-bottom: 2px; }
+    .reco-body p { margin: 0; font-size: 0.92rem; line-height: 1.45; }
+    .reco-btn {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 9px 14px;
+      border-radius: 8px;
+      background: var(--color-primary);
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.85rem;
+      border: 1px solid var(--color-primary);
+      white-space: nowrap;
+      transition: background 0.15s ease, border-color 0.15s ease;
+    }
+    .reco-btn:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    @media (max-width: 560px) {
+      .reco { flex-wrap: wrap; }
+      .reco-btn { width: 100%; justify-content: center; }
+    }
   </style>
 
   <script type="application/ld+json">
@@ -458,6 +496,15 @@
 
     <p class="lead">AUSTRAC registration is one of the most misunderstood labels in Australian crypto. It means a provider is registered under Australia&rsquo;s anti-money-laundering and counter-terrorism-financing regime. It is <strong>not the same as an Australian Financial Services Licence (AFSL)</strong>, it is not a government recommendation, and by itself it does not guarantee that customer funds will be protected if a platform fails.</p>
     <p>The important question is therefore not simply whether an exchange says it is &ldquo;regulated&rdquo;. You need to know <strong>which entity is registered, what services that registration covers, and whether separate ASIC licensing applies to the product you are using</strong>.</p>
+
+    <div class="reco">
+      <span class="reco-ic"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="#0B0E11"/><path d="M20 7 L33 20 L20 33 L7 20 Z" fill="#F0B90B"/></svg></span>
+      <div class="reco-body">
+        <span class="reco-label">Our pick</span>
+        <p><strong>Binance</strong> — our pick among AUSTRAC-registered platforms for 0.10% spot fees.</p>
+      </div>
+      <a href="https://www.binance.com/join?ref=HRYMM0AG" class="reco-btn" rel="nofollow sponsored">Sign up</a>
+    </div>
 
     <div class="verdict">
       <span class="tag">The short answer</span>
