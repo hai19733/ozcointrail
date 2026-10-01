@@ -258,6 +258,7 @@
     .cta-logo svg { display: block; }
     .cta-box h3 { color: #fff; margin: 0 0 10px; font-size: 1.25rem; }
     .cta-box p { color: #DCE2E6; margin: 0 0 20px; }
+    .cta-box ul { color: #DCE2E6; margin: 0 0 20px 22px; }
     .cta-box .btn { background: var(--color-accent); color: var(--color-primary-dark); border: none; }
     .cta-box .btn:hover { background: #F2C94C; }
     .cta-box .fine { font-size: 0.78rem; color: #A8B0B8; margin-top: 14px; }
@@ -372,7 +373,7 @@
                     "name": "What does AUSTRAC registration actually mean?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "It means the platform is enrolled in Australia's anti-money-laundering and counter-terrorism-financing (AML/CTF) regime, which requires it to verify customer identities, monitor transactions and report suspicious activity. It does not mean ASIC has licensed the business, and it is not a government endorsement."
+                        "text": "It means the provider is registered under Australia's AML/CTF framework to provide covered virtual-asset services and must comply with applicable obligations. It does not by itself mean the provider holds an AFSL."
                     }
                 },
                 {
@@ -380,15 +381,15 @@
                     "name": "Is AUSTRAC registration the same as a licence?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "No. AUSTRAC registration is an AML/CTF enrolment. An Australian Financial Services Licence (AFSL) is issued by ASIC and authorises specified financial services. They cover different things, and holding one does not mean holding the other."
+                        "text": "No. AUSTRAC registration and an ASIC Australian Financial Services Licence (AFSL) are separate regulatory concepts. Registration relates to AML/CTF compliance, while an AFSL authorises specified financial services."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "How do I check if a platform is AUSTRAC registered?",
+                    "name": "How do I check if a crypto platform is AUSTRAC registered?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Search AUSTRAC's public register on austrac.gov.au using the provider's legal entity name rather than its brand name — for example, Binance Australia trades through Investbybit Pty Ltd. Then confirm the registered entity matches the website you are using, and check the registration status is active rather than suspended or cancelled."
+                        "text": "Use AUSTRAC's public Virtual Asset Service Provider Register. Search using the provider's legal or trading name, or identifiers such as its ABN or ACN, and match the registered entity to the website you are using."
                     }
                 },
                 {
@@ -396,7 +397,15 @@
                     "name": "Does AUSTRAC registration protect my funds?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Not directly. AUSTRAC registration is about anti-money-laundering compliance, not consumer protection. It does not guarantee segregated client funds, insurance, or compensation if the platform fails. Those protections, where they exist, come from separate arrangements such as an AFSL or a product's own terms."
+                        "text": "Not in the way bank deposit protection does. Registration does not create a general guarantee, insurance scheme or promise that crypto assets will be returned if the provider fails."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does an AFSL mean an exchange's spot crypto service is licensed?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not automatically. AFSL authorisations are specific, and crypto brands frequently operate through multiple legal entities. Check which entity holds the licence and which financial services that licence authorises."
                     }
                 },
                 {
@@ -404,7 +413,7 @@
                     "name": "Is every crypto exchange operating in Australia AUSTRAC registered?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "They are required to be, but not all are. AUSTRAC can suspend, cancel or refuse registration, and it has publicly warned that some businesses remain listed while no longer operating. This is why checking the current status yourself, rather than trusting a marketing badge, matters."
+                        "text": "Providers of registrable virtual-asset services with the required connection to Australia are required to register. That does not mean every crypto website accessible from Australia is necessarily compliant — check the AUSTRAC register directly."
                     }
                 }
             ]
@@ -447,189 +456,247 @@
       <span>Written by <a href="/author/james-walker/">James Walker</a> &middot; Source reviewed against AUSTRAC, ASIC and exchange documentation</span>
     </div>
 
-    <p class="lead">AUSTRAC registration is the most misunderstood label in Australian crypto. It shows a platform has anti-money-laundering controls in place &mdash; <strong>nothing more</strong>. It is not a licence, not a government endorsement, and not a promise that your funds are protected. Here is what it actually means, what it does and doesn&rsquo;t cover, and how to check a platform&rsquo;s registration yourself in a few minutes.</p>
+    <p class="lead">AUSTRAC registration is one of the most misunderstood labels in Australian crypto. It means a provider is registered under Australia&rsquo;s anti-money-laundering and counter-terrorism-financing regime. It is <strong>not the same as an Australian Financial Services Licence (AFSL)</strong>, it is not a government recommendation, and by itself it does not guarantee that customer funds will be protected if a platform fails.</p>
+    <p>The important question is therefore not simply whether an exchange says it is &ldquo;regulated&rdquo;. You need to know <strong>which entity is registered, what services that registration covers, and whether separate ASIC licensing applies to the product you are using</strong>.</p>
 
     <div class="verdict">
       <span class="tag">The short answer</span>
-      <h2>Registration &ne; licence &mdash; and it&rsquo;s easy to check</h2>
-      <p>AUSTRAC registration means a crypto platform is enrolled in Australia&rsquo;s anti-money-laundering (AML/CTF) regime. It does <strong>not</strong> mean ASIC has licensed it, it does <strong>not</strong> mean the government endorses it, and it does <strong>not</strong> bring the consumer protections that attach to an AFSL. You can verify any provider in minutes using AUSTRAC&rsquo;s public register &mdash; the trick is to search the <strong>legal entity name</strong>, not the brand name.</p>
+      <h2>Registration &ne; licence &mdash; and you can check it yourself</h2>
+      <p>Virtual asset service providers that provide covered services in Australia generally need to be registered with AUSTRAC. That registration primarily relates to Australia&rsquo;s <strong>AML/CTF framework</strong>, and it requires providers to meet obligations covering customer identification, transaction monitoring, reporting, record keeping and other controls designed to reduce money-laundering and terrorism-financing risk.</p>
+      <p>An <strong>AFSL</strong>, by contrast, is administered by ASIC and authorises specified financial services or products. The two should not be treated as interchangeable.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Aspect</th>
+              <th scope="col">AUSTRAC registration</th>
+              <th scope="col">AFSL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Regulator</td>
+              <td>AUSTRAC</td>
+              <td>ASIC</td>
+            </tr>
+            <tr>
+              <td>Main purpose</td>
+              <td>AML/CTF supervision</td>
+              <td>Financial-services licensing</td>
+            </tr>
+            <tr>
+              <td>Typical obligations</td>
+              <td>Customer identification, monitoring, reporting and records</td>
+              <td>Depends on the financial services and products authorised</td>
+            </tr>
+            <tr>
+              <td>Does it guarantee customer funds?</td>
+              <td>No</td>
+              <td>No blanket guarantee</td>
+            </tr>
+            <tr>
+              <td>Is it government endorsement?</td>
+              <td>No</td>
+              <td>No</td>
+            </tr>
+            <tr>
+              <td>Where to check</td>
+              <td>AUSTRAC VASP Register</td>
+              <td>ASIC Professional Registers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The simplest way to think about it is this: <strong>AUSTRAC registration tells you that the provider is registered to provide covered virtual-asset services under the AML/CTF framework. An AFSL tells you that an entity has ASIC authorisation for particular financial services.</strong> Neither label means the Australian government recommends the platform.</p>
     </div>
-
-    <h2>At a glance: AUSTRAC registration vs an AFSL</h2>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Aspect</th>
-            <th scope="col">AUSTRAC registration</th>
-            <th scope="col">AFSL (ASIC licence)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Issued by</td>
-            <td>AUSTRAC</td>
-            <td>ASIC</td>
-          </tr>
-          <tr>
-            <td>What it covers</td>
-            <td>Anti-money-laundering and counter-terrorism-financing (AML/CTF) compliance</td>
-            <td>Specified financial products and services</td>
-          </tr>
-          <tr>
-            <td>What it means for you</td>
-            <td>The platform must verify your ID, monitor transactions and report suspicious activity</td>
-            <td>Additional consumer protections may apply, depending on the product</td>
-          </tr>
-          <tr>
-            <td>Where to check</td>
-            <td>AUSTRAC public register</td>
-            <td>ASIC registers</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>In short, the two labels answer different questions: AUSTRAC registration answers <em>who is allowed to operate</em>, while an AFSL answers <em>what they can sell you and how you&rsquo;re protected</em>.</p>
 
     <h2>What AUSTRAC registration actually is</h2>
-    <p>AUSTRAC is Australia&rsquo;s financial-intelligence regulator, and it administers the <em>Anti-Money Laundering and Counter-Terrorism Financing Act 2006</em>. Since 2018, businesses that exchange digital currency &mdash; buying and selling crypto for cash or for other crypto &mdash; have been required to register with AUSTRAC as digital currency exchanges. In 2026 AUSTRAC opened its <strong>public register of virtual asset service providers (VASPs)</strong>, so consumers and businesses can look up a provider directly rather than taking a platform&rsquo;s &ldquo;we&rsquo;re registered&rdquo; badge at face value.</p>
-    <p>Registration is not a one-off form. It obliges the provider to meet ongoing AML/CTF requirements, including:</p>
+    <p>AUSTRAC is Australia&rsquo;s financial-intelligence and AML/CTF regulator.</p>
+    <p>Crypto businesses exchanging digital currency for fiat have been subject to AUSTRAC registration requirements since 2018. Australia expanded the framework in 2026, replacing the narrower digital currency exchange terminology with a broader <strong>virtual asset service provider, or VASP, regime</strong>.</p>
+    <p>Covered services now extend beyond simple crypto-to-fiat exchange and can include services such as:</p>
     <ul>
-      <li><strong>Identity verification (KYC)</strong> &mdash; confirming who you are before you trade.</li>
-      <li><strong>Suspicious matter reporting</strong> &mdash; reporting transactions that show signs of money laundering or other serious crime.</li>
-      <li><strong>Threshold transaction reporting</strong> &mdash; reporting cash transactions of A$10,000 or more.</li>
-      <li><strong>Record keeping</strong> &mdash; holding transaction and identity records, typically for several years.</li>
+      <li>exchanging virtual assets for money;</li>
+      <li>exchanging one virtual asset for another;</li>
+      <li>virtual-asset safekeeping;</li>
+      <li>transferring virtual assets on behalf of customers; and</li>
+      <li>certain financial services connected with the offer or sale of virtual assets.</li>
     </ul>
-    <p>These are anti-money-laundering duties aimed at detecting crime. They are not the same thing as looking after your money.</p>
+    <p>Providers offering registrable virtual-asset services with the required Australian connection generally need to enrol and register with AUSTRAC before providing those services.</p>
+    <p>Registration also has to be maintained. AUSTRAC can impose conditions and may refuse, suspend, cancel or refuse to renew a registration in appropriate circumstances.</p>
 
-    <h2>Registration is not a licence, and not an endorsement</h2>
-    <p>The single biggest source of confusion is that &ldquo;registered&rdquo; gets blurred with &ldquo;licensed&rdquo; &mdash; and both get blurred with &ldquo;endorsed.&rdquo; They are three different things.</p>
-    <p>An <strong>Australian Financial Services Licence (AFSL)</strong> is issued by ASIC and authorises specified financial services, such as dealing in regulated financial products. Depending on the product, that licensing regime can bring additional obligations and consumer protections. AUSTRAC registration is a separate AML/CTF enrolment, and it should not be treated as equivalent to an AFSL.</p>
-    <p>Equally, holding either an AUSTRAC registration or an AFSL is <strong>not a government endorsement</strong> of the business or its products. A platform that says it is &ldquo;AUSTRAC registered&rdquo; is stating a compliance fact &mdash; not that any regulator recommends it, and not that your funds are safe.</p>
-    <div class="callout">
-      <h4>Read that distinction twice</h4>
-      <p>&ldquo;Registered&rdquo; answers <em>who is allowed to operate</em> (AUSTRAC, anti-money-laundering). &ldquo;Licensed&rdquo; answers <em>what they can sell you and how you&rsquo;re protected</em> (ASIC, financial services). Neither word means &ldquo;the government vouches for this platform.&rdquo; A lot of marketing copy collapses all three into one word: &ldquo;regulated.&rdquo;</p>
-    </div>
+    <h2>What obligations come with registration?</h2>
+    <p>AUSTRAC registration is not simply a badge placed in a website footer. Depending on the services provided and the rules that apply, a registered provider can have obligations covering areas such as:</p>
+    <h3>Customer identification</h3>
+    <p>Platforms need procedures for identifying customers and performing customer due diligence. This is why Australian exchanges ask users to complete KYC checks rather than allowing unrestricted anonymous trading.</p>
+    <h3>Transaction monitoring</h3>
+    <p>Providers need systems and controls designed to identify unusual activity and manage money-laundering and terrorism-financing risks.</p>
+    <h3>Suspicious matter reporting</h3>
+    <p>Transactions or behaviour that meet the relevant legal threshold may need to be reported to AUSTRAC.</p>
+    <h3>Threshold transaction reporting</h3>
+    <p>Certain reportable transactions, including relevant cash transactions of A$10,000 or more, can trigger reporting requirements.</p>
+    <h3>Record keeping</h3>
+    <p>Providers must keep specified customer, transaction and compliance records for the periods required by law.</p>
+    <h3>Travel Rule obligations</h3>
+    <p>Australia&rsquo;s 2026 AML/CTF reforms also expanded Travel Rule requirements for virtual-asset transfers. For newly regulated virtual-asset services, relevant Travel Rule obligations began applying from <strong>1 July 2026</strong>. In broad terms, the rule requires regulated institutions involved in covered transfers to collect or transmit specified information about the parties to the transaction.</p>
+    <p>These are serious compliance obligations. But their purpose is primarily to detect and prevent financial crime &mdash; <strong>not to insure your crypto balance against platform failure</strong>.</p>
 
-    <h2>What it protects &mdash; and what it doesn&rsquo;t</h2>
-    <p>The cleanest way to see the limits of AUSTRAC registration is to put its coverage side by side with what it does <em>not</em> give you.</p>
+    <h2>Registration is not a licence</h2>
+    <p>This is the distinction that matters most. The words <strong>registered</strong>, <strong>licensed</strong> and <strong>regulated</strong> are often used interchangeably in marketing, but legally they can describe very different things.</p>
+    <p>An Australian Financial Services Licence is issued under the financial-services regime administered by ASIC. An AFSL contains specific authorisations, and holding one licence does not automatically mean every activity performed by the company is covered by that licence.</p>
+    <p>For example, an exchange may:</p>
+    <ul>
+      <li>provide spot crypto trading through one entity;</li>
+      <li>provide derivatives through another entity;</li>
+      <li>offer a payment product under a separate licence or authorised-representative arrangement.</li>
+    </ul>
+    <p>That means you should check <strong>the product and legal entity</strong>, rather than simply seeing &ldquo;AFSL&rdquo; somewhere on the company&rsquo;s website and assuming it covers everything.</p>
+
+    <h2>Registration is also not a government endorsement</h2>
+    <p>AUSTRAC registration should not be described as an Australian government approval of an exchange. AUSTRAC itself assesses whether businesses fall within and comply with its AML/CTF framework.</p>
+    <p>Registration does not mean AUSTRAC has concluded that:</p>
+    <ul>
+      <li>the exchange is a good investment platform;</li>
+      <li>its fees are competitive;</li>
+      <li>its custody practices are risk-free;</li>
+      <li>it will remain solvent;</li>
+      <li>its crypto assets are insured; or</li>
+      <li>customers are guaranteed repayment if the business collapses.</li>
+    </ul>
+    <p>The same caution applies to an AFSL: a financial-services licence is a regulatory authorisation, not an endorsement or investment recommendation.</p>
+
+    <h2>What AUSTRAC registration protects &mdash; and what it doesn&rsquo;t</h2>
+    <p>The easiest way to understand its limits is side by side.</p>
     <div class="table-wrap">
       <table>
         <thead>
           <tr>
-            <th scope="col">AUSTRAC registration covers</th>
-            <th scope="col">It does not cover</th>
+            <th scope="col">AUSTRAC framework covers</th>
+            <th scope="col">AUSTRAC registration alone does not provide</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Identity verification (KYC)</td>
-            <td>Segregation of your funds from the platform&rsquo;s own funds</td>
+            <td>Customer identification and due diligence</td>
+            <td>A guarantee that customer funds are segregated</td>
           </tr>
           <tr>
-            <td>Suspicious-matter and threshold reporting</td>
-            <td>Insurance or a compensation scheme if the platform fails</td>
+            <td>Transaction monitoring</td>
+            <td>Deposit insurance for crypto</td>
           </tr>
           <tr>
-            <td>Ongoing customer due diligence and record keeping</td>
-            <td>AFCA dispute resolution (this depends on the product or entity)</td>
+            <td>Suspicious-matter reporting</td>
+            <td>A compensation guarantee if the exchange fails</td>
           </tr>
           <tr>
-            <td>Monitoring for signs of money laundering</td>
-            <td>A guarantee that the platform is solvent or well-run</td>
+            <td>Certain transaction reporting</td>
+            <td>A guarantee that the platform is solvent</td>
+          </tr>
+          <tr>
+            <td>AML/CTF programs and controls</td>
+            <td>A guarantee that every product has ASIC licensing</td>
+          </tr>
+          <tr>
+            <td>Record-keeping requirements</td>
+            <td>Government endorsement of the exchange</td>
+          </tr>
+          <tr>
+            <td>Relevant Travel Rule requirements</td>
+            <td>Protection against crypto market losses</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p>The practical takeaway: AUSTRAC registration is about stopping crime, not about protecting your trading balance. If something goes wrong with a platform, registration alone does not get your money back.</p>
+    <p>The practical takeaway is simple: <strong>AUSTRAC registration is an important compliance check, but it should not be used as shorthand for &ldquo;my money is protected&rdquo;.</strong></p>
 
-    <h2>How to check a platform&rsquo;s registration yourself</h2>
-    <p>Rather than trusting a footer badge, you can verify a platform in a few minutes. The whole process comes down to matching the right entity name.</p>
+    <h2>How to check AUSTRAC registration yourself</h2>
+    <p>Australia now has a public <strong>Virtual Asset Service Provider Register</strong>, making this much easier than it used to be. You do not need to rely on screenshots or claims made by an exchange.</p>
+    <h3>Step 1: Find the legal entity</h3>
+    <p>Do not start with the logo. Look at the exchange&rsquo;s Australian Terms of Use, Product Disclosure Statement, Financial Services Guide, website footer or regulatory disclosure page. Find the Australian company name and, ideally, its <strong>ABN or ACN</strong>. A global crypto brand can operate through several different companies.</p>
+    <h3>Step 2: Open AUSTRAC&rsquo;s VASP Register</h3>
+    <p>Go to AUSTRAC&rsquo;s website and open the <a href="https://www.austrac.gov.au/news-and-media/article/virtual-asset-service-provider-register-goes-public" target="_blank" rel="noopener noreferrer">Virtual Asset Service Provider Register</a>. The public register became available in 2026 and allows users to check whether a provider is registered.</p>
+    <h3>Step 3: Search the company</h3>
+    <p>AUSTRAC allows searches using identifiers such as legal or trading name, ABN, ACN or ARBN. Using the legal entity or registration number is generally safer than relying only on the brand.</p>
+    <h3>Step 4: Match the entity</h3>
+    <p>Confirm that the company appearing in the register is actually the company providing the service you intend to use. Do not assume that the registration of one subsidiary automatically covers every international entity using the same brand.</p>
+    <h3>Step 5: Check the registration details</h3>
+    <p>Review the information displayed by AUSTRAC, including any available registration details or conditions. AUSTRAC can refuse, suspend, cancel or refuse to renew registrations where the legal requirements are met.</p>
+    <h3>Step 6: Check ASIC separately</h3>
+    <p>If the company claims to hold an AFSL, search ASIC&rsquo;s professional registers separately. Then determine which legal entity holds the AFSL, the AFSL number, and whether the service or product you are interested in appears to fall within that entity&rsquo;s authorisations. This second check is important because <strong>AUSTRAC registration and ASIC licensing are separate regulatory questions</strong>.</p>
+
+    <h2>Examples from major Australian crypto platforms</h2>
+    <p>The regulatory structure can become much clearer when you look at actual entities.</p>
+    <h3>Binance Australia</h3>
+    <p>Binance Australia&rsquo;s Australian services are provided through <strong>Investbybit Pty Ltd</strong>. Binance Australia documentation identifies Investbybit as registered with AUSTRAC as a virtual-asset services provider. Its April 2026 Binance Pay documentation stated that no AFSL had yet been assigned and that an AFSL application was to be lodged. Because Australia&rsquo;s licensing transition continued during 2026, users checking its status today should verify the current position directly against <a href="https://bin.bnbstatic.com/static/cms/cg08ou2ak0tn7mcplvfg/file/d105b8533b58cd5cc5c90e43f29700f49511ca5d48ca24a28d0e8600e0cbc2a8.pdf" target="_blank" rel="noopener noreferrer">Binance&rsquo;s latest Australian disclosures</a> and ASIC&rsquo;s registers rather than relying on an older document.</p>
+    <h3>OKX Australia</h3>
+    <p>Spot crypto exchange services for Australian customers are provided by <strong>OKX Australia Pty Ltd</strong>. Derivatives and margin products are provided separately by <strong>OKX Australia Financial Pty Ltd</strong>, which states that it holds <strong>AFSL 379035</strong>. That is a useful example of why the entity matters: the company providing spot trading is not necessarily the same company issuing a regulated financial product. See <a href="https://www.okx.com/en-au/help/okx-australia-launch-what-can-i-use-in-australia" target="_blank" rel="noopener noreferrer">OKX&rsquo;s Australia help page</a> for its own entity breakdown.</p>
+    <h3>CoinSpot</h3>
+    <p>CoinSpot has operated as an AUSTRAC-registered crypto provider in Australia. Its payments-related financial services involve <strong>Casey Block Services Pty Ltd</strong>, which holds <strong>AFSL 562554</strong>. That AFSL should not automatically be interpreted as meaning every CoinSpot spot-crypto activity is provided under the licence.</p>
+    <h3>Swyftx</h3>
+    <p>Swyftx Pty Ltd is AUSTRAC registered and also holds <strong>AFSL 568543</strong>. Swyftx itself states that its spot cryptocurrency exchange services are <strong>not provided under that AFSL</strong>. Again, seeing an AFSL number beside an exchange name is not enough &mdash; you need to understand what the licence actually covers.</p>
+
+    <h2>Why &ldquo;regulated exchange&rdquo; can be misleading</h2>
+    <p>Imagine two websites both say &ldquo;we are a regulated Australian crypto exchange.&rdquo; That sentence alone tells you very little. One might mean registered with AUSTRAC for AML/CTF purposes; another might mean registered with AUSTRAC plus an associated company has an AFSL for derivatives; a third could mean an AFSL applies only to a payment card or another financial product. All three could use the word &ldquo;regulated&rdquo;, while the customer protections and licensing arrangements are very different.</p>
+    <p>A better question is: <strong>registered or licensed by whom, through which entity, and for which service?</strong></p>
+
+    <h2>What changed in 2026?</h2>
+    <p>2026 has been an important year for Australian crypto regulation.</p>
+    <h3>1. AUSTRAC&rsquo;s public VASP Register launched</h3>
+    <p>AUSTRAC made its Virtual Asset Service Provider Register publicly available on <strong>30 June 2026</strong>. Consumers can now check a provider&rsquo;s registration directly rather than relying solely on claims made by the platform.</p>
+    <h3>2. The VASP regime became broader</h3>
+    <p>Australia expanded the AML/CTF framework beyond the old digital-currency-exchange model. Covered virtual-asset services can now include crypto-to-crypto exchange, custody and certain transfer-related activities, in addition to fiat-to-crypto exchange.</p>
+    <h3>3. Travel Rule obligations expanded</h3>
+    <p>Relevant obligations for newly regulated virtual-asset services began applying from <strong>1 July 2026</strong>. Providers therefore need systems capable of handling specified information associated with covered virtual-asset transfers.</p>
+    <h3>4. AUSTRAC increased enforcement and register clean-up</h3>
+    <p>AUSTRAC has been actively reviewing inactive and higher-risk registrations. On 7 September 2026, AUSTRAC said it had <strong>cancelled, suspended or refused renewal for 45 remittance and virtual-asset service provider registrations during the previous year</strong>. A company appearing on a register should therefore still be checked for its current status and legal entity.</p>
+    <h3>5. Australia passed a broader digital-asset licensing framework</h3>
+    <p>The <strong>Corporations Amendment (Digital Assets Framework) Act 2026</strong> passed Parliament on 1 April 2026 and received Royal Assent on <strong>8 April 2026</strong>. The new regime is scheduled to commence on <strong>9 April 2027</strong>, with ASIC responsible for licensing and supervising digital asset platforms falling within the regime.</p>
+    <p>That makes one point particularly important: <strong>AUSTRAC registration will continue to matter for AML/CTF compliance, but it should not be confused with the financial-services licensing framework that applies alongside it.</strong></p>
+
+    <h2>Common claims that get AUSTRAC registration wrong</h2>
+    <ul>
+      <li><strong>&ldquo;AUSTRAC registered means regulated like a bank.&rdquo;</strong> No. Banks operate under a substantially different prudential and financial-services regulatory framework. AUSTRAC registration primarily concerns AML/CTF obligations.</li>
+      <li><strong>&ldquo;AUSTRAC registration protects my funds.&rdquo;</strong> Not by itself. Registration does not create a general crypto deposit-insurance scheme or guarantee repayment if an exchange fails.</li>
+      <li><strong>&ldquo;If a company has an AFSL, all of its crypto products are licensed.&rdquo;</strong> Not necessarily. AFSL authorisations are specific, and crypto brands frequently operate through multiple legal entities. Check the entity and product.</li>
+      <li><strong>&ldquo;Every crypto exchange Australians can access is AUSTRAC registered.&rdquo;</strong> Accessibility is not the same as legal registration. Check the public register rather than assuming that a website available from Australia has the required status.</li>
+      <li><strong>&ldquo;AUSTRAC registered means the government recommends the exchange.&rdquo;</strong> No. Registration is a regulatory status, not a government recommendation.</li>
+    </ul>
+
+    <h2>A better five-minute exchange check</h2>
+    <p>Before sending a significant amount of money to an Australian crypto platform, check these five things:</p>
     <ol>
-      <li><strong>Go to AUSTRAC&rsquo;s public register</strong> on the AUSTRAC website (austrac.gov.au). It is searchable by the provider&rsquo;s legal entity name or registration number.</li>
-      <li><strong>Search the legal entity name, not the brand.</strong> This is the step most people miss. Binance Australia, for example, trades through <em>Investbybit Pty Ltd</em>; OKX Australia&rsquo;s spot exchange runs through <em>OKX Australia Pty Ltd</em>. The brand on the website is not necessarily the name on the register.</li>
-      <li><strong>Match the entity to the website.</strong> Confirm the registered entity is the one actually operating the site you are using. A global brand may operate a separate, unregistered product that looks identical.</li>
-      <li><strong>Check the status.</strong> Look for whether the registration is <em>registered and active</em>, or whether it has been <em>suspended</em> or <em>cancelled</em>. AUSTRAC has warned that some businesses stay listed even after they stop operating, so a listing alone is not proof the platform is currently active.</li>
+      <li><strong>Legal entity</strong> &mdash; who are you actually contracting with?</li>
+      <li><strong>AUSTRAC registration</strong> &mdash; does that entity appear on the VASP Register?</li>
+      <li><strong>ASIC status</strong> &mdash; does the company or a related entity claim to hold an AFSL, and what exactly does that licence cover?</li>
+      <li><strong>Custody terms</strong> &mdash; who legally holds the crypto and fiat deposited on the platform?</li>
+      <li><strong>Product-specific protections</strong> &mdash; do derivatives, cards, staking, lending or other products use a different company or regulatory structure?</li>
     </ol>
-    <p>If you find the entity, it matches the site, and the status is active, you have done more due diligence than most people do. If any of those checks fails, that is a signal to pause before sending money.</p>
-
-    <h2>The mainstream exchanges, and how they sit</h2>
-    <p>All four of the platforms OzCoinTrail covers in depth are AUSTRAC-registered for their Australian spot services. Where they differ is the licence picture alongside that registration.</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th scope="col">Platform</th>
-            <th scope="col">AUSTRAC-registered entity (spot)</th>
-            <th scope="col">Also holds</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Binance Australia</td>
-            <td>Investbybit Pty Ltd</td>
-            <td>AFSL application pending with ASIC</td>
-          </tr>
-          <tr>
-            <td>OKX Australia</td>
-            <td>OKX Australia Pty Ltd</td>
-            <td>AFSL 379035 (derivatives), via a separate entity</td>
-          </tr>
-          <tr>
-            <td>CoinSpot</td>
-            <td>AUSTRAC-registered since May 2018</td>
-            <td>AFSL 562554 (payments only &mdash; not spot)</td>
-          </tr>
-          <tr>
-            <td>Swyftx</td>
-            <td>AUSTRAC-registered</td>
-            <td>AFSL 568543 (spot not covered by it)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Notice the pattern: AUSTRAC registration is the common baseline, but the AFSL situation is different for every platform &mdash; which is why a one-word &ldquo;regulated&rdquo; tells you almost nothing. You can read the full picture in our <a href="/exchanges/is-binance-legal-in-australia/">Binance</a> and <a href="/exchanges/is-okx-legal-in-australia/">OKX</a> legal-status guides, or compare the platforms in our <a href="/exchanges/best-crypto-exchanges-australia/">exchange comparison</a>.</p>
-
-    <h2>What changed in 2026</h2>
-    <p>Australia&rsquo;s crypto rules are moving, and a few 2026 changes reframe what &ldquo;AUSTRAC registered&rdquo; means in practice.</p>
-    <ul>
-      <li><strong>A public VASP register.</strong> AUSTRAC opened its register of virtual asset service providers to the public, giving consumers a direct way to check registration status.</li>
-      <li><strong>The Travel Rule.</strong> Expanded Travel Rule obligations for covered providers took effect on 1 July 2026, requiring originator and beneficiary information to accompany transfers between regulated providers. See our <a href="/regulation/">crypto regulation guide</a> for the fuller picture.</li>
-      <li><strong>A new licensing regime is coming.</strong> The Digital Assets Framework received Royal Assent on 8 April 2026 and brings digital asset platforms into a financial-services licensing regime, with its main provisions commencing in 2027.</li>
-      <li><strong>Clean-up of inactive and non-compliant providers.</strong> AUSTRAC has reported cancelling, suspending or refusing to renew registrations for a large number of crypto and remittance providers over the past year, and has warned that inactive exchanges risk deregistration.</li>
-    </ul>
-    <p>Net effect: registration is becoming easier to check at the same time as it is becoming a baseline that fewer platforms can rely on alone. From 2027, the AFSL will matter more &mdash; but that does not change what AUSTRAC registration has always been: an AML/CTF enrolment, not a guarantee.</p>
-
-    <h2>Claims that get it wrong</h2>
-    <p>When you read other sites on this topic, a few statements crop up that don&rsquo;t hold up.</p>
-    <ul>
-      <li><strong>&ldquo;AUSTRAC registered = regulated like a bank.&rdquo;</strong> Wrong. It is an AML/CTF enrolment, not a prudential or consumer-protection regime.</li>
-      <li><strong>&ldquo;AUSTRAC registered means your funds are protected.&rdquo;</strong> Wrong. Registration does not segregate funds, insure balances or pay compensation if a platform fails.</li>
-      <li><strong>&ldquo;Every exchange you see is AUSTRAC registered.&rdquo;</strong> Wrong. Registration is required, but not everyone complies, and AUSTRAC has suspended and cancelled registrations.</li>
-      <li><strong>&ldquo;AUSTRAC registered = the government recommends it.&rdquo;</strong> Wrong. Registration is a compliance status, not an endorsement of the business or its products.</li>
-    </ul>
+    <p>This tells you much more than a generic &ldquo;regulated exchange&rdquo; badge.</p>
 
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
         <summary>What does AUSTRAC registration actually mean?</summary>
-        <p>It means the platform is enrolled in Australia&rsquo;s anti-money-laundering and counter-terrorism-financing (AML/CTF) regime, which requires it to verify customer identities, monitor transactions and report suspicious activity. It does not mean ASIC has licensed the business, and it is not a government endorsement.</p>
+        <p>It means the provider is registered under Australia&rsquo;s AML/CTF framework to provide covered virtual-asset services and must comply with applicable obligations. It does not by itself mean the provider holds an AFSL.</p>
       </details>
       <details>
         <summary>Is AUSTRAC registration the same as a licence?</summary>
-        <p>No. AUSTRAC registration is an AML/CTF enrolment. An Australian Financial Services Licence (AFSL) is issued by ASIC and authorises specified financial services. They cover different things, and holding one does not mean holding the other.</p>
+        <p>No. AUSTRAC registration and an ASIC Australian Financial Services Licence are separate regulatory concepts. Registration relates to AML/CTF compliance, while an AFSL authorises specified financial services.</p>
       </details>
       <details>
-        <summary>How do I check if a platform is AUSTRAC registered?</summary>
-        <p>Search AUSTRAC&rsquo;s public register on austrac.gov.au using the provider&rsquo;s legal entity name rather than its brand name &mdash; for example, Binance Australia trades through Investbybit Pty Ltd. Then confirm the registered entity matches the website you are using, and check the registration status is active rather than suspended or cancelled.</p>
+        <summary>How do I check if a crypto platform is AUSTRAC registered?</summary>
+        <p>Use AUSTRAC&rsquo;s public Virtual Asset Service Provider Register. Search using the provider&rsquo;s legal or trading name, or identifiers such as its ABN or ACN, and match the registered entity to the website you are using.</p>
       </details>
       <details>
         <summary>Does AUSTRAC registration protect my funds?</summary>
-        <p>Not directly. AUSTRAC registration is about anti-money-laundering compliance, not consumer protection. It does not guarantee segregated client funds, insurance, or compensation if the platform fails. Those protections, where they exist, come from separate arrangements such as an AFSL or a product&rsquo;s own terms.</p>
+        <p>Not in the way bank deposit protection does. Registration does not create a general guarantee, insurance scheme or promise that crypto assets will be returned if the provider fails.</p>
+      </details>
+      <details>
+        <summary>Does an AFSL mean an exchange&rsquo;s spot crypto service is licensed?</summary>
+        <p>Not automatically. AFSL authorisations are specific, and crypto brands frequently operate through multiple legal entities. Check which entity holds the licence and which financial services that licence authorises.</p>
       </details>
       <details>
         <summary>Is every crypto exchange operating in Australia AUSTRAC registered?</summary>
-        <p>They are required to be, but not all are. AUSTRAC can suspend, cancel or refuse registration, and it has publicly warned that some businesses remain listed while no longer operating. This is why checking the current status yourself, rather than trusting a marketing badge, matters.</p>
+        <p>Providers of registrable virtual-asset services with the required connection to Australia are required to register. That does not mean every crypto website accessible from Australia is necessarily compliant &mdash; check the AUSTRAC register directly.</p>
       </details>
     </div>
 
@@ -638,12 +705,19 @@
         <svg viewBox="0 0 32 32" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="#E2B63F" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="#E2B63F"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg>
       </div>
       <h3>Want the registration and fees in one place?</h3>
-      <p>Our exchange comparison shows which AUSTRAC-registered platforms suit Australians &mdash; with verified fees, AUD funding and licence coverage side by side.</p>
+      <p>Our exchange comparison shows how major Australian crypto platforms differ across:</p>
+      <ul>
+        <li>AUSTRAC registration</li>
+        <li>ASIC licensing</li>
+        <li>AUD funding</li>
+        <li>trading fees</li>
+        <li>Australian product availability</li>
+      </ul>
       <a href="/exchanges/best-crypto-exchanges-australia/" class="btn">Compare exchanges</a>
       <p class="fine">No sign-up required. OzCoinTrail may earn a commission if you sign up through certain links on our site.</p>
     </div>
 
-    <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Regulatory status changes and was correct as at the date shown. Cryptocurrency is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
+    <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Regulatory status can change and should be checked against the relevant regulator and provider before acting. Cryptocurrency involves significant risk and may not have the same protections as traditional financial products or bank deposits. Where you sign up through links on this site, OzCoinTrail may earn a commission; this does not change the price you pay.</p>
     <div class="author-box">
       <img class="author-avatar" src="/img/authors/james-walker.webp" alt="James Walker" />
       <div class="author-info">
