@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUSTRAC Registration: What It Means &amp; How to Check | OzCoinTrail</title>
+  <meta name="description" content="AUSTRAC registration explained — what it does and doesn't protect, how to check Australia's public VASP register, and which exchanges are registered." />
+  <link rel="canonical" href="https://ozcointrail.com/regulation/austrac/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="theme-color" content="#1B2A4A" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="OzCoinTrail" />
+  <meta property="og:title" content="AUSTRAC Registration: What It Means &amp; How to Check" />
+  <meta property="og:description" content="AUSTRAC registration explained — what it does and doesn't protect, how to check Australia's public VASP register, and which exchanges are registered." />
+  <meta property="og:url" content="https://ozcointrail.com/regulation/austrac/" />
+  <meta property="og:image" content="https://ozcointrail.com/og-cover.png" />
+  <meta property="og:locale" content="en_AU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AUSTRAC Registration: What It Means &amp; How to Check" />
+  <meta name="twitter:description" content="AUSTRAC registration explained — what it does and doesn't protect, how to check Australia's public VASP register, and which exchanges are registered." />
+  <meta name="twitter:image" content="https://ozcointrail.com/og-cover.png" />
+  <style>
+    :root {
+      --color-primary: #1B2A4A;
+      --color-primary-dark: #12203A;
+      --color-accent: #E2B63F;
+      --color-accent-dark: #D9A91A;
+      --color-background: #FAF7F1;
+      --color-surface: #FFFEFA;
+      --color-text: #17211E;
+      --color-text-secondary: #5F646B;
+      --color-border: #DDE2E4;
+      --color-info: #236B8E;
+      --color-success: #23855B;
+      --color-warning: #C98520;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--color-background);
+      color: var(--color-text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      white-space: nowrap;
+    }
+    .logo-mark { display: inline-flex; flex-shrink: 0; color: var(--color-primary); }
+    .logo-mark svg { width: 30px; height: 30px; }
+    .logo .oz { color: var(--color-primary); }
+    .logo .trail { color: var(--color-accent-dark); }
+    .nav { display: flex; gap: 22px; flex: 1; justify-content: center; }
+    .nav a {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--color-text);
+      padding: 6px 2px;
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .nav a:hover { color: var(--color-primary); border-bottom-color: var(--color-accent); }
+    .header-actions { display: flex; align-items: center; gap: 16px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+    }
+    .btn-primary { background: var(--color-primary); color: #fff; border: 1px solid var(--color-primary); }
+    .btn-primary:hover { background: var(--color-primary-dark); border-color: var(--color-primary-dark); }
+    .btn-outline { background: transparent; color: var(--color-primary); border: 1.5px solid var(--color-primary); }
+    .btn-outline:hover { background: var(--color-primary); color: #fff; }
+
+    /* ---------- Article layout ---------- */
+    .article {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 72px;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--color-primary); }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .article h1 {
+      font-size: clamp(1.9rem, 4vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--color-border);
+      margin-bottom: 32px;
+    }
+    .article-meta .verified {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 600;
+      color: var(--color-success);
+    }
+    .article-meta .verified svg { width: 15px; height: 15px; }
+
+    .article .lead {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: var(--color-text);
+      margin-bottom: 28px;
+    }
+    .article h2 {
+      font-size: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      margin: 40px 0 16px;
+      color: var(--color-text);
+    }
+    .article h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin: 28px 0 10px;
+    }
+    .article p { margin-bottom: 16px; color: var(--color-text); }
+    .article ul, .article ol { margin: 0 0 16px 22px; }
+    .article li { margin-bottom: 8px; }
+    .article a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .article a:hover { color: var(--color-primary-dark); }
+
+    /* ---------- Verdict card ---------- */
+    .verdict {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-left: 5px solid var(--color-primary);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin: 24px 0;
+    }
+    .verdict h2 { margin-top: 0; }
+    .verdict .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #B8891A;
+      background: rgba(226, 182, 63, 0.16);
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    /* ---------- Table ---------- */
+    .table-wrap { overflow-x: auto; margin: 20px 0 24px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+      font-size: 0.9rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--color-border);
+      vertical-align: top;
+    }
+    th {
+      background: #ECF1F7;
+      color: var(--color-primary-dark);
+      font-weight: 700;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { font-weight: 600; white-space: nowrap; }
+
+    /* ---------- Callouts ---------- */
+    .callout {
+      background: #F2F6F7;
+      border-left: 4px solid var(--color-info);
+      border-radius: 10px;
+      padding: 20px 22px;
+      margin: 24px 0;
+    }
+    .callout h4 { color: var(--color-info); font-size: 0.95rem; margin-bottom: 8px; }
+    .callout p { font-size: 0.92rem; margin: 0 0 8px; color: var(--color-text); }
+    .callout p:last-child { margin-bottom: 0; }
+
+    /* ---------- FAQ ---------- */
+    .faq { margin: 24px 0; }
+    .faq details {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+    }
+    .faq summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--color-text);
+    }
+    .faq details p { margin: 12px 0 0; font-size: 0.95rem; }
+
+    /* ---------- CTA ---------- */
+    .cta-box {
+      background: var(--color-primary);
+      border-radius: 16px;
+      padding: 32px;
+      margin: 32px 0;
+      color: #fff;
+    }
+    .cta-logo { margin-bottom: 14px; }
+    .cta-logo svg { display: block; }
+    .cta-box h3 { color: #fff; margin: 0 0 10px; font-size: 1.25rem; }
+    .cta-box p { color: #DCE2E6; margin: 0 0 20px; }
+    .cta-box .btn { background: var(--color-accent); color: var(--color-primary-dark); border: none; }
+    .cta-box .btn:hover { background: #F2C94C; }
+    .cta-box .fine { font-size: 0.78rem; color: #A8B0B8; margin-top: 14px; }
+
+    .disclaimer {
+      font-size: 0.8rem;
+      color: var(--color-text-secondary);
+      border-top: 1px solid var(--color-border);
+      padding-top: 20px;
+      margin-top: 32px;
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer {
+      background: var(--color-primary-dark);
+      color: #DCE2E6;
+      padding: 64px 24px 32px;
+    }
+    .footer-inner { max-width: 1200px; margin: 0 auto; }
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 48px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .footer-brand { max-width: 300px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 14px; display: inline-flex; align-items: center; gap: 9px; }
+    .footer-brand .logo-mark { color: #fff; }
+    .footer-brand .logo .oz { color: #fff; }
+    .footer-brand .logo .trail { color: var(--color-accent); }
+    .footer-brand p { font-size: 0.88rem; color: #A8B0B8; line-height: 1.55; }
+    .footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
+    .footer-col h4 { color: #fff; font-size: 0.9rem; font-weight: 700; margin-bottom: 14px; letter-spacing: 0.02em; }
+    .footer-col a { display: block; font-size: 0.88rem; color: #A8B0B8; margin-bottom: 10px; transition: color 0.15s ease; }
+    .footer-col a:hover { color: var(--color-accent); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.12);
+      padding-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      font-size: 0.82rem;
+      color: #8C94A0;
+    }
+    .footer-bottom a { color: #8C94A0; }
+    .footer-bottom a:hover { color: var(--color-accent); }
+    .footer-disclaimer { max-width: 760px; font-size: 0.78rem; color: #7E8793; line-height: 1.6; }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .logo { flex: 1; }
+    }
+
+    /* ---------- Author box ---------- */
+    .author-box {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .author-avatar {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .author-info .author-name { font-weight: 700; margin-bottom: 6px; color: var(--color-text); }
+    .author-info .author-bio { font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 8px; }
+    .author-info .author-more { font-size: 0.9rem; }
+    .author-box a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .author-box a:hover { color: var(--color-primary-dark); }
+    .article-meta a { color: var(--color-primary); font-weight: 600; }
+    .article-meta a:hover { text-decoration: underline; }
+  </style>
+
+  <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Article",
+            "headline": "AUSTRAC Registration: What It Means & How to Check in 2026",
+            "description": "AUSTRAC registration explained — what it does and doesn't protect, how to check Australia's public VASP register, and which exchanges are registered.",
+            "author": {
+                "@type": "Person",
+                "name": "James Walker",
+                "url": "https://ozcointrail.com/author/james-walker/"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "OzCoinTrail",
+                "url": "https://ozcointrail.com/"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://ozcointrail.com/regulation/austrac/"
+            },
+            "dateModified": "2026-10-01"
+        },
+        {
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "What does AUSTRAC registration actually mean?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "It means the platform is enrolled in Australia's anti-money-laundering and counter-terrorism-financing (AML/CTF) regime, which requires it to verify customer identities, monitor transactions and report suspicious activity. It does not mean ASIC has licensed the business, and it is not a government endorsement."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is AUSTRAC registration the same as a licence?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "No. AUSTRAC registration is an AML/CTF enrolment. An Australian Financial Services Licence (AFSL) is issued by ASIC and authorises specified financial services. They cover different things, and holding one does not mean holding the other."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "How do I check if a platform is AUSTRAC registered?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Search AUSTRAC's public register on austrac.gov.au using the provider's legal entity name rather than its brand name — for example, Binance Australia trades through Investbybit Pty Ltd. Then confirm the registered entity matches the website you are using, and check the registration status is active rather than suspended or cancelled."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does AUSTRAC registration protect my funds?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Not directly. AUSTRAC registration is about anti-money-laundering compliance, not consumer protection. It does not guarantee segregated client funds, insurance, or compensation if the platform fails. Those protections, where they exist, come from separate arrangements such as an AFSL or a product's own terms."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Is every crypto exchange operating in Australia AUSTRAC registered?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "They are required to be, but not all are. AUSTRAC can suspend, cancel or refuse registration, and it has publicly warned that some businesses remain listed while no longer operating. This is why checking the current status yourself, rather than trusting a marketing badge, matters."
+                    }
+                }
+            ]
+        }
+    ]
+}
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+        <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+      </a>
+      <nav class="nav">
+        <a href="/exchanges/">Exchanges</a>
+        <a href="/buy-crypto/">Buy Crypto</a>
+        <a href="/transfers/">Transfers</a>
+        <a href="/crypto-tax/">Tax</a>
+        <a href="/usdt/">USDT</a>
+        <a href="/regulation/">Regulation</a>
+        <a href="/learn/">Learn</a>
+      </nav>
+      <div class="header-actions">
+        <a href="/exchanges/" class="btn btn-primary">Compare Exchanges</a>
+      </div>
+    </div>
+  </header>
+
+  <article class="article">
+    <nav class="breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/regulation/">Regulation</a> &rsaquo; AUSTRAC Registration</nav>
+
+    <h1>AUSTRAC Registration: What It Means &amp; How to Check in 2026</h1>
+
+    <div class="article-meta">
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 1 October 2026</span>
+      <span>&middot;</span>
+      <span>Written by <a href="/author/james-walker/">James Walker</a> &middot; Source reviewed against AUSTRAC, ASIC and exchange documentation</span>
+    </div>
+
+    <p class="lead">AUSTRAC registration is the most misunderstood label in Australian crypto. It shows a platform has anti-money-laundering controls in place &mdash; <strong>nothing more</strong>. It is not a licence, not a government endorsement, and not a promise that your funds are protected. Here is what it actually means, what it does and doesn&rsquo;t cover, and how to check a platform&rsquo;s registration yourself in a few minutes.</p>
+
+    <div class="verdict">
+      <span class="tag">The short answer</span>
+      <h2>Registration &ne; licence &mdash; and it&rsquo;s easy to check</h2>
+      <p>AUSTRAC registration means a crypto platform is enrolled in Australia&rsquo;s anti-money-laundering (AML/CTF) regime. It does <strong>not</strong> mean ASIC has licensed it, it does <strong>not</strong> mean the government endorses it, and it does <strong>not</strong> bring the consumer protections that attach to an AFSL. You can verify any provider in minutes using AUSTRAC&rsquo;s public register &mdash; the trick is to search the <strong>legal entity name</strong>, not the brand name.</p>
+    </div>
+
+    <h2>At a glance: AUSTRAC registration vs an AFSL</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Aspect</th>
+            <th scope="col">AUSTRAC registration</th>
+            <th scope="col">AFSL (ASIC licence)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Issued by</td>
+            <td>AUSTRAC</td>
+            <td>ASIC</td>
+          </tr>
+          <tr>
+            <td>What it covers</td>
+            <td>Anti-money-laundering and counter-terrorism-financing (AML/CTF) compliance</td>
+            <td>Specified financial products and services</td>
+          </tr>
+          <tr>
+            <td>What it means for you</td>
+            <td>The platform must verify your ID, monitor transactions and report suspicious activity</td>
+            <td>Additional consumer protections may apply, depending on the product</td>
+          </tr>
+          <tr>
+            <td>Where to check</td>
+            <td>AUSTRAC public register</td>
+            <td>ASIC registers</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>In short, the two labels answer different questions: AUSTRAC registration answers <em>who is allowed to operate</em>, while an AFSL answers <em>what they can sell you and how you&rsquo;re protected</em>.</p>
+
+    <h2>What AUSTRAC registration actually is</h2>
+    <p>AUSTRAC is Australia&rsquo;s financial-intelligence regulator, and it administers the <em>Anti-Money Laundering and Counter-Terrorism Financing Act 2006</em>. Since 2018, businesses that exchange digital currency &mdash; buying and selling crypto for cash or for other crypto &mdash; have been required to register with AUSTRAC as digital currency exchanges. In 2026 AUSTRAC opened its <strong>public register of virtual asset service providers (VASPs)</strong>, so consumers and businesses can look up a provider directly rather than taking a platform&rsquo;s &ldquo;we&rsquo;re registered&rdquo; badge at face value.</p>
+    <p>Registration is not a one-off form. It obliges the provider to meet ongoing AML/CTF requirements, including:</p>
+    <ul>
+      <li><strong>Identity verification (KYC)</strong> &mdash; confirming who you are before you trade.</li>
+      <li><strong>Suspicious matter reporting</strong> &mdash; reporting transactions that show signs of money laundering or other serious crime.</li>
+      <li><strong>Threshold transaction reporting</strong> &mdash; reporting cash transactions of A$10,000 or more.</li>
+      <li><strong>Record keeping</strong> &mdash; holding transaction and identity records, typically for several years.</li>
+    </ul>
+    <p>These are anti-money-laundering duties aimed at detecting crime. They are not the same thing as looking after your money.</p>
+
+    <h2>Registration is not a licence, and not an endorsement</h2>
+    <p>The single biggest source of confusion is that &ldquo;registered&rdquo; gets blurred with &ldquo;licensed&rdquo; &mdash; and both get blurred with &ldquo;endorsed.&rdquo; They are three different things.</p>
+    <p>An <strong>Australian Financial Services Licence (AFSL)</strong> is issued by ASIC and authorises specified financial services, such as dealing in regulated financial products. Depending on the product, that licensing regime can bring additional obligations and consumer protections. AUSTRAC registration is a separate AML/CTF enrolment, and it should not be treated as equivalent to an AFSL.</p>
+    <p>Equally, holding either an AUSTRAC registration or an AFSL is <strong>not a government endorsement</strong> of the business or its products. A platform that says it is &ldquo;AUSTRAC registered&rdquo; is stating a compliance fact &mdash; not that any regulator recommends it, and not that your funds are safe.</p>
+    <div class="callout">
+      <h4>Read that distinction twice</h4>
+      <p>&ldquo;Registered&rdquo; answers <em>who is allowed to operate</em> (AUSTRAC, anti-money-laundering). &ldquo;Licensed&rdquo; answers <em>what they can sell you and how you&rsquo;re protected</em> (ASIC, financial services). Neither word means &ldquo;the government vouches for this platform.&rdquo; A lot of marketing copy collapses all three into one word: &ldquo;regulated.&rdquo;</p>
+    </div>
+
+    <h2>What it protects &mdash; and what it doesn&rsquo;t</h2>
+    <p>The cleanest way to see the limits of AUSTRAC registration is to put its coverage side by side with what it does <em>not</em> give you.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">AUSTRAC registration covers</th>
+            <th scope="col">It does not cover</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Identity verification (KYC)</td>
+            <td>Segregation of your funds from the platform&rsquo;s own funds</td>
+          </tr>
+          <tr>
+            <td>Suspicious-matter and threshold reporting</td>
+            <td>Insurance or a compensation scheme if the platform fails</td>
+          </tr>
+          <tr>
+            <td>Ongoing customer due diligence and record keeping</td>
+            <td>AFCA dispute resolution (this depends on the product or entity)</td>
+          </tr>
+          <tr>
+            <td>Monitoring for signs of money laundering</td>
+            <td>A guarantee that the platform is solvent or well-run</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The practical takeaway: AUSTRAC registration is about stopping crime, not about protecting your trading balance. If something goes wrong with a platform, registration alone does not get your money back.</p>
+
+    <h2>How to check a platform&rsquo;s registration yourself</h2>
+    <p>Rather than trusting a footer badge, you can verify a platform in a few minutes. The whole process comes down to matching the right entity name.</p>
+    <ol>
+      <li><strong>Go to AUSTRAC&rsquo;s public register</strong> on the AUSTRAC website (austrac.gov.au). It is searchable by the provider&rsquo;s legal entity name or registration number.</li>
+      <li><strong>Search the legal entity name, not the brand.</strong> This is the step most people miss. Binance Australia, for example, trades through <em>Investbybit Pty Ltd</em>; OKX Australia&rsquo;s spot exchange runs through <em>OKX Australia Pty Ltd</em>. The brand on the website is not necessarily the name on the register.</li>
+      <li><strong>Match the entity to the website.</strong> Confirm the registered entity is the one actually operating the site you are using. A global brand may operate a separate, unregistered product that looks identical.</li>
+      <li><strong>Check the status.</strong> Look for whether the registration is <em>registered and active</em>, or whether it has been <em>suspended</em> or <em>cancelled</em>. AUSTRAC has warned that some businesses stay listed even after they stop operating, so a listing alone is not proof the platform is currently active.</li>
+    </ol>
+    <p>If you find the entity, it matches the site, and the status is active, you have done more due diligence than most people do. If any of those checks fails, that is a signal to pause before sending money.</p>
+
+    <h2>The mainstream exchanges, and how they sit</h2>
+    <p>All four of the platforms OzCoinTrail covers in depth are AUSTRAC-registered for their Australian spot services. Where they differ is the licence picture alongside that registration.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Platform</th>
+            <th scope="col">AUSTRAC-registered entity (spot)</th>
+            <th scope="col">Also holds</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Binance Australia</td>
+            <td>Investbybit Pty Ltd</td>
+            <td>AFSL application pending with ASIC</td>
+          </tr>
+          <tr>
+            <td>OKX Australia</td>
+            <td>OKX Australia Pty Ltd</td>
+            <td>AFSL 379035 (derivatives), via a separate entity</td>
+          </tr>
+          <tr>
+            <td>CoinSpot</td>
+            <td>AUSTRAC-registered since May 2018</td>
+            <td>AFSL 562554 (payments only &mdash; not spot)</td>
+          </tr>
+          <tr>
+            <td>Swyftx</td>
+            <td>AUSTRAC-registered</td>
+            <td>AFSL 568543 (spot not covered by it)</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Notice the pattern: AUSTRAC registration is the common baseline, but the AFSL situation is different for every platform &mdash; which is why a one-word &ldquo;regulated&rdquo; tells you almost nothing. You can read the full picture in our <a href="/exchanges/is-binance-legal-in-australia/">Binance</a> and <a href="/exchanges/is-okx-legal-in-australia/">OKX</a> legal-status guides, or compare the platforms in our <a href="/exchanges/best-crypto-exchanges-australia/">exchange comparison</a>.</p>
+
+    <h2>What changed in 2026</h2>
+    <p>Australia&rsquo;s crypto rules are moving, and a few 2026 changes reframe what &ldquo;AUSTRAC registered&rdquo; means in practice.</p>
+    <ul>
+      <li><strong>A public VASP register.</strong> AUSTRAC opened its register of virtual asset service providers to the public, giving consumers a direct way to check registration status.</li>
+      <li><strong>The Travel Rule.</strong> Expanded Travel Rule obligations for covered providers took effect on 1 July 2026, requiring originator and beneficiary information to accompany transfers between regulated providers. See our <a href="/regulation/">crypto regulation guide</a> for the fuller picture.</li>
+      <li><strong>A new licensing regime is coming.</strong> The Digital Assets Framework received Royal Assent on 8 April 2026 and brings digital asset platforms into a financial-services licensing regime, with its main provisions commencing in 2027.</li>
+      <li><strong>Clean-up of inactive and non-compliant providers.</strong> AUSTRAC has reported cancelling, suspending or refusing to renew registrations for a large number of crypto and remittance providers over the past year, and has warned that inactive exchanges risk deregistration.</li>
+    </ul>
+    <p>Net effect: registration is becoming easier to check at the same time as it is becoming a baseline that fewer platforms can rely on alone. From 2027, the AFSL will matter more &mdash; but that does not change what AUSTRAC registration has always been: an AML/CTF enrolment, not a guarantee.</p>
+
+    <h2>Claims that get it wrong</h2>
+    <p>When you read other sites on this topic, a few statements crop up that don&rsquo;t hold up.</p>
+    <ul>
+      <li><strong>&ldquo;AUSTRAC registered = regulated like a bank.&rdquo;</strong> Wrong. It is an AML/CTF enrolment, not a prudential or consumer-protection regime.</li>
+      <li><strong>&ldquo;AUSTRAC registered means your funds are protected.&rdquo;</strong> Wrong. Registration does not segregate funds, insure balances or pay compensation if a platform fails.</li>
+      <li><strong>&ldquo;Every exchange you see is AUSTRAC registered.&rdquo;</strong> Wrong. Registration is required, but not everyone complies, and AUSTRAC has suspended and cancelled registrations.</li>
+      <li><strong>&ldquo;AUSTRAC registered = the government recommends it.&rdquo;</strong> Wrong. Registration is a compliance status, not an endorsement of the business or its products.</li>
+    </ul>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details>
+        <summary>What does AUSTRAC registration actually mean?</summary>
+        <p>It means the platform is enrolled in Australia&rsquo;s anti-money-laundering and counter-terrorism-financing (AML/CTF) regime, which requires it to verify customer identities, monitor transactions and report suspicious activity. It does not mean ASIC has licensed the business, and it is not a government endorsement.</p>
+      </details>
+      <details>
+        <summary>Is AUSTRAC registration the same as a licence?</summary>
+        <p>No. AUSTRAC registration is an AML/CTF enrolment. An Australian Financial Services Licence (AFSL) is issued by ASIC and authorises specified financial services. They cover different things, and holding one does not mean holding the other.</p>
+      </details>
+      <details>
+        <summary>How do I check if a platform is AUSTRAC registered?</summary>
+        <p>Search AUSTRAC&rsquo;s public register on austrac.gov.au using the provider&rsquo;s legal entity name rather than its brand name &mdash; for example, Binance Australia trades through Investbybit Pty Ltd. Then confirm the registered entity matches the website you are using, and check the registration status is active rather than suspended or cancelled.</p>
+      </details>
+      <details>
+        <summary>Does AUSTRAC registration protect my funds?</summary>
+        <p>Not directly. AUSTRAC registration is about anti-money-laundering compliance, not consumer protection. It does not guarantee segregated client funds, insurance, or compensation if the platform fails. Those protections, where they exist, come from separate arrangements such as an AFSL or a product&rsquo;s own terms.</p>
+      </details>
+      <details>
+        <summary>Is every crypto exchange operating in Australia AUSTRAC registered?</summary>
+        <p>They are required to be, but not all are. AUSTRAC can suspend, cancel or refuse registration, and it has publicly warned that some businesses remain listed while no longer operating. This is why checking the current status yourself, rather than trusting a marketing badge, matters.</p>
+      </details>
+    </div>
+
+    <div class="cta-box">
+      <div class="cta-logo">
+        <svg viewBox="0 0 32 32" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="#E2B63F" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="#E2B63F"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg>
+      </div>
+      <h3>Want the registration and fees in one place?</h3>
+      <p>Our exchange comparison shows which AUSTRAC-registered platforms suit Australians &mdash; with verified fees, AUD funding and licence coverage side by side.</p>
+      <a href="/exchanges/best-crypto-exchanges-australia/" class="btn">Compare exchanges</a>
+      <p class="fine">No sign-up required. OzCoinTrail may earn a commission if you sign up through certain links on our site.</p>
+    </div>
+
+    <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Regulatory status changes and was correct as at the date shown. Cryptocurrency is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
+    <div class="author-box">
+      <img class="author-avatar" src="/img/authors/james-walker.webp" alt="James Walker" />
+      <div class="author-info">
+        <p class="author-name"><a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</p>
+        <p class="author-bio">James Walker covers Australian crypto exchanges, AUD funding methods, transfers and crypto regulation for OzCoinTrail. He verifies guides using official exchange documentation and AUSTRAC, ASIC and ATO sources.</p>
+        <p class="author-more"><a href="/author/james-walker/">View all articles by James Walker &rarr;</a></p>
+      </div>
+    </div>
+
+  </article>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-mark"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="16" cy="16" r="13.5" stroke="currentColor" stroke-width="2.4"/><path d="M9 22 L16 15.5 L22.5 9.5" stroke="#E2B63F" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="22" r="2.3" fill="currentColor"/><circle cx="22.5" cy="9.5" r="2.8" fill="#E2B63F"/></svg></span>
+            <span><span class="oz">OzCoin</span><span class="trail">Trail</span></span>
+          </a>
+          <p>Independent crypto guides for Australians &mdash; exchanges, AUD deposits, transfers, USDT, tax and regulation.</p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Exchanges</h4>
+            <a href="/exchanges/binance/">Binance</a>
+            <a href="/exchanges/okx/">OKX</a>
+            <a href="/exchanges/coinspot/">CoinSpot</a>
+            <a href="/exchanges/swyftx/">Swyftx</a>
+            <a href="/exchanges/">Compare Exchanges</a>
+          </div>
+          <div class="footer-col">
+            <h4>Guides</h4>
+            <a href="/buy-crypto/">Buy Crypto</a>
+            <a href="/transfers/">Transfers</a>
+            <a href="/crypto-tax/">Crypto Tax</a>
+            <a href="/usdt/">USDT</a>
+            <a href="/regulation/">Regulation</a>
+            <a href="/learn/">Learn</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="/about/">About</a>
+            <a href="/author/james-walker/">Our Editor</a>
+            <a href="/how-we-review/">How We Review</a>
+            <a href="/editorial-policy/">Editorial Policy</a>
+            <a href="/affiliate-disclosure/">Affiliate Disclosure</a>
+            <a href="/contact/">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-disclaimer">
+          <p>OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Crypto is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting.</p>
+        </div>
+        <div>
+          <p>&copy; 2026 OzCoinTrail &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
