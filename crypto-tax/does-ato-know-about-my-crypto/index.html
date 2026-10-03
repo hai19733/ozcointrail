@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Does the ATO Know About My Crypto? Data Matching Explained | OzCoinTrail</title>
-  <meta name="description" content="The ATO's crypto data-matching program collects account and transaction records from Australian exchanges each year. Here's what it captures, which platforms report, and what to do if you've under-reported." />
+  <meta name="description" content="The ATO's crypto data-matching program obtains account and transaction data from Australian crypto service providers and matches it against tax returns. Here's what it can collect, what it can and can't see, and what to do if you've under-reported." />
   <link rel="canonical" href="https://ozcointrail.com/crypto-tax/does-ato-know-about-my-crypto/" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
@@ -14,13 +14,13 @@
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="OzCoinTrail" />
   <meta property="og:title" content="Does the ATO Know About My Crypto? Data Matching Explained" />
-  <meta property="og:description" content="The ATO's crypto data-matching program collects account and transaction records from Australian exchanges each year. Here's what it captures, which platforms report, and what to do if you've under-reported." />
+  <meta property="og:description" content="The ATO's crypto data-matching program obtains account and transaction data from Australian crypto service providers and matches it against tax returns. Here's what it can collect, what it can and can't see, and what to do if you've under-reported." />
   <meta property="og:url" content="https://ozcointrail.com/crypto-tax/does-ato-know-about-my-crypto/" />
   <meta property="og:image" content="https://ozcointrail.com/og-cover.png" />
   <meta property="og:locale" content="en_AU" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Does the ATO Know About My Crypto? Data Matching Explained" />
-  <meta name="twitter:description" content="The ATO's crypto data-matching program collects account and transaction records from Australian exchanges each year. Here's what it captures, which platforms report, and what to do if you've under-reported." />
+  <meta name="twitter:description" content="The ATO's crypto data-matching program obtains account and transaction data from Australian crypto service providers and matches it against tax returns. Here's what it can collect, what it can and can't see, and what to do if you've under-reported." />
   <meta name="twitter:image" content="https://ozcointrail.com/og-cover.png" />
   <style>
     :root {
@@ -169,6 +169,16 @@
     .article li { margin-bottom: 8px; }
     .article a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
     .article a:hover { color: var(--color-primary-dark); }
+    .article blockquote {
+      border-left: 4px solid var(--color-accent);
+      background: #FBF6E8;
+      border-radius: 0 8px 8px 0;
+      padding: 16px 20px;
+      margin: 16px 0;
+      color: var(--color-text);
+      font-style: italic;
+    }
+    .article blockquote p { margin: 0; }
 
     /* ---------- Table ---------- */
     .table-wrap { overflow-x: auto; margin: 20px 0 24px; }
@@ -194,37 +204,19 @@
       white-space: nowrap;
     }
     tr:last-child td { border-bottom: none; }
-    td:first-child { font-weight: 600; white-space: nowrap; }
+    td:first-child { font-weight: 600; }
 
-    /* ---------- Callouts ---------- */
-    .callout {
-      background: #F2F6F7;
-      border-left: 4px solid var(--color-info);
-      border-radius: 10px;
-      padding: 20px 22px;
-      margin: 24px 0;
-    }
-    .callout h4 { color: var(--color-info); font-size: 0.95rem; margin-bottom: 8px; }
-    .callout p { font-size: 0.92rem; margin: 0 0 8px; color: var(--color-text); }
-    .callout p:last-child { margin-bottom: 0; }
-    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
-    .callout.warn h4 { color: var(--color-warning); }
-
-    /* ---------- FAQ ---------- */
+    /* ---------- FAQ (expanded) ---------- */
     .faq { margin: 24px 0; }
-    .faq details {
-      background: var(--color-surface);
-      border: 1px solid var(--color-border);
-      border-radius: 10px;
-      padding: 16px 20px;
-      margin-bottom: 12px;
+    .faq h3 {
+      font-size: 1.08rem;
+      font-weight: 700;
+      margin: 24px 0 8px;
+      padding-top: 20px;
+      border-top: 1px solid var(--color-border);
     }
-    .faq summary {
-      font-weight: 600;
-      cursor: pointer;
-      color: var(--color-text);
-    }
-    .faq details p { margin: 12px 0 0; font-size: 0.95rem; }
+    .faq h3:first-child { border-top: none; padding-top: 0; margin-top: 8px; }
+    .faq p { margin-bottom: 12px; font-size: 0.95rem; color: var(--color-text); }
 
     /* ---------- CTA ---------- */
     .cta-box {
@@ -368,7 +360,7 @@
         {
             "@type": "Article",
             "headline": "Does the ATO Know About My Crypto? Data Matching Explained",
-            "description": "The ATO's crypto data-matching program collects account and transaction records from Australian exchanges each year. Here's what it captures, which platforms report, and what to do if you've under-reported.",
+            "description": "The ATO's crypto data-matching program obtains account and transaction data from Australian crypto service providers and matches it against tax returns. Here's what it can collect, what it can and can't see, and what to do if you've under-reported.",
             "author": {
                 "@type": "Person",
                 "name": "James Walker",
@@ -390,10 +382,18 @@
             "mainEntity": [
                 {
                     "@type": "Question",
-                    "name": "Does the ATO know if I buy crypto on Binance?",
+                    "name": "Does the ATO know I have crypto?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes, in most cases. Binance (including its Australian entity) is repeatedly named in connection with the ATO's crypto data-matching program, and the ATO states it obtains data from crypto exchanges operating in Australia. If you bought through Binance Australia, the ATO can receive your account and transaction details without you reporting them first."
+                        "text": "If you have used a crypto exchange or service provider connected to Australia's regulated financial system, you should assume the ATO may already have information about your account or activity. The ATO's crypto-assets data-matching program obtains identity and transaction data from selected crypto service providers and matches it against tax records."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does the ATO know if I use Binance?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "The ATO does not publish a complete list of providers selected for its current crypto data-matching program, so it does not officially provide a public Binance yes/no list. Australian Binance users should nevertheless not assume their activity is invisible to the ATO."
                     }
                 },
                 {
@@ -401,7 +401,7 @@
                     "name": "Does CoinSpot report to the ATO?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. CoinSpot is an AUSTRAC-registered digital currency exchange and is named as one of the Australian platforms whose data reaches the ATO under the crypto data-matching program."
+                        "text": "The ATO deliberately does not publish the names of all designated service providers participating in the crypto data-matching program. CoinSpot users should therefore keep complete records and meet their tax obligations rather than relying on claims that a particular exchange does or does not report."
                     }
                 },
                 {
@@ -409,7 +409,31 @@
                     "name": "Is swapping crypto for another coin taxable?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. A crypto-to-crypto swap, including into a stablecoin such as USDT, is a disposal for capital gains tax purposes. You may realise a capital gain or loss on the coin you swapped out, even if you never converted it back to Australian dollars."
+                        "text": "A crypto-to-crypto exchange is generally a disposal for CGT purposes. For example, exchanging BTC for USDT can create a CGT event for the BTC even though you never receive Australian dollars."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Does transferring crypto between my own wallets create CGT?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Generally, moving the same crypto between wallets you own is not itself a disposal because ownership has not changed. However, transaction fees and other circumstances can have separate tax consequences, so retain records showing both sides of the transfer."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can the ATO see MetaMask or another self-custody wallet?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "A blockchain address does not automatically identify its owner. However, if that address is linked to a verified exchange account or other identifiable records, authorities may be able to connect the wallet to you."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Can the ATO see offshore crypto?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Potentially. International exchange of information, banking records and connections between identified exchange accounts and wallets can all provide information. Australia's planned implementation of CARF is expected to increase automatic international crypto tax reporting from 2027, with the first reporting and information exchanges expected in 2028."
                     }
                 },
                 {
@@ -417,23 +441,15 @@
                     "name": "What happens if I never reported my crypto?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "If the ATO's matched data suggests you left crypto disposals out of a return, it will generally give you at least 28 days to verify or correct the information before taking administrative action. You can also lodge an amendment or make a voluntary disclosure, which can reduce penalties."
+                        "text": "If an earlier tax return is incorrect, you may need to amend it. Reconstruct your transactions before making corrections and consider a registered tax agent where multiple years or significant amounts are involved. If the ATO has already contacted you, follow the response deadline stated in the actual correspondence rather than assuming there is a standard crypto-specific deadline."
                     }
                 },
                 {
                     "@type": "Question",
-                    "name": "Can the ATO see my offshore crypto?",
+                    "name": "How long does the ATO keep crypto data?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Offshore accounts are harder for the ATO to see directly, but not invisible. The ATO can obtain data through international information-sharing arrangements (such as the Common Reporting Standard), blockchain analytics, and your bank records showing transfers to and from overseas exchanges. The OECD's Crypto-Asset Reporting Framework (CARF) will extend this further."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "How long does the ATO keep my crypto data?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "The ATO retains each financial year's crypto data for around seven years from receipt of the final verified data files, in line with its record-keeping practices."
+                        "text": "Under the current crypto-assets data-matching protocol, data can be retained for approximately seven years from receipt of the final instalment of verified data files."
                     }
                 }
             ]
@@ -476,7 +492,10 @@
       <span>Written by <a href="/author/james-walker/">James Walker</a> &middot; Source reviewed against current ATO guidance</span>
     </div>
 
-    <p class="lead">Short answer: <strong>yes &mdash; if you've bought, sold or swapped crypto through an Australian exchange or another &ldquo;designated service provider&rdquo;, the ATO likely already holds your account and transaction data.</strong> You don't have to report anything yourself first. The ATO's crypto-assets data-matching program pulls records from platforms each year, matches them against tax returns, and flags people who left crypto disposals out. Here's exactly how it works, what it collects, which platforms report, and what to do if you think you've under-reported.</p>
+    <p class="lead">Short answer: <strong>yes &mdash; if you've used a crypto exchange or other crypto service provider operating in Australia, you should assume the ATO may already have information about your account and transactions.</strong></p>
+    <p>The ATO runs a crypto-assets data-matching program that obtains identity and transaction data from crypto service providers and compares it with Australian tax returns. The current published protocol covers financial years <strong>2014&ndash;15 through to 2025&ndash;26</strong>.</p>
+    <p>That does not mean the ATO can automatically see every private wallet transaction you have ever made. But if your activity touches an identified exchange account, Australian bank account or other regulated service, there may already be enough information to connect that activity back to you.</p>
+    <p>Here is what the ATO can collect, how the matching works, what happens with Binance and other exchanges, and what to do if your past tax returns are incomplete.</p>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -489,108 +508,256 @@
     </div>
 
     <h2>The short answer</h2>
-    <p>The ATO has run a <strong>crypto-assets data-matching program</strong> for years, and its published protocol covers financial years <strong>2014&ndash;15 through to 2025&ndash;26</strong>. Each year it obtains account and transaction records on an estimated <strong>700,000 to 1.2 million individuals and entities</strong>, then matches those records against lodged returns. If you've used an Australian exchange, the realistic answer to &ldquo;does the ATO know?&rdquo; is almost always <strong>yes</strong> &mdash; the question is really whether your return matches what it already has.</p>
-    <p>This matters because crypto disposals &mdash; including swaps between coins &mdash; are capital gains tax (CGT) events. If the ATO's data shows a disposal you didn't report, you can expect it to follow up. See our <a href="/crypto-tax/crypto-tax-australia/">full guide to crypto tax in Australia</a> for how gains and losses are actually calculated.</p>
+    <p>The ATO has operated a <strong>crypto-assets data-matching program</strong> for several years.</p>
+    <p>Its current published protocol covers the period from <strong>2014&ndash;15 to 2025&ndash;26</strong> and is designed to identify people and entities that buy, sell or otherwise transact in crypto assets.</p>
+    <p>The ATO estimates that records relating to roughly <strong>700,000 to 1.2 million individuals and entities</strong> may be obtained for each financial year covered by the program.</p>
+    <p>The important point is this:</p>
+    <blockquote>
+      <p>If you have used an identifiable crypto account, do not assume the ATO only knows about your crypto because you declared it yourself.</p>
+    </blockquote>
+    <p>The ATO can obtain third-party data and compare it with your tax return.</p>
+    <p>Where the information does not line up, that data can be used for education, risk profiling and compliance activity.</p>
+    <p>For the tax treatment itself, see our <a href="/crypto-tax/crypto-tax-australia/">crypto tax in Australia guide</a>.</p>
 
-    <h2>How the ATO's crypto data-matching works</h2>
-    <p>The program obtains data from <strong>crypto &ldquo;designated service providers&rdquo;</strong> &mdash; in practice, the AUSTRAC-registered exchanges and payment businesses operating in Australia. The ATO negotiates with each provider individually, so the exact list and the exact fields aren't publicly confirmed for every platform, but the mechanism is well documented:</p>
+    <h2>How does the ATO know you own crypto?</h2>
+    <p>The main mechanism is <strong>data matching</strong>.</p>
+    <p>The ATO obtains data from selected crypto-asset <strong>designated service providers</strong> and compares that information against records it already holds.</p>
+    <p>That may allow it to connect:</p>
     <ul>
-      <li><strong>Legal authority:</strong> the ATO collects the data under <strong>section 353-10 of Schedule 1 to the Taxation Administration Act 1953</strong>, and the provider is legally obliged to supply it.</li>
-      <li><strong>How often:</strong> data is obtained <strong>annually, typically between April and July</strong>, covering the preceding period.</li>
-      <li><strong>Who it covers:</strong> an estimated <strong>700,000&ndash;1,200,000</strong> individuals and entities each financial year.</li>
-      <li><strong>How it's matched:</strong> the ATO uses <strong>more than 60 identity-matching techniques</strong> to link third-party data to taxpayer records.</li>
-      <li><strong>How long it's kept:</strong> each year's data is retained for <strong>around 7 years</strong> from receipt of the final verified data files.</li>
+      <li>your identity;</li>
+      <li>your exchange account;</li>
+      <li>linked bank details;</li>
+      <li>wallet addresses associated with that account;</li>
+      <li>and individual crypto transactions.</li>
     </ul>
-    <p>The program protocol is submitted to the Office of the Australian Information Commissioner, which is the privacy oversight layer on top of the tax-collection purpose.</p>
+    <p>The ATO's published program says the information is used to identify buyers and sellers of crypto assets and quantify relevant transactions.</p>
+    <p>This is different from the idea that the ATO simply watches every blockchain address in Australia.</p>
+    <p>Instead, the strongest link is often created when a regulated account connects a real identity to transactions, bank accounts or wallet addresses.</p>
 
-    <h2>What the ATO collects about you</h2>
-    <p>The data falls into two broad groups: who you are, and what you did. Both are more extensive than most people expect.</p>
+    <h2>What information can the ATO collect?</h2>
+    <p>The ATO's crypto data-matching protocol covers considerably more than a person's name and the fact they opened an exchange account.</p>
+    <p>Depending on the information held by the provider, collected fields can include:</p>
     <div class="table-wrap">
       <table>
         <thead>
-          <tr><th>Category</th><th>What the ATO collects</th></tr>
+          <tr><th>Category</th><th>Examples of information that may be collected</th></tr>
         </thead>
         <tbody>
-          <tr><td>Identity details</td><td>Name, date of birth, address, ABN, email, phone number and social media profiles</td></tr>
-          <tr><td>Account details</td><td>User ID, account type, sign-up date, registration IP address and identity-verification records</td></tr>
-          <tr><td>Transaction data</td><td>Dates and times, crypto asset type, amounts in fiat and crypto, and transfer type and description</td></tr>
-          <tr><td>Funding links</td><td>Linked bank accounts and wallet addresses, plus account balances</td></tr>
+          <tr><td>Identity information</td><td>Name, date of birth, residential address, ABN where applicable, email address and phone number</td></tr>
+          <tr><td>Account information</td><td>User or account ID, account type, account status, sign-up date and IP-address information</td></tr>
+          <tr><td>Verification information</td><td>Details associated with identity verification and account identification</td></tr>
+          <tr><td>Banking information</td><td>Bank account details linked to the crypto account</td></tr>
+          <tr><td>Wallet information</td><td>Wallet addresses associated with the account</td></tr>
+          <tr><td>Transaction information</td><td>Transaction date and time, crypto asset type, fiat amount, crypto amount, transfer type and transaction description</td></tr>
+          <tr><td>Account-level information</td><td>Account balances and certain unique account identifiers</td></tr>
         </tbody>
       </table>
     </div>
-    <p>In short, the ATO isn't just told &ldquo;you bought some Bitcoin&rdquo; &mdash; it can receive the dates, amounts and counterparties behind your activity, which is enough to reconstruct a disposal history.</p>
+    <p>So the ATO may receive enough information to identify both <strong>who owns an account and what occurred inside that account</strong>.</p>
+    <p>That still does not mean every item of data above is supplied by every provider in every case. The exact records depend on the provider and the information available to it.</p>
 
-    <h2>Which exchanges report to the ATO</h2>
-    <p>The ATO states it collects data from crypto exchanges operating legally in Australia, and it does not publish a complete name-by-name list. However, several platforms are consistently identified in connection with the program:</p>
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr><th>Platform</th><th>Australian status</th><th>Reports to the ATO?</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>CoinSpot</td><td>AUSTRAC-registered exchange</td><td>Yes &mdash; reported</td></tr>
-          <tr><td>Binance (incl. Binance Australia)</td><td>AUSTRAC-registered</td><td>Reported across multiple sources</td></tr>
-          <tr><td>Swyftx</td><td>AUSTRAC-registered exchange</td><td>Yes &mdash; reported</td></tr>
-          <tr><td>Independent Reserve</td><td>AUSTRAC-registered</td><td>Reported</td></tr>
-          <tr><td>Kraken (Australian entity)</td><td>AUSTRAC-registered</td><td>Reported</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p>Treat &ldquo;reported&rdquo; here as <em>reported by third-party tax sources</em>, not as a formal ATO confirmation &mdash; the ATO negotiates with each provider separately and keeps the exact scope private. The safer assumption is that any AUSTRAC-registered platform you've used can supply your data. Our reviews of <a href="/exchanges/coinspot/">CoinSpot</a> and <a href="/exchanges/binance/">Binance</a> cover what each account lets you export for your own records.</p>
+    <h2>Does the ATO know which crypto exchanges I use?</h2>
+    <p>Potentially, yes.</p>
+    <p>However, there is an important distinction that many crypto-tax articles miss:</p>
+    <p><strong>the ATO does not publish a complete list of the crypto providers selected for its data-matching program.</strong></p>
+    <p>The Office of the Australian Information Commissioner has allowed the ATO to withhold the names of participating providers from the published protocol.</p>
+    <p>That means it is safer not to rely on online lists claiming that a particular exchange is either definitely &ldquo;reported&rdquo; or definitely &ldquo;not reported&rdquo;.</p>
+    <p>If a crypto business operates in Australia and falls within the relevant regulatory and data-collection framework, you should not assume that using it keeps your activity outside the ATO's reach.</p>
 
-    <h2>Crypto-to-crypto swaps: the gap most people miss</h2>
-    <p>If there's one thing the data-matching program is designed to catch, it's the <strong>crypto-to-crypto swap</strong>. Many people assume tax only applies when they cash out to Australian dollars &mdash; but swapping Bitcoin for USDT, or USDT for another coin, is a <strong>disposal</strong> and therefore a CGT event, even though no AUD ever touched your account.</p>
-    <p>Because exchanges record every one of those swaps, a trader who converted between coins repeatedly can trigger a chain of taxable events they never reported. The ATO's matching doesn't need you to confess anything; the disposal history is already in the data it receives. Our <a href="/crypto-tax/crypto-tax-australia/">crypto tax guide</a> walks through what counts as a disposal in detail.</p>
+    <h2>Does CoinSpot report to the ATO?</h2>
+    <p>The ATO does <strong>not publicly confirm CoinSpot by name</strong> as a provider selected under the current crypto-assets data-matching protocol.</p>
+    <p>CoinSpot is an Australian crypto platform operating within Australia's regulated crypto environment, so users should not assume their CoinSpot activity is invisible to the ATO.</p>
+    <p>For tax purposes, the practical approach is to keep and report your records correctly regardless of whether a provider appears on an unofficial online list.</p>
+    <p>See our <a href="/exchanges/coinspot/">CoinSpot review</a> for more information about the platform.</p>
 
-    <h2>What makes the ATO take a closer look</h2>
-    <p>Data matching isn't a penalty by itself &mdash; it's a comparison. The ATO is most likely to act when what it holds doesn't line up with what you declared:</p>
+    <h2>Does Binance report to the ATO?</h2>
+    <p>The same principle applies to Binance.</p>
+    <p>The ATO does not publish a provider-by-provider list showing which exchanges have supplied data under its crypto data-matching protocol.</p>
+    <p>Accordingly, it is too strong to say that the ATO has publicly confirmed Binance as a named reporting provider.</p>
+    <p>But Australian users should <strong>not assume Binance activity is invisible to the ATO</strong>.</p>
+    <p>Depending on the services used, relevant information may be identifiable through regulated entities, banking records, transaction records and other information available to Australian authorities.</p>
+    <p>If you use Binance, keep complete account and transaction exports for your own tax records.</p>
+    <p>See our <a href="/exchanges/binance/">Binance review</a> for more information about the platform.</p>
+
+    <h2>Can the ATO see my crypto wallet?</h2>
+    <p>This depends on what you mean by &ldquo;see&rdquo;.</p>
+
+    <h3>Exchange wallets</h3>
+    <p>If the wallet is part of a custodial exchange account linked to your identity, the exchange may hold information connecting you to that account and its activity.</p>
+    <p>That type of information can potentially fall within the ATO's data-matching framework.</p>
+
+    <h3>Self-custody wallets</h3>
+    <p>A self-custody wallet does not normally contain your name or tax file number on the blockchain.</p>
+    <p>Simply looking at a blockchain address therefore does not necessarily tell the ATO who owns it.</p>
+    <p>But a wallet can become attributable to you when it interacts with something that already knows your identity &mdash; for example:</p>
     <ul>
-      <li><strong>Unreported disposals</strong>, especially crypto-to-crypto swaps, that appear in exchange data but not in your return.</li>
-      <li><strong>Income you omitted</strong>, such as staking rewards or airdrops that a platform reported.</li>
-      <li><strong>Bank records that don't match</strong> &mdash; large deposits or withdrawals that suggest buying or selling you didn't declare.</li>
-      <li><strong>Values that look wrong</strong> relative to the transaction history the ATO already has.</li>
+      <li>you withdraw from a verified exchange to that wallet;</li>
+      <li>you deposit from that wallet into a verified exchange;</li>
+      <li>the address is recorded against an exchange account;</li>
+      <li>or other financial and transaction records establish the connection.</li>
     </ul>
+    <p>So <strong>self-custody is not the same thing as anonymity</strong>.</p>
 
-    <h2>What to do if you've under-reported</h2>
-    <p>If you think a past return left crypto out, the ATO's process gives you room to fix it before things escalate. When its matched data suggests a discrepancy, it will generally give you <strong>at least 28 days</strong> to verify or correct the information before taking administrative action.</p>
-    <p>Your options, roughly in order of preference:</p>
+    <h2>What about crypto-to-crypto swaps?</h2>
+    <p>This is one of the most important tax rules Australian crypto users miss.</p>
+    <p>You do <strong>not</strong> need to convert crypto back into Australian dollars before a tax event can occur.</p>
+    <p>When you exchange one crypto asset for another, you are generally disposing of the asset you gave up.</p>
+    <p>For example:</p>
+    <p><strong>BTC &rarr; USDT</strong></p>
+    <p>can involve a CGT event for the BTC.</p>
+    <p>So can:</p>
+    <p><strong>ETH &rarr; SOL</strong></p>
+    <p>or another crypto-to-crypto exchange.</p>
+    <p>You generally need to work out the Australian-dollar market value of the crypto received at the time of the transaction and use the relevant value when calculating the gain or loss.</p>
+    <p>That means someone who traded between coins for several years but never withdrew AUD may still have a substantial disposal history that needs to be considered for tax.</p>
+    <p>Our <a href="/crypto-tax/crypto-tax-australia/">crypto tax guide</a> explains disposals and capital gains in more detail.</p>
+
+    <h2>Does simply buying crypto create a tax bill?</h2>
+    <p>Not necessarily.</p>
+    <p>Buying crypto with Australian dollars and continuing to hold it is generally different from disposing of it.</p>
+    <p>The tax issue usually arises when a relevant disposal or income event occurs.</p>
+    <p>Common examples include:</p>
     <ul>
-      <li><strong>Lodge an amendment</strong> to correct an earlier return.</li>
-      <li><strong>Make a voluntary disclosure</strong>, which can reduce the penalties that would otherwise apply &mdash; penalties are generally lower (or waived) when you come forward before the ATO contacts you.</li>
-      <li><strong>Get your records straight first</strong> &mdash; export your exchange history before you calculate anything, since platforms can restrict access to older data.</li>
+      <li>selling crypto for AUD;</li>
+      <li>exchanging one crypto asset for another;</li>
+      <li>using crypto to acquire goods or services where the relevant tax rules apply;</li>
+      <li>gifting or otherwise disposing of crypto;</li>
+      <li>receiving certain staking rewards or other crypto income.</li>
     </ul>
-    <p>If you're unsure how far back to correct or how to value the assets, this is the point to talk to a registered tax agent rather than guess.</p>
+    <p>Moving crypto between wallets you own is generally not itself a disposal merely because the coins changed addresses, although transaction fees and the exact circumstances still need to be considered.</p>
 
-    <h2>What's coming next: CARF</h2>
-    <p>The current program mostly reaches Australian-registered platforms. The next layer is the OECD's <strong>Crypto-Asset Reporting Framework (CARF)</strong>, which Australia is preparing to implement &mdash; it extends crypto reporting across borders on the same model as the existing Common Reporting Standard for bank accounts. In practice, that means offshore exchanges become progressively less of a hiding place, and the data the ATO holds about your crypto will only get more complete. This sits alongside the AML/CTF <strong>Travel Rule</strong>, which already requires virtual asset service providers to collect and pass on payer and payee information for relevant transfers &mdash; a separate AUSTRAC obligation covered in our <a href="/regulation/austrac/">AUSTRAC registration guide</a>, but part of the same trend toward greater identification around crypto.</p>
+    <h2>What makes the ATO take a closer look?</h2>
+    <p>Data matching does not automatically mean you have done anything wrong.</p>
+    <p>Its purpose is to compare third-party information with the information already held by the ATO.</p>
+    <p>A mismatch may attract attention where, for example:</p>
+    <ul>
+      <li>exchange records show crypto disposals that do not appear to have been reported;</li>
+      <li>reported figures are inconsistent with the available transaction history;</li>
+      <li>income-related crypto activity appears to be missing;</li>
+      <li>or other financial records do not align with what was lodged.</li>
+    </ul>
+    <p>An exchange record also does not necessarily contain the entire tax story.</p>
+    <p>For example, a platform may know that crypto left your account but not whether you:</p>
+    <ul>
+      <li>transferred it to another wallet you owned;</li>
+      <li>paid someone;</li>
+      <li>moved it to another exchange;</li>
+      <li>or disposed of it.</li>
+    </ul>
+    <p>That is one reason your own records remain important.</p>
+
+    <h2>Can the ATO see offshore crypto exchanges?</h2>
+    <p>Using an overseas exchange does not automatically make your crypto invisible.</p>
+    <p>The ATO's existing domestic crypto data-matching program is only one source of information.</p>
+    <p>Depending on the circumstances, information may also be connected through:</p>
+    <ul>
+      <li>Australian bank transfers;</li>
+      <li>transactions involving Australian-regulated service providers;</li>
+      <li>international information-sharing arrangements;</li>
+      <li>records obtained in an investigation;</li>
+      <li>and identifiable transfers between exchanges and wallets.</li>
+    </ul>
+    <p>The international reporting framework is also becoming broader.</p>
+
+    <h2>CARF will expand international crypto reporting</h2>
+    <p>Australia has committed to implementing the OECD's <strong>Crypto-Asset Reporting Framework &mdash; CARF</strong>.</p>
+    <p>CARF is designed specifically for automatic exchange of tax information relating to crypto assets between participating countries.</p>
+    <p>Under Australia's announced implementation timetable, the framework and a parallel domestic crypto reporting regime are expected to <strong>commence in 2027</strong>, with the first domestic reporting to the ATO and first exchanges of information with foreign tax authorities expected in <strong>2028</strong>.</p>
+    <p>In practical terms, CARF is intended to make cross-border crypto holdings and transactions easier for tax authorities to identify.</p>
+    <p>So relying on an overseas exchange simply because it is outside Australia is likely to become an increasingly weak assumption.</p>
+
+    <h2>What about the crypto Travel Rule?</h2>
+    <p>The <strong>Travel Rule</strong> is separate from the ATO's tax data-matching program.</p>
+    <p>It comes from Australia's anti-money-laundering and counter-terrorism-financing regime administered by <strong>AUSTRAC</strong>, not the ATO.</p>
+    <p>Under the reformed rules, virtual asset service providers can be required to collect, verify and pass certain payer and payee information when transferring virtual assets.</p>
+    <p>For relevant virtual-asset services, expanded obligations took effect during 2026.</p>
+    <p>There is no general minimum transaction amount below which the Travel Rule automatically disappears.</p>
+    <p>Transfers involving self-hosted wallets also have specific requirements: although information may not always need to be transmitted to another institution, a provider can still have obligations to collect and verify information relating to the transfer.</p>
+    <p>The Travel Rule does <strong>not</strong> itself determine whether you owe tax. It is an AML/CTF identification and information-sharing requirement.</p>
+    <p>See our <a href="/regulation/austrac/">AUSTRAC guide</a> for how Australia's crypto regulatory framework works.</p>
+
+    <h2>What should I do if I forgot to report crypto?</h2>
+    <p>Do not start by guessing a number.</p>
+    <p>First reconstruct the records.</p>
+    <p>Ideally, collect:</p>
+    <ol>
+      <li>exchange transaction exports;</li>
+      <li>deposit and withdrawal records;</li>
+      <li>wallet addresses you controlled;</li>
+      <li>bank deposits and withdrawals;</li>
+      <li>records from exchanges you no longer use;</li>
+      <li>staking, reward and other income records;</li>
+      <li>acquisition dates and original cost information.</li>
+    </ol>
+    <p>Then identify which transactions were:</p>
+    <ul>
+      <li>purchases;</li>
+      <li>disposals;</li>
+      <li>wallet-to-wallet transfers;</li>
+      <li>income;</li>
+      <li>fees;</li>
+      <li>or transfers between your own accounts.</li>
+    </ul>
+    <p>If a previous return is incorrect, you may be able to <strong>amend the return</strong>.</p>
+    <p>Depending on the circumstances, a voluntary disclosure may also be relevant. Coming forward before compliance action begins can affect how penalties are treated.</p>
+    <p>There is not one universal &ldquo;28-day crypto rule&rdquo; applying to every ATO data-matching case. If the ATO contacts you, use the response deadline shown in the actual notice or correspondence.</p>
+    <p>If the records span several financial years, involve large amounts, or you are unsure how the transactions should be classified, consider speaking with a registered tax agent.</p>
+
+    <h2>How far back can the ATO's crypto data go?</h2>
+    <p>The ATO's current published crypto-assets data-matching protocol covers financial years:</p>
+    <p><strong>2014&ndash;15 through to 2025&ndash;26.</strong></p>
+    <p>That is important because the program is not limited to people who started trading recently.</p>
+    <p>The ATO has also stated that data obtained under this program may be retained for <strong>seven years from receipt of the final instalment of verified data files</strong>, reflecting the long holding periods that can occur with crypto assets and the need for longer-term analysis.</p>
+
+    <h2>What records should crypto investors keep?</h2>
+    <p>At minimum, keep records that let you establish:</p>
+    <ul>
+      <li>the date of each transaction;</li>
+      <li>what crypto asset was involved;</li>
+      <li>the quantity;</li>
+      <li>the Australian-dollar value at the time;</li>
+      <li>what you paid to acquire it;</li>
+      <li>what you received when disposing of it;</li>
+      <li>relevant fees;</li>
+      <li>the purpose of the transaction;</li>
+      <li>and the other wallet or account involved where relevant.</li>
+    </ul>
+    <p>Keeping only your current exchange balance is not enough.</p>
+    <p>A tax calculation may depend on transactions that occurred years before the eventual sale.</p>
+    <p>If you move assets between exchanges, retaining the withdrawal record from one side and the matching deposit record on the other side can also help demonstrate that a transaction was a transfer rather than a disposal.</p>
 
     <h2>Frequently asked questions</h2>
     <div class="faq">
-      <details>
-        <summary>Does the ATO know if I buy crypto on Binance?</summary>
-        <p>Yes, in most cases. Binance (including its Australian entity) is repeatedly named in connection with the ATO's crypto data-matching program, and the ATO states it obtains data from crypto exchanges operating in Australia. If you bought through Binance Australia, the ATO can receive your account and transaction details without you reporting them first.</p>
-      </details>
-      <details>
-        <summary>Does CoinSpot report to the ATO?</summary>
-        <p>Yes. CoinSpot is an AUSTRAC-registered digital currency exchange and is named as one of the Australian platforms whose data reaches the ATO under the crypto data-matching program.</p>
-      </details>
-      <details>
-        <summary>Is swapping crypto for another coin taxable?</summary>
-        <p>Yes. A crypto-to-crypto swap, including into a stablecoin such as USDT, is a disposal for capital gains tax purposes. You may realise a capital gain or loss on the coin you swapped out, even if you never converted it back to Australian dollars.</p>
-      </details>
-      <details>
-        <summary>What happens if I never reported my crypto?</summary>
-        <p>If the ATO's matched data suggests you left crypto disposals out of a return, it will generally give you at least 28 days to verify or correct the information before taking administrative action. You can also lodge an amendment or make a voluntary disclosure, which can reduce penalties.</p>
-      </details>
-      <details>
-        <summary>Can the ATO see my offshore crypto?</summary>
-        <p>Offshore accounts are harder for the ATO to see directly, but not invisible. The ATO can obtain data through international information-sharing arrangements (such as the Common Reporting Standard), blockchain analytics, and your bank records showing transfers to and from overseas exchanges. The OECD's Crypto-Asset Reporting Framework (CARF) will extend this further.</p>
-      </details>
-      <details>
-        <summary>How long does the ATO keep my crypto data?</summary>
-        <p>The ATO retains each financial year's crypto data for around seven years from receipt of the final verified data files, in line with its record-keeping practices.</p>
-      </details>
+      <h3>Does the ATO know I have crypto?</h3>
+      <p>If you have used a crypto exchange or service provider connected to Australia's regulated financial system, you should assume the ATO may already have information about your account or activity. The ATO's crypto-assets data-matching program obtains identity and transaction data from selected crypto service providers and matches it against tax records.</p>
+      <h3>Does the ATO know if I use Binance?</h3>
+      <p>The ATO does not publish a complete list of providers selected for its current crypto data-matching program, so it does not officially provide a public Binance yes/no list. Australian Binance users should nevertheless not assume their activity is invisible to the ATO.</p>
+      <h3>Does CoinSpot report to the ATO?</h3>
+      <p>The ATO deliberately does not publish the names of all designated service providers participating in the crypto data-matching program. CoinSpot users should therefore keep complete records and meet their tax obligations rather than relying on claims that a particular exchange does or does not report.</p>
+      <h3>Is swapping crypto for another coin taxable?</h3>
+      <p>A crypto-to-crypto exchange is generally a disposal for CGT purposes. For example, exchanging BTC for USDT can create a CGT event for the BTC even though you never receive Australian dollars.</p>
+      <h3>Does transferring crypto between my own wallets create CGT?</h3>
+      <p>Generally, moving the same crypto between wallets you own is not itself a disposal because ownership has not changed. However, transaction fees and other circumstances can have separate tax consequences, so retain records showing both sides of the transfer.</p>
+      <h3>Can the ATO see MetaMask or another self-custody wallet?</h3>
+      <p>A blockchain address does not automatically identify its owner. However, if that address is linked to a verified exchange account or other identifiable records, authorities may be able to connect the wallet to you.</p>
+      <h3>Can the ATO see offshore crypto?</h3>
+      <p>Potentially. International exchange of information, banking records and connections between identified exchange accounts and wallets can all provide information. Australia's planned implementation of CARF is expected to increase automatic international crypto tax reporting from 2027, with the first reporting and information exchanges expected in 2028.</p>
+      <h3>What happens if I never reported my crypto?</h3>
+      <p>If an earlier tax return is incorrect, you may need to amend it. Reconstruct your transactions before making corrections and consider a registered tax agent where multiple years or significant amounts are involved. If the ATO has already contacted you, follow the response deadline stated in the actual correspondence rather than assuming there is a standard crypto-specific deadline.</p>
+      <h3>How long does the ATO keep crypto data?</h3>
+      <p>Under the current crypto-assets data-matching protocol, data can be retained for approximately seven years from receipt of the final instalment of verified data files.</p>
     </div>
+
+    <h2>Official sources used for this guide</h2>
+    <p>This guide was checked against current primary material including:</p>
+    <ul>
+      <li>Australian Taxation Office &mdash; <strong>Crypto assets data-matching program protocol to 2025&ndash;26</strong></li>
+      <li>Australian Taxation Office &mdash; guidance on <strong>crypto disposals and crypto-to-crypto exchanges</strong></li>
+      <li>Office of the Australian Information Commissioner &mdash; <strong>crypto-assets data-matching exemption</strong></li>
+      <li>Australian Treasury &mdash; <strong>Crypto-Asset Reporting Framework</strong></li>
+      <li>AUSTRAC &mdash; <strong>Travel Rule</strong> and virtual asset service provider guidance</li>
+    </ul>
+    <p>Rules, reporting arrangements and implementation dates can change, so check current ATO or AUSTRAC guidance when acting on a specific tax or regulatory issue.</p>
 
     <div class="cta-box">
       <div class="cta-logo">
@@ -603,7 +770,8 @@
     </div>
 
     <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Tax rules and the ATO's data-matching arrangements are subject to change, and the specific platforms and fields the ATO collects from are not all publicly confirmed. Cryptocurrency is volatile and may be unregulated in some circumstances. Consider your own circumstances and seek advice from a registered tax agent before acting on anything here. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
-      <div class="author-box">
+
+    <div class="author-box">
       <img class="author-avatar" src="/img/authors/james-walker.webp" alt="James Walker" />
       <div class="author-info">
         <p class="author-name"><a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</p>
