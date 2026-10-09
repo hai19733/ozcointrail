@@ -24,6 +24,7 @@ OzCoinTrail publishes Australia-specific guides on crypto exchanges (Binance, OK
 ## Buy, transfer & tax
 
 - [How to Buy USDT in Australia](https://ozcointrail.com/buy-crypto/usdt/): Cheapest route and fees compared.
+- [How to Buy Bitcoin in Australia](https://ozcointrail.com/buy-crypto/bitcoin/): CoinSpot, Binance and OKX fees compared, PayID steps and the real cost of a A$1,000 purchase.
 - [USDT vs USDC](https://ozcointrail.com/usdt/usdt-vs-usdc/): Reserves, safety, regulation and which stablecoin to use in Australia.
 - [CoinSpot to Binance Australia](https://ozcointrail.com/transfers/exchanges/coinspot-to-binance/): How to transfer crypto safely.
 - [Crypto Tax in Australia](https://ozcointrail.com/crypto-tax/crypto-tax-australia/): CGT, staking and the 2027 changes.
