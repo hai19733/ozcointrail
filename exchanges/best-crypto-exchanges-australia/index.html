@@ -400,6 +400,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -424,7 +453,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/best-crypto-exchanges-australia/"
             },
-            "dateModified": "2026-09-16"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -504,12 +533,17 @@
     <h1>Best Crypto Exchanges in Australia 2026: Binance, OKX, CoinSpot &amp; Swyftx Compared</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">The best exchange for you in Australia comes down to how you'll actually use it. If you want the simplest way to buy and sell with Australian dollars and don't mind paying a little more for the convenience, <strong>CoinSpot</strong> or <strong>Swyftx</strong> are the natural starting points. If you want the lowest standard spot fee and deeper markets, <strong>Binance</strong> is the pick &mdash; while <strong>OKX</strong> is the one to look at for locally licensed derivatives, though its Australian fees are higher than its global rates. Here's how all four compare on fees, AUD deposits, regulation and support.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 9 minutes. The two things people get wrong most often: <strong>choosing an exchange on its headline spot fee while ignoring how the money gets in</strong>, and <strong>treating an AUSTRAC registration as though it were the same thing as an ASIC licence</strong>.</p>
+      <p>Start with the funding route and the licence status for the account you would actually open &mdash; the cheapest headline fee is worth nothing if the deposit rail you need is unavailable.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -575,7 +609,7 @@
         </tbody>
       </table>
     </div>
-    <p style="font-size:0.82rem;color:var(--color-text-secondary);">Fees are indicative as at September 2026 and can change &mdash; confirm the current rates on each platform before trading.</p>
+    <p style="font-size:0.82rem;color:var(--color-text-secondary);">Fees are indicative as at 16 October 2026 and can change &mdash; confirm the current rates on each platform before trading.</p>
 
     <h2>The four exchanges in detail</h2>
 
@@ -584,8 +618,8 @@
         <h3>Binance Australia</h3>
         <span class="exch-verdict">Low-cost spot &amp; depth</span>
       </div>
-      <p>Binance runs the largest crypto market in the world, and that shows up as deep liquidity and a flat <strong>0.10% spot fee</strong> (0.075% if you pay with BNB). The one to know about is AUD funding: <strong>direct PayID AUD deposits are currently unavailable</strong>. Australian users can still fund an account through supported alternatives such as card purchases or P2P trading &mdash; where PayID is used between buyers and sellers, not as a direct deposit into Binance.</p>
-      <p>The trade-off is regulatory. Binance operates in Australia through an AUSTRAC-registered local entity but does <strong>not</strong> hold an AFSL, and its former derivatives business was ordered by the Federal Court to pay a <strong>A$10 million penalty in March 2026</strong> over failures that led to hundreds of retail clients being misclassified as wholesale. Spot trading remains available; derivatives do not. Read our <a href="/exchanges/binance/">full Binance Australia review</a> for the details.</p>
+      <p>Binance runs the largest crypto market in the world, and that shows up as deep liquidity and a flat <strong>0.10% spot fee</strong> (0.075% if you pay with BNB).<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> The one to know about is AUD funding: <strong>direct PayID AUD deposits are currently unavailable</strong>. Australian users can still fund an account through supported alternatives such as card purchases or P2P trading &mdash; where PayID is used between buyers and sellers, not as a direct deposit into Binance.</p>
+      <p>The trade-off is regulatory. Binance operates in Australia through an AUSTRAC-registered local entity but does <strong>not</strong> hold an AFSL, and its former derivatives business was ordered by the Federal Court to pay a <strong>A$10 million penalty in March 2026</strong> over failures that led to hundreds of retail clients being misclassified as wholesale.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> Spot trading remains available; derivatives do not. Read our <a href="/exchanges/binance/">full Binance Australia review</a> for the details.</p>
       <ul>
         <li><strong>Best for:</strong> traders who want a low standard spot fee and deep liquidity.</li>
         <li><strong>Watch for:</strong> no AFSL, no direct PayID deposits, and a regulatory history worth understanding first.</li>
@@ -597,7 +631,7 @@
         <h3>OKX Australia</h3>
         <span class="exch-verdict">Licensed derivatives</span>
       </div>
-      <p>OKX Australia runs a <strong>separate fee schedule from OKX Global</strong>. As at September 2026 the standard AU retail tier is <strong>0.70% maker / taker</strong> &mdash; noticeably higher than the 0.08%/0.10% figures quoted on many sites for the global platform. Its real strength locally is regulation: the derivatives entity holds <strong>AFSL 379035</strong>, and a separate entity (AFSL 536984) covers the OKX Pay wallet and card.</p>
+      <p>OKX Australia runs a <strong>separate fee schedule from OKX Global</strong>. As at 16 October 2026 the standard AU retail tier is <strong>0.70% maker / taker</strong> &mdash; noticeably higher than the 0.08%/0.10% figures quoted on many sites for the global platform. Its real strength locally is regulation: the derivatives entity holds <strong>AFSL 379035</strong>, and a separate entity (AFSL 536984) covers the OKX Pay wallet and card.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
       <p>Eligible retail clients can access crypto derivatives under the local licence, though leverage limits differ from OKX Global. Card purchases remain the expensive way to fund an account. See our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
       <ul>
         <li><strong>Best for:</strong> traders who want Australian-licensed derivatives and a broad product range.</li>
@@ -611,7 +645,7 @@
         <span class="exch-verdict">Simplest &amp; most local</span>
       </div>
       <p>CoinSpot is the most beginner-friendly local option and the one many Australians start with. It's AUSTRAC-registered, ISO 27001 certified, lists <strong>510+ coins</strong> and offers 24/7 Australian-based support. PayID deposits are free, and both AUD and crypto withdrawals are free apart from network fees.</p>
-      <p>The catch is price. CoinSpot charges a <strong>1% fee on Instant Buy, Sell and Swap</strong>, and the quoted execution price can differ from prices visible on order-book markets &mdash; so compare the final quote before confirming. Its &ldquo;Markets&rdquo; interface charges 0.1% on supported pairs but covers fewer coins with thinner liquidity. Read <a href="/exchanges/binance-vs-coinspot/">CoinSpot vs Binance</a> to see the cost difference on a real trade.</p>
+      <p>The catch is price. CoinSpot charges a <strong>1% fee on Instant Buy, Sell and Swap</strong>, and the quoted execution price can differ from prices visible on order-book markets &mdash; so compare the final quote before confirming.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> Its &ldquo;Markets&rdquo; interface charges 0.1% on supported pairs but covers fewer coins with thinner liquidity. Read <a href="/exchanges/binance-vs-coinspot/">CoinSpot vs Binance</a> to see the cost difference on a real trade.</p>
       <ul>
         <li><strong>Best for:</strong> beginners who want the simplest AUD experience and local support.</li>
         <li><strong>Watch for:</strong> the 1% instant-buy fee &mdash; the &ldquo;cheap&rdquo; 0.1% rate only applies on the Markets screen.</li>
@@ -623,7 +657,7 @@
         <h3>Swyftx</h3>
         <span class="exch-verdict">Local &amp; lower cost</span>
       </div>
-      <p>Swyftx sits between CoinSpot and the global exchanges: it's Brisbane-based and AUSTRAC-registered. <strong>Swyftx Pty Ltd also holds AFSL 568543, although its spot cryptocurrency exchange services are not provided under that AFSL.</strong> It uses a 1:1 asset-backing model and charges a <strong>0.6% standard trading fee plus a separate spread</strong>. Free PayID, Osko and bank-transfer deposits are supported up to <strong>A$100,000 per day</strong>, and AUD withdrawals are free.</p>
+      <p>Swyftx sits between CoinSpot and the global exchanges: it's Brisbane-based and AUSTRAC-registered. <strong>Swyftx Pty Ltd also holds AFSL 568543, although its spot cryptocurrency exchange services are not provided under that AFSL.</strong> It uses a 1:1 asset-backing model and charges a <strong>0.6% standard trading fee plus a separate spread</strong>. Free PayID and bank-transfer deposits are supported up to <strong>A$100,000 per day</strong>, and AUD withdrawals are free.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
       <p>The 0.6% rate is the standard tier, and lower tiers down to 0.1% apply only at high 30-day volumes &mdash; the fee tier does not change the spread. For most retail users, Swyftx is a solid &ldquo;local but cheaper&rdquo; alternative to CoinSpot.</p>
       <ul>
         <li><strong>Best for:</strong> beginners to intermediate users who want local support at a lower cost than CoinSpot.</li>
@@ -653,12 +687,21 @@
 
     <div class="callout">
       <h4>Regulation is changing in 2026 &mdash; read this before you deposit</h4>
-      <p>An AUSTRAC registration and an ASIC licence are <strong>not</strong> the same thing. AUSTRAC covers anti-money-laundering obligations; an AFSL from ASIC authorises specified financial services. Australia's new digital-asset framework was passed on 1 April 2026 and commences on 9 April 2027, bringing digital asset platforms and tokenised custody platforms into a new financial-services licensing framework. From 1 July 2026, expanded Travel Rule obligations require covered virtual-asset service providers to collect and transmit prescribed originator and beneficiary information for relevant transfers.</p>
+      <p>An AUSTRAC registration and an ASIC licence are <strong>not</strong> the same thing. AUSTRAC covers anti-money-laundering obligations; an AFSL from ASIC authorises specified financial services. Australia's new digital-asset framework was passed on 1 April 2026 and commences on 9 April 2027, bringing digital asset platforms and tokenised custody platforms into a new financial-services licensing framework. From 1 July 2026, expanded Travel Rule obligations require covered virtual-asset service providers to collect and transmit prescribed originator and beneficiary information for relevant transfers.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup></p>
       <p>Check the regulatory and operating status of any exchange in our <a href="/regulation/">crypto regulation guide</a>.</p>
     </div>
 
     <h2>Worth knowing, but not covered above</h2>
     <p>Three other names also come up often for Australian users. <strong>Kraken</strong> is a long-established global exchange, while <strong>Independent Reserve</strong> and <strong>BTC Markets</strong> are Australian-run platforms often considered by users dealing with larger AUD amounts or SMSF-related needs. They're not included in the main comparison here, but may suit users whose priorities differ from the four above.</p>
+
+    <h2>Risk: funding a Binance account by card or P2P after finding direct PayID unavailable</h2>
+    <p>This is the specific way the &ldquo;cheapest spot fee&rdquo; recommendation can cost you money. You choose Binance for the 0.10% spot rate, then discover that the free local deposit rail you assumed would be there is not, and you fund the account the only ways left: a card purchase, which adds a payment fee before any trade happens, or a P2P order, where you send AUD to another person rather than to the exchange.</p>
+    <p>It happens because the deposit rail, not the trading fee, is the binding constraint for Australian users. Binance&rsquo;s own documentation has been inconsistent on this &mdash; a PayID/BSB restoration has been reported, while some official help pages have still marked direct bank-transfer and PayID deposits as temporarily unavailable. A card purchase stacks two costs on top of each other, and in P2P the counterparty risk moves to you: the platform only processes the order, it does not hold your AUD while you pay.</p>
+    <p>You can reduce the risk by checking the live deposit options on your own verified account before you choose an exchange at all, and by preferring a free bank transfer wherever one is offered. If you use P2P, trade only inside the platform&rsquo;s own order flow, keep the payment within the order&rsquo;s time window, never release or confirm an order you have not been paid for, and start with a small amount to learn the process.</p>
+    <div class="callout warn">
+      <h4>If a deposit has already gone wrong</h4>
+      <p>If you paid a P2P counterparty and the crypto was not released, do not send a second payment and do not release anything in the order &mdash; open a dispute on that order and contact the platform&rsquo;s support with the order reference and your payment receipt. If a card or bank transfer went to the wrong place, contact your bank or card issuer immediately; bank transfers are the hardest to reverse once they have settled. Either way, stop depositing further funds until the first transfer is resolved.</p>
+    </div>
 
     <h2>Frequently asked questions</h2>
     <div class="faq">
@@ -682,6 +725,46 @@
         <summary>Do I need to worry about the new AFSL rules?</summary>
         <p>The new regime takes effect 9 April 2027 with a transition period, so nothing changes overnight. For now, check a platform is AUSTRAC-registered and understand the difference between that and an AFSL before depositing.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance publishes a standard spot fee of <strong>0.10% maker / 0.10% taker</strong> for regular users, with a displayed <strong>25% discount when fees are paid in BNB</strong> (0.075%). Source: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot trading fee schedule</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Binance&rsquo;s Australian spot business is AUSTRAC-registered and <strong>does not hold an AFSL</strong>, and the Federal Court ordered its former derivatives entity (Oztures Trading Pty Ltd) to pay a <strong>A$10 million penalty on 27 March 2026</strong> over the misclassification of 524 retail clients as wholesale. Sources: <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a>; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">OKX runs a separate Australian fee schedule: the <strong>retail Regular tier is 0.70% maker / 0.70% taker</strong> on pairs other than zero-fee pairs, and the 0.08% / 0.10% figures quoted for OKX belong to wholesale and non-AUD tiers. Its derivatives entity holds <strong>AFSL 379035</strong>, with <strong>AFSL 536984</strong> covering the wallet and card products. Sources: <a href="https://www.okx.com/en-au/help/notice-updates-to-okx-au-trading-fees" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to OKX AU trading fees</a>; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia launch help page</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">CoinSpot publishes <strong>1% on Instant Buy, Sell and Swap</strong> against <strong>0.1% on CoinSpot Markets</strong> orders, with 1% also applying to standard limit and stop orders &mdash; the 0.1% rate does not cover every order type on the platform. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Swyftx publishes a <strong>0.6% standard trading fee plus a separate spread</strong>, and states that its <strong>spot exchange services are not provided under AFSL 568543</strong>. Its free PayID and bank-transfer deposit route and the <strong>A$100,000-per-day</strong> supported deposit limit are as published by Swyftx and can change. Sources: <a href="https://swyftx.com/au/fees-and-pricing" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees and pricing</a>; <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for deposits and withdrawals</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">The Digital Assets Framework passed Parliament on <strong>1 April 2026</strong>, received Royal Assent on <strong>8 April 2026</strong> and its main provisions <strong>commence 9 April 2027</strong>; expanded travel rule obligations for covered virtual asset service providers took effect on <strong>1 July 2026</strong>. Sources: <a href="https://www.asic.gov.au/about-asic/news-centre/news-items/asic-s-roadmap-for-digital-assets-law-reform-implementation/" rel="noopener noreferrer" target="_blank">ASIC &mdash; digital assets law reform roadmap</a>; <a href="https://www.austrac.gov.au/amlctf-reform/reforms-guidance/other-guidance/travel-rule-reform" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; travel rule reform</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Binance 0.10% standard spot fee and the 25% BNB discount</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; trading fee schedule</a></li>
+        <li><strong>Binance A$10 million penalty (27 March 2026) and its AUSTRAC-registered, non-AFSL position</strong> &mdash; <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a></li>
+        <li><strong>OKX Australian retail 0.70% spot tier and its separate fee framework</strong> &mdash; <a href="https://www.okx.com/en-au/help/notice-updates-to-okx-au-trading-fees" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to OKX AU trading fees</a></li>
+        <li><strong>OKX entity and licence breakdown (AFSL 379035 derivatives; AFSL 536984 wallet and card)</strong> &mdash; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia launch help page</a></li>
+        <li><strong>CoinSpot 1% Instant Buy and 0.1% Markets fees</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>Swyftx 0.6% standard fee, separate spread, free PayID and bank-transfer deposits</strong> &mdash; <a href="https://swyftx.com/au/fees-and-pricing" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees and pricing</a></li>
+        <li><strong>Swyftx deposit and withdrawal charges and supported deposit limits</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for deposits and withdrawals</a></li>
+        <li><strong>AUSTRAC registration versus an AFSL, and what VASP registration covers</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+        <li><strong>Digital Assets Framework timing and the 2026 travel rule start date</strong> &mdash; <a href="https://www.asic.gov.au/about-asic/news-centre/news-items/asic-s-roadmap-for-digital-assets-law-reform-implementation/" rel="noopener noreferrer" target="_blank">ASIC &mdash; digital assets law reform roadmap</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section and a sources list; fees, licence positions and regulatory dates re-checked. 16 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and licensing arrangements change. The fees above are the published standard or retail rates checked against official sources on 16 October 2026, and the regulatory statements are general information rather than legal advice.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; fees, licensed derivatives and AUD funding</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot review &mdash; fees, Markets orders and AUD deposits</a></li>
+        <li><a href="/exchanges/is-binance-legal-in-australia/">Is Binance legal in Australia? AUSTRAC registration and AFSL status</a></li>
+        <li><a href="/regulation/austrac/">AUSTRAC registration &mdash; how to check a crypto exchange yourself</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

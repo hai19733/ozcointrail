@@ -402,6 +402,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -426,7 +453,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/binance-vs-coinspot/"
             },
-            "dateModified": "2026-09-16"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -452,7 +479,7 @@
                     "name": "Can I deposit AUD into Binance or CoinSpot?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "CoinSpot supports free PayID and Osko AUD deposits and free AUD withdrawals. Binance's direct AUD deposits via bank transfer (BSB / PayID) are temporarily unavailable; Australian users fund via card, P2P or crypto transfers instead."
+                        "text": "CoinSpot supports free PayID and bank-transfer AUD deposits and free AUD withdrawals. Binance's guidance on direct AUD deposits via BSB / PayID is conflicting — a January 2026 announcement reported a restoration while a later help page still lists them as temporarily unavailable. Australian users should check their own account and may fund via card, P2P or crypto transfers instead."
                     }
                 },
                 {
@@ -506,16 +533,21 @@
     <h1>Binance vs CoinSpot Australia 2026: Fees, PayID, Regulation &amp; Which Fits You?</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
-    <p class="lead">On headline spot trading fees, Binance and CoinSpot can both charge <strong>0.10%</strong> &mdash; but that comparison hides an important difference. Binance's standard spot fee starts at 0.10%, with eligible users able to receive up to a 25% discount when paying fees with BNB. CoinSpot charges 0.10% on its Markets order book, while its simpler Instant Buy, Sell &amp; Swap service charges 1%.</p>
+    <p class="lead">On headline spot trading fees, Binance and CoinSpot can both charge <strong>0.10%</strong> &mdash; but that comparison hides an important difference. Binance's standard spot fee starts at 0.10%, with eligible users able to receive up to a 25% discount when paying fees with BNB.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> CoinSpot charges 0.10% on its Markets order book, while its simpler Instant Buy, Sell &amp; Swap service charges 1%.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></p>
 
-    <p>For Australians, the bigger difference is funding. <strong>CoinSpot supports free PayID and direct AUD deposits</strong>, while Binance currently does not support direct AUD deposits through BSB bank transfer or PayID.</p>
+    <p>For Australians, the bigger difference is funding. <strong>CoinSpot supports free PayID and direct AUD deposits</strong>, while Binance's guidance on direct BSB bank transfer or PayID deposits is conflicting — a January 2026 announcement reported a restoration, while a later-updated help page still lists them as temporarily unavailable.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
 
-    <p>The two platforms also have different regulatory structures. Both operate within Australia's AUSTRAC AML/CTF framework. CoinSpot additionally holds <strong>AFSL 562554</strong>, although its licensed financial services relate to non-cash payment products associated with the CoinSpot Mastercard rather than ordinary spot crypto trading.</p>
+    <p>The two platforms also have different regulatory structures. Both operate within Australia's AUSTRAC AML/CTF framework. CoinSpot additionally holds <strong>AFSL 562554</strong>, although its licensed financial services relate to non-cash payment products associated with the CoinSpot Mastercard rather than ordinary spot crypto trading.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 7 minutes. The two things people get wrong most often: <strong>quoting CoinSpot at 1% and Binance at 0.10% as if they were the same service</strong>, and <strong>assuming the AUD deposit method in an older guide is live in your own account</strong>.</p>
+      <p>Work out which CoinSpot flow you are actually using &mdash; Markets or Instant &mdash; then compare the total AUD you pay and the crypto you receive, not the headline percentage.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -551,8 +583,8 @@
           </tr>
           <tr>
             <td>AUD deposits</td>
-            <td>PayID / bank transfer unavailable; card, P2P, crypto instead</td>
-            <td>Free PayID / Osko, near-instant</td>
+            <td>PayID / bank transfer guidance conflicting; card, P2P, crypto instead</td>
+            <td>Free PayID / bank transfer, near-instant</td>
           </tr>
           <tr>
             <td>Coins</td>
@@ -596,8 +628,17 @@
       <p>CoinSpot's 1% Instant Buy fee does not make the final execution price identical to the Markets order book. Before confirming, compare the <strong>final AUD quote and amount of crypto received</strong>, rather than looking at the headline fee alone.</p>
     </div>
 
+    <h2>Risk: paying CoinSpot's 1% Instant Buy fee while believing you paid 0.1%</h2>
+    <p>The 1% Instant Buy fee is the easiest cost to pay by accident on CoinSpot. It is the flow most new users land on: you enter an AUD amount on the dashboard, the platform shows how much crypto you will receive, and you confirm. Nothing is hidden, but the charge is presented inside a quote-and-confirm screen rather than as a separate order-book fee, which is exactly why it gets lost when people compare platforms by headline percentage.</p>
+    <p>It happens because CoinSpot runs two different products under one login. <strong>Instant Buy, Sell &amp; Swap</strong> is a quoted service charged at 1%; <strong>Markets</strong> is the order book charged at 0.1%. The same A$1,000 buy costs roughly A$10 in fees on Instant and roughly A$1 on Markets. The convenient button is not the cheap one.</p>
+    <p>To avoid it: open <strong>Markets</strong> rather than the dashboard's Instant Buy button; check the fee and the final crypto amount on the confirmation screen before you submit; and for a first trade, place a small order and confirm what actually landed in your account before committing a larger one. If you specifically want a coin that only Instant covers, treat the 1% as the price of access rather than a mistake.</p>
+    <div class="callout">
+      <h4>If it has already happened</h4>
+      <p>A filled Instant Buy settles at the price you were quoted, so there is no fee to reverse after the fact. If you believe the wrong fee was applied to a completed order, contact CoinSpot support from inside your account with the order reference &mdash; and place your next order through Markets so the 0.1% fee applies from the start.</p>
+    </div>
+
     <h2>AUD deposits: this is where they split</h2>
-    <p>If you fund your account with Australian dollars, this is the deciding factor for most people. <strong>CoinSpot supports free PayID and Osko deposits</strong> that typically arrive within minutes, and free AUD withdrawals. <strong>Binance currently does not offer direct AUD deposits via BSB bank transfer or PayID.</strong> Its own support pages state that AUD deposits via bank transfer (BSB / PayID) are <strong>temporarily unavailable</strong>, and Australian users fund accounts through card purchases, P2P trading or crypto transfers instead.</p>
+    <p>If you fund your account with Australian dollars, this is the deciding factor for most people. <strong>CoinSpot supports free PayID and bank-transfer deposits</strong> that typically arrive within minutes, and free AUD withdrawals. <strong>Binance's guidance on direct AUD deposits via BSB bank transfer or PayID is conflicting.</strong> A January 2026 announcement reported a PayID restoration, while a later-updated help page still lists AUD deposits via bank transfer (BSB / PayID) as <strong>temporarily unavailable</strong> — so availability has to be confirmed inside your own account, and in practice Australian users may fund through card purchases, P2P trading or crypto transfers instead.</p>
     <p>The practical consequence is friction. To use Binance's 0.10% fee, many Australians take a two-step path &mdash; buy on a local exchange with PayID, then transfer the crypto to Binance to trade. That adds a transfer fee and a little time. For a one-off A$500 Bitcoin purchase, the additional transfer step introduces both a network fee and extra complexity. Some users may prefer CoinSpot's simpler AUD purchase flow despite its 1% Instant Buy fee, while frequent or larger-volume traders may place more weight on Binance's lower trading fees and deeper liquidity. Read more in our <a href="/exchanges/binance/">full Binance review</a>.</p>
 
     <h2>Coins and liquidity: a mirror image</h2>
@@ -606,7 +647,7 @@
 
     <h2>Regulation and safety: the AFSL detail most people misread</h2>
     <p>CoinSpot is often described as &ldquo;the licensed Australian exchange&rdquo;, and that needs a closer look. CoinSpot does hold <strong>AFSL 562554</strong>, but this should not be interpreted as an AFSL covering ordinary spot cryptocurrency trading. CoinSpot's April 2026 Financial Services Guide says its licensed financial services are limited to non-cash payment products associated with the CoinSpot Mastercard. Its crypto exchange activities are separately subject to AUSTRAC registration and AML/CTF obligations (CoinSpot has been AUSTRAC-registered since April 2018, one of Australia's longest-running).</p>
-    <p>Binance, meanwhile, is AUSTRAC-registered but <strong>does not currently hold an AFSL</strong>, with an application lodged and pending with ASIC. Its former derivatives business was fined <strong>A$10 million</strong> in March 2026 after more than 85% of Australian clients were misclassified as wholesale &mdash; but that concerned derivatives it no longer offers, not its spot exchange.</p>
+    <p>Binance, meanwhile, is AUSTRAC-registered but <strong>does not currently hold an AFSL</strong>, with an application lodged and pending with ASIC. Its former derivatives business was fined <strong>A$10 million</strong> in March 2026 after more than 85% of Australian clients were misclassified as wholesale &mdash; but that concerned derivatives it no longer offers, not its spot exchange.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     <p>The upshot: CoinSpot's AFSL is a genuine regulatory edge, but a narrower one than the headline suggests. Both are AUSTRAC-registered for the crypto you actually trade. For a full picture of how the new rules change things, see our <a href="/regulation/">crypto regulation guide</a>.</p>
 
     <h2>Derivatives: neither offers them</h2>
@@ -625,7 +666,7 @@
       <div class="cons">
         <h4>Binance drawbacks</h4>
         <ul>
-          <li>Direct PayID / bank-transfer AUD deposits unavailable</li>
+          <li>Direct PayID / bank-transfer AUD deposit guidance conflicting</li>
           <li>No AFSL (application pending)</li>
           <li>Card funding can erode the cheap trading fee</li>
         </ul>
@@ -635,7 +676,7 @@
       <div class="pros">
         <h4>CoinSpot advantages</h4>
         <ul>
-          <li>Free PayID / Osko deposits and free AUD withdrawals</li>
+          <li>Free PayID / bank-transfer deposits and free AUD withdrawals</li>
           <li>One of Australia's widest coin lists (500+, count varies)</li>
           <li>Long-running local platform (AUSTRAC-registered since 2018), holds AFSL 562554</li>
         </ul>
@@ -667,7 +708,7 @@
       </details>
       <details>
         <summary>Can I deposit AUD into Binance or CoinSpot?</summary>
-        <p>CoinSpot supports free PayID and Osko AUD deposits and free AUD withdrawals. Binance's direct AUD deposits via bank transfer (BSB / PayID) are temporarily unavailable; Australian users fund via card, P2P or crypto transfers instead.</p>
+        <p>CoinSpot supports free PayID and bank-transfer AUD deposits and free AUD withdrawals. Binance's guidance on direct AUD deposits via BSB / PayID is conflicting — a January 2026 announcement reported a restoration while a later help page still lists them as temporarily unavailable. Australian users should check their own account and may fund via card, P2P or crypto transfers instead.</p>
       </details>
       <details>
         <summary>Which is better for beginners?</summary>
@@ -677,6 +718,42 @@
         <summary>How do Binance and CoinSpot differ on regulation and security?</summary>
         <p>Both are AUSTRAC-registered digital currency exchanges under Australia's AML/CTF framework. CoinSpot additionally holds AFSL 562554 (for non-cash payment products only) and states it is ISO 27001 certified for information security. Binance does not currently hold an AFSL (application pending), and in August 2025 AUSTRAC ordered an external audit of Binance Australia's AML/CTF controls after raising concerns about local governance and resourcing. Neither structure is a guarantee &mdash; as with any exchange, keep only trading funds on-platform.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance's published standard spot fee for regular users is <strong>0.10% maker / 0.10% taker</strong>, with a 25% discount available on eligible spot fees paid in BNB (about 0.075%). Sources: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fees</a>; <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">CoinSpot's published fees are <strong>0.1% on Markets</strong> (its order book), <strong>1% on Instant Buy, Sell &amp; Swap</strong> and 0.1% on OTC, as published on 16 October 2026. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">CoinSpot charges no CoinSpot fee on PayID and direct bank deposits, and no CoinSpot fee on standard AUD withdrawals. Binance's Australian help pages still list AUD deposits by bank transfer (BSB / PayID) as temporarily unavailable, while a PayID and bank-transfer restoration was reported in January 2026 &mdash; the two positions conflict, so deposit availability should be treated as account-specific rather than settled either way. Sources: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Bank Withdrawals</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Both platforms are registered with AUSTRAC as virtual asset service providers, which is an AML/CTF registration and not an AFSL. CoinSpot's AFSL <strong>562554</strong> is limited to non-cash payment products connected to the CoinSpot Mastercard, not spot crypto trading. Sources: <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a>; <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">The Federal Court ordered Oztures Trading Pty Ltd, which traded as Binance Australia Derivatives, to pay a <strong>A$10 million</strong> penalty in March 2026 over the classification and onboarding of retail clients; ASIC stated the conduct exposed 524 retail investors to high-risk derivatives. That case concerned the former derivatives business, not Binance Australia's current spot exchange service. Source: <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Binance 0.10% standard spot fee and the 25% BNB fee discount</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fees</a>; <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a></li>
+        <li><strong>CoinSpot's 0.1% Markets fee and 1% Instant Buy, Sell &amp; Swap fee</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>CoinSpot free PayID and direct bank deposits, and free AUD withdrawals</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>Binance Australia AUD deposit and withdrawal availability</strong> &mdash; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Bank Withdrawals</a>; <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a></li>
+        <li><strong>CoinSpot AFSL 562554 scope, and the AUSTRAC registration both platforms hold</strong> &mdash; <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide</a>; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+        <li><strong>A$10 million penalty against Binance's former Australian derivatives business</strong> &mdash; <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a sources list and a Related guides block; fee, AFSL and AUD deposit figures re-checked against the sources above. 16 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot review &mdash; Markets versus Instant Buy fees</a></li>
+        <li><a href="/exchanges/binance-fees/">Binance fees in Australia, including the BNB discount</a></li>
+        <li><a href="/buy-crypto/aud/binance-payid/">Binance PayID deposits &mdash; what Australian accounts currently show</a></li>
+        <li><a href="/exchanges/best-crypto-exchanges-australia/">Best crypto exchanges in Australia compared</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

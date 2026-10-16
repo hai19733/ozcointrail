@@ -360,6 +360,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -384,7 +411,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/buy-crypto/aud/binance-payid/"
             },
-            "dateModified": "2026-10-13"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -472,17 +499,22 @@
     <h1>Binance Australia PayID: Is AUD Deposit Back in 2026?</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Public sources checked: 13 October 2026 (UTC)</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
-    <p class="lead"><strong>Binance announced a return of PayID and bank-transfer AUD deposits in January 2026, but its AUD help FAQ &mdash; updated in April 2026 &mdash; still shows BSB/PayID deposits as temporarily unavailable. The documentation is not fully consistent.</strong> Before sending AUD, check whether your own Binance account offers the deposit method and provides current payment instructions.</p>
+    <p class="lead"><strong>Binance announced a return of PayID and bank-transfer AUD deposits in January 2026, but its AUD help FAQ &mdash; updated in April 2026 &mdash; still shows BSB/PayID deposits as temporarily unavailable.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> The documentation is not fully consistent.</strong> Before sending AUD, check whether your own Binance account offers the deposit method and provides current payment instructions.</p>
     <p>This guide explains how to check availability, how direct AUD deposits differ from PayID payments on P2P, and what to compare if you consider funding Binance through another exchange.</p>
 
     <div class="callout">
       <h4>Verification scope</h4>
       <p>This review covers public help pages and fee schedules. We have not tested an AUD deposit through an Australian Binance account.</p>
+    </div>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 6 minutes. The two things people get wrong most often: <strong>assuming a January 2026 announcement means your own account can deposit AUD today</strong>, and <strong>sending a transfer to BSB or PayID details saved from an older deposit</strong>.</p>
+      <p>Sign in and read the deposit screen your account actually shows before you move any money &mdash; then compare the funding routes on total cost, not on a headline spot fee.</p>
     </div>
 
     <div class="reco">
@@ -511,7 +543,7 @@
 
     <h2>What Binance has announced versus what its help page says</h2>
     <p>In January 2026, Binance reported the restoration of PayID and bank-transfer AUD deposits for Australian users, following a staged rollout. That is a report of a change, not a guarantee that every verified account can access the method today.</p>
-    <p>The <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance AUD withdrawal FAQ</a>, marked as updated on 2 April 2026, still carries an AUD bank-transfer deposit suspension notice and says withdrawals through this channel require a previous deposit. Binance's payment pages have also continued to reference restoring PayID.</p>
+    <p>The <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance AUD withdrawal FAQ</a>, marked as updated on 2 April 2026, still carries an AUD bank-transfer deposit suspension notice and says withdrawals through this channel require a previous deposit.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> Binance's payment pages have also continued to reference restoring PayID.</p>
     <p>That means Binance's own public documents are not fully consistent: an announcement says deposits have returned, while a later-updated help page still shows them as unavailable.</p>
     <p>For a payment you are about to make, check the current instructions in your account. If those instructions conflict with the help page, ask Binance support to clarify before sending funds.</p>
 
@@ -524,6 +556,15 @@
       <li><strong>Do not reuse old payment details.</strong> Only proceed with instructions currently provided for your account. If the option is missing or suspended, confirm the position with official support.</li>
     </ol>
     <p>Keep a record of the instructions and any transfer confirmation. A visible menu option alone is not proof that a payment has been accepted or credited.</p>
+
+    <h2>Risk: sending AUD to saved payment details after a PayID availability change</h2>
+    <p>The specific risk is paying an instruction that predates the current state of Binance's AUD funding. That includes a BSB and account number saved in your banking app from an earlier deposit, a screenshot someone forwards to you, and a PayID supplied by a person who contacts you claiming to be Binance support.</p>
+    <p>Deposit details are issued per account and can change when a funding rail is suspended, restored or moved to a different provider. Because Binance's own pages currently disagree about whether BSB/PayID deposits have returned, an instruction that was correct in December 2025 may now point at an account that is no longer monitored. In that situation the money can leave your bank without ever being credited to your Binance balance, and a bank transfer is not reversible on request in the way a card charge is.</p>
+    <p>To reduce the risk: take the details from the deposit screen your account shows right now, immediately before each transfer; check the recipient name against the name Binance states for that instruction; treat any payment request arriving by message, email or social media as fraudulent; and send a small first transfer when the amount is large. Keep the receipt and reference until the AUD balance appears.</p>
+    <div class="callout warn">
+      <h4>If the AUD has already been sent to the wrong place</h4>
+      <p>Contact your bank first &mdash; the sooner a recall or trace request is lodged, the better the chance of recovering an incorrect transfer &mdash; then raise a Binance support ticket from inside your account quoting the transfer reference and the instruction you followed. Do not send a second transfer to correct the first, and do not follow payment instructions from anyone who contacts you first.</p>
+    </div>
 
     <h2>Direct PayID deposits and P2P PayID payments are different</h2>
     <p>A direct AUD deposit follows Binance's fiat funding instructions. A P2P purchase is an order to buy crypto from another user, with payment made using the order's agreed method.</p>
@@ -546,7 +587,7 @@
     <p>Availability needs to be checked for your account. For a fair comparison, use the same AUD budget and compare how much of the same asset would reach Binance after the quoted costs.</p>
 
     <h2>Example: buying on CoinSpot and transferring to Binance</h2>
-    <p>CoinSpot's <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">official fee schedule</a> lists free PayID and Direct Deposit funding, a 0.1% Markets trading fee, and a 1% Instant Buy, Sell &amp; Swap fee. Check whether your chosen asset has a suitable Markets pair before assuming the lower fee applies.</p>
+    <p>CoinSpot's <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">official fee schedule</a> lists free PayID and Direct Deposit funding, a 0.1% Markets trading fee, and a 1% Instant Buy, Sell &amp; Swap fee.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> Check whether your chosen asset has a suitable Markets pair before assuming the lower fee applies.</p>
     <p>For a hypothetical A$1,000 trade value, a 0.1% trading fee is A$1; a 1% fee is A$10. This compares the stated trading fees only. It does not compare execution prices or include withdrawal costs.</p>
     <p>CoinSpot also lists a flat crypto withdrawal fee, with the current amount shown on its wallet page. Check that amount for the asset and network you intend to use.</p>
     <p>Separate the costs into two stages:</p>
@@ -554,7 +595,7 @@
       <li><strong>Getting crypto to Binance:</strong> any AUD funding charge, the purchase fee, the effect of the execution price or spread, and the sending exchange's withdrawal fee. Check any receiving conditions or charges as well.</li>
       <li><strong>Trading after arrival:</strong> an additional trading fee or conversion cost if you choose to exchange the asset again.</li>
     </ul>
-    <p>Binance's <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">published standard spot rate</a> for regular users is 0.10% maker and taker, with a displayed 25% BNB discount for eligible fee payments. Pair-specific rates, promotions and account tiers can differ. This is a trading charge, not a fee you automatically pay merely because a transfer arrives.</p>
+    <p>Binance's <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">published standard spot rate</a> for regular users is 0.10% maker and taker, with a displayed 25% BNB discount for eligible fee payments.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> Pair-specific rates, promotions and account tiers can differ. This is a trading charge, not a fee you automatically pay merely because a transfer arrives.</p>
     <p>For the transfer walkthrough, see <a href="https://ozcointrail.com/transfers/exchanges/coinspot-to-binance/">CoinSpot to Binance</a>. If USDT is your intended asset, also read <a href="https://ozcointrail.com/buy-crypto/usdt/">how to buy USDT in Australia</a>.</p>
 
     <h2>Before transferring crypto: a practical checklist</h2>
@@ -596,6 +637,37 @@
         <summary>What should I do if AUD deposits are missing?</summary>
         <p>Check any account notices and contact official support. Do not send AUD using saved payment details from an earlier transaction. If considering another funding route, check its availability and full quote first.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance <strong>reported</strong> a PayID and bank-transfer restoration for Australian users in January 2026, while a Binance help page updated in April 2026 still lists BSB/PayID deposits as temporarily unavailable. The two public statements conflict, so availability can only be confirmed inside your own verified account. Sources: <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit/withdrawal help page</a> (the reported restoration has no matching current help page we could verify). Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">That Binance help page carries an update date of <strong>2 April 2026</strong>, retains the AUD bank-transfer deposit suspension notice, and states that withdrawals through the channel require a previous deposit. Source: <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD withdrawal FAQ</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">CoinSpot's published fee schedule lists <strong>no charge for PayID and Direct Deposit funding</strong>, a 0.1% Markets trading fee and a 1% Instant Buy, Sell &amp; Swap fee, so the A$1 versus A$10 example on a A$1,000 trade value is arithmetic on published rates. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Binance's published standard spot rate for regular users is <strong>0.10% maker / 0.10% taker</strong>, with a displayed 25% BNB discount for eligible fee payments. It applies to a spot trade, not to a crypto deposit arriving in your account. Source: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot trading fee schedule</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Whether Binance currently lists AUD deposits via bank transfer (BSB/PayID) as available, and the conditions attached to that channel</strong> &mdash; <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit and withdrawal help page</a></li>
+        <li><strong>Binance's standard 0.10% spot rate and 25% BNB discount, which apply to a trade rather than to a deposit</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; trading fee schedule</a></li>
+        <li><strong>CoinSpot's free PayID and Direct Deposit funding, 0.1% Markets fee and 1% Instant rate, used in the funding-route comparison</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; fees</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a sources list and related-guide links; Binance AUD deposit status and the CoinSpot and Binance fee figures re-checked. 13 October 2026 &mdash; previous public-source check.</p>
+      <p>AUD deposit availability, fee tiers and bank policies change, and Binance's public documents are not currently consistent on whether BSB/PayID funding has returned: a January 2026 announcement says it has, while a later-updated help page still marks it unavailable. Exactly one of those can be true for your account at any moment, which is why the availability statement above is written as account-specific. Public sources checked on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and its pending AFSL application</a></li>
+        <li><a href="/buy-crypto/aud/okx-aud-deposit/">How to deposit AUD into OKX Australia by bank transfer, and which senders it rejects</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance, step by step</a></li>
+        <li><a href="/buy-crypto/usdt/">How to buy USDT in Australia with AUD and what each route costs</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

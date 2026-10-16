@@ -348,6 +348,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -372,7 +399,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/usdt/usdt-vs-usdc/"
             },
-            "dateModified": "2026-10-05"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -516,7 +543,7 @@
     <h1>USDT vs USDC: Which Is Safer &amp; Which to Use in Australia</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 5 October 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
@@ -528,8 +555,13 @@
       <li><strong>Choose USDC</strong> if your priority is reserve transparency, regulatory oversight and holding a dollar-denominated balance rather than actively trading.</li>
       <li><strong>Neither is the same as holding AUD or USD in an insured bank account.</strong></li>
     </ul>
-    <p>USDT is currently the larger and more liquid stablecoin, with around <strong>US$184 billion</strong> in circulation, while USDC has around <strong>US$72 billion</strong>. USDC, however, publishes reserve information more frequently and its reserves are concentrated mainly in cash and short-dated US government debt.</p>
+    <p>USDT is currently the larger and more liquid stablecoin, with around <strong>US$184 billion</strong> in circulation, while USDC has around <strong>US$72 billion</strong>. USDC, however, publishes reserve information more frequently and its reserves are concentrated mainly in cash and short-dated US government debt.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></p>
     <p>For Australians, there is another factor that is easy to overlook: <strong>USDT and USDC are crypto assets for tax purposes, not simply digital cash.</strong> Your result in AUD can therefore change because of the AUD/USD exchange rate even if the stablecoin itself remains close to US$1.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>sending USDT on a network the receiving platform does not support</strong>, and <strong>judging the whole decision on the US$1 peg while ignoring the AUD/USD move and the exchange's AUD conversion fee</strong>.</p>
+      <p>Decide first whether you are trading this money or parking it &mdash; that answer drives the coin, the network and the exchange you should use.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -592,11 +624,11 @@
         </tbody>
       </table>
     </div>
-    <p>USDC's reserves are held primarily in cash and short-term US Treasury assets, including assets held through the <strong>Circle Reserve Fund</strong>, a government money-market fund managed by BlackRock. Tether's reserves are more diversified &mdash; in addition to US Treasury holdings and cash-equivalent assets, its disclosures have included assets such as gold, Bitcoin, secured loans and other investments. That does not automatically make USDT unsafe, but it means users are taking exposure to a broader reserve mix.</p>
+    <p>USDC's reserves are held primarily in cash and short-term US Treasury assets, including assets held through the <strong>Circle Reserve Fund</strong>, a government money-market fund managed by BlackRock.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> Tether's reserves are more diversified &mdash; in addition to US Treasury holdings and cash-equivalent assets, its disclosures have included assets such as gold, Bitcoin, secured loans and other investments.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> That does not automatically make USDT unsafe, but it means users are taking exposure to a broader reserve mix.</p>
     <p><strong>An attestation is not the same as an audit.</strong> Neither USDT nor USDC had published a completed full financial audit as of the latest verification date for this article. An attestation checks information at a particular point in time, while a full financial audit generally involves a broader review of financial statements, systems, controls and liabilities. That distinction matters when comparing stablecoin reserve claims.</p>
 
     <h2>USDC's 2023 depeg shows why "transparent" does not mean risk-free</h2>
-    <p>USDC provides stronger reserve transparency, but that did not prevent it from temporarily losing its US$1 peg in March 2023. At the time, around <strong>US$3.3 billion</strong> of Circle's reserves were held at Silicon Valley Bank when the bank failed. USDC briefly traded below US$1 before recovering.</p>
+    <p>USDC provides stronger reserve transparency, but that did not prevent it from temporarily losing its US$1 peg in March 2023. At the time, around <strong>US$3.3 billion</strong> of Circle's reserves were held at Silicon Valley Bank when the bank failed.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> USDC briefly traded below US$1 before recovering.</p>
     <p>This is an important example because it shows that even high-quality reserves can face banking risk, liquidity risk, redemption pressure and market panic. <strong>Reserve transparency reduces uncertainty. It does not eliminate stablecoin risk.</strong></p>
 
     <h2>Which is more regulated: USDT or USDC?</h2>
@@ -604,7 +636,7 @@
 
     <h2>What does this mean for Australians?</h2>
     <p>For Australian users, there are two separate questions: <strong>how is the stablecoin issuer regulated, and how is the exchange you use regulated in Australia?</strong> These are not the same thing. Holding USDC does not automatically mean the exchange where you bought it is safer, and holding USDT through an Australian-facing exchange does not mean Tether itself is regulated in Australia.</p>
-    <p>Australia's digital-asset regulatory framework is still developing, with broader licensing changes expected to take greater effect from 2027. For most Australian users today, you should therefore check:</p>
+    <p>Australia's digital-asset regulatory framework is still developing, with broader licensing changes expected to take greater effect from 2027.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> For most Australian users today, you should therefore check:</p>
     <ul>
       <li>whether the exchange operates legally in Australia,</li>
       <li>whether it is <a href="/regulation/austrac/">registered with AUSTRAC</a> where required,</li>
@@ -632,6 +664,15 @@
     </div>
     <p><strong>The most important transfer rule: the sending and receiving network must match.</strong> If you withdraw USDT using TRC-20, the receiving wallet or exchange must support USDT on Tron. Do not assume that because an address accepts USDT, it accepts USDT on every blockchain. A wrong-network transfer can be difficult or impossible to recover. For the AUD-specific steps of getting USDT in the first place, see our guide on <a href="/buy-crypto/usdt/">how to buy USDT in Australia</a>.</p>
 
+    <h2>Risk: sending USDT or USDC on the wrong network</h2>
+    <p>A stablecoin transfer has two parts, and only one of them is the token. The other is the network &mdash; Tron, Ethereum, BNB Chain, Solana, Base and others. The sending and receiving sides have to be on the same one.</p>
+    <p>It happens because the same ticker exists on several chains. An address that accepts USDT on Tron is not automatically able to receive USDT on Ethereum, and some platforms support one chain but not another. Exchange withdrawal screens often default to the network you used last, which is how a routine transfer becomes a wrong-network transfer.</p>
+    <p>Two habits prevent almost all of it. Read the network name on the withdrawal screen and compare it with the network the receiving platform actually supports for that coin &mdash; not just the coin name. And send a small test amount first whenever the route is new, the receiving platform has changed its supported networks, or you are moving a large balance.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>Contact both platforms immediately with the transaction hash, the amount, the network used and the receiving address, and keep that record. Recoverability depends entirely on whether the receiving side controls the keys on that chain: a custodial exchange may be able to credit the funds manually, while a transfer to a self-custody address on a chain you do not control is usually unrecoverable. Do not send a second transfer to "correct" the first one.</p>
+    </div>
+
     <h2>Is USDT cheaper to transfer than USDC?</h2>
     <p>Not necessarily. The transfer fee depends more on the <strong>blockchain network</strong> and the exchange's withdrawal fee than on whether you are using USDT or USDC. USDT on Tron is often inexpensive, while USDT on Ethereum may cost more; USDC on Solana can be very inexpensive, while USDC on Ethereum can become more expensive when network activity rises.</p>
     <p>So the better question is not "Is USDT or USDC cheaper?" &mdash; it is "Which supported network gives me the lowest total cost without creating compatibility risk?"</p>
@@ -651,7 +692,7 @@
         </tbody>
       </table>
     </div>
-    <p>The difference can be significant. <a href="/exchanges/coinspot/">CoinSpot's</a> Markets section can be attractive when buying stablecoins directly with AUD because the Markets fee is substantially lower than its Instant Buy pricing, and using PayID can also reduce funding friction. <a href="/exchanges/binance/">Binance</a> has deeper global order books and a 0.10% standard spot fee, making it more attractive once funds are already on the platform &mdash; the disadvantage for Australians is funding, since direct AUD bank-transfer availability has been restricted. <a href="/exchanges/okx/">OKX</a> often advertises low global spot-trading fees, but Australian users need to look specifically at the AUD market they intend to use: its USDT/AUD route may carry a materially higher standard trading fee than its headline crypto-to-crypto rate. <a href="/exchanges/swyftx/">Swyftx</a> provides an easier Australian-dollar route but generally has a higher explicit trading fee than a low-cost order-book market.</p>
+    <p>The difference can be significant. <a href="/exchanges/coinspot/">CoinSpot's</a> Markets section can be attractive when buying stablecoins directly with AUD because the Markets fee is substantially lower than its Instant Buy pricing, and using PayID can also reduce funding friction. <a href="/exchanges/binance/">Binance</a> has deeper global order books and a 0.10% standard spot fee, making it more attractive once funds are already on the platform &mdash; the disadvantage for Australians is funding, since direct AUD bank-transfer availability has been restricted.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup> <a href="/exchanges/okx/">OKX</a> often advertises low global spot-trading fees, but Australian users need to look specifically at the AUD market they intend to use: its USDT/AUD route may carry a materially higher standard trading fee than its headline crypto-to-crypto rate. <a href="/exchanges/swyftx/">Swyftx</a> provides an easier Australian-dollar route but generally has a higher explicit trading fee than a low-cost order-book market.</p>
 
     <h2>USDT vs USDC: which should you use?</h2>
     <p>There is no single winner. Choose based on the job you need the stablecoin to perform.</p>
@@ -732,6 +773,47 @@
 
       <h3>Is USDT better than USDC?</h3>
       <p>Neither is universally better. <strong>USDT is better for liquidity and trading; USDC is better for reserve transparency and regulatory structure.</strong> The best choice depends on what you intend to do after buying it.</p>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Issuer-published data puts USDT at roughly US$184 billion and USDC at roughly US$72 billion in circulation, which is why USDT has the deeper trading liquidity. Circulation changes daily, so treat both figures as indicative as at the verification date. Sources: <a href="https://tether.to/en/transparency/" rel="noopener noreferrer" target="_blank">Tether &mdash; Transparency</a> and <a href="https://www.circle.com/en/transparency" rel="noopener noreferrer" target="_blank">Circle &mdash; Transparency &amp; Stability</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Circle states USDC reserves are held mainly in cash and short-dated US Treasuries, with the majority in the Circle Reserve Fund, an SEC-registered government money-market fund managed by BlackRock. Source: <a href="https://www.circle.com/en/transparency" rel="noopener noreferrer" target="_blank">Circle &mdash; Transparency &amp; Stability</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Tether's reserve disclosures are published quarterly with an attestation by BDO Italia and have included US Treasury holdings, cash equivalents, gold, Bitcoin and secured loans &mdash; an attestation is a point-in-time check, not a full financial audit. Source: <a href="https://tether.to/en/transparency/" rel="noopener noreferrer" target="_blank">Tether &mdash; Transparency</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Around US$3.3 billion of Circle's USDC reserves were held at Silicon Valley Bank when it failed in March 2023, and USDC traded below US$1 before the reserve risk was removed. Source: <a href="https://www.circle.com/en/pressroom/3-3-billion-of-usdc-reserve-risk-removed-dollar-de-peg-closes" rel="noopener noreferrer" target="_blank">Circle &mdash; press release, USDC reserve risk removed</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">The Corporations Amendment (Digital Assets Framework) Act 2026 received Royal Assent on 8 April 2026, with the new licensing regime commencing in April 2027; ASIC's implementation release cites commencement on 8 April 2027 and confirms ASIC will license and supervise platforms within the regime. Source: <a href="https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws" rel="noopener noreferrer" target="_blank">ASIC &mdash; 26-245MR</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">Binance's published standard spot fee for regular users is 0.10% maker and taker, and the platform's own help pages have been inconsistent about whether BSB/PayID AUD deposits are restored, so check what your verified account shows. Sources: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; trading fee schedule</a> and <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit and withdrawal FAQ</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>USDT and USDC circulation figures</strong> &mdash; <a href="https://tether.to/en/transparency/" rel="noopener noreferrer" target="_blank">Tether &mdash; Transparency</a> and <a href="https://www.circle.com/en/transparency" rel="noopener noreferrer" target="_blank">Circle &mdash; Transparency &amp; Stability</a></li>
+        <li><strong>Reserve composition, attestation frequency and the Circle Reserve Fund</strong> &mdash; <a href="https://www.circle.com/en/transparency" rel="noopener noreferrer" target="_blank">Circle &mdash; Transparency &amp; Stability</a> and <a href="https://tether.to/en/transparency/" rel="noopener noreferrer" target="_blank">Tether &mdash; Transparency</a></li>
+        <li><strong>The March 2023 USDC depeg and the US$3.3 billion Silicon Valley Bank exposure</strong> &mdash; <a href="https://www.circle.com/en/pressroom/3-3-billion-of-usdc-reserve-risk-removed-dollar-de-peg-closes" rel="noopener noreferrer" target="_blank">Circle &mdash; press release</a></li>
+        <li><strong>CoinSpot Markets fee and free PayID deposits used in the AUD comparison table</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>Binance 0.10% standard spot fee</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; trading fee schedule</a></li>
+        <li><strong>Binance AUD deposit and withdrawal status</strong> &mdash; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit and withdrawal FAQ</a></li>
+        <li><strong>OKX Australia standard retail fee for the USDT/AUD route</strong> &mdash; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; fees</a></li>
+        <li><strong>Swyftx 0.60% trading fee plus spread</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; our trading fees</a></li>
+        <li><strong>Australia's digital asset licensing framework and its 2027 commencement</strong> &mdash; <a href="https://www.asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-245mr-asic-consults-on-implementation-of-new-digital-asset-laws" rel="noopener noreferrer" target="_blank">ASIC &mdash; media release 26-245MR</a></li>
+        <li><strong>Stablecoins treated as crypto assets for CGT purposes</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto asset transactions</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a risk section on wrong-network transfers and a related-guides block; circulation, reserve, fee and regulatory references re-checked against issuer, exchange, ASIC and ATO sources. Previous version carried a Last verified date of 5 October 2026.</p>
+      <p>Stablecoin circulation, reserve composition, exchange fees and AUD funding availability all change, and network costs move with congestion. The figures above are the issuer and exchange figures checked on 16 October 2026 and should be treated as indicative &mdash; confirm the current numbers on the issuer or exchange page before you act.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/buy-crypto/usdt/">How to buy USDT in Australia with AUD</a></li>
+        <li><a href="/crypto-tax/crypto-tax-australia/">Crypto tax in Australia &mdash; how stablecoin swaps are treated</a></li>
+        <li><a href="/regulation/austrac/">AUSTRAC registration &mdash; how Australian exchanges are regulated</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot review &mdash; Markets vs Instant Buy fees and PayID deposits</a></li>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

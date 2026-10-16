@@ -404,6 +404,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -428,7 +457,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/swyftx/"
             },
-            "dateModified": "2026-09-20"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -516,7 +545,7 @@
     <h1>Swyftx Review 2026: Fees, Spread &amp; What Its AFSL Actually Covers</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 13 October 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
@@ -525,6 +554,11 @@
     <p class="lead">The trade-off is cost.</p>
     <p class="lead">Swyftx charges a <strong>standard trading fee of 0.6% on both buys and sells, plus a separate, variable spread</strong>. For someone buying A$1,000 of Bitcoin, the fee plus spread means the total cost is meaningfully higher than the headline 0.6% on its own &mdash; and higher than the <strong>0.10%</strong> you can get through <a href="/exchanges/coinspot/">CoinSpot Markets</a> or <a href="/exchanges/binance/">Binance</a> spot trading.</p>
     <p class="lead">There's also a regulatory detail worth getting right. Swyftx Pty Ltd holds <strong>AFSL 568543</strong>, but Swyftx's own disclosures state it does <em>not</em> hold an AFSL for spot crypto &mdash; ordinary spot trading sits under its AUSTRAC registration instead, and its derivatives service runs through a separate company, Eightcap.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>quoting the 0.6% fee as the whole cost when a variable spread sits on top of it</strong>, and <strong>reading AFSL 568543 as cover for ordinary spot-crypto trading</strong>.</p>
+      <p>Check the live buy and sell price on the coin's page before you size an order &mdash; the gap between them is the part of the cost the fee line never shows.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -586,8 +620,8 @@
     <h2>Fees explained: 0.6% plus a separate spread</h2>
     <p>Swyftx's cost structure is easy to misread, because there are two charges working at once.</p>
     <ul>
-      <li><strong>Trading fee &mdash; 0.6%.</strong> This is the standard rate for both buys and sells on the retail tier (30-day trading volume under A$100,000). Higher-volume tiers reduce the fee, down to around 0.1% at the top tier.</li>
-      <li><strong>Spread &mdash; separate and variable.</strong> On top of the 0.6% fee, Swyftx prices each trade with a spread between the buy and sell price. The spread is set by market liquidity and volatility, and your fee tier does not change it.</li>
+      <li><strong>Trading fee &mdash; 0.6%.</strong> This is the standard rate for both buys and sells on the retail tier (30-day trading volume under A$100,000). Higher-volume tiers reduce the fee, down to around 0.1% at the top tier.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></li>
+      <li><strong>Spread &mdash; separate and variable.</strong> On top of the 0.6% fee, Swyftx prices each trade with a spread between the buy and sell price. The spread is set by market liquidity and volatility, and your fee tier does not change it.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></li>
     </ul>
     <div class="callout">
       <h4>Why the spread matters more than the fee</h4>
@@ -635,8 +669,8 @@
     <p>The short version: Swyftx is not the cheapest way to trade crypto in Australia, but it's also not the most expensive &mdash; the real question is how much you value the free AUD funding and the polished app against the 0.6%-plus-spread cost.</p>
 
     <h2>AUD deposits &amp; withdrawals</h2>
-    <p>Swyftx does not charge a fee for <strong>PayID or Australian bank-transfer deposits</strong>, and AUD withdrawals to an Australian bank account are also free. Crypto withdrawals are charged only the network (blockchain) fee. <a href="/exchanges/binance/">Binance</a> announced the restoration of its own PayID and bank-transfer deposits in January 2026, though some of its support pages still show older availability warnings &mdash; see how they compare in our <a href="/exchanges/binance-vs-swyftx/">Binance vs Swyftx</a> guide.</p>
-    <p>Card funding is different. Swyftx's payment documentation distinguishes between Stripe and Banxa: for Australian users there is no card processing surcharge on those channels, but Banxa deposits can carry a spread of up to 2.5%, so check the provider quote before paying. That spread is a third-party cost that can add up, so use a free PayID or bank transfer where possible.</p>
+    <p>Swyftx does not charge a fee for <strong>PayID or Australian bank-transfer deposits</strong>, and AUD withdrawals to an Australian bank account are also free. Crypto withdrawals are charged only the network (blockchain) fee.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> <a href="/exchanges/binance/">Binance</a> announced the restoration of its own PayID and bank-transfer deposits in January 2026, though some of its support pages still show older availability warnings &mdash; see how they compare in our <a href="/exchanges/binance-vs-swyftx/">Binance vs Swyftx</a> guide.</p>
+    <p>Card funding is different. Swyftx's payment documentation distinguishes between Stripe and Banxa: for Australian users there is no card processing surcharge on those channels, but Banxa deposits can carry a spread of up to 2.5%, so check the provider quote before paying.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> That spread is a third-party cost that can add up, so use a free PayID or bank transfer where possible.</p>
     <p>POLi is no longer available: Swyftx discontinued POLi deposits in September 2023. Swyftx added NZD bank deposits in January 2026, so it now serves New Zealand as well as Australia.</p>
     <p>For the lowest-cost funding route, PayID or bank transfer is generally the cleaner starting point. The trading cost still depends on Swyftx's trading fee and the live spread shown before you confirm the order.</p>
 
@@ -646,7 +680,7 @@
     <p>That distinction matters: the derivatives service should not be confused with Swyftx's ordinary spot exchange, and Swyftx itself states that it does not hold an AFSL for spot-crypto trading. Staking and Earn products were withdrawn in early 2023, so there's no yield feature today.</p>
 
     <h2>Regulation &amp; safety</h2>
-    <p>Swyftx is registered with AUSTRAC as a digital currency exchange, subject to Australia's AML/CTF framework including KYC and transaction monitoring. Swyftx Pty Ltd (ABN 72 623 556 730) also holds <strong>AFSL 568543</strong> &mdash; but read the scope carefully, because this is where most write-ups go wrong.</p>
+    <p>Swyftx is registered with AUSTRAC as a digital currency exchange, subject to Australia's AML/CTF framework including KYC and transaction monitoring. Swyftx Pty Ltd (ABN 72 623 556 730) also holds <strong>AFSL 568543</strong> &mdash; but read the scope carefully, because this is where most write-ups go wrong.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     <div class="callout">
       <h4>The AFSL fine print</h4>
       <p>Swyftx Pty Ltd holds <strong>AFSL 568543</strong>, but that should not be read as an AFSL covering ordinary spot-crypto trading. Swyftx's own regulatory disclosures explicitly state that it does <strong>not</strong> hold an Australian Financial Services Licence for spot crypto. Its spot exchange instead operates under its AUSTRAC registration and Australia's AML/CTF framework.</p>
@@ -686,6 +720,15 @@
     <p>Swyftx is the right call for <strong>beginners and casual buyers who want to move Australian dollars into crypto as simply as possible</strong>, value a clean app and free PayID and bank deposits, and aren't trading often enough for the 0.6%-plus-spread cost to outweigh the convenience. It's also a natural home for <strong>SMSF, company or trust</strong> accounts, which few Australian platforms support.</p>
     <p>It's a worse fit for <strong>active traders chasing the lowest all-in cost</strong> &mdash; for them, CoinSpot's 0.10% Markets fee or Binance's 0.10% spot fee with deeper order books is the closer comparison. If you mainly care about keeping costs down, start with our <a href="/exchanges/best-crypto-exchanges-australia/">Best Crypto Exchanges in Australia</a> comparison rather than defaulting to Swyftx. Derivatives are a separate matter: Swyftx's come through an Eightcap CFD service, while <a href="/exchanges/okx/">OKX</a> is the Australian option for licensed retail derivatives.</p>
 
+    <h2>Risk: confirming a trade without checking the live spread on a thinly traded coin</h2>
+    <p>The concrete mistake is comparing Swyftx's 0.6% fee against another platform's headline rate, then confirming an order on a lower-volume altcoin where the buy and sell prices are separated by several percentage points. Swyftx publishes a live spread per coin, and its own spread page shows gaps that widen well beyond the trading fee on smaller assets. The 0.6% is charged on top of that gap, and the spread is the part of the cost that never appears as a fee line on your statement.</p>
+    <p>It works that way because the spread is priced from market liquidity and volatility rather than from your fee tier, so trading more volume through the tiers does not narrow it. On a thin order book there is simply less resting liquidity to trade against, and an order of any size can clear at worse prices than the quoted one.</p>
+    <p>To reduce the risk, open the coin's page and read the current buy and sell prices before you size anything, and apply that gap to the amount you intend to trade rather than to the fee. Split large orders, favour coins with deeper markets, and compare the final AUD amount on the confirmation screen against another venue before you commit &mdash; the order screen shows the price you will actually get.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>An executed trade cannot be re-priced, and selling straight back crosses the spread a second time &mdash; so do not churn the position to &ldquo;fix&rdquo; it. Save the order confirmation and a screenshot of the buy and sell prices you were shown at the time, then raise any difference between the quoted price and the executed price with Swyftx support using the order ID.</p>
+    </div>
+
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
@@ -712,6 +755,40 @@
         <summary>Does Swyftx offer leverage or derivatives?</summary>
         <p>Yes. Swyftx now provides access to crypto derivatives services for eligible clients. The derivative products are issued by Eightcap Pty Ltd (AFSL 391441) and distributed through Swyftx Pty Ltd (AFSL 568543), separate from Swyftx's ordinary spot-crypto service. Eligibility, fees, leverage and product terms differ from spot trading, so review the relevant Product Disclosure Statement and client agreement before using the derivatives service.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Swyftx's standard trading fee is <strong>0.6%</strong> on buys and sells on the retail tier (30-day trading volume under A$100,000), with volume tiers reducing it to around 0.1% at the top tier. Source: <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Our Trading Fees</a>. Rates are indicative as published on 16 October 2026. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Swyftx applies a separate, variable spread on top of the trading fee, disclosed before execution and set by market liquidity and volatility rather than by fee tier. Source: <a href="https://swyftx.com/spreads/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Spreads</a> and <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Our Trading Fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">PayID and Australian bank-transfer deposits are free at Swyftx, AUD withdrawals to an Australian bank account are free, and crypto withdrawals are charged only the network (blockchain) fee. Source: <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for Deposits and Withdrawals</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Swyftx's payment documentation distinguishes Stripe from Banxa for card funding: no card processing surcharge is published for those channels for Australian users, but Banxa deposits can carry a spread of up to 2.5%, so the provider quote is the figure that matters. Source: <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for Deposits and Withdrawals</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Swyftx Pty Ltd holds AFSL 568543, but Swyftx's own disclosures state that the licence does not cover its ordinary spot-crypto exchange service, which operates under its AUSTRAC registration instead. Derivative products are issued by Eightcap Pty Ltd (AFSL 391441) and distributed through Swyftx. Source: <a href="https://swyftx.com/au/inside-access/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; AFSL and spot service disclosure</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>0.6% standard trading fee and the volume tiers</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; trading fee tiers</a></li>
+        <li><strong>Live spreads and the separate spread component</strong> &mdash; <a href="https://swyftx.com/spreads/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; spreads</a></li>
+        <li><strong>Free PayID and bank deposits, free AUD withdrawals, and the Stripe / Banxa card funding terms</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; fees for deposits and withdrawals</a></li>
+        <li><strong>Scope of AFSL 568543 and the Eightcap derivatives arrangement</strong> &mdash; <a href="https://swyftx.com/au/inside-access/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; AFSL and spot service disclosure</a></li>
+        <li><strong>AUSTRAC registration and what it does and does not cover</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a spread-risk section and related guides; trading fee, spread and card funding entries re-checked against the sources above. 20 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, spreads and AUD funding terms change. Figures above are the published standard rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/coinspot-vs-swyftx/">CoinSpot vs Swyftx: 0.10% Markets against 0.6% plus spread</a></li>
+        <li><a href="/exchanges/binance-vs-swyftx/">Binance vs Swyftx in Australia: fees, AUD funding and liquidity compared</a></li>
+        <li><a href="/exchanges/best-crypto-exchanges-australia/">Best crypto exchanges in Australia: matching the platform to how you buy</a></li>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; licensed derivatives, fees and AUD funding</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

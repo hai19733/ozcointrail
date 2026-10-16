@@ -395,6 +395,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -419,7 +448,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/coinspot-vs-swyftx/"
             },
-            "dateModified": "2026-10-12"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -539,7 +568,7 @@
     <h1>CoinSpot vs Swyftx Australia 2026: Fees, Spread &amp; Which Is Better</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 12 October 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
@@ -548,6 +577,11 @@
     <p class="lead">The important difference is how you buy crypto. Swyftx has a lower standard trading fee than CoinSpot Instant Buy, but both platforms' quoted prices can reflect a spread. CoinSpot Markets offers a lower published fee, although execution price, liquidity and available trading pairs still matter.</p>
     <p class="lead">For Australian beginners, Swyftx is worth considering for its straightforward trading experience and demo account. CoinSpot is worth considering for its larger cryptocurrency selection and lower-fee Markets feature.</p>
     <p class="lead">This comparison explains the fees, spreads, AUD deposits, security and regulatory differences &mdash; including what happens when you buy A$1,000 or A$10,000 worth of crypto.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>comparing the advertised trading fee instead of the amount of crypto the final quote actually delivers</strong>, and <strong>assuming CoinSpot&rsquo;s 0.1% rate covers its Instant Buy screen or its ordinary limit and stop orders</strong>.</p>
+      <p>Before you deposit anywhere, check which order screen you will actually use &mdash; on CoinSpot the instant screen and the Markets order book are priced a full percentage point apart.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -582,7 +616,7 @@
     <p>Our verdict: choose Swyftx if you mainly want straightforward purchases and an opportunity to practise before using real money. Choose CoinSpot if you want more listed assets or are comfortable using its Markets feature. If cost is your priority, compare the final amount of cryptocurrency received rather than selecting an exchange by its advertised fee alone.</p>
 
     <h2>CoinSpot vs Swyftx Fees: Which Is Cheaper?</h2>
-    <p>CoinSpot has two substantially different retail trading fee structures. Instant Buy, Sell and Swap costs 1%, while trades made through CoinSpot Markets cost 0.1%. Swyftx starts at 0.6% for standard customers and reduces fees according to the customer's rolling 30-day trading volume.</p>
+    <p>CoinSpot has two substantially different retail trading fee structures. Instant Buy, Sell and Swap costs 1%, while trades made through CoinSpot Markets cost 0.1%.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> Swyftx starts at 0.6% for standard customers and reduces fees according to the customer's rolling 30-day trading volume.</p>
 
     <h3>Standard trading fees compared</h3>
     <div class="table-wrap">
@@ -606,7 +640,7 @@
     <p>Important: CoinSpot's 0.1% Markets fee does not mean every limit or stop order on the platform costs 0.1%. Its published fee schedule distinguishes Markets from other order types.</p>
 
     <h3>How do Swyftx's trading fee tiers work?</h3>
-    <p>Swyftx uses your trading volume over the previous 30 days to determine your fee level, and its system recalculates your eligibility hourly.</p>
+    <p>Swyftx uses your trading volume over the previous 30 days to determine your fee level, and its system recalculates your eligibility hourly.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -678,7 +712,7 @@
     <p>Decision: if two platforms quote different BTC amounts for the same A$1,000 purchase, the quote delivering more BTC under equivalent conditions is the cheaper effective purchase &mdash; regardless of which has the smaller advertised trading fee.</p>
 
     <h2>CoinSpot vs Swyftx Spread: What Are You Really Paying?</h2>
-    <p>A crypto spread is the difference between the buying price and the selling price, and it affects the effective price available when entering or exiting a position. Swyftx explicitly applies a variable spread in addition to its trading fee, which depends on the asset and prevailing market conditions, and it publishes indicative spreads on its website with figures updated regularly. CoinSpot's Instant Buy quote can also differ from its available market execution prices, and its 1% fee should not be interpreted as proof that buying and selling price differences have disappeared.</p>
+    <p>A crypto spread is the difference between the buying price and the selling price, and it affects the effective price available when entering or exiting a position. Swyftx explicitly applies a variable spread in addition to its trading fee, which depends on the asset and prevailing market conditions, and it publishes indicative spreads on its website with figures updated regularly.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> CoinSpot's Instant Buy quote can also differ from its available market execution prices, and its 1% fee should not be interpreted as proof that buying and selling price differences have disappeared.</p>
 
     <h3>Trading fee vs spread</h3>
     <div class="table-wrap">
@@ -784,7 +818,7 @@
         </tbody>
       </table>
     </div>
-    <p>These are the published provider charges; additional bank or payment-provider conditions may apply, and supported methods can also vary by account.</p>
+    <p>These are the published provider charges; additional bank or payment-provider conditions may apply, and supported methods can also vary by account.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
 
     <h3>What about AUD withdrawals?</h3>
     <p>Both platforms publish free standard AUD bank withdrawals. Crypto withdrawals are different &mdash; blockchain network costs apply, and the displayed withdrawal charge can vary by asset and network.</p>
@@ -797,10 +831,10 @@
     <p>AUSTRAC registration and an Australian Financial Services Licence are not the same. AUSTRAC registration relates to anti-money laundering and counter-terrorism financing obligations, while an AFSL authorises specified financial services under Australian financial services legislation. Having an AFSL does not automatically mean a company's entire cryptocurrency spot trading business operates under that licence.</p>
 
     <h3>CoinSpot's AFSL explained</h3>
-    <p>CoinSpot operates through Casey Block Services Pty Ltd, which holds AFSL 562554. Its published Financial Services Guide explains that the financial services provided under that licence relate to promoting and arranging the CoinSpot Mastercard, including specified general financial product advice associated with the card. That licence should not be presented as blanket ASIC financial-product authorisation for ordinary cryptocurrency spot trading.</p>
+    <p>CoinSpot operates through Casey Block Services Pty Ltd, which holds AFSL 562554.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> Its published Financial Services Guide explains that the financial services provided under that licence relate to promoting and arranging the CoinSpot Mastercard, including specified general financial product advice associated with the card. That licence should not be presented as blanket ASIC financial-product authorisation for ordinary cryptocurrency spot trading.</p>
 
     <h3>Swyftx's AFSL explained</h3>
-    <p>Swyftx Pty Ltd holds AFSL 568543, and Swyftx expressly states that its spot cryptocurrency exchange services are not provided under its AFSL. Certain crypto derivative products available through the Swyftx platform are issued by Eightcap Pty Ltd, which holds AFSL 391441. These distinctions matter when assessing what protections, disclosures and legal obligations apply to a particular service.</p>
+    <p>Swyftx Pty Ltd holds AFSL 568543, and Swyftx expressly states that its spot cryptocurrency exchange services are not provided under its AFSL.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup> Certain crypto derivative products available through the Swyftx platform are issued by Eightcap Pty Ltd, which holds AFSL 391441. These distinctions matter when assessing what protections, disclosures and legal obligations apply to a particular service.</p>
 
     <h3>How their regulatory positions compare</h3>
     <div class="table-wrap">
@@ -864,6 +898,15 @@
     <p>Binance and OKX may be relevant additional comparisons for eligible Australian users, but payment access, product availability, account eligibility and total transaction costs should be checked separately. For a wider comparison, see our <a href="/exchanges/best-crypto-exchanges-australia/">Best Crypto Exchanges in Australia</a> guide.</p>
     <p>Final verdict: Swyftx is a practical option for Australians who prioritise ease of use and demo trading. CoinSpot is compelling for users who value its wider coin selection and can access the 0.1% Markets fee. Neither should be declared the cheapest in all circumstances without comparing live execution prices.</p>
 
+    <h2>Risk: paying CoinSpot&rsquo;s 1% Instant Buy fee when the same trade was available on Markets</h2>
+    <p>The most expensive mistake in this comparison is not picking the wrong exchange &mdash; it is picking the wrong button on the same exchange. Instant Buy, Sell and Swap is the default, easiest screen on CoinSpot and it costs 1%. Trading the same supported AUD pair through CoinSpot Markets costs 0.1%. On a A$10,000 purchase that is the difference between A$100 and A$10 in explicit trading fees alone.</p>
+    <p>It happens because the two features are priced separately, and neither screen tells you the other route is cheaper. The published schedule also distinguishes Markets trades from standard limit and stop orders, so the 0.1% rate does not follow every order type you can place.</p>
+    <p>You can lower the risk by checking which screen you are on before you confirm. Instant Buy shows a single quote and an AUD amount; Markets shows an order book and lets you place a buy or sell at your chosen price. If the asset has no supported AUD market, Markets may not be available for it at all &mdash; in that case compare the instant quote against your alternatives rather than assuming a cheaper route exists.</p>
+    <div class="callout warn">
+      <h4>If you have already paid the higher fee</h4>
+      <p>An executed trade cannot be reversed, so treat the extra fee as spent. If you believe the wrong rate was charged for the order type you actually used, contact CoinSpot support with the order reference and check the fee shown on your trade confirmation. Do not try to &ldquo;fix&rdquo; a fee mistake by selling through Instant Sell and rebuying on Markets &mdash; you would pay the spread twice.</p>
+    </div>
+
     <h2>Frequently Asked Questions</h2>
     <div class="faq">
       <h3>Is CoinSpot or Swyftx cheaper in 2026?</h3>
@@ -897,18 +940,43 @@
       <p>Both platforms publish information about their security practices, but centralised exchanges carry custody and operational risks. Users should enable strong authentication and consider whether funds not needed for trading should be held in a suitable self-custody arrangement.</p>
     </div>
 
-    <h2>Sources</h2>
-    <p>Information verified against publicly available disclosures on 12 October 2026. Published fees, asset availability and product eligibility may change.</p>
-    <ul class="sources">
-      <li><a href="https://www.coinspot.com.au/fees" rel="nofollow">CoinSpot &mdash; Fees</a></li>
-      <li><a href="https://www.coinspot.com.au/terms" rel="nofollow">CoinSpot &mdash; Terms and Conditions</a></li>
-      <li><a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="nofollow">CoinSpot &mdash; Mastercard Financial Services Guide</a></li>
-      <li><a href="https://swyftx.com/au/fees-and-pricing" rel="nofollow">Swyftx &mdash; Fees and Pricing</a></li>
-      <li><a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="nofollow">Swyftx &mdash; Trading Fee Tiers</a></li>
-      <li><a href="https://swyftx.com/spreads/" rel="nofollow">Swyftx &mdash; Spreads</a></li>
-      <li><a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="nofollow">Swyftx &mdash; Deposits and Withdrawals</a></li>
-      <li><a href="https://swyftx.com/au/terms-conditions/" rel="nofollow">Swyftx &mdash; Terms and Conditions</a></li>
-    </ul>
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">CoinSpot publishes a <strong>1% fee on Instant Buy, Sell and Swap</strong> against <strong>0.1% on CoinSpot Markets</strong> trades, with 1% on standard limit and stop orders and 0.1% on its OTC service &mdash; so the 0.1% headline does not cover every CoinSpot order type. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Swyftx&rsquo;s published standard trading fee is <strong>0.6%</strong>, stepping down through 30-day volume tiers to a published 0.10% at A$6 million and above; the platform states the tier is recalculated hourly. Source: <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Our trading fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Swyftx applies a <strong>separate variable spread alongside its trading fee</strong> and publishes indicative spreads by asset, which can be materially wider on thinly traded coins than on major assets. Source: <a href="https://swyftx.com/spreads/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Spreads</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Both platforms publish <strong>no-charge PayID and bank-transfer AUD deposits</strong>, while card and cash routes carry separate charges (CoinSpot card 1.22%, PayPal 0.5%, cash 2.5%; Swyftx card deposits carry no surcharge but a Banxa spread of up to 2.5% is reported). Sources: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>; <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for deposits and withdrawals</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">CoinSpot&rsquo;s cited AFSL 562554 is held by <strong>Casey Block Services Pty Ltd</strong> and, per its Financial Services Guide, covers the financial services connected with promoting and arranging the CoinSpot Mastercard &mdash; it is not blanket authorisation for ordinary spot crypto trading. Source: <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide (PDF)</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">Swyftx Pty Ltd holds <strong>AFSL 568543</strong> and states that its <strong>spot cryptocurrency exchange services are not provided under that AFSL</strong>; derivative products offered through the platform come from a separate licensed issuer. Source: <a href="https://swyftx.com/au/terms-conditions/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Terms and Conditions</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>CoinSpot 1% Instant Buy / 0.1% Markets / 1% limit and stop orders / 0.1% OTC, plus free PayID and direct deposit</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>CoinSpot account and order-type conditions</strong> &mdash; <a href="https://www.coinspot.com.au/terms" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Terms and Conditions</a></li>
+        <li><strong>CoinSpot AFSL 562554 (Casey Block Services Pty Ltd) covering the Mastercard, not spot crypto</strong> &mdash; <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide (PDF)</a></li>
+        <li><strong>Swyftx 0.6% standard trading fee, volume tiers and spread disclosure</strong> &mdash; <a href="https://swyftx.com/au/fees-and-pricing" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees and pricing</a></li>
+        <li><strong>Swyftx fee-tier thresholds and hourly tier recalculation</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Our trading fees</a></li>
+        <li><strong>Swyftx variable spread charged on top of the trading fee</strong> &mdash; <a href="https://swyftx.com/spreads/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Spreads</a></li>
+        <li><strong>Free PayID / bank-transfer deposits and deposit charges on both platforms</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12004727-fees-for-deposits-and-withdrawals" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Fees for deposits and withdrawals</a></li>
+        <li><strong>Swyftx AFSL 568543 does not cover its spot exchange service</strong> &mdash; <a href="https://swyftx.com/au/terms-conditions/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Terms and Conditions</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section and this expanded source list; figures re-checked. 12 October 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Published fees, asset availability and product eligibility may also change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/coinspot/">CoinSpot Australia review &mdash; fees, AUD funding and features</a></li>
+        <li><a href="/exchanges/swyftx/">Swyftx Australia review &mdash; fees, spread and AUD deposits</a></li>
+        <li><a href="/exchanges/best-crypto-exchanges-australia/">Best crypto exchanges in Australia compared</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance, step by step</a></li>
+      </ul>
+    </div>
     <p class="disclaimer">OzCoinTrail provides general information only and does not constitute financial, legal or tax advice. Cryptocurrency is volatile and may be unregulated in some circumstances. Consider your own circumstances and, where needed, seek professional advice before acting. Where you sign up through links on this site, we may earn a commission &mdash; this never affects our assessment or the price you pay.</p>
 
     <div class="author-box">

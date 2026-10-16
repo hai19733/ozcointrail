@@ -357,6 +357,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -381,7 +408,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/okx-vs-coinspot/"
             },
-            "dateModified": "2026-09-18"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -469,13 +496,18 @@
     <h1>OKX vs CoinSpot Australia 2026: Fees, Safety, AUD Deposits &amp; Derivatives</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 18 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
-    <p class="lead">The short answer: <strong>if you're buying or selling crypto with Australian dollars, CoinSpot is the cheaper of the two &mdash; its Markets order book charges 0.1%, while OKX charges a 0.70% retail fee on the same AUD pairs.</strong> That's the opposite of what most "OKX vs CoinSpot" guides claim, because they quote OKX's non-AUD rates and miss that its AUD pairs sit in a higher fee tier.</p>
+    <p class="lead">The short answer: <strong>if you're buying or selling crypto with Australian dollars, CoinSpot is the cheaper of the two &mdash; its Markets order book charges 0.1%, while OKX charges a 0.70% retail fee on the same AUD pairs.</strong><sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> That's the opposite of what most "OKX vs CoinSpot" guides claim, because they quote OKX's non-AUD rates and miss that its AUD pairs sit in a higher fee tier.</p>
     <p>But "cheaper" depends on the job. CoinSpot's default <strong>Instant Buy</strong> costs 1% &mdash; more than OKX. And OKX is the only one of the two with <strong>licensed derivatives</strong>, offering perpetual futures up to 2x leverage for retail clients. So there isn't one winner: these are two platforms built for different things, and the one you want flips depending on whether you're trading spot, using leverage, or just depositing AUD.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 7 minutes. The two things people get wrong most often: <strong>clicking CoinSpot's Instant Buy button and paying 1% instead of 0.1% on Markets</strong>, and <strong>comparing OKX's global 0.08% / 0.10% rates against an Australian AUD-quoted pair that actually charges 0.70%</strong>.</p>
+      <p>Check which CoinSpot flow you are in and which fee tier your OKX AUD pair sits on before you place the order &mdash; both numbers are visible before you confirm.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/okx-logo.webp" alt="OKX" /></span>
@@ -502,7 +534,7 @@
 
     <h2>The fee most guides get backwards</h2>
     <p>At the time of writing, OKX Australia charges regular retail users <strong>0.70% maker and 0.70% taker on AUD-quoted spot pairs</strong>. CoinSpot's <strong>Markets</strong> order book charges <strong>0.1%</strong>. On a A$1,000 spot trade that's A$7 on OKX versus A$1 on CoinSpot Markets, a seven-fold difference before you even look at the spread.</p>
-    <p>Why do so many guides say the opposite? The lower 0.08% / 0.10% rates commonly quoted for OKX apply to its <strong>Standard Group</strong> spot fee schedule rather than AUD-quoted spot pairs &mdash; OKX specifically states that AUD fiat-quoted pairs retain their separate fee rules. We flagged the same issue in our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
+    <p>Why do so many guides say the opposite? The lower 0.08% / 0.10% rates commonly quoted for OKX apply to its <strong>Standard Group</strong> spot fee schedule rather than AUD-quoted spot pairs &mdash; OKX specifically states that AUD fiat-quoted pairs retain their separate fee rules.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> We flagged the same issue in our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
     <p>Fees change, and OKX runs occasional zero-fee promotions, so treat these as the standard rates at the time of writing rather than a permanent promise &mdash; the deposit and trading screens in your own account are always the final word.</p>
 
     <h2>CoinSpot's 1% trap &mdash; and how to avoid it</h2>
@@ -510,13 +542,22 @@
     <p>This is the single most important thing to get right on CoinSpot: <strong>switch to Markets before you trade.</strong> On a A$10,000 buy, 1% versus 0.1% is the difference between A$100 and A$10 in fees. On a genuinely small one-off buy, Instant's convenience is fine &mdash; the 1% only really bites as the amount grows.</p>
 
     <h2>Neither is "ASIC-licensed" for spot &mdash; here's what their licences actually cover</h2>
-    <p>Both exchanges are <strong>registered with AUSTRAC</strong> as digital currency exchanges, which brings anti-money-laundering obligations. But an AUSTRAC registration is <em>not</em> a financial-services licence, and neither exchange holds an AFSL that covers spot crypto trading.</p>
+    <p>Both exchanges are <strong>registered with AUSTRAC</strong> as digital currency exchanges, which brings anti-money-laundering obligations. But an AUSTRAC registration is <em>not</em> a financial-services licence, and neither exchange holds an AFSL that covers spot crypto trading.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
     <p>The AFSL number CoinSpot displays is <strong>562554</strong>, held by Casey Block Services Pty Ltd for <strong>non-cash payment facilities</strong> &mdash; it backs the CoinSpot Mastercard and related payment products, not the spot exchange itself. We break down what that licence does and doesn't cover in our <a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot comparison</a>.</p>
-    <p>OKX runs three local entities: <strong>OKX Australia Pty Ltd</strong> (the AUSTRAC-registered exchange, which also acts as distributor for its payment products), <strong>OKX Australia Financial Pty Ltd</strong> (AFSL 379035, which issues the derivatives and margin products), and <strong>Bano Pty Ltd</strong> (AFSL 536984, which issues the OKX Pay wallet and card). The licensed part &mdash; derivatives &mdash; is exactly where these two exchanges stop looking alike.</p>
+    <p>OKX runs three local entities: <strong>OKX Australia Pty Ltd</strong> (the AUSTRAC-registered exchange, which also acts as distributor for its payment products), <strong>OKX Australia Financial Pty Ltd</strong> (AFSL 379035, which issues the derivatives and margin products), and <strong>Bano Pty Ltd</strong> (AFSL 536984, which issues the OKX Pay wallet and card).<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> The licensed part &mdash; derivatives &mdash; is exactly where these two exchanges stop looking alike.</p>
 
     <h2>The real difference: OKX does derivatives, CoinSpot doesn't</h2>
-    <p>OKX is one of the few platforms in Australia offering <strong>licensed crypto derivatives to retail clients</strong>. Retail users can trade USDT-margined perpetual contracts with up to <strong>2x leverage</strong>, provided they pass a suitability assessment and a knowledge test, and the products carry negative-balance protection and margin close-out protection. Wholesale clients can access higher leverage, but that's a different category entirely.</p>
+    <p>OKX is one of the few platforms in Australia offering <strong>licensed crypto derivatives to retail clients</strong>. Retail users can trade USDT-margined perpetual contracts with up to <strong>2x leverage</strong>, provided they pass a suitability assessment and a knowledge test, and the products carry negative-balance protection and margin close-out protection.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> Wholesale clients can access higher leverage, but that's a different category entirely.</p>
     <p>CoinSpot offers <strong>no derivatives or margin trading</strong> &mdash; it's a spot-only exchange. That also changes the risk profile: leveraged derivatives can magnify losses, and OKX warns that users may lose all of the USDT deposited in their derivatives trading account.</p>
+
+    <h2>Risk: a 2x perpetual position can be closed out before you expect it</h2>
+    <p>The specific risk with OKX's retail derivatives is not only that the price moves against you. It is that a leveraged position can be liquidated &mdash; closed out automatically &mdash; and that, as OKX itself warns, you may lose all of the USDT held in your derivatives trading account, not just the margin behind that one trade.</p>
+    <p>Two mechanisms sit behind that. Margin close-out protection closes a position when your margin is exhausted, which is designed to stop losses spilling beyond the account but also means the position ends at that point rather than staying open for a recovery. Negative-balance protection then limits what you can owe the platform afterwards &mdash; it does not restore what you have already lost. On top of that, perpetual contracts carry funding costs that accrue while the position is open, so a position that is flat on price can still lose money over time.</p>
+    <p>To reduce the risk: complete the suitability and knowledge assessments honestly rather than treating them as a formality; size the position against what you can afford to lose inside the derivatives account, not against your whole portfolio; understand that 2x means a roughly 50% adverse move can exhaust margin; keep only the funds you are actively trading in that account; and watch funding costs and the margin ratio rather than just the entry price.</p>
+    <div class="callout">
+      <h4>If it has already happened</h4>
+      <p>A liquidation cannot be reversed. Review the close-out price and the account statement in OKX, confirm whether any balance remains, and if you believe the close-out or protection did not operate as described, raise it with OKX support and, where the product is licensed, through the external dispute resolution process named in OKX Australia Financial's disclosure documents.</p>
+    </div>
 
     <h2>Getting AUD in and out</h2>
     <p>CoinSpot offers <strong>free AUD deposits</strong> via PayID and direct bank deposit. That makes its 0.1% Markets fee especially competitive for a straightforward AUD &rarr; crypto trade, because there is no CoinSpot deposit fee stacked on top.</p>
@@ -586,14 +627,14 @@
     <ul>
       <li><strong>Plain spot trading with AUD</strong> &rarr; CoinSpot, but on <strong>Markets</strong> (0.1%), never the Instant button (1%).</li>
       <li><strong>Leverage or derivatives</strong> &rarr; OKX is the only option here, with retail perpetual futures up to 2x.</li>
-      <li><strong>Deepest liquidity at the same 0.10% fee</strong> &rarr; arguably neither: Binance's spot books are deeper at a 0.10% standard fee, though its AUD bank-transfer deposits are currently unavailable &mdash; see our <a href="/exchanges/binance/">Binance Australia review</a>.</li>
+      <li><strong>Deepest liquidity at the same 0.10% fee</strong> &rarr; arguably neither: Binance's spot books are deeper at a 0.10% standard fee, though its AUD bank-transfer deposits are inconsistently documented &mdash; see our <a href="/exchanges/binance/">Binance Australia review</a>.</li>
     </ul>
     <p>If you're weighing CoinSpot against Binance instead, we've done that head-to-head too: <a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot</a>.</p>
 
     <h2>How to actually get CoinSpot's 0.1% (not 1%)</h2>
     <ol>
       <li>Create a CoinSpot account and complete identity verification (KYC).</li>
-      <li>Deposit AUD via PayID or Osko &mdash; both are free.</li>
+      <li>Deposit AUD via PayID or bank transfer &mdash; both are free.</li>
       <li>Open <strong>Markets</strong>, not the Instant Buy button on the dashboard.</li>
       <li>Find the pair you want (for example BTC/AUD) and place a limit or market order at the 0.1% fee.</li>
     </ol>
@@ -625,6 +666,43 @@
         <summary>Is crypto from CoinSpot or OKX taxable?</summary>
         <p>Yes &mdash; crypto is treated as a CGT asset in Australia, so selling, swapping or spending it can trigger a capital gain or loss, on top of any income treatment for things like staking. See our <a href="/crypto-tax/crypto-tax-australia/">crypto tax guide</a> for the full picture.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">CoinSpot's published fees are <strong>0.1% on Markets</strong> and <strong>1% on Instant Buy, Sell &amp; Swap</strong> (OTC is also 0.1%), while OKX Australia's published Regular retail spot fee on AUD-quoted pairs is <strong>0.70% maker / 0.70% taker</strong>, as published on 16 October 2026. Sources: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">The widely quoted OKX figures of <strong>0.08% maker / 0.10% taker</strong> sit in OKX's broader Standard Group spot schedule; OKX states that AUD fiat-quoted pairs retain their own fee rules, which is why the Australian retail rate on AUD pairs is 0.70%. Sources: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to the AU fee framework</a>; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Both platforms' spot crypto services sit under AUSTRAC registration, which is an AML/CTF registration rather than an AFSL. CoinSpot's AFSL <strong>562554</strong> covers non-cash payment facilities connected to the CoinSpot Mastercard, not spot trading, and OKX's derivatives AFSL does not extend to its spot exchange. Sources: <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide</a>; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">OKX's Australian operations are split across three entities: <strong>OKX Australia Pty Ltd</strong> (the AUSTRAC-registered spot exchange and payment-product distributor), <strong>OKX Australia Financial Pty Ltd</strong> (AFSL 379035, issuing derivatives and margin products) and <strong>Bano Pty Ltd</strong> (AFSL 536984, issuing the OKX Pay wallet and card). Source: <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Eligible Australian retail clients can access USDT-margined perpetual contracts with leverage of up to <strong>2x</strong> after completing a suitability assessment and a knowledge assessment; OKX states the products carry negative-balance protection and margin close-out protection, and warns that a user may lose all USDT held in the derivatives trading account. Source: <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>CoinSpot 0.1% Markets fee versus the 1% Instant Buy fee</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>CoinSpot free PayID and direct bank deposits</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>OKX Australia's 0.70% Regular retail spot rate on AUD-quoted pairs and its VIP tiers</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to the AU fee framework</a></li>
+        <li><strong>Why 0.08% / 0.10% is not the Australian AUD-pair rate</strong> &mdash; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a></li>
+        <li><strong>CoinSpot AFSL 562554 scope (non-cash payment facilities only)</strong> &mdash; <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide</a></li>
+        <li><strong>AUSTRAC registration for spot crypto services, and why it is not an AFSL</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+        <li><strong>OKX Australia's entity split, AFSL 379035 and AFSL 536984, and retail perpetuals up to 2x</strong> &mdash; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a sources list and a Related guides block; fee, licence and derivatives figures re-checked against the sources above, and a derivatives risk section added. 18 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and regulatory arrangements change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; fees, AFSL coverage and AUD funding</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot review &mdash; Markets versus Instant Buy fees</a></li>
+        <li><a href="/exchanges/okx-fees/">OKX Australia fees explained &mdash; why retail pays 0.70%, not 0.08%</a></li>
+        <li><a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot Australia &mdash; the same 0.1% trap</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto off CoinSpot, step by step</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

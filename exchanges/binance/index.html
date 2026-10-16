@@ -402,6 +402,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -426,7 +455,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/binance/"
             },
-            "dateModified": "2026-09-16"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -506,12 +535,17 @@
     <h1>Binance Australia Review 2026: Fees, AUD Deposits &amp; Regulation</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 13 October 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">Binance has <strong>one of the lowest standard spot trading fees available to Australians</strong>, at 0.10% maker/taker with a 25% BNB fee discount reducing it to 0.075%, and the deepest order books of any exchange open to Australians. The trade-off is on the Australian dollar side: <strong>Binance announced the restoration of direct PayID and bank-transfer AUD deposits in January 2026, though some of its support pages still show older availability warnings</strong>, and it does not currently hold an AFSL. This review sets out exactly what that means for you, so you can decide whether Binance fits how you actually trade.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 9 minutes. The two things people get wrong most often: <strong>reusing saved PayID or BSB details from an earlier transfer</strong>, and <strong>treating the 0.10% spot fee as the whole cost</strong> when a card purchase or P2P trade is what actually funds the account.</p>
+      <p>Start by opening the deposit screen inside your own Binance account and confirming which AUD methods it actually shows &mdash; then work out the all-in cost of that route before you send anything.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -562,11 +596,11 @@
     </div>
 
     <h2>Fees explained</h2>
-    <p>Binance's headline number is simple: a flat <strong>0.10% maker and taker fee</strong> on standard spot pairs. Turn on <strong>&ldquo;Use BNB to pay for fees&rdquo;</strong> in your account settings and that drops 25% to <strong>0.075%</strong>. At the volumes most retail traders actually hit, this is among the lowest standard spot fees offered by major exchanges commonly used in Australia &mdash; but note the fine print: the discount means holding BNB, and BNB's own price moves while you hold it.</p>
+    <p>Binance's headline number is simple: a flat <strong>0.10% maker and taker fee</strong> on standard spot pairs. Turn on <strong>&ldquo;Use BNB to pay for fees&rdquo;</strong> in your account settings and that drops 25% to <strong>0.075%</strong>.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> At the volumes most retail traders actually hit, this is among the lowest standard spot fees offered by major exchanges commonly used in Australia &mdash; but note the fine print: the discount means holding BNB, and BNB's own price moves while you hold it.</p>
     <p>Where Binance can get expensive is getting money in. Card purchases may include transaction or payment-provider charges shown at checkout, which can outweigh the 0.10% spot-fee advantage on smaller purchases. P2P pricing also depends on the merchant or counterparty quote, so compare the effective AUD-to-crypto rate rather than looking only at the headline trading fee.</p>
 
     <h2>AUD deposits &amp; withdrawals: the PayID situation</h2>
-    <p>Binance announced the <strong>restoration of direct AUD deposits and withdrawals via PayID and standard bank transfer (BSB/account number)</strong> in January 2026, following a roughly two-year freeze that began in mid-2023 when its local banking partner withdrew support. The reported return was rolled out in stages to verified customers, and Binance has published zero-fee deposits for these methods. However, some official support pages updated after the announcement still show BSB/PayID deposits as temporarily unavailable, so the documentation is not fully consistent. Card purchases and P2P trading remain available as alternatives, but a PayID or bank-transfer deposit is usually the lower-cost route.</p>
+    <p>Binance announced the <strong>restoration of direct AUD deposits and withdrawals via PayID and standard bank transfer (BSB/account number)</strong> in January 2026, following a roughly two-year freeze that began in mid-2023 when its local banking partner withdrew support. The reported return was rolled out in stages to verified customers, and Binance has published zero-fee deposits for these methods. However, some official support pages updated after the announcement still show BSB/PayID deposits as temporarily unavailable, so the documentation is not fully consistent.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> Card purchases and P2P trading remain available as alternatives, but a PayID or bank-transfer deposit is usually the lower-cost route.</p>
     <div class="callout">
       <h4>Availability can vary</h4>
       <p>The January 2026 restoration was announced to verified customers, but Binance's own support documentation has not been fully consistent &mdash; some help pages updated after the announcement still show BSB/PayID deposits as temporarily unavailable. Check which AUD deposit methods appear in your own account before funding, and review any deposit limits or verification requirements shown at the time.</p>
@@ -575,10 +609,10 @@
 
     <h2>What you can trade</h2>
     <p>Binance offers <strong>spot trading, a P2P marketplace and Earn products</strong> to Australian users. The spot market is the core strength: deep liquidity across hundreds of coins means tighter spreads and less slippage than smaller local exchanges, especially outside the biggest pairs.</p>
-    <p>What you cannot do in Australia is trade derivatives. Binance's former derivatives business (operated through Oztures Trading Pty Ltd) <strong>surrendered its Australian financial services licence in 2023</strong>, and on <strong>27 March 2026</strong> the Federal Court ordered it to pay a <strong>A$10 million penalty</strong> after more than 85% of Australian clients were misclassified as wholesale over a nine-month period, exposing 524 retail clients to high-risk derivatives. Spot trading was not the subject of that action and remains available; derivatives are not.</p>
+    <p>What you cannot do in Australia is trade derivatives. Binance's former derivatives business (operated through Oztures Trading Pty Ltd) <strong>surrendered its Australian financial services licence in 2023</strong>, and on <strong>27 March 2026</strong> the Federal Court ordered it to pay a <strong>A$10 million penalty</strong> after more than 85% of Australian clients were misclassified as wholesale over a nine-month period, exposing 524 retail clients to high-risk derivatives.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> Spot trading was not the subject of that action and remains available; derivatives are not.</p>
 
     <h2>Regulation &amp; safety</h2>
-    <p>Binance Australia is registered with AUSTRAC as a Virtual Asset Service Provider. It does <strong>not currently hold an AFSL</strong> (the ASIC licence that authorises specified financial services), although Binance says an AFSL application has been lodged with ASIC and remains pending determination. That distinction matters more in 2026 than it used to: Australia's new digital-asset framework received Royal Assent on <strong>8 April 2026</strong> and its main provisions commence on <strong>9 April 2027</strong>, bringing digital asset platforms into a new licensing regime, and expanded <strong>Travel Rule</strong> obligations for covered providers started on <strong>1 July 2026</strong>. Read our <a href="/regulation/">crypto regulation guide</a> to understand where Binance sits under the new rules.</p>
+    <p>Binance Australia is registered with AUSTRAC as a Virtual Asset Service Provider.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> It does <strong>not currently hold an AFSL</strong> (the ASIC licence that authorises specified financial services), although Binance says an AFSL application has been lodged with ASIC and remains pending determination. That distinction matters more in 2026 than it used to: Australia's new digital-asset framework received Royal Assent on <strong>8 April 2026</strong> and its main provisions commence on <strong>9 April 2027</strong>, bringing digital asset platforms into a new licensing regime, and expanded <strong>Travel Rule</strong> obligations for covered providers started on <strong>1 July 2026</strong>.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> Read our <a href="/regulation/">crypto regulation guide</a> to understand where Binance sits under the new rules.</p>
     <p>On operational security, Binance has the resources of the world's largest exchange behind it &mdash; including large asset reserves and account-security features like two-factor authentication and withdrawal address allowlisting. None of that removes the regulatory gap, but it does mean the platform is not a small operation. As with any exchange, only keep trading funds on-platform, not long-term savings.</p>
 
     <h2>Pros and cons</h2>
@@ -605,6 +639,15 @@
     <p>Binance suits two kinds of Australian users particularly well. First, <strong>active spot traders</strong> who value a low fee and deep liquidity above all else, and who are comfortable funding via card, P2P or a crypto transfer. Second, <strong>experienced users</strong> who already hold crypto and want the widest market to trade it in.</p>
     <p>It is a worse fit for <strong>beginners who just want to buy Bitcoin with Australian dollars</strong> as simply as possible &mdash; for them, the busier interface and the card fee make a local option like <a href="/exchanges/swyftx/">Swyftx</a> more practical. It's also not the choice for anyone who specifically wants <strong>locally licensed derivatives</strong>, which Binance simply doesn't offer in Australia. See <a href="/exchanges/best-crypto-exchanges-australia/">which exchange fits your situation</a> for the side-by-side.</p>
 
+    <h2>Risk: reusing saved PayID or BSB details after Binance's AUD deposit status changed</h2>
+    <p>The concrete mistake is paying Australian dollars to payment details you already have saved &mdash; inside your banking app, on an old transaction, or in a screenshot &mdash; instead of generating the instruction fresh in your own Binance account. Binance's direct AUD rails were frozen for roughly two years from mid-2023 when its local banking partner withdrew support, and the January 2026 restoration was rolled out in stages to verified customers. Deposit details and payee names can be different from what an older instruction shows, and money sent to details that are no longer live is not automatically returned to you.</p>
+    <p>This is unusually easy to get wrong here because Binance's own documentation has not been fully consistent: some help pages updated after the January 2026 announcement still mark BSB and PayID deposits as temporarily unavailable. When the platform's published status and your account's live status disagree, only one of them can actually move your money &mdash; and it is not the article, the forum post or the saved template.</p>
+    <p>To limit the risk, generate the deposit instruction inside your account every time, and check that the payee name shown on that screen matches the name you expect to be paying before you authorise anything. Send a small test amount first and confirm it lands and is credited before sending the balance. Never reuse details from an earlier transfer, and never act on payment details sent to you by someone who contacted you first.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>Contact Binance support immediately with the transaction reference and a screenshot of the deposit screen you used, then call your Australian bank &mdash; a recall request is time-sensitive and works better the sooner it is raised. Do not send a second transfer to &ldquo;correct&rdquo; the first one.</p>
+    </div>
+
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
@@ -627,6 +670,40 @@
         <summary>Is Binance safe to use in Australia?</summary>
         <p>Binance is the world's largest exchange with substantial reserves and standard account-security features, but it operates in Australia without an AFSL and with limited direct AUD rails. Only keep trading funds on-platform and understand the regulatory position before you deposit.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance's published standard spot fee for regular users is <strong>0.10% maker / 0.10% taker</strong>, reduced by 25% to <strong>0.075%</strong> when fees are paid in BNB. Source: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fee Schedule</a> and <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a>. These are the standard published rates for regular users, and are indicative as published on 16 October 2026. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Binance reported the restoration of direct AUD deposits and withdrawals by PayID and standard bank transfer in January 2026, after a freeze that began in mid-2023 &mdash; but official help pages updated after that announcement still list BSB/PayID deposits as temporarily unavailable, so the documentation is inconsistent and account-level availability is what counts. Source: <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD banking FAQ</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">ASIC reports that on 27 March 2026 the Federal Court ordered Binance's former derivatives business, Oztures Trading Pty Ltd, to pay a <strong>A$10 million penalty</strong> over onboarding failures that misclassified retail clients as wholesale; that business surrendered its Australian financial services licence in 2023 and derivatives are not offered to Australian users. Source: <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC &mdash; media release 26-055MR</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Binance Australia is registered with AUSTRAC as a virtual asset service provider. That is an anti-money-laundering and counter-terrorism financing registration, not an AFSL, and it is not a government guarantee of the platform. Source: <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Expanded Travel Rule obligations for covered virtual asset service providers began on <strong>1 July 2026</strong>, requiring originator and beneficiary information to be collected and passed on for covered transfers. Source: <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; Travel Rule overview</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>0.10% spot fee and the 25% BNB discount</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance trading fee schedule</a> and <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; using BNB to pay trading fees</a></li>
+        <li><strong>AUD deposit and withdrawal availability (PayID / BSB)</strong> &mdash; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD banking FAQ</a></li>
+        <li><strong>A$10 million penalty and the 2023 derivatives licence surrender</strong> &mdash; <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a></li>
+        <li><strong>AUSTRAC registration and what it does and does not cover</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+        <li><strong>Travel Rule start date for covered providers</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; Travel Rule overview</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a funding-risk section and related guides; fee, AUD deposit and regulatory entries re-checked against the sources above. 16 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance-fees/">Binance fees in Australia: spot rates, the BNB discount and deposit costs</a></li>
+        <li><a href="/buy-crypto/aud/binance-payid/">Depositing AUD into Binance with PayID, step by step</a></li>
+        <li><a href="/exchanges/is-binance-legal-in-australia/">Is Binance legal in Australia? AUSTRAC registration, AFSL status and derivatives</a></li>
+        <li><a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot: fees, liquidity and AUD funding compared</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

@@ -400,6 +400,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -424,7 +453,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/okx/"
             },
-            "dateModified": "2026-09-29"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -512,12 +541,17 @@
     <h1>OKX Australia Review 2026: Fees, PayID &amp; Licensed Derivatives</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 29 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">OKX is often described as one of the cheaper global crypto exchanges, because its global spot fees start at <strong>0.08% maker and 0.10% taker</strong>. For Australians, that headline number doesn't tell the whole story. OKX Australia currently charges regular retail users <strong>0.70% maker and 0.70% taker on every spot pair</strong> apart from designated zero-fee pairs &mdash; considerably more than the fee you'll see advertised. Where OKX stands out is elsewhere: working AUD deposits, a broad crypto and Web3 product set, and a derivatives business that operates through OKX Australia Financial Pty Ltd under <strong>AFSL 379035</strong>. This review separates OKX's retail fee reality from its locally licensed derivatives, so you can see where the platform is competitive &mdash; and where it isn't.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>budgeting on the 0.08% spot fee quoted in global reviews of OKX</strong>, and <strong>assuming the leverage settings shown on the global platform apply to an Australian account</strong>.</p>
+      <p>Before you trade anything, open your own account's fee schedule and the maximum leverage shown for your client classification &mdash; both are set per account, not per website.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/okx-logo.webp" alt="OKX" /></span>
@@ -572,8 +606,8 @@
     </div>
 
     <h2>Fees explained: the number everyone gets wrong</h2>
-    <p>OKX's fee structure in Australia depends on <strong>whether you're a retail or wholesale client</strong>, and this is where most write-ups go astray. For regular retail accounts &mdash; the classification most Australians hold &mdash; OKX Australia charges <strong>0.70% maker and 0.70% taker on every spot pair</strong>, whether it's AUD/BTC or BTC/USDT. There is no cheaper crypto-to-crypto rate for retail clients. The only exception is a set of designated zero-fee pairs, which trade at 0.00%.</p>
-    <p>Why this matters: the <strong>0.08% maker / 0.10% taker</strong> figure you'll see quoted everywhere is a <em>wholesale</em> rate, not a retail one. To get anywhere near it you must first be classified as a wholesale or professional client, and then reach VIP 3 &mdash; which needs A$5 million in assets or A$15 million in 30-day volume. For everyone else, the fee is 0.70% across the board.</p>
+    <p>OKX's fee structure in Australia depends on <strong>whether you're a retail or wholesale client</strong>, and this is where most write-ups go astray. For regular retail accounts &mdash; the classification most Australians hold &mdash; OKX Australia charges <strong>0.70% maker and 0.70% taker on every spot pair</strong>, whether it's AUD/BTC or BTC/USDT.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> There is no cheaper crypto-to-crypto rate for retail clients. The only exception is a set of designated zero-fee pairs, which trade at 0.00%.</p>
+    <p>Why this matters: the <strong>0.08% maker / 0.10% taker</strong> figure you'll see quoted everywhere is a <em>wholesale</em> rate, not a retail one. To get anywhere near it you must first be classified as a wholesale or professional client, and then reach VIP 3 &mdash; which needs A$5 million in assets or A$15 million in 30-day volume.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> For everyone else, the fee is 0.70% across the board.</p>
     <div class="callout">
       <h4>Why everyone quotes 0.08%</h4>
       <p>Many comparison sites take OKX's <em>global</em> fee schedule &mdash; or a single line from the Australian <em>wholesale</em> table &mdash; and present it as the Australian rate. OKX introduced a separate Australian fee framework in April 2026 with distinct retail and wholesale schedules. The 0.08% figure is real, but only for wholesale clients on non-AUD pairs at VIP 3 and above. When a site calls OKX &ldquo;the cheapest exchange in Australia&rdquo; without that distinction, treat it with caution.</p>
@@ -581,19 +615,19 @@
     <p>Put against the local alternatives, OKX's retail spot fee is the highest of the major platforms. Its 0.70% is materially higher than <a href="/exchanges/binance/">Binance's</a> 0.10% (or 0.075% with BNB) and <a href="/exchanges/coinspot/">CoinSpot</a> Markets' 0.10%. For the full tier-by-tier breakdown and how OKX stacks up, see our <a href="/exchanges/okx-fees/">OKX fees guide</a>. Note that OKX's <em>quick buy / convert</em> option is separate again: like most instant-buy features, it may include a spread on top of the quoted rate, so compare the final AUD amount before you confirm.</p>
 
     <h2>AUD deposits &amp; withdrawals</h2>
-    <p>On the dollar side, OKX is in a better position than Binance right now. OKX Australia supports <strong>AUD deposits via bank transfer and PayID</strong>, and OKX currently states that <strong>no fees are being charged on AUD withdrawals to an Australian bank account</strong>. Deposit fees vary by method &mdash; OKX shows the applicable fee on the deposit preview in your account, so check there before you confirm. That's still a meaningful difference from Binance, whose direct PayID deposits are marked temporarily unavailable, so if you want to move Australian dollars in and out without an extra hop, OKX clears that bar.</p>
+    <p>On the dollar side, OKX is in a better position than Binance right now. OKX Australia supports <strong>AUD deposits via bank transfer and PayID</strong>, and OKX currently states that <strong>no fees are being charged on AUD withdrawals to an Australian bank account</strong>.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> Deposit fees vary by method &mdash; OKX shows the applicable fee on the deposit preview in your account, so check there before you confirm. That's still a meaningful difference from Binance, whose direct PayID deposits are marked temporarily unavailable, so if you want to move Australian dollars in and out without an extra hop, OKX clears that bar.</p>
     <p>As with any exchange, the practical cost of moving AUD is not always the headline fee. Quick-buy and conversion features can embed a spread, and the exchange rate you're quoted on an AUD pair will move with the market. For larger dollar amounts, comparing the effective AUD-per-coin rate you're offered against a couple of alternatives is worth the two minutes it takes.</p>
 
     <h2>What you can trade</h2>
     <p>OKX offers <strong>spot trading, derivatives, a Web3 wallet, trading bots and a demo-trading environment</strong> to Australian users, with <strong>370+ supported tokens as of July 2026</strong>. The broad coin range and built-in Web3 tooling are part of what separates OKX from simpler local platforms.</p>
-    <p>The derivatives offering is the real headline for Australian traders, because it's the area where OKX holds an Australian licence. Retail clients can access derivatives on eligible products <strong>up to 2x leverage</strong>, subject to suitability and knowledge assessments, while wholesale or professional clients can go considerably higher &mdash; up to 100x on some products. If you've previously traded derivatives offshore, the leverage limits available to Australian retail clients here are more conservative than the global platform's. For the licensing detail &mdash; the three local entities and what the AFSL covers &mdash; see <a href="/exchanges/is-okx-legal-in-australia/">is OKX legal in Australia</a>.</p>
+    <p>The derivatives offering is the real headline for Australian traders, because it's the area where OKX holds an Australian licence. Retail clients can access derivatives on eligible products <strong>up to 2x leverage</strong>, subject to suitability and knowledge assessments, while wholesale or professional clients can go considerably higher &mdash; up to 100x on some products.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> If you've previously traded derivatives offshore, the leverage limits available to Australian retail clients here are more conservative than the global platform's. For the licensing detail &mdash; the three local entities and what the AFSL covers &mdash; see <a href="/exchanges/is-okx-legal-in-australia/">is OKX legal in Australia</a>.</p>
 
     <h2>Regulation &amp; safety</h2>
     <p>OKX operates in Australia through three entities, and it's worth knowing which one you're dealing with:</p>
     <ul>
       <li><strong>OKX Australia Pty Ltd</strong> provides spot digital currency exchange services and is registered with AUSTRAC. Spot trading is not covered by an AFSL.</li>
       <li><strong>OKX Australia Financial Pty Ltd</strong> holds <strong>AFSL 379035</strong> and issues the derivatives and margin products.</li>
-      <li><strong>Bano Pty Ltd</strong> holds <strong>AFSL 536984</strong> and provides the OKX Pay wallet and card.</li>
+      <li><strong>Bano Pty Ltd</strong> holds <strong>AFSL 536984</strong> and provides the OKX Pay wallet and card.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></li>
     </ul>
     <p>That AFSL 379035 is the distinction to focus on: it's the reason OKX is one of the few global exchanges that can offer derivatives to Australians under an Australian licence, where Binance's former derivatives arm exited the market after surrendering its licence in 2023. It does not mean spot trading is AFSL-regulated &mdash; that remains an AUSTRAC registration &mdash; but the derivatives side is genuinely locally licensed.</p>
     <p>The licensing backdrop is changing too. Australia's <strong>Corporations Amendment (Digital Assets Framework) Act 2026</strong> received Royal Assent on <strong>8 April 2026</strong>, with the main digital-asset platform licensing provisions scheduled to commence on <strong>9 April 2027</strong>. The framework will bring qualifying digital asset platforms into Australia's financial-services licensing regime. Australia's expanded AML/CTF rules for virtual asset services are also being phased in, with certain new virtual asset services becoming subject to obligations including Travel Rule requirements from <strong>1 July 2026</strong>. Read our <a href="/regulation/">crypto regulation guide</a> for a fuller explanation of how these reforms apply. On operational security, OKX publishes regular proof-of-reserves and offers the standard account protections such as two-factor authentication &mdash; but as with any exchange, keep only trading funds on-platform rather than long-term savings.</p>
@@ -623,6 +657,15 @@
     <p>OKX fits two groups particularly well. First, <strong>traders who want derivatives on a locally licensed platform</strong> &mdash; that's the genuine differentiator, and it's the reason to choose OKX over Binance: Binance Australia does not currently offer the locally licensed retail crypto derivatives proposition that OKX Australia provides. Second, <strong>experienced users who value a wide coin range and Web3 tooling</strong>, and don't mind paying a higher spot fee for the breadth of the platform.</p>
     <p>It's a poorer fit for <strong>beginners who simply want to buy Bitcoin with Australian dollars</strong> at the lowest cost. For that one trade, OKX's 0.70% retail spot fee is materially higher than what <a href="/exchanges/binance/">Binance</a> or <a href="/exchanges/okx-vs-coinspot/">CoinSpot Markets</a> charge, and the platform's depth of features is more than most first-time buyers need. If you're comparing your options, start with <a href="/exchanges/best-crypto-exchanges-australia/">which exchange fits your situation</a> before committing.</p>
 
+    <h2>Risk: using the leverage OKX's global platform advertises on an Australian account</h2>
+    <p>The specific mistake is planning a trade around leverage you have seen on OKX's global site or in offshore reviews. Those numbers do not carry across to an Australian retail account. Retail clients here are limited to <strong>up to 2&times;</strong> on eligible products, and the higher figures are reserved for clients classified as wholesale or professional. Sizing a position on the assumption that 50&times; or 100&times; is available can leave you holding an exposure far larger than you intended.</p>
+    <p>The reason for the gap is the licence. OKX's derivatives and margin products in Australia are issued by OKX Australia Financial Pty Ltd under <strong>AFSL 379035</strong>, which brings them inside the Australian retail framework &mdash; including the suitability and knowledge assessments you complete before you can trade them. The global platform sits outside that framework, so its leverage limits, product set and collateral rules are not the product you are being offered here.</p>
+    <p>To reduce the risk, complete the suitability assessment on the basis of what you actually plan to trade, check the maximum leverage shown inside your own account before you size anything, and treat borrowed exposure as money you could lose entirely. Leverage multiplies losses at the same rate as positions, and a modest adverse move on a leveraged position can close it out at a loss you did not choose.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>If a leveraged position has been closed out, save the order IDs and statements before you do anything else, and do not deposit more to try to trade back out of the loss. Raise the issue with OKX support first &mdash; and if it concerns a product issued under AFSL 379035 that the firm does not resolve, you can escalate it to AFCA, the external dispute resolution scheme that licensed financial firms must belong to.</p>
+    </div>
+
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
@@ -649,6 +692,39 @@
         <summary>Can I trade derivatives on OKX in Australia?</summary>
         <p>Yes, with limits. Retail clients can access derivatives on eligible products up to 2x leverage, while wholesale or professional clients can go up to 100x on some products. These Australian retail limits are more conservative than OKX's global platform.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">For regular retail accounts, OKX Australia applies <strong>0.70% maker / 0.70% taker</strong> to all spot pairs except designated zero-fee pairs, with no cheaper crypto-to-crypto rate for retail clients. The widely quoted 0.08% / 0.10% figure is the wholesale schedule, not the retail one. Source: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Updates to the AU Fee Framework</a> and <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; Fees</a>. Rates are indicative as published on 16 October 2026. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">The 0.08% maker / 0.10% taker rate sits on OKX's Australian wholesale schedule and requires wholesale or professional client classification plus VIP 3, which OKX ties to A$5 million in assets or A$15 million in 30-day volume. Below that, retail rates apply. Source: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Updates to the AU Fee Framework</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">OKX Australia supports AUD deposits by bank transfer and PayID, and OKX currently states that no fee is charged on AUD withdrawals to an Australian bank account. Deposit fees vary by method and are shown on the deposit preview before you confirm. Source: <a href="https://www.okx.com/en-au/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; what you can use in Australia</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Retail clients can access derivatives on eligible products at up to 2&times; leverage, subject to suitability and knowledge assessments, while wholesale or professional clients can go higher &mdash; up to 100&times; on some products. OKX listed 370+ supported tokens as of July 2026. Source: <a href="https://www.okx.com/en-au/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; what you can use in Australia</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">OKX's Australian operations are split across three entities: OKX Australia Pty Ltd (AUSTRAC-registered spot exchange), OKX Australia Financial Pty Ltd (AFSL 379035, derivatives and margin) and Bano Pty Ltd (AFSL 536984, OKX Pay). Spot trading is not covered by an AFSL. Source: <a href="https://www.okx.com/en-au/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; what you can use in Australia</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>0.70% retail spot fee and the separate wholesale schedule</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to the AU fee framework</a></li>
+        <li><strong>Published Australian fee schedule (retail and wholesale tiers)</strong> &mdash; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; fees</a></li>
+        <li><strong>AUD deposit and withdrawal methods, entity structure and retail derivatives eligibility</strong> &mdash; <a href="https://www.okx.com/en-au/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX Australia &mdash; what you can use in Australia</a></li>
+        <li><strong>AUSTRAC registration of the spot exchange, and what it does and does not cover</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a derivatives leverage-risk section and related guides; retail fee, AUD funding and licensing entries re-checked against the sources above. 16 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx-fees/">OKX fees in Australia: why the retail rate is 0.70%, not 0.08%</a></li>
+        <li><a href="/exchanges/is-okx-legal-in-australia/">Is OKX legal in Australia? The three entities and what each AFSL covers</a></li>
+        <li><a href="/buy-crypto/aud/okx-aud-deposit/">Depositing AUD into OKX: bank transfer, PayID and the fees to check</a></li>
+        <li><a href="/exchanges/binance-vs-okx-australia/">Binance vs OKX in Australia: spot fees, AUD funding and derivatives access</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

@@ -360,6 +360,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -384,7 +411,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/binance-vs-okx-australia/"
             },
-            "dateModified": "2026-09-27"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -496,15 +523,20 @@
     <h1>Binance vs OKX Australia 2026: Fees, Safety &amp; Which Is Better</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 27 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
-    <p class="lead">If you're comparing Binance and OKX in Australia, there is one difference you should know before anything else: <strong>Binance currently charges a standard 0.10% spot trading fee, while a regular OKX Australia retail account pays 0.70% maker and 0.70% taker on standard spot pairs.</strong></p>
+    <p class="lead">If you're comparing Binance and OKX in Australia, there is one difference you should know before anything else: <strong>Binance currently charges a standard 0.10% spot trading fee, while a regular OKX Australia retail account pays 0.70% maker and 0.70% taker on standard spot pairs.</strong><sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></p>
     <p>That matters because many Binance vs OKX comparisons quote OKX's better-known global fee schedule and assume Australians get the same rates. They don't.</p>
     <p>But fees are only part of the comparison. OKX currently has the clearer local AUD bank-transfer route and offers regulated crypto perpetual derivatives to eligible Australian retail clients with leverage capped at 2x. Binance Australia, meanwhile, does not currently offer derivatives, and its official support page still says AUD deposits by BSB/PayID are temporarily unavailable.</p>
     <p>So there isn't one answer for every Australian user.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 9 minutes. The two things people get wrong most often: <strong>applying OKX's global 0.08% / 0.10% schedule to an Australian retail account</strong>, and <strong>treating an AUSTRAC registration as if it were an AFSL</strong>.</p>
+      <p>Before you compare anything, open the fee page inside your own OKX Australia account and confirm which tier and which pair you are actually on.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -574,13 +606,13 @@
 
     <h2>The fee difference most comparison guides miss</h2>
     <p>This is the part worth checking carefully.</p>
-    <p>As of 27 September 2026, Binance's Regular User spot fee schedule starts at:</p>
+    <p>As of 16 October 2026, Binance's Regular User spot fee schedule starts at:</p>
     <ul>
       <li><strong>0.10% maker</strong></li>
       <li><strong>0.10% taker</strong></li>
       <li><strong>around 0.075%</strong> when the eligible 25% BNB fee discount is applied</li>
     </ul>
-    <p>OKX Australia uses a separate local retail fee structure. For a Regular retail user, its current standard spot schedule is <strong>0.70% maker and 0.70% taker</strong>. That Australian framework took effect on 22 April 2026. We flag the same mismatch in our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
+    <p>OKX Australia uses a separate local retail fee structure. For a Regular retail user, its current standard spot schedule is <strong>0.70% maker and 0.70% taker</strong>. That Australian framework took effect on 22 April 2026.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> We flag the same mismatch in our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
 
     <h3>What does that mean in dollars?</h3>
     <p>On an <strong>A$1,000 spot trade</strong>, ignoring spread and any promotional fee exemptions:</p>
@@ -642,7 +674,7 @@
     <h3>OKX Australia</h3>
     <p>OKX provides Australian-dollar funding options for local users and has built its Australian service around local AUD access. That makes the path relatively simple: <strong>Australian bank account &rarr; OKX &rarr; AUD &rarr; crypto</strong>. Availability and bank-processing times can still vary, so always check the funding screen in your own account before sending money. See our <a href="/buy-crypto/aud/okx-aud-deposit/">OKX AUD deposit guide</a> for the exact route.</p>
     <h3>Binance Australia</h3>
-    <p>This is currently the weaker part of Binance's Australian offering. Binance's official Australian support page states that <strong>AUD deposits using Bank Transfer (BSB / PayID) are temporarily unavailable</strong>. It also says users who have never previously deposited through that channel may be unable to withdraw AUD through it, because a prior deposit is required. Binance instead points users toward alternatives such as P2P or other available funding methods. We cover the current situation in our <a href="/buy-crypto/aud/binance-payid/">Binance PayID guide</a>.</p>
+    <p>This is currently the weaker part of Binance's Australian offering. Binance's official Australian support page states that <strong>AUD deposits using Bank Transfer (BSB / PayID) are temporarily unavailable</strong>. It also says users who have never previously deposited through that channel may be unable to withdraw AUD through it, because a prior deposit is required.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> Binance instead points users toward alternatives such as P2P or other available funding methods. We cover the current situation in our <a href="/buy-crypto/aud/binance-payid/">Binance PayID guide</a>.</p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -681,16 +713,25 @@
     <h2>Derivatives: this is where OKX is very different</h2>
     <p>If you only buy Bitcoin or altcoins on the spot market, derivatives may not matter. If you want leveraged trading, however, Binance and OKX Australia are currently very different products.</p>
     <h3>OKX Australia</h3>
-    <p>OKX Australia Financial Pty Ltd holds <strong>AFSL 379035</strong> for its derivatives business. Eligible retail clients can access USDT-margined perpetual contracts with leverage of up to <strong>2:1</strong>. Before retail derivatives are enabled, OKX requires users to complete both a suitability assessment and a knowledge assessment. Its current knowledge test contains 12 questions, with at least 10 correct answers required to proceed.</p>
+    <p>OKX Australia Financial Pty Ltd holds <strong>AFSL 379035</strong> for its derivatives business.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> Eligible retail clients can access USDT-margined perpetual contracts with leverage of up to <strong>2:1</strong>. Before retail derivatives are enabled, OKX requires users to complete both a suitability assessment and a knowledge assessment. Its current knowledge test contains 12 questions, with at least 10 correct answers required to proceed.</p>
     <p>OKX also states that retail clients receive protections including negative-balance protection. That does <em>not</em> make leveraged trading low risk. A position can still be fully liquidated, and OKX explicitly warns that a user may lose all USDT placed in the derivatives trading account. For the full licensing picture, see <a href="/exchanges/is-okx-legal-in-australia/">Is OKX legal in Australia</a>.</p>
     <h3>Binance Australia</h3>
-    <p>Binance no longer operates its previous Australian derivatives service. Its former Australian derivatives entity, Oztures Trading Pty Ltd, had its AFS licence cancelled in 2023 after requesting cancellation. In March 2026, the Federal Court ordered Oztures Trading &mdash; which traded as Binance Australia Derivatives &mdash; to pay a <strong>A$10 million penalty</strong> over failures involving the classification and onboarding of retail clients between 2022 and 2023. ASIC said 524 retail investors had been exposed to high-risk derivatives without required retail protections.</p>
+    <p>Binance no longer operates its previous Australian derivatives service. Its former Australian derivatives entity, Oztures Trading Pty Ltd, had its AFS licence cancelled in 2023 after requesting cancellation. In March 2026, the Federal Court ordered Oztures Trading &mdash; which traded as Binance Australia Derivatives &mdash; to pay a <strong>A$10 million penalty</strong> over failures involving the classification and onboarding of retail clients between 2022 and 2023. ASIC said 524 retail investors had been exposed to high-risk derivatives without required retail protections.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     <p>This enforcement case relates to the former derivatives operation, not Binance Australia's current spot exchange service. See <a href="/exchanges/is-binance-legal-in-australia/">Is Binance legal in Australia</a> for the distinction.</p>
     <h3>Derivatives verdict</h3>
     <p>For eligible Australian retail clients who specifically want crypto perpetual derivatives, <strong>OKX currently offers a regulated Australian product; Binance Australia does not offer an equivalent retail derivatives service.</strong></p>
 
+    <h2>Risk: sending AUD to saved bank details after a deposit channel change</h2>
+    <p>The concrete risk here is money leaving your bank account towards BSB and account details that are saved in your banking app from an earlier deposit, or copied from an older guide, when the receiving side is no longer accepting that channel &mdash; or is accepting it only under conditions you have not met.</p>
+    <p>It happens because a saved payee keeps working from your side of the transaction. Your bank does not know that Binance's Australian support pages currently list AUD deposits by bank transfer (BSB / PayID) as temporarily unavailable, nor that Binance says a prior deposit through that channel is required before you can withdraw AUD through it. Deposit channels and their conditions can also change between the day a guide is written and the day you send money.</p>
+    <p>To reduce the risk: check the live deposit screen inside your own verified account instead of a saved payee or a tutorial; send a small test amount and confirm it lands before sending the rest; and keep the transaction reference for every transfer. If your account shows no AUD bank-transfer route at all, use the funding method it does show rather than recreating an older one.</p>
+    <div class="callout">
+      <h4>If it has already gone wrong</h4>
+      <p>Contact your bank and Binance support immediately with the transaction reference and the exact details you sent to. Do not send a second transfer to "fix" the first one &mdash; that turns one unresolved payment into two.</p>
+    </div>
+
     <h2>Is Binance regulated in Australia?</h2>
-    <p>Yes, but you need to understand what type of registration it has. Binance Australia states that it is registered with <strong>AUSTRAC</strong> as a Virtual Asset Service Provider under registration number <strong>100576141-001</strong>. It also says it has lodged an application with ASIC for an <strong>Australian Financial Services Licence (AFSL)</strong> and that the application remains pending.</p>
+    <p>Yes, but you need to understand what type of registration it has. Binance Australia states that it is registered with <strong>AUSTRAC</strong> as a Virtual Asset Service Provider under registration number <strong>100576141-001</strong>.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup> It also says it has lodged an application with ASIC for an <strong>Australian Financial Services Licence (AFSL)</strong> and that the application remains pending.</p>
     <p>That distinction matters: <strong>AUSTRAC registration is not the same thing as holding an AFSL.</strong> AUSTRAC focuses primarily on Australia's anti-money-laundering and counter-terrorism-financing framework, while an AFSL applies to regulated financial services and financial products where Australian financial-services law requires one. So avoid treating "Binance is AUSTRAC registered" as equivalent to "Binance holds an AFSL covering its Australian spot exchange" &mdash; they are not the same statement.</p>
 
     <h2>Is OKX regulated in Australia?</h2>
@@ -808,6 +849,44 @@
         <summary>Which is better for an Australian beginner?</summary>
         <p>It depends on the task. Binance currently has the lower standard spot trading fee, while OKX currently provides the clearer local AUD bank-transfer route. Someone interested in regulated leveraged trading also has a materially different choice, because OKX offers eligible retail clients up to 2x perpetual derivatives under its Australian derivatives structure. For a first purchase, compare the <strong>total cost of funding + spread + trading fee + withdrawal fee</strong>, rather than choosing an exchange from the headline fee alone.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance's published standard spot fee for regular users is <strong>0.10% maker / 0.10% taker</strong> (about 0.075% with the 25% BNB fee discount), while OKX Australia's published Regular retail spot fee is <strong>0.70% maker / 0.70% taker</strong>, as published on 16 October 2026. Sources: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fees</a>; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">OKX Australia's local retail fee framework took effect on <strong>22 April 2026</strong>, setting the Regular tier at 0.70% maker / 0.70% taker and stepping down through VIP tiers. The widely quoted 0.08% maker / 0.10% taker figures belong to OKX's broader Standard Group schedule and should not be applied to an Australian Regular retail spot account. Sources: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to the AU fee framework</a>; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Binance's Australian support pages list <strong>AUD deposits by bank transfer (BSB / PayID) as temporarily unavailable</strong>, and state that users who have not previously deposited through that channel may be unable to withdraw AUD through it. Payment channels change, so this should be verified inside your own verified account rather than treated as settled. Sources: <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Bank Withdrawals</a>; <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">OKX Australia's derivatives are issued by <strong>OKX Australia Financial Pty Ltd under AFSL 379035</strong>; that licence applies to the derivatives products offered through that entity and does not by itself cover OKX's Australian spot crypto services, which sit under AUSTRAC registration. Sources: <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia</a>; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">ASIC's <strong>A$10 million</strong> penalty against Oztures Trading Pty Ltd (Binance Australia Derivatives) was ordered by the Federal Court in March 2026 over the classification and onboarding of retail clients between 2022 and 2023, with ASIC stating 524 retail investors were exposed to high-risk derivatives without required retail protections. It concerns the former derivatives business, not Binance Australia's current spot service. Source: <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">Binance Australia states that it is registered with <strong>AUSTRAC</strong> as a Virtual Asset Service Provider under registration number <strong>100576141-001</strong>, and that its AFSL application to ASIC is pending. AUSTRAC registration is an AML/CTF requirement and is not an AFSL; the AUSTRAC VASP register is public. Sources: <a href="https://www.austrac.gov.au/news-and-media/article/virtual-asset-service-provider-register-goes-public" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP register is public</a>; <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Binance 0.10% standard spot fee and the 25% BNB fee discount</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fees</a>; <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a></li>
+        <li><strong>OKX Australia's Regular retail spot fee and the 22 April 2026 AU fee framework, including VIP tier thresholds</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; updates to the AU fee framework</a></li>
+        <li><strong>Why 0.08% / 0.10% is not an Australian retail spot rate</strong> &mdash; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a></li>
+        <li><strong>Binance Australia's AUD deposit and withdrawal availability (BSB / PayID)</strong> &mdash; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Bank Withdrawals</a>; <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a></li>
+        <li><strong>OKX Australia's derivatives entity and AFSL 379035</strong> &mdash; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia</a></li>
+        <li><strong>Binance Australia's AUSTRAC VASP registration, and why it is not an AFSL</strong> &mdash; <a href="https://www.austrac.gov.au/news-and-media/article/virtual-asset-service-provider-register-goes-public" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP register is public</a>; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a></li>
+        <li><strong>The A$10 million penalty against Binance's former Australian derivatives business</strong> &mdash; <a href="https://asic.gov.au/about-asic/news-centre/find-a-media-release/2026-releases/26-055mr-binance-australia-derivatives-ordered-to-pay-10-million-penalty-for-onboarding-failures-causing-millions-in-client-trading-losses/" rel="noopener noreferrer" target="_blank">ASIC media release 26-055MR</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a sources list and a Related guides block; Binance and OKX Australia fee figures, the AUD deposit status and both licences re-checked against the sources above. 27 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and regulatory arrangements change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx-fees/">OKX Australia fees explained &mdash; why retail pays 0.70%, not 0.08%</a></li>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+        <li><a href="/exchanges/is-okx-legal-in-australia/">Is OKX legal in Australia? AFSL 379035 and the entity split</a></li>
+        <li><a href="/exchanges/is-binance-legal-in-australia/">Is Binance legal in Australia? AUSTRAC versus an AFSL</a></li>
+        <li><a href="/buy-crypto/aud/binance-payid/">Binance PayID deposits &mdash; what Australian accounts currently show</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

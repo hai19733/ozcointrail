@@ -360,6 +360,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -384,7 +411,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/buy-crypto/aud/okx-aud-deposit/"
             },
-            "dateModified": "2026-09-25"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -496,19 +523,24 @@
     <h1>How to Deposit AUD into OKX Australia (2026): Bank Transfer Fees &amp; Limits</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Public sources checked: 25 September 2026 (UTC)</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg> Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
-    <p class="lead"><strong>OKX supports AUD deposits from eligible Australian bank accounts by local bank transfer, and OKX states that it does not charge a fee for this deposit method. Your own bank may still charge a transfer fee.</strong></p>
+    <p class="lead"><strong>OKX supports AUD deposits from eligible Australian bank accounts by local bank transfer, and OKX states that it does not charge a fee for this deposit method.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> Your own bank may still charge a transfer fee.</strong></p>
     <p>There are several important restrictions: the transfer must come from a supported Australian bank account in your own name, and OKX does not support AUD deposits sent directly from cryptocurrency exchanges such as CoinSpot or from cross-border payment providers such as Wise.</p>
     <p>This guide explains how to deposit AUD into OKX Australia, what fees and limits to check, how long a transfer can take, which payments may be rejected, and how the current AUD deposit route compares with Binance Australia.</p>
 
     <div class="callout">
       <h4>Verification scope</h4>
-      <p>This guide is based on OKX Australia's public help pages and fee information checked on 25 September 2026.</p>
+      <p>This guide is based on OKX Australia's public help pages and fee information checked on 16 October 2026.</p>
       <p>We have not completed an AUD bank-transfer deposit through an Australian OKX account ourselves. The payment methods, limits and instructions shown to you can vary by account eligibility and verification status, so always check the details displayed inside your own OKX account before sending money.</p>
+    </div>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>sending the transfer from a crypto exchange or a Wise-style provider instead of a bank account in your own name</strong>, and <strong>reusing bank details saved from an earlier deposit</strong>.</p>
+      <p>Open the AUD deposit screen in your own account first and read the current recipient details, minimum and limit &mdash; then send, and keep the receipt until the balance updates.</p>
     </div>
 
     <div class="reco">
@@ -600,7 +632,7 @@
       <li>public holidays</li>
       <li>incorrect transfer details</li>
     </ul>
-    <p>For a first deposit, OKX recommends allowing up to <strong>one business day</strong>.</p>
+    <p>For a first deposit, OKX recommends allowing up to <strong>one business day</strong>.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></p>
     <p>Keep your bank transfer receipt until the AUD has appeared in your OKX account.</p>
     <p>If the transfer has not arrived after the expected period, first check that you used a supported Australian bank and entered the current OKX payment details correctly.</p>
 
@@ -627,7 +659,7 @@
     <p>This is one of the most important parts of the deposit process.</p>
 
     <h3>Crypto exchange transfers</h3>
-    <p>OKX states that AUD deposits sent directly from cryptocurrency exchange platforms such as <strong>CoinSpot</strong> are not supported.</p>
+    <p>OKX states that AUD deposits sent directly from cryptocurrency exchange platforms such as <strong>CoinSpot</strong> are not supported.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
     <p>For example, this route should not be used:</p>
     <p><strong>CoinSpot &rarr; OKX AUD bank details</strong></p>
     <p>If you hold AUD at CoinSpot and want to fund OKX using fiat, the usual route is:</p>
@@ -682,7 +714,7 @@
         </tbody>
       </table>
     </div>
-    <p>As of the latest Binance Australia help information checked for this article, <strong>AUD deposits through Bank Transfer (BSB / PayID) remain listed as temporarily unavailable</strong>.</p>
+    <p>As of the latest Binance Australia help information checked for this article, <strong>AUD deposits through Bank Transfer (BSB / PayID) remain listed as temporarily unavailable</strong>.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
     <p>That means the two platforms currently have different AUD funding arrangements.</p>
     <p>See our <a href="/buy-crypto/aud/binance-payid/">Binance Australia PayID guide</a> for the latest Binance-specific position.</p>
 
@@ -702,7 +734,7 @@
       </table>
     </div>
     <p>Different products or selected trading pairs can have different fee schedules.</p>
-    <p>For example, some stablecoin pairs may have separate pricing, while <strong>Buy/Sell</strong> or <strong>Convert</strong> can use a quoted price or spread instead of the same maker/taker structure used by the spot order book. The 0.08% / 0.10% rate often quoted for OKX is the global (non-Australian) framework, not the Australian retail schedule above.</p>
+    <p>For example, some stablecoin pairs may have separate pricing, while <strong>Buy/Sell</strong> or <strong>Convert</strong> can use a quoted price or spread instead of the same maker/taker structure used by the spot order book. The 0.08% / 0.10% rate often quoted for OKX is the global (non-Australian) framework, not the Australian retail schedule above.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     <p>Therefore, do not assume that every AUD-to-crypto transaction costs exactly 0.70%. Check the fee or quote shown for the exact transaction you are about to make.</p>
     <p>If your goal is to buy USDT, compare the complete route &mdash; including deposit cost, trading cost and withdrawal cost &mdash; in our <a href="/buy-crypto/usdt/">how to buy USDT in Australia</a> guide.</p>
     <p>For a broader look at the platform, see our <a href="/exchanges/okx/">OKX Australia review</a>.</p>
@@ -724,6 +756,11 @@
 
     <h3>You used old payment instructions</h3>
     <p>Always use the payment details displayed in your current OKX deposit screen. Do not assume that previously saved recipient details are still correct.</p>
+
+    <div class="callout warn">
+      <h4>If the AUD has left your bank but not arrived</h4>
+      <p>Do not send a second transfer to speed things up. Check whether the transfer was sent from a supported Australian bank account in your own name using the current OKX details, keep the bank receipt and reference, and open a support ticket from inside your OKX account quoting them. If the details were wrong, contact your bank as well &mdash; a recall or trace request lodged early has the best chance of recovering an incorrect transfer.</p>
+    </div>
 
     <h2>Frequently asked questions</h2>
     <div class="faq">
@@ -763,6 +800,39 @@
         <summary>Is Binance's direct AUD bank deposit available?</summary>
         <p>Binance Australia's help centre currently states that AUD deposits through <strong>Bank Transfer (BSB / PayID)</strong> are temporarily unavailable. Check Binance again before acting because this status can change.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">OKX states that it charges <strong>no fee for AUD deposits made by supported local bank transfers</strong>, and that only local Australian banks are supported. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">OKX says most AUD bank transfer deposits are processed quickly, but that a <strong>first deposit should be allowed up to one business day</strong> while bank reviews are completed. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">OKX states that deposits from <strong>cryptocurrency exchange platforms (such as CoinSpot) and cross-border payment providers (such as Wise) are not supported</strong>, and that third-party deposits are rejected because the account names must match. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Binance <strong>reported</strong> restoring PayID and bank-transfer AUD deposits in January 2026, but Binance's own help page still lists AUD deposits via bank transfer (BSB/PayID) as temporarily unavailable. The documentation conflicts, so this comparison line is <em>indicative</em> and should be re-checked in each account. Source: <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit and withdrawal help page</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">OKX Australia's published regular retail spot rate is <strong>0.70% maker / 0.70% taker</strong>; the 0.08% / 0.10% figures quoted elsewhere belong to OKX's global framework rather than the Australian retail schedule. Source: <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>OKX charges no deposit fee for supported local AUD bank transfers, only accepts local Australian banks, asks for up to one business day on a first deposit, and does not accept deposits from crypto exchanges or cross-border providers</strong> &mdash; <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a></li>
+        <li><strong>OKX Australia's regular retail spot rate of 0.70% maker and taker, against the 0.08% / 0.10% global schedule</strong> &mdash; <a href="https://www.okx.com/en-au/fees" rel="noopener noreferrer" target="_blank">OKX &mdash; Australia fees</a></li>
+        <li><strong>Binance's AUD deposit status, used only for the OKX versus Binance comparison</strong> &mdash; <a href="https://www.binance.com/en/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance &mdash; AUD deposit and withdrawal help page</a></li>
+        <li><strong>CoinSpot's free PayID and Direct Deposit funding, referenced when explaining why an exchange-to-exchange AUD transfer is rejected</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; fees</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a sources list and related-guide links; OKX deposit conditions, the AU retail fee rate and Binance's AUD status re-checked. 25 September 2026 &mdash; previous public-source check.</p>
+      <p>Deposit fees, limits, supported banks and the availability of competitors' AUD funding routes change. Figures above are the published standard or regular-user rates and the conditions OKX states for its AUD bank-transfer deposit, checked against official sources on 16 October 2026. Binance's public documents disagree on whether BSB/PayID funding has returned, so that comparison is indicative only.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; AUD funding, the 0.70% retail rate and its licensed derivatives arm</a></li>
+        <li><a href="/exchanges/okx-fees/">OKX fees explained for Australian users &mdash; why the global 0.08% rate does not apply here</a></li>
+        <li><a href="/buy-crypto/aud/binance-payid/">Binance Australia PayID &mdash; what its own help pages currently say about AUD deposits</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-okx/">Moving crypto from CoinSpot to OKX instead of sending AUD between exchanges</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

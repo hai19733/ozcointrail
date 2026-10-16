@@ -359,6 +359,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -383,7 +410,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/crypto-tax/crypto-tax-australia/"
             },
-            "dateModified": "2026-09-18"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -471,13 +498,18 @@
     <h1>Crypto Tax in Australia</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 18 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>Written by <a href="/author/james-walker/">James Walker</a> &middot; Source reviewed against current ATO guidance</span>
     </div>
 
     <p class="lead">For most Australians, crypto is taxed in two ways: <strong>capital gains tax (CGT)</strong> when you sell, swap or spend it, and <strong>ordinary income tax</strong> on things like staking rewards and airdrops. There's no separate &ldquo;crypto tax rate&rdquo; &mdash; your net gain is added to your other income and taxed at your marginal rate, with a 50% CGT discount if you held the asset for 12 months or more. <strong>That discount is changing: from 1 July 2027 it's replaced by inflation-based cost-base indexation and a 30% minimum tax on real gains.</strong></p>
     <p>Two rules trip people up most: moving crypto between your own wallets is <em>not</em> a disposal, but swapping one coin for another &mdash; even into a stablecoin &mdash; usually <em>is</em>. And if you hold crypto across 1 July 2027, keeping a defensible AUD value for it around that date can be important when you later split the gain between the old and new rules.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 8 minutes. The two things people get wrong most often: <strong>leaving a crypto-to-crypto swap off the return because no Australian dollars ever hit the bank</strong>, and <strong>holding a coin through 1 July 2027 with no dated AUD price record to split the gain</strong>.</p>
+      <p>Read the taxable-event list first, then work out whether you will still be holding anything on 1 July 2027.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -506,13 +538,13 @@
     </div>
 
     <h2>How the ATO sees your crypto</h2>
-    <p>The ATO treats cryptocurrency as <strong>property, not as a foreign currency</strong>, and that single decision drives almost everything else. For most people, crypto is a CGT asset: you make a capital gain or loss when you dispose of it. For a smaller number who trade in a business-like way &mdash; frequent, organised, profit-driven &mdash; crypto can instead be treated as trading stock or business income. The line between the two isn't a checkbox; it turns on how you actually use the asset. The rest of this guide assumes the more common investor position, which is how the ATO frames crypto for most individuals.</p>
+    <p>The ATO treats cryptocurrency as <strong>property, not as a foreign currency</strong>, and that single decision drives almost everything else. For most people, crypto is a CGT asset: you make a capital gain or loss when you dispose of it. For a smaller number who trade in a business-like way &mdash; frequent, organised, profit-driven &mdash; crypto can instead be treated as trading stock or business income. The line between the two isn't a checkbox; it turns on how you actually use the asset. The rest of this guide assumes the more common investor position, which is how the ATO frames crypto for most individuals.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 
     <h2>What triggers a capital gain (or loss)</h2>
     <p>A CGT event happens when you dispose of crypto. The common triggers are:</p>
     <ul>
       <li><strong>Selling crypto for AUD</strong> (or another fiat currency).</li>
-      <li><strong>Swapping one coin for another</strong> &mdash; crypto-to-crypto trades, including swapping into a stablecoin like USDT, are each treated as a disposal. So buying USDT with Bitcoin, then later back to AUD, can be two separate CGT events.</li>
+      <li><strong>Swapping one coin for another</strong> &mdash; crypto-to-crypto trades, including swapping into a stablecoin like USDT, are each treated as a disposal. So buying USDT with Bitcoin, then later back to AUD, can be two separate CGT events.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></li>
       <li><strong>Using crypto to buy goods or services.</strong></li>
       <li><strong>Gifting crypto</strong>, in most cases.</li>
       <li><strong>Adding or removing liquidity, wrapping or bridging tokens</strong>, where the transaction amounts to a disposal.</li>
@@ -521,7 +553,7 @@
     <p>Your capital gain is <strong>proceeds minus your cost base</strong>, where the cost base is roughly what you paid plus any fees, commissions or gas costs incurred to buy and sell. Capital losses can offset capital gains, but they can't be deducted against your salary or other ordinary income &mdash; any unused loss carries forward to future years.</p>
 
     <h2>What's taxed as income instead</h2>
-    <p>Some crypto you receive is ordinary income, taxed at its AUD market value on the day you receive it, with no CGT discount. The main examples:</p>
+    <p>Some crypto you receive is ordinary income, taxed at its AUD market value on the day you receive it, with no CGT discount.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> The main examples:</p>
     <ul>
       <li><strong>Staking rewards.</strong></li>
       <li><strong>Airdrops</strong> of established tokens (some initial-allocation airdrops may not be income).</li>
@@ -533,14 +565,14 @@
     <p>Whether something is income or a capital gain matters, because the treatment changes both <em>when</em> it's taxed and <em>how much</em> of it is taxed.</p>
 
     <h2>The 50% CGT discount (and how it works today)</h2>
-    <p>Until 30 June 2027, individuals and trusts who hold a crypto asset for <strong>12 months or more</strong> before disposing of it can discount the capital gain by 50% &mdash; so only half the gain is taxed. Companies don't get the discount. The 12-month period runs from the day you acquired the asset to the day of the CGT event, and the discount is applied <em>after</em> any capital losses have been netted against gains.</p>
+    <p>Until 30 June 2027, individuals and trusts who hold a crypto asset for <strong>12 months or more</strong> before disposing of it can discount the capital gain by 50% &mdash; so only half the gain is taxed. Companies don't get the discount. The 12-month period runs from the day you acquired the asset to the day of the CGT event, and the discount is applied <em>after</em> any capital losses have been netted against gains.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
     <p>A simple example: you buy A$10,000 of Bitcoin, hold it for 14 months, then sell for A$16,000. Your capital gain is A$6,000. With the 50% discount, only A$3,000 is added to your assessable income. That A$3,000 is then taxed at whatever marginal rate applies to your total income for the year.</p>
 
     <h2>The 2027 change: what replaces the 50% discount</h2>
     <p>This is the biggest shift in how long-term crypto gains are taxed in Australia in decades, and it's worth understanding now because it affects the value you'll need to record in mid-2027.</p>
     <div class="callout">
       <h4>The change in one paragraph</h4>
-      <p>From <strong>1 July 2027</strong>, the existing 50% CGT discount is replaced for relevant gains of Australian resident individuals and trusts, including gains attributable to individuals through partnerships. The new system uses <strong>cost-base indexation</strong> to remove inflation from the taxable gain and introduces a <strong>30% minimum tax rate</strong> on qualifying real capital gains. The legislation received Royal Assent on 26 June 2026 (<a href="https://treasury.gov.au/policy-topics/taxation/budget2026-27" rel="noopener noreferrer" target="_blank">Treasury's Budget 2026-27 measures</a>).</p>
+      <p>From <strong>1 July 2027</strong>, the existing 50% CGT discount is replaced for relevant gains of Australian resident individuals and trusts, including gains attributable to individuals through partnerships. The new system uses <strong>cost-base indexation</strong> to remove inflation from the taxable gain and introduces a <strong>30% minimum tax rate</strong> on qualifying real capital gains. The legislation received Royal Assent on 26 June 2026 (<a href="https://treasury.gov.au/policy-topics/taxation/budget2026-27" rel="noopener noreferrer" target="_blank">Treasury's Budget 2026-27 measures</a>).<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     </div>
     <p>Companies are treated differently. Companies generally do not qualify for the 50% CGT discount that applies to eligible individuals and trusts, so the replacement of that discount is primarily relevant to those taxpayers rather than companies.</p>
     <p>Complying superannuation funds are also treated separately under the CGT rules and are not brought into the new individual 30% minimum-tax regime in the same way. If you hold crypto through an SMSF, the fund's tax treatment should therefore be considered separately from the individual rules described in this guide.</p>
@@ -591,7 +623,7 @@
     <p>The exact figures change with each Federal Budget, so treat the table as the current-year guide and confirm against the ATO's published rates when you lodge.</p>
 
     <h2>What records to keep</h2>
-    <p>The ATO expects you to keep records for <strong>at least five years</strong> &mdash; and potentially longer where the records support an asset you continue to hold, a carried-forward capital loss, or an assessment that can still be amended. It's the area where people most often come unstuck years after the fact (see the <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO's crypto record-keeping guidance</a>). Keep:</p>
+    <p>The ATO expects you to keep records for <strong>at least five years</strong> &mdash; and potentially longer where the records support an asset you continue to hold, a carried-forward capital loss, or an assessment that can still be amended. It's the area where people most often come unstuck years after the fact (see the <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO's crypto record-keeping guidance</a>).<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup> Keep:</p>
     <ul>
       <li>Receipts and the date, time and AUD value of every transaction.</li>
       <li>Exchange statements and trade histories &mdash; <strong>export them regularly before you close an account</strong>, since platforms can restrict access to old history. If you use Binance, our <a href="/exchanges/binance/">Binance Australia review</a> covers the account and what you can export from it.</li>
@@ -599,6 +631,15 @@
       <li>Fees, commissions and network/gas costs, which form part of your cost base.</li>
       <li>Records of staking, airdrops and other income received.</li>
     </ul>
+
+    <h2>Risk: expecting a crypto loss to reduce the tax on your salary</h2>
+    <p>The loss that catches people out is not a market loss &mdash; it is assuming a capital loss works like a deduction. For most investors, crypto is a CGT asset, so a loss on it is a <strong>capital</strong> loss with its own rules.</p>
+    <p>Capital losses can be applied against capital gains: your crypto gains, and capital gains on shares, property or other CGT assets. They cannot be subtracted from salary, wages, business income or other ordinary income. An unused capital loss is carried forward and can be used against future capital gains.</p>
+    <p>Two habits limit the damage. Record every disposal &mdash; including the swaps and small trades you would not normally think of as sales &mdash; because an unrecorded disposal is often an unrecorded loss. Then keep the loss year's records together with the later year in which you actually use the loss, since a carried-forward loss can be queried years after the fact.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>If a crypto loss has already been applied against ordinary income in a lodged return, don't wait to be contacted. Reconstruct the affected year from exchange exports, work out the correct capital loss, and ask a registered tax agent whether an amendment is needed rather than lodging another estimate.</p>
+    </div>
 
     <h2>How to report crypto on your tax return</h2>
     <p>You report crypto in two places, depending on what happened:</p>
@@ -634,6 +675,45 @@
         <summary>How long do I need to keep records?</summary>
         <p>At least five years. Keep transaction history, dates, AUD values, exchange statements and records of any staking or airdrops, and export your exchange history before closing an account.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">The ATO treats a crypto asset as a CGT asset &mdash; property rather than foreign currency, which is a separate CGT asset category. Source: <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/list-of-cgt-assets-and-exemptions" rel="noopener noreferrer" target="_blank">ATO &mdash; List of CGT assets and exemptions</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Disposing of crypto includes exchanging one crypto asset for another, so a swap or a conversion into a stablecoin can be a CGT event even when no Australian dollars are withdrawn. Source: <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto asset transactions</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Staking rewards, airdrops and similar receipts are generally assessable as ordinary income at their AUD market value when received, with no CGT discount. Source: <a href="https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/tax-time/tax-time-toolkits/tax-time-toolkit-for-investors/tax-and-crypto-asset-investments" rel="noopener noreferrer" target="_blank">ATO &mdash; Tax and crypto asset investments</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Australian resident individuals and trusts can apply a 50% CGT discount to a gain on an asset held for at least 12 months; companies do not get that discount. Source: <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/how-to-calculate-your-cgt" rel="noopener noreferrer" target="_blank">ATO &mdash; How to calculate your CGT</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">From 1 July 2027 the 50% CGT discount is to be replaced for relevant gains of resident individuals and trusts by cost-base indexation plus a 30% minimum tax on real gains, as set out in Treasury's Budget 2026&ndash;27 material. Source: <a href="https://treasury.gov.au/policy-topics/taxation/budget2026-27" rel="noopener noreferrer" target="_blank">Treasury &mdash; Budget 2026&ndash;27 measures</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">The ATO expects crypto records to be kept for at least five years, and longer where they support a carried-forward capital loss or an asset you still hold. Source: <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO &mdash; Keeping crypto records</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Crypto is a CGT asset rather than foreign currency</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/list-of-cgt-assets-and-exemptions" rel="noopener noreferrer" target="_blank">ATO &mdash; List of CGT assets and exemptions</a></li>
+        <li><strong>What counts as a disposal, and crypto received as income</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto asset transactions</a> and <a href="https://www.ato.gov.au/tax-and-super-professionals/for-tax-professionals/prepare-and-lodge/tax-time/tax-time-toolkits/tax-time-toolkit-for-investors/tax-and-crypto-asset-investments" rel="noopener noreferrer" target="_blank">ATO &mdash; Tax and crypto asset investments</a></li>
+        <li><strong>The 50% CGT discount and the 12-month holding period</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/capital-gains-tax/calculating-your-cgt/how-to-calculate-your-cgt" rel="noopener noreferrer" target="_blank">ATO &mdash; How to calculate your CGT</a></li>
+        <li><strong>The 2027 reform that replaces the discount for individuals and trusts</strong> &mdash; <a href="https://treasury.gov.au/policy-topics/taxation/budget2026-27" rel="noopener noreferrer" target="_blank">Treasury &mdash; Budget 2026&ndash;27</a></li>
+        <li><strong>Individual marginal tax rates used in the table above</strong> &mdash; <a href="https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents" rel="noopener noreferrer" target="_blank">ATO &mdash; Tax rates, Australian resident</a></li>
+        <li><strong>The tax year and the 31 October self-lodgment deadline</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return" rel="noopener noreferrer" target="_blank">ATO &mdash; Preparing your tax return</a></li>
+        <li><strong>Five-year record-keeping expectation</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO &mdash; Keeping crypto records</a></li>
+        <li><strong>AML/CTF Travel Rule alongside the tax rules</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; Travel Rule overview</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a risk section on capital losses and a related-guides block; tax-year, rate and 2027 reform references re-checked against ATO and Treasury sources. Previous version carried a Last verified date of 18 September 2026.</p>
+      <p>Tax rates, thresholds and transitional guidance change, and the 2027 reform is still being settled through ATO guidance. The figures and dates above are as published by the ATO and Treasury on 16 October 2026. This page explains the mechanics only; it is not personal tax advice, so confirm your own position with a registered tax agent or the ATO.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/crypto-tax/does-ato-know-about-my-crypto/">Does the ATO know about my crypto? Data matching explained</a></li>
+        <li><a href="/regulation/austrac/">AUSTRAC registration &mdash; what it does and doesn't protect</a></li>
+        <li><a href="/usdt/usdt-vs-usdc/">USDT vs USDC &mdash; which stablecoin to use in Australia</a></li>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance without triggering a disposal</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

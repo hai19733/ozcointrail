@@ -402,6 +402,35 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .callout.warn { background: #FBF4E6; border-left-color: var(--color-warning); }
+    .callout.warn h4 { color: var(--color-warning); }
   </style>
 
   <script type="application/ld+json">
@@ -426,7 +455,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/coinspot/"
             },
-            "dateModified": "2026-09-19"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -514,7 +543,7 @@
     <h1>CoinSpot Review 2026: Fees, Safety &amp; What Its AFSL Actually Covers</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 19 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
@@ -523,6 +552,11 @@
     <p class="lead">The main catch is cost.</p>
     <p class="lead">CoinSpot's standard <strong>Instant Buy, Sell and Swap fee is 1%</strong>, while trades placed through its <strong>Markets order book cost 0.10%</strong>. For someone buying A$1,000 of Bitcoin, that difference alone can turn a trading fee of A$10 into about A$1 before considering the actual execution price.</p>
     <p class="lead">There's also an important regulatory detail that is easy to misunderstand. CoinSpot's operator, Casey Block Services Pty Ltd, holds <strong>AFSL 562554</strong>, but that licence relates to its role in the CoinSpot Mastercard &mdash; it does not mean ordinary spot-crypto trades on CoinSpot are covered by the AFSL.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 7 minutes. The two things people get wrong most often: <strong>tapping Instant Buy at 1% instead of placing the order through CoinSpot Markets at 0.10%</strong>, and <strong>assuming every deposit route is free</strong> when only PayID and direct bank deposit are.</p>
+      <p>Open the Markets tab for the coin you want before you buy, and fund the account with PayID or a direct bank deposit rather than cash or card.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -584,7 +618,7 @@
     <h2>Fees explained: the 1% default you can avoid</h2>
     <p>CoinSpot has two very different fee tiers depending on which part of the app you use, and the cheaper one sits one screen deeper.</p>
     <ul>
-      <li><strong>Instant Buy / Sell / Swap &mdash; 1%.</strong> This is the default option most people hit first, and the fee applies to every purchase made through it.</li>
+      <li><strong>Instant Buy / Sell / Swap &mdash; 1%.</strong> This is the default option most people hit first, and the fee applies to every purchase made through it.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></li>
       <li><strong>Markets trading fee &mdash; 0.10%.</strong> This is the order-book option, and it only applies to cryptocurrencies that have a dedicated AUD market on CoinSpot.</li>
       <li><strong>OTC &mdash; 0.10%</strong> for larger trades, and <strong>Take Profit / Stop / Limit orders &mdash; 1%</strong>.</li>
     </ul>
@@ -634,18 +668,18 @@
     <p>The short version: CoinSpot is not the cheapest place to trade, but it's far from the most expensive &mdash; provided you stay off the 1% Instant Buy default.</p>
 
     <h2>AUD deposits &amp; withdrawals</h2>
-    <p>CoinSpot's dollar rails are a genuine strength. Deposits via <strong>PayID and direct bank deposit are free</strong>, AUD withdrawals to an Australian bank account are free, and crypto withdrawals are charged only the network (blockchain) fee. That's the opposite of <a href="/exchanges/binance/">Binance's</a> current position, where direct PayID deposits remain temporarily unavailable &mdash; if moving Australian dollars in and out without friction matters to you, CoinSpot clears that bar comfortably.</p>
-    <p>Other funding methods carry fees. CoinSpot's main fee schedule currently lists PayPal deposits at 0.5%, cash deposits at 2.5%, and a separate fee for card funding. Check the confirmation screen before paying, as funding fees can change. For the cheapest route, use a free PayID or direct deposit and then place a Markets order rather than an Instant Buy. As always, the effective AUD-per-coin rate you're offered is what matters, not the headline fee on its own.</p>
+    <p>CoinSpot's dollar rails are a genuine strength. Deposits via <strong>PayID and direct bank deposit are free</strong>, AUD withdrawals to an Australian bank account are free, and crypto withdrawals are charged only the network (blockchain) fee.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> That's the opposite of <a href="/exchanges/binance/">Binance's</a> current position, where direct PayID deposits remain temporarily unavailable &mdash; if moving Australian dollars in and out without friction matters to you, CoinSpot clears that bar comfortably.</p>
+    <p>Other funding methods carry fees. CoinSpot's main fee schedule currently lists PayPal deposits at 0.5%, cash deposits at 2.5%, and a separate fee for card funding.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup> Check the confirmation screen before paying, as funding fees can change. For the cheapest route, use a free PayID or direct deposit and then place a Markets order rather than an Instant Buy. As always, the effective AUD-per-coin rate you're offered is what matters, not the headline fee on its own.</p>
 
     <h2>What you can trade</h2>
     <p>CoinSpot is a <strong>spot-only</strong> exchange: no margin, no leverage, no futures, no derivatives and no crypto lending. For some people that's a feature &mdash; fewer ways to get into trouble &mdash; and for others it's a dealbreaker, because there's simply no way to trade with leverage here.</p>
     <p>What CoinSpot does offer is breadth. It supports <strong>several hundred coins</strong> and describes itself as offering Australia's largest variety, though the exact count differs across its own pages (you'll see figures from 400+ to 500+ depending on where you look). On top of spot trading there's &ldquo;Bundles&rdquo; (basket purchases), an NFT marketplace and the CoinSpot Mastercard for spending crypto. CoinSpot's previous staking product, CoinSpot Earn, was suspended in September 2023 and is not currently offered, so treat staking as unavailable unless CoinSpot announces a new product.</p>
 
     <h2>Regulation &amp; safety</h2>
-    <p>CoinSpot is registered with AUSTRAC as a digital currency exchange, a registration it has held since <strong>May 2018</strong>. It also holds <strong>AFSL 562554</strong> through Casey Block Services Pty Ltd &mdash; but read the scope carefully, because this is where most write-ups go wrong.</p>
+    <p>CoinSpot is registered with AUSTRAC as a digital currency exchange, a registration it has held since <strong>May 2018</strong>.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> It also holds <strong>AFSL 562554</strong> through Casey Block Services Pty Ltd &mdash; but read the scope carefully, because this is where most write-ups go wrong.</p>
     <div class="callout">
       <h4>The AFSL fine print</h4>
-      <p>CoinSpot's AFSL does not mean its crypto exchange is ASIC-licensed in the same way as a conventional financial product platform. Casey Block Services Pty Ltd holds <strong>AFSL 562554</strong>, but CoinSpot's own Financial Services Guide states that the licensed services relate to promoting and arranging the CoinSpot Mastercard and providing general financial product advice about the card. The Mastercard itself is issued by EML Payment Solutions Limited.</p>
+      <p>CoinSpot's AFSL does not mean its crypto exchange is ASIC-licensed in the same way as a conventional financial product platform. Casey Block Services Pty Ltd holds <strong>AFSL 562554</strong>, but CoinSpot's own Financial Services Guide states that the licensed services relate to promoting and arranging the CoinSpot Mastercard and providing general financial product advice about the card. The Mastercard itself is issued by EML Payment Solutions Limited.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
       <p>CoinSpot's crypto exchange activities are separately subject to Australia's AUSTRAC registration and AML/CTF framework. AUSTRAC registration and an AFSL serve different regulatory purposes, so you should not treat the Mastercard-related AFSL as regulatory coverage for ordinary spot-crypto trading.</p>
     </div>
     <p>On security, CoinSpot states it holds the majority of client assets in cold storage and cites third-party audits of one-to-one asset backing, and it says it was the first Australian exchange to achieve ISO 27001 certification. In November 2023, blockchain researchers reported that roughly US$2.4 million was drained from a known CoinSpot hot wallet. Security firm CertiK assessed the incident as a probable private-key compromise. Public reporting did not establish that individual customer balances were affected. None of that removes the usual exchange risk, so keep only what you're actively trading on-platform rather than long-term savings. For the broader picture on how Australian crypto regulation is changing, read our <a href="/regulation/">crypto regulation guide</a>.</p>
@@ -676,6 +710,15 @@
     <p>CoinSpot is the right call for <strong>beginners who want to buy crypto with Australian dollars as simply as possible</strong> and value local support over fees. It's also a reasonable home for <strong>buy-and-hold investors</strong> who buy coins that have a dedicated AUD market and use the Markets order book rather than the Instant Buy button.</p>
     <p>It's a worse fit for <strong>active traders chasing the lowest fees and deepest liquidity</strong> &mdash; for them, Binance's 0.10% spot fee with deeper order books is the closer comparison, and our <a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot</a> breakdown sets out the trade-off. It's also not the choice if you specifically want <strong>derivatives</strong>, which CoinSpot simply doesn't offer &mdash; see <a href="/exchanges/okx-vs-coinspot/">OKX vs CoinSpot</a> for where the licensed-derivatives option differs. Start with <a href="/exchanges/best-crypto-exchanges-australia/">which exchange fits your situation</a> if you're still weighing up the field. If you're deciding between the two local favourites, our <a href="/exchanges/coinspot-vs-swyftx/">CoinSpot vs Swyftx</a> comparison lines up the 0.1% Markets fee against Swyftx's 0.6%-plus-spread pricing.</p>
 
+    <h2>Risk: assuming every CoinSpot deposit route is free</h2>
+    <p>The concrete mistake is treating &ldquo;free AUD deposits&rdquo; as a property of the platform rather than of two particular payment methods. PayID and direct bank deposit are the free rails; CoinSpot's published fee schedule lists PayPal deposits at 0.5% and cash deposits at 2.5%, with a separate charge for card funding. On a A$1,000 cash deposit, 2.5% is A$25 gone before you have bought anything &mdash; more than the 1% Instant Buy fee most people come to CoinSpot trying to avoid.</p>
+    <p>It happens because the deposit screen lists several methods side by side, and the fee is not always the most prominent number on it. The non-bank channels are priced by third-party payment providers rather than by CoinSpot, so they can change independently of the headline fee page &mdash; which is why the figure to trust is the one shown on the confirmation screen at the moment you deposit.</p>
+    <p>To reduce the risk, fund with PayID or a direct bank deposit, and read the fee line on the confirmation screen before you authorise the payment. If you are depositing a large amount, compare that fee against the cost of an ordinary bank transfer, which for these methods is zero.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>Check what was actually credited: if the amount that landed in your CoinSpot account is less than the amount you sent, the difference is the funding cost applied by that payment method. Raise it with CoinSpot support using the deposit reference and a copy of the payment receipt before you send anything further &mdash; and do not send a second deposit to &ldquo;top up&rdquo; the first, because the same cost applies again.</p>
+    </div>
+
     <h2>Frequently asked questions</h2>
     <div class="faq">
       <details>
@@ -702,6 +745,39 @@
         <summary>Can I deposit AUD into CoinSpot for free?</summary>
         <p>Yes &mdash; CoinSpot offers free AUD deposits via PayID and direct bank deposit, and free AUD withdrawals to an Australian bank account. Card purchases, PayPal and cash deposits carry fees listed on CoinSpot's fee page.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">CoinSpot's published fee schedule sets Instant Buy / Sell / Swap at <strong>1%</strong>, Markets order-book trading at <strong>0.10%</strong> (for coins with a dedicated AUD market), OTC at 0.10% and Take Profit / Stop / Limit orders at 1%. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Rates are indicative as published on 16 October 2026. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">PayID and direct bank deposit are free at CoinSpot, AUD withdrawals to an Australian bank account are free, and crypto withdrawals are charged only the network (blockchain) fee. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">The same fee schedule lists PayPal deposits at <strong>0.5%</strong> and cash deposits at <strong>2.5%</strong>, with a separate charge for card funding &mdash; so &ldquo;free deposits&rdquo; applies only to the PayID and direct bank deposit routes. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">CoinSpot is registered with AUSTRAC as a digital currency exchange, a registration it has held since May 2018. AUSTRAC registration is an AML/CTF registration: it is not ASIC prudential supervision and it does not provide a compensation scheme for customer balances. Source: <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a> and <a href="https://www.austrac.gov.au/news-and-media/article/virtual-asset-service-provider-register-goes-public" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP register</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Casey Block Services Pty Ltd holds AFSL 562554, but CoinSpot's own Financial Services Guide states the licensed services relate to promoting and arranging the CoinSpot Mastercard and providing general financial product advice about the card, which is issued by EML Payment Solutions Limited. The AFSL does not cover ordinary spot-crypto trading. Source: <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>1% Instant Buy, 0.10% Markets, free PayID and bank deposits, and the PayPal / cash / card funding fees</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; fees</a></li>
+        <li><strong>Scope of AFSL 562554 and who issues the Mastercard</strong> &mdash; <a href="https://www.coinspot.com.au/public/CoinSpot%20Mastercard%20FSG.pdf" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Mastercard Financial Services Guide (PDF)</a></li>
+        <li><strong>AUSTRAC registration status and what it does and does not cover</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/your-industry/virtual-asset-service-providers/virtual-asset-service-providers-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; VASP overview</a> and <a href="https://www.austrac.gov.au/news-and-media/article/virtual-asset-service-provider-register-goes-public" rel="noopener noreferrer" target="_blank">the public VASP register</a></li>
+        <li><strong>CoinSpot's account terms and geographic eligibility</strong> &mdash; <a href="https://www.coinspot.com.au/terms" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; terms and conditions</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a deposit-fee risk section and related guides; fee schedule, AUSTRAC registration and AFSL scope re-checked against the sources above. 20 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot: the 0.10% spot fee against the 1% Instant Buy default</a></li>
+        <li><a href="/exchanges/coinspot-vs-swyftx/">CoinSpot vs Swyftx: Markets fees, spreads and free AUD deposits compared</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance, step by step</a></li>
+        <li><a href="/exchanges/best-crypto-exchanges-australia/">Best crypto exchanges in Australia: which one fits how you buy</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

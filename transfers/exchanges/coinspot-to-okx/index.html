@@ -359,6 +359,32 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -383,7 +409,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/transfers/exchanges/coinspot-to-okx/"
             },
-            "dateModified": "2026-09-23"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -503,12 +529,17 @@
     <h1>How to Transfer Crypto from CoinSpot to OKX Australia</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 23 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">Moving crypto from CoinSpot to OKX Australia is usually a straightforward on-chain transfer: <strong>get the deposit address and network from OKX first, then use those exact details when sending from CoinSpot</strong>.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 7 minutes. The two things people get wrong most often: <strong>picking the CoinSpot network because it looks cheaper rather than the one OKX gave them</strong>, and <strong>sending AUD straight from CoinSpot to OKX's bank details instead of through their own bank account</strong>.</p>
+      <p>Open OKX first &mdash; choose the asset and a supported network, copy the deposit details, then match them exactly on CoinSpot.</p>
+    </div>
 
     <p>The most important rule is simple:</p>
 
@@ -652,8 +683,8 @@
     <h2 id="how-much-does-the-transfer-cost">How much does the transfer cost?</h2>
     <p>There is normally no single fixed "CoinSpot to OKX fee".</p>
     <p>The main cost is the fee applied when the cryptocurrency leaves CoinSpot.</p>
-    <p>CoinSpot displays the applicable transaction or network fee before you confirm the send. The amount can vary depending on the cryptocurrency and network.</p>
-    <p>On the receiving side, OKX states that it does <strong>not</strong> charge a network fee for crypto deposits.</p>
+    <p>CoinSpot displays the applicable transaction or network fee before you confirm the send.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> The amount can vary depending on the cryptocurrency and network.</p>
+    <p>On the receiving side, OKX states that it does <strong>not</strong> charge a network fee for crypto deposits.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></p>
     <div class="table-wrap">
       <table>
         <thead>
@@ -700,7 +731,7 @@
     <p>The route is:</p>
     <p><strong>CoinSpot &rarr; your Australian bank account &rarr; OKX Australia</strong></p>
     <p>OKX Australia supports AUD deposits through available local bank-transfer methods for eligible Australian customers.</p>
-    <p>However, OKX specifically states that deposits sent <strong>from cryptocurrency exchange platforms such as CoinSpot are not supported</strong>.</p>
+    <p>However, OKX specifically states that deposits sent <strong>from cryptocurrency exchange platforms such as CoinSpot are not supported</strong>.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
     <p>So you should not take the OKX bank details and try to initiate a direct AUD payment from CoinSpot.</p>
     <p>Instead:</p>
     <ol>
@@ -731,6 +762,15 @@
       </table>
     </div>
     <p>If you already own the cryptocurrency you want in OKX, the on-chain route is normally the more direct option.</p>
+
+    <h2>Risk: sending AUD straight from CoinSpot to OKX's deposit details</h2>
+    <p>The risk is a payment that leaves CoinSpot, lands nowhere it can be credited, and comes back days later minus bank fees. It happens when someone takes the BSB and account details from their OKX AUD deposit screen and pays them out of a CoinSpot AUD balance instead of from their own bank.</p>
+    <p>OKX's Australian deposit help is explicit: deposits from other crypto exchange platforms and from cross-border payment providers are not supported, only local Australian banks are accepted, and the name on the sending account must match the name on the OKX account. Third-party deposits are rejected. That control is about where the money came from, so a support ticket is not going to waive it.</p>
+    <p>Reduce the risk by keeping every AUD move two-legged: sell or convert to AUD on CoinSpot, withdraw that AUD to a bank account in your own name, wait for it to clear, then start a <em>fresh</em> deposit from that same account inside the OKX app. Never pay OKX from a joint, business or third-party account, and check the method and limits shown for your own account before you send.</p>
+    <div class="callout warn">
+      <h4>If the payment has already gone</h4>
+      <p>Do not send a second payment to "fix" the first. Contact OKX support with the payment reference, amount, date and the name on the sending account, and tell your bank the transfer may be returned. A rejected deposit is normally sent back to the originating account, which can take several business days, so keep the reference for every leg.</p>
+    </div>
 
     <h2 id="what-if-the-transfer-has-not-arrived">What if the transfer has not arrived?</h2>
     <p>Do not immediately send another transaction.</p>
@@ -786,11 +826,11 @@
     <h2 id="why-transfer-from-coinspot-to-okx">Why transfer from CoinSpot to OKX?</h2>
     <p>The reason for moving funds should determine whether the transfer is worth doing.</p>
     <p>CoinSpot and OKX Australia do not offer exactly the same product set.</p>
-    <p>OKX Australia currently provides spot trading and, for eligible customers, access to selected derivatives and margin products through <strong>OKX Australia Financial Pty Ltd (AFSL 379035)</strong>.</p>
+    <p>OKX Australia currently provides spot trading and, for eligible customers, access to selected derivatives and margin products through <strong>OKX Australia Financial Pty Ltd (AFSL 379035)</strong>.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
     <p>Eligible Australian retail derivatives customers must complete suitability and knowledge assessments before access is enabled, and retail leverage on selected products is limited to 2&times;.</p>
     <p>Derivatives carry substantially higher risk than simply transferring or holding spot crypto and are not appropriate for every user.</p>
     <p>If you only want to buy or sell crypto against AUD, compare the full cost before moving funds.</p>
-    <p>CoinSpot currently advertises <strong>0.1% trading fees on its Markets</strong>, while OKX Australia's fee structure has changed over time and can differ by account tier and eligible zero-fee pairs. Check the fee page shown for your own OKX Australia account rather than relying on an old global OKX fee table.</p>
+    <p>CoinSpot currently advertises <strong>0.1% trading fees on its Markets</strong>, while OKX Australia's fee structure has changed over time and can differ by account tier and eligible zero-fee pairs.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> Check the fee page shown for your own OKX Australia account rather than relying on an old global OKX fee table.</p>
     <p>That distinction matters because an article quoting global OKX spot rates may not reflect the fee schedule applied to Australian retail customers.</p>
     <p>For a broader comparison, see our <a href="/exchanges/okx-vs-coinspot/">OKX vs CoinSpot comparison</a>.</p>
     <p>You can also read our full <a href="/exchanges/okx/">OKX Australia review</a> before deciding whether you need the additional platform in the first place.</p>
@@ -845,6 +885,41 @@
     <p>For a first-time or high-value transfer, consider a small test transaction before moving the rest.</p>
     <p>If you prefer to move the value as Australian dollars instead, withdraw AUD from CoinSpot to <strong>your own bank account first</strong>, then make a separate bank deposit into OKX. Do not send an AUD payment directly from CoinSpot to OKX's bank details.</p>
     <p>Always check the live deposit screen before transferring because supported networks, minimum deposit amounts, fees and account availability can change.</p>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">CoinSpot applies a transaction or network fee when cryptocurrency is sent to an external address, with the amount depending on the asset and network and displayed before the withdrawal is confirmed. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">OKX states that it does not charge a fee for receiving a crypto deposit, though a deposit below the minimum limit shown on the deposit page will not be credited (recovery is only supported for certain cryptos and carries added fees). Source: <a href="https://www.okx.com/en-au/help/do-i-need-to-pay-fees-for-deposit-and-withdrawal" rel="noopener noreferrer" target="_blank">OKX &mdash; Do I need to pay fees for deposit and withdrawal?</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">OKX's Australian deposit help states that deposits from other crypto exchange platforms and from cross-border payment providers are not supported, that only local Australian banks are accepted, and that the sending account name must match the OKX account name &mdash; third-party deposits are rejected. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">OKX Australia's own help page lists derivatives and margin products as issued by <strong>OKX Australia Financial Pty Ltd (AFSL 379035)</strong>, with retail leverage on selected products limited to 2&times;, while spot exchange services are provided by a different OKX entity. Source: <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia?</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">CoinSpot's published Markets trading fee is <strong>0.1%</strong>; OKX Australia's spot schedule is separate and depends on the account's tier, so a global OKX fee table is not a reliable comparison. Sources: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a> and <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>CoinSpot external send fee and 0.1% Markets fee</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>OKX crypto deposit fee and minimum deposit rule</strong> &mdash; <a href="https://www.okx.com/en-au/help/do-i-need-to-pay-fees-for-deposit-and-withdrawal" rel="noopener noreferrer" target="_blank">OKX &mdash; Do I need to pay fees for deposit and withdrawal?</a></li>
+        <li><strong>OKX AUD deposits cannot come from another exchange</strong> &mdash; <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a></li>
+        <li><strong>OKX Australia entities, AFSL 379035 and retail leverage</strong> &mdash; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia?</a></li>
+        <li><strong>OKX Australia fee tiers</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations and a data-check section; CoinSpot send fee, OKX deposit rules and the OKX Australia licensing line re-checked against the sources below. 23 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, supported networks, minimum deposits and account eligibility change. Figures above are the published fees and rules checked against official sources on 16 October 2026. Always confirm the live deposit screen and the confirm screen before you send.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; licensing, products and AUD funding</a></li>
+        <li><a href="/buy-crypto/aud/okx-aud-deposit/">How to deposit AUD into OKX Australia &mdash; and which transfers get rejected</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot Australia review &mdash; fees, AUD funding and what its AFSL covers</a></li>
+        <li><a href="/exchanges/okx-vs-coinspot/">OKX vs CoinSpot Australia &mdash; fees, products and licensing compared</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance, step by step</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <h3>Moving to OKX for derivatives or a wider product range?</h3>

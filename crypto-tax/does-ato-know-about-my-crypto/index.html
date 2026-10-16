@@ -351,6 +351,33 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -375,7 +402,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/crypto-tax/does-ato-know-about-my-crypto/"
             },
-            "dateModified": "2026-10-03"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -487,7 +514,7 @@
     <h1>Does the ATO Know About My Crypto?</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 3 October 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>Written by <a href="/author/james-walker/">James Walker</a> &middot; Source reviewed against current ATO guidance</span>
     </div>
@@ -496,6 +523,11 @@
     <p>The ATO runs a <strong>crypto-assets data-matching program</strong> that obtains identity and transaction information from selected crypto service providers and compares it with Australian tax records. Its current published protocol covers financial years <strong>2014&ndash;15 through to 2025&ndash;26</strong>.</p>
     <p>That does <strong>not</strong> mean the ATO can automatically identify every self-custody wallet or see every blockchain transaction as belonging to you. But once a wallet, transaction or bank transfer can be connected to an identifiable exchange account, there may already be enough information to link the activity back to you.</p>
     <p>Here is what the ATO can obtain, how crypto data matching works, whether exchanges such as Binance and CoinSpot are publicly confirmed, and what to do if your previous tax returns are incomplete.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 9 minutes. The two things people get wrong most often: <strong>trusting online lists that name which exchanges do or don't report to the ATO</strong>, and <strong>assuming a self-custody wallet keeps a crypto-to-crypto swap off the record entirely</strong>.</p>
+      <p>Export your exchange transaction and transfer history now, while you still have account access &mdash; then use the sections below to work out what the ATO can actually see.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -509,8 +541,8 @@
 
     <h2>The short answer</h2>
     <p>The ATO has operated a crypto-assets data-matching program for years.</p>
-    <p>Its current published protocol covers <strong>2014&ndash;15 to 2025&ndash;26</strong> and is intended to identify taxpayers who buy, sell or otherwise dispose of crypto assets.</p>
-    <p>The ATO estimates that data relating to approximately <strong>700,000 to 1.2 million individuals and entities</strong> may be obtained for each financial year covered by the program. It also says it uses more than <strong>60 identity-matching techniques</strong> when matching third-party data to taxpayers.</p>
+    <p>Its current published protocol covers <strong>2014&ndash;15 to 2025&ndash;26</strong> and is intended to identify taxpayers who buy, sell or otherwise dispose of crypto assets.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+    <p>The ATO estimates that data relating to approximately <strong>700,000 to 1.2 million individuals and entities</strong> may be obtained for each financial year covered by the program. It also says it uses more than <strong>60 identity-matching techniques</strong> when matching third-party data to taxpayers.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup></p>
     <p>The practical takeaway is simple:</p>
     <blockquote>
       <p>If you have used an identifiable crypto account, do not assume the ATO only knows about your crypto because you reported it yourself.</p>
@@ -559,7 +591,7 @@
     <p>Potentially.</p>
     <p>But there is an important distinction that many articles overlook:</p>
     <p><strong>the ATO does not publish the complete list of crypto providers participating in its current data-matching program.</strong></p>
-    <p>The Office of the Australian Information Commissioner granted the ATO an exemption allowing it to withhold the names of the designated service providers involved.</p>
+    <p>The Office of the Australian Information Commissioner granted the ATO an exemption allowing it to withhold the names of the designated service providers involved.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
     <p>That means you should be cautious with online lists claiming:</p>
     <ul>
       <li>&ldquo;Exchange X definitely reports to the ATO&rdquo;; or</li>
@@ -607,7 +639,7 @@
     <h2>Are crypto-to-crypto swaps taxable?</h2>
     <p>Generally, yes &mdash; and this is one of the most commonly misunderstood parts of Australian crypto tax.</p>
     <p>You do <strong>not</strong> have to convert crypto into Australian dollars before a disposal can occur.</p>
-    <p>The ATO states that disposing of crypto can include <strong>exchanging one crypto asset for another</strong>.</p>
+    <p>The ATO states that disposing of crypto can include <strong>exchanging one crypto asset for another</strong>.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup></p>
     <p>For example:</p>
     <p><strong>BTC &rarr; USDT</strong></p>
     <p>can be a disposal of the BTC.</p>
@@ -653,6 +685,15 @@
     </ul>
     <p>That is why keeping your own transfer records remains important.</p>
 
+    <h2>Risk: ignoring an ATO data-matching letter or missing its deadline</h2>
+    <p>The moment data matching actually touches you is usually a letter or a myGov message saying the ATO holds information that does not match your lodged return. That letter is not a bill, but it is not junk either.</p>
+    <p>It happens because third-party data is matched against returns automatically, and the mismatch may be explained by something the provider could not see &mdash; a transfer to another wallet you own, a movement to a different exchange, or a disposal already reported in a different year. The ATO's published protocol provides a period for a taxpayer to verify matched data before administrative action follows, but the deadline that actually binds you is the one printed on your own notice.</p>
+    <p>Three habits keep this manageable. Read the notice and write the response date into your calendar that day. Check that your myGov contact details are current, so a notice cannot sit unread. And pull the exchange exports for the year named in the letter before you reply, so your response is built on records rather than memory.</p>
+    <div class="callout warn">
+      <h4>If it has already gone wrong</h4>
+      <p>If a deadline has passed or has nearly passed, contact the ATO using the details in the notice &mdash; or have your registered tax agent do it &mdash; rather than waiting for the next step. Do not respond with an estimate or a blanket denial. If you agree the return was wrong, ask about amending it or making a voluntary disclosure; if you disagree, say which transaction was not a disposal and attach the transfer records that show it.</p>
+    </div>
+
     <h2>Can the ATO see offshore crypto exchanges?</h2>
     <p>Using an overseas exchange does not automatically make your crypto invisible.</p>
     <p>The ATO's domestic crypto data-matching program is only one possible source of information.</p>
@@ -680,7 +721,7 @@
     <p>The <strong>Travel Rule is separate from ATO tax reporting</strong>.</p>
     <p>It forms part of Australia's anti-money-laundering and counter-terrorism-financing regime administered by <strong>AUSTRAC</strong>.</p>
     <p>For relevant transfers, businesses such as virtual asset service providers may need to collect, verify and pass information about the parties involved in a transfer.</p>
-    <p>For new registrable virtual-asset services, certain AML/CTF obligations &mdash; including relevant Travel Rule obligations &mdash; applied from <strong>1 July 2026</strong> under the transitional arrangements.</p>
+    <p>For new registrable virtual-asset services, certain AML/CTF obligations &mdash; including relevant Travel Rule obligations &mdash; applied from <strong>1 July 2026</strong> under the transitional arrangements.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup></p>
     <p>AUSTRAC also states that there is <strong>no general minimum transfer amount</strong> below which the Travel Rule automatically stops applying.</p>
     <h3>What about self-hosted wallets?</h3>
     <p>There are specific rules for transfers involving self-hosted wallets.</p>
@@ -720,7 +761,7 @@
     <p>The current published crypto-assets data-matching protocol covers:</p>
     <p><strong>2014&ndash;15 through to 2025&ndash;26.</strong></p>
     <p>That means the program is not limited to people who only recently started buying crypto.</p>
-    <p>The ATO's protocol also provides for crypto data to be retained for <strong>seven years from receipt of the final instalment of verified data files</strong>, because crypto assets may be held for many years before disposal.</p>
+    <p>The ATO's protocol also provides for crypto data to be retained for <strong>seven years from receipt of the final instalment of verified data files</strong>, because crypto assets may be held for many years before disposal.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup></p>
     <p>This is another reason old transaction records can still matter.</p>
 
     <h2>What records should crypto investors keep?</h2>
@@ -773,6 +814,42 @@
       <li><strong>AUSTRAC</strong> &mdash; Travel Rule guidance and AML/CTF transitional rules</li>
     </ul>
     <p>Tax, reporting and AML/CTF rules can change. Check current ATO and AUSTRAC guidance where a rule is material to your own circumstances.</p>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">The ATO's current crypto-assets data-matching protocol covers financial years 2014&ndash;15 to 2025&ndash;26 and is aimed at taxpayers who acquire or dispose of crypto assets. Source: <a href="https://www.ato.gov.au/about-ato/commitments-and-reporting/in-detail/privacy-and-information-gathering/how-we-use-data-matching/crypto-assets-data-matching-program-protocol" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto assets data-matching program protocol to 2025&ndash;26</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">The same protocol estimates records relating to roughly 700,000 to 1.2 million individuals and entities per financial year and describes more than 60 identity-matching techniques used to match third-party data to taxpayers. Source: <a href="https://www.ato.gov.au/about-ato/commitments-and-reporting/in-detail/privacy-and-information-gathering/how-we-use-data-matching/crypto-assets-data-matching-program-protocol" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto assets data-matching program protocol to 2025&ndash;26</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">The OAIC approved the ATO's request to extend the crypto data-matching program while withholding the names of the source crypto designated service providers &mdash; which is why no official provider-by-provider list exists. Source: <a href="https://www.oaic.gov.au/privacy/privacy-registers/data-matching-exemptions-register/crypto-assets-2014-15-to-2025-26-financial-years-data-matching-program" rel="noopener noreferrer" target="_blank">OAIC &mdash; Data matching exemptions register: crypto assets 2014&ndash;15 to 2025&ndash;26</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Disposing of crypto includes exchanging one crypto asset for another, so a swap can create a CGT event without any AUD withdrawal. Source: <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto asset transactions</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Relevant Travel Rule obligations for newly regulated virtual-asset services applied from 1 July 2026, and AUSTRAC states there is no general minimum transfer amount below which the rule stops applying. Source: <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; Travel Rule overview</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">The protocol provides for crypto data to be retained for seven years from receipt of the final instalment of verified data files. Source: <a href="https://www.ato.gov.au/about-ato/commitments-and-reporting/in-detail/privacy-and-information-gathering/how-we-use-data-matching/crypto-assets-data-matching-program-protocol" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto assets data-matching program protocol to 2025&ndash;26</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>Scope, volumes, matching techniques and the seven-year retention period</strong> &mdash; <a href="https://www.ato.gov.au/about-ato/commitments-and-reporting/in-detail/privacy-and-information-gathering/how-we-use-data-matching/crypto-assets-data-matching-program-protocol" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto assets data-matching program protocol to 2025&ndash;26</a></li>
+        <li><strong>Why the ATO does not publish the list of reporting providers</strong> &mdash; <a href="https://www.oaic.gov.au/privacy/privacy-registers/data-matching-exemptions-register/crypto-assets-2014-15-to-2025-26-financial-years-data-matching-program" rel="noopener noreferrer" target="_blank">OAIC &mdash; Data matching exemptions register: crypto assets</a></li>
+        <li><strong>What counts as a crypto disposal, including swaps</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/transactions-acquiring-and-disposing-of-crypto-assets/crypto-asset-transactions" rel="noopener noreferrer" target="_blank">ATO &mdash; Crypto asset transactions</a></li>
+        <li><strong>Record-keeping expectations for crypto investors</strong> &mdash; <a href="https://www.ato.gov.au/individuals-and-families/investments-and-assets/crypto-asset-investments/keeping-crypto-records" rel="noopener noreferrer" target="_blank">ATO &mdash; Keeping crypto records</a></li>
+        <li><strong>Travel Rule timing and self-hosted wallet treatment</strong> &mdash; <a href="https://www.austrac.gov.au/industry-and-business/obligations-and-guidance/additional-guidance/travel-rule/travel-rule-overview" rel="noopener noreferrer" target="_blank">AUSTRAC &mdash; Travel Rule overview</a></li>
+        <li><strong>Australia's CARF implementation work</strong> &mdash; <a href="https://treasury.gov.au/consultation/c2024-598501" rel="noopener noreferrer" target="_blank">Treasury &mdash; Australia's implementation of the Crypto Asset Reporting Framework and related CRS amendments</a> (consultation closed 24 January 2025; the reporting timetable depends on domestic legislation)</li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations, a data-check section, a risk section on ATO data-matching letters and a related-guides block; ATO protocol, OAIC exemption and AUSTRAC Travel Rule references re-checked. Previous version carried a Last verified date of 3 October 2026.</p>
+      <p>The ATO does not publish a complete provider-by-provider list, and CARF reporting obligations depend on Australian legislation that was still being settled at the time of checking. Treat any list of "reporting" or "non-reporting" exchanges with caution and work from the official sources above, checked on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/crypto-tax/crypto-tax-australia/">Crypto tax in Australia &mdash; CGT, staking income and the 2027 changes</a></li>
+        <li><a href="/regulation/austrac/">AUSTRAC registration explained &mdash; what it covers and what it doesn't</a></li>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and how to export your history</a></li>
+        <li><a href="/exchanges/coinspot/">CoinSpot review &mdash; fees, Markets orders and record keeping</a></li>
+      </ul>
+    </div>
 
     <div class="cta-box">
       <div class="cta-logo">

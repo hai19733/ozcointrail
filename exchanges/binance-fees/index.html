@@ -392,6 +392,32 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -416,7 +442,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/binance-fees/"
             },
-            "dateModified": "2026-09-29"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -504,12 +530,17 @@
     <h1>Binance Fees in Australia 2026: 0.10% Spot, Deposit &amp; Withdrawal Costs</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 29 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">If you're comparing Australian exchanges, Binance's <strong>0.10%</strong> standard spot trading fee is among the lowest you'll find. But it comes with a catch for Australian users: direct AUD deposits via PayID or BSB bank transfer are <strong>still marked temporarily unavailable</strong>. The headline fee is cheap, but how you get Australian dollars into your account can add cost and friction. This guide breaks down Binance Australia's actual fees for spot trading, deposits, withdrawals and crypto transfers in 2026 &mdash; and how they compare with CoinSpot, OKX and Swyftx. For a broader look at the platform, see our <a href="/exchanges/binance/">full Binance Australia review</a>.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 6 minutes. The two things people get wrong most often: <strong>treating the 0.10% spot fee as your total cost</strong> when card funding adds a separate charge on top, and <strong>assuming you can withdraw AUD to your bank the same way you funded the account</strong>.</p>
+      <p>Check <strong>Deposit &rarr; AUD</strong> and <strong>Withdraw &rarr; Fiat &rarr; AUD</strong> inside your own Binance account before you move money in &mdash; the fee table below only means something once those rails exist for you.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/binance-logo.webp" alt="Binance" /></span>
@@ -600,7 +631,7 @@
     </div>
 
     <h2>Why 0.10% is among the lowest &mdash; but not unique</h2>
-    <p>Binance's standard spot fee of <strong>0.10% maker and 0.10% taker</strong> is one of the lowest standard rates in Australia. What matters for accuracy is the word <em>among</em>: CoinSpot's order-book <a href="/exchanges/coinspot/">Markets trading</a> also charges 0.10%, so it would be wrong to say Binance is uniquely the cheapest. Where Binance genuinely stands out is <strong>liquidity</strong> &mdash; the depth of its order books tends to mean tighter spreads and better execution on popular pairs, which can matter as much as the headline fee.</p>
+    <p>Binance's standard spot fee of <strong>0.10% maker and 0.10% taker</strong> is one of the lowest standard rates in Australia.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> What matters for accuracy is the word <em>among</em>: CoinSpot's order-book <a href="/exchanges/coinspot/">Markets trading</a> also charges 0.10%, so it would be wrong to say Binance is uniquely the cheapest.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> Where Binance genuinely stands out is <strong>liquidity</strong> &mdash; the depth of its order books tends to mean tighter spreads and better execution on popular pairs, which can matter as much as the headline fee.</p>
 
     <h2>What would a 0.10% fee actually cost?</h2>
     <p>The percentage looks small until you translate it into dollars.</p>
@@ -645,7 +676,7 @@
     <p>* The &ldquo;With BNB discount&rdquo; column applies the 25% BNB discount to a regular user's 0.10% base rate. These figures illustrate the trading fee only. Your actual cost can also be affected by the <strong>spread</strong>, the execution price and &mdash; when you fund by card &mdash; payment-provider charges. That is why comparing only the advertised trading percentage can be misleading.</p>
 
     <h2>The BNB discount: 25% off eligible spot fees</h2>
-    <p>If you hold BNB and enable <strong>Use BNB to pay fees</strong>, Binance currently applies a <strong>25% discount</strong> to eligible spot trading fees. For a regular user whose standard spot fee is 0.10%, that reduces the rate to <strong>0.075%</strong> for both maker and taker orders.</p>
+    <p>If you hold BNB and enable <strong>Use BNB to pay fees</strong>, Binance currently applies a <strong>25% discount</strong> to eligible spot trading fees. For a regular user whose standard spot fee is 0.10%, that reduces the rate to <strong>0.075%</strong> for both maker and taker orders.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
     <p>Think of 0.075% as the discounted rate for a regular user, not a universal fee for every account. Higher-volume VIP users already have lower base fees, so the discount applies to their own lower rate; and Binance can also run pair-specific or promotional rates. Check the live fee shown in your account before a large trade. If you trade often, enabling the BNB discount is the simplest way to lower your effective cost without changing platforms.</p>
 
     <h2>Binance fees vs other Australian exchanges</h2>
@@ -686,7 +717,7 @@
     <p>The comparison needs context. A low trading fee does not automatically mean the final execution is always cheaper &mdash; liquidity, spread, deposit method and the market price when the order executes all affect the final amount of crypto you receive. If free PayID deposits matter to you, that tilts the practical cost in favour of <a href="/exchanges/coinspot/">CoinSpot</a> or <a href="/exchanges/swyftx/">Swyftx</a>, even though their headline trading fees are not always the lowest. See our <a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot</a>, <a href="/exchanges/binance-vs-okx-australia/">Binance vs OKX</a> and <a href="/exchanges/best-crypto-exchanges-australia/">full exchange comparison</a> for the wider picture.</p>
 
     <h2>AUD deposit fees &mdash; and the PayID gap</h2>
-    <p>This is where Binance's fee picture gets more complicated for Australians. <strong>Direct AUD deposits via PayID or BSB bank transfer are currently marked temporarily unavailable</strong> on Binance's own support pages, as at September 2026. That means you generally cannot fund your account the same free, near-instant way you can on CoinSpot or Swyftx.</p>
+    <p>This is where Binance's fee picture gets more complicated for Australians. <strong>Direct AUD deposits via PayID or BSB bank transfer are currently marked temporarily unavailable</strong> on Binance's own support pages, as at 16 October 2026.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> That means you generally cannot fund your account the same free, near-instant way you can on CoinSpot or Swyftx.</p>
     <p>Some reports from early 2026 claimed Binance had &ldquo;restored PayID&rdquo;. Those reports describe P2P payments or older statements, not a return of direct deposits &mdash; so don't treat them as confirmation that free bank deposits are back. Binance itself says it is <strong>working to restore PayID services</strong>, but until the Deposit &rarr; AUD screen in your account offers a BSB/PayID option, direct deposits are not available to you. For a step-by-step on checking this in your account, see our guide on <a href="/buy-crypto/aud/binance-payid/">Binance Australia PayID deposits</a>.</p>
     <p>With direct deposits unavailable, Australians typically fund a Binance account through one of these routes:</p>
     <ul>
@@ -696,7 +727,16 @@
     </ul>
 
     <h2>AUD withdrawal fees</h2>
-    <p>AUD withdrawals need more nuance than simply saying they are free. Binance's own FAQ states that users who have <strong>never previously deposited AUD through the bank-transfer channel (BSB/PayID) may not be able to withdraw AUD the same way</strong>, because a prior deposit can be required to enable that route. A new withdrawal account can also require adding and verifying bank details, including a small test deposit. So if you are opening a fresh Binance Australia account in 2026, do not assume direct AUD bank withdrawal will appear automatically &mdash; check <strong>Withdraw &rarr; Fiat &rarr; AUD</strong> inside your account. Where bank withdrawal is unavailable, Binance points Australian users toward alternatives such as P2P.</p>
+    <p>AUD withdrawals need more nuance than simply saying they are free. Binance's own FAQ states that users who have <strong>never previously deposited AUD through the bank-transfer channel (BSB/PayID) may not be able to withdraw AUD the same way</strong>, because a prior deposit can be required to enable that route.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> A new withdrawal account can also require adding and verifying bank details, including a small test deposit. So if you are opening a fresh Binance Australia account in 2026, do not assume direct AUD bank withdrawal will appear automatically &mdash; check <strong>Withdraw &rarr; Fiat &rarr; AUD</strong> inside your account. Where bank withdrawal is unavailable, Binance points Australian users toward alternatives such as P2P.</p>
+
+    <h2>Risk: funding in when you cannot get AUD back out to your bank</h2>
+    <p>Binance Australia's strongest feature is its spot fee; its weakest feature is the AUD rails around it. The specific risk is putting money into an account you can only exit by selling to AUD and sending it out by crypto transfer or P2P, rather than by a simple bank withdrawal.</p>
+    <p>Two platform rules combine to create it. Direct AUD bank deposits (BSB/PayID) are marked temporarily unavailable on Binance's support pages, and Binance's own FAQ says a user who has never deposited AUD through that bank-transfer channel may not be able to withdraw AUD the same way. The exit route can therefore depend on an entry route that is closed to you.</p>
+    <p>Reduce the risk before you fund anything. Open <strong>Deposit &rarr; AUD</strong> and <strong>Withdraw &rarr; Fiat &rarr; AUD</strong> in your own account and see what is actually offered to you, fund a small amount first rather than a large one, and keep a second on-ramp such as <a href="/exchanges/coinspot/">CoinSpot</a> or <a href="/exchanges/swyftx/">Swyftx</a> available for AUD in and out. If you plan to move a large sum, confirm the exit before the entry.</p>
+    <div class="callout">
+      <h4>If your AUD is already in and no bank withdrawal appears</h4>
+      <p>Do not send more money in to "unlock" the account. Contact Binance support and ask which AUD withdrawal methods are enabled for you, then use the alternatives Binance itself points to &mdash; a crypto transfer to an exchange with working AUD rails, or P2P. Keep the transaction references for every step.</p>
+    </div>
 
     <h2>Crypto deposit &amp; withdrawal fees</h2>
     <p>Crypto deposits into Binance generally carry no network fee from Binance's side, although some assets or networks can have a minimum deposit amount below which the deposit may not be credited. Crypto withdrawals are different: there is no single fixed fee, because the amount varies by cryptocurrency, blockchain network and current network conditions. Binance shows the withdrawal fee before you confirm, so check the live preview rather than relying on a static table.</p>
@@ -735,6 +775,43 @@
         <summary>What is the Binance crypto withdrawal fee?</summary>
         <p>There is no single fixed fee. It varies by cryptocurrency and blockchain network and is displayed before you confirm the withdrawal.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">Binance's published standard spot fee for regular users is <strong>0.10% maker / 0.10% taker</strong> on standard spot pairs, with a displayed 25% BNB discount for eligible fee payments. Source: <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance &mdash; Spot Trading Fee Schedule</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">CoinSpot's order-book Markets trading fee is <strong>0.10%</strong> &mdash; the same headline rate as Binance spot, which is why this guide says "among the lowest" rather than the lowest. CoinSpot's Instant Buy, Sell &amp; Swap is a separate <strong>1%</strong>. Source: <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">Binance's BNB fee-payment discount is <strong>25%</strong> on eligible spot fees, reducing a regular user's 0.10% rate to <strong>0.075%</strong> maker and taker; VIP tiers and promotional pairs use their own rates. Source: <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">Binance's Australian help material marks direct AUD bank-transfer deposits (BSB/PayID) as temporarily unavailable, while its Australian payment page says Binance is &ldquo;working hard to bring back PayID&rdquo;. The documentation is internally inconsistent, so this guide does not call the rails either restored or permanently closed &mdash; check what your own verified account shows. Sources: <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD banking FAQ</a> and <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">Binance's AUD FAQ states that users who have never deposited AUD through the bank-transfer channel may not be able to withdraw AUD that way, because a prior deposit can be required to enable the route, and that a new withdrawal account can require added, verified bank details. Source: <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD banking FAQ</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>0.10% Binance spot rate</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance trading fee schedule</a></li>
+        <li><strong>25% BNB fee discount (0.10% &rarr; 0.075%)</strong> &mdash; <a href="https://www.binance.com/en/support/faq/detail/115000583311" rel="noopener noreferrer" target="_blank">Binance &mdash; Using BNB to Pay Trading Fees</a></li>
+        <li><strong>Binance Australia AUD deposit and withdrawal status</strong> &mdash; <a href="https://www.binance.com/en-AU/support/faq/detail/7a6af1f95c5b43acb28f304556785704" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD banking FAQ</a></li>
+        <li><strong>PayID restoration statement</strong> &mdash; <a href="https://www.binance.com/en-AU/learn/paymenthub" rel="noopener noreferrer" target="_blank">Binance Australia &mdash; AUD Payment Hub</a></li>
+        <li><strong>CoinSpot Markets 0.10% / Instant Buy 1%</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>OKX Australia retail spot 0.70% / 0.70% (comparison table)</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a></li>
+        <li><strong>Swyftx standard fee tiers with a separate spread (comparison table)</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Trading fee tiers</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations and a data-check section; fee and AUD rail figures re-checked against the sources below. 29 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/binance/">Binance Australia review &mdash; fees, AUD funding and regulation</a></li>
+        <li><a href="/buy-crypto/aud/binance-payid/">Binance Australia PayID deposits &mdash; current status and workarounds</a></li>
+        <li><a href="/exchanges/okx-fees/">OKX fees in Australia 2026 &mdash; the 0.70% retail rate explained</a></li>
+        <li><a href="/exchanges/binance-vs-coinspot/">Binance vs CoinSpot Australia &mdash; which is cheaper once funding is counted</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-binance/">Moving crypto from CoinSpot to Binance, step by step</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">

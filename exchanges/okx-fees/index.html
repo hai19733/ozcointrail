@@ -392,6 +392,32 @@
       .reco { flex-wrap: wrap; }
       .reco-btn { width: 100%; justify-content: center; }
     }
+    /* ---------- Evidence chain: quickstart / footnotes / fact-check / sources / related ---------- */
+    .quickstart { background: var(--color-surface); border: 1px solid var(--color-border); border-left: 4px solid var(--color-accent); border-radius: 12px; padding: 18px 20px; margin: 24px 0; }
+    .quickstart p { margin: 0 0 8px; font-size: 0.95rem; }
+    .quickstart p:last-child { margin-bottom: 0; }
+    .quickstart-time { font-size: 1rem; }
+    sup.fn { font-size: 0.72em; line-height: 0; }
+    sup.fn a { color: var(--color-accent-dark); font-weight: 700; text-decoration: none; }
+    sup.fn a:hover { text-decoration: underline; }
+    .fact-check { background: #F2F6F7; border: 1px solid var(--color-border); border-left: 4px solid var(--color-info); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .fact-check h2 { margin-top: 0; font-size: 1.1rem; color: var(--color-info); }
+    .fact-check ol { margin: 0 0 0 20px; }
+    .fact-check li { font-size: 0.88rem; line-height: 1.55; color: var(--color-text-secondary); margin-bottom: 10px; }
+    .fact-check a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .fact-check .fn-back { text-decoration: none; font-weight: 700; }
+    .sources { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .sources h2 { margin-top: 0; font-size: 1.1rem; }
+    .sources ul { margin: 0 0 12px 18px; }
+    .sources li { margin-bottom: 6px; font-size: 0.9rem; }
+    .sources a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
+    .sources .sources-log { font-size: 0.85rem; color: var(--color-text-secondary); }
+    .sources p:last-child { margin-bottom: 0; }
+    .related { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 10px; padding: 20px 22px; margin: 24px 0; }
+    .related h2 { margin-top: 0; font-size: 1.1rem; }
+    .related ul { margin: 0 0 0 18px; }
+    .related li { margin-bottom: 8px; font-size: 0.92rem; }
+    .related a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }
   </style>
 
   <script type="application/ld+json">
@@ -416,7 +442,7 @@
                 "@type": "WebPage",
                 "@id": "https://ozcointrail.com/exchanges/okx-fees/"
             },
-            "dateModified": "2026-09-29"
+            "dateModified": "2026-10-16"
         },
         {
             "@type": "FAQPage",
@@ -504,12 +530,17 @@
     <h1>OKX Fees in Australia 2026: 0.70% Retail Spot, Withdrawals &amp; VIP Tiers</h1>
 
     <div class="article-meta">
-      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 29 September 2026</span>
+      <span class="verified"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>Last verified: 16 October 2026 (AEST)</span>
       <span>&middot;</span>
       <span>By <a href="/author/james-walker/">James Walker</a> &middot; Editor, OzCoinTrail</span>
     </div>
 
     <p class="lead">If you've seen websites saying OKX charges <strong>0.08%</strong> for spot trading, that figure is real &mdash; but it is <strong>not the standard rate for most Australian retail users</strong>. For a regular OKX Australia retail account, the standard spot trading fee is <strong>0.70% maker and 0.70% taker</strong>, apart from designated zero-fee pairs. Lower rates apply as you move through the VIP tiers, while OKX also maintains a separate fee schedule for eligible wholesale clients. This guide explains what Australians actually pay for spot trading, AUD deposits and withdrawals, crypto withdrawals, and how the retail and wholesale fee schedules differ. For a broader look at the platform, see our <a href="/exchanges/okx/">full OKX review</a>.</p>
+
+    <div class="quickstart">
+      <p class="quickstart-time">Reading time: about 7 minutes. The two things people get wrong most often: <strong>quoting the 0.08% global or wholesale OKX figure as their own retail rate</strong>, and <strong>sending AUD to OKX straight from another exchange's account</strong> instead of from a bank account in their own name.</p>
+      <p>Confirm two things in your own OKX Australia account first &mdash; your current fee tier, and the deposit method the AUD deposit flow actually offers you.</p>
+    </div>
 
     <div class="reco">
       <span class="reco-ic"><img src="/img/okx-logo.webp" alt="OKX" /></span>
@@ -595,8 +626,8 @@
       <li><strong>Retail clients</strong> &mdash; the default classification for most everyday Australian users.</li>
       <li><strong>Wholesale clients</strong> &mdash; eligible professional or wholesale investors who meet separate qualification requirements.</li>
     </ul>
-    <p>For a standard retail account, OKX Australia currently lists <strong>0.70% maker and 0.70% taker</strong> at the Regular tier. That rate applies to standard spot pairs unless the pair has specifically been designated as zero-fee. So if you create a normal personal OKX Australia account and make your first spot trade, <strong>0.70% is the number you should use when estimating trading costs &mdash; not 0.08%.</strong></p>
-    <p>All figures on this page come from <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX's Australian fee framework</a>, checked on 29 September 2026. Fee schedules change, so confirm the current tier before a large trade.</p>
+    <p>For a standard retail account, OKX Australia currently lists <strong>0.70% maker and 0.70% taker</strong> at the Regular tier.<sup class="fn"><a href="#fn1" id="fnref1">[1]</a></sup> That rate applies to standard spot pairs unless the pair has specifically been designated as zero-fee. So if you create a normal personal OKX Australia account and make your first spot trade, <strong>0.70% is the number you should use when estimating trading costs &mdash; not 0.08%.</strong></p>
+    <p>All figures on this page come from <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX's Australian fee framework</a>, checked on 16 October 2026. Fee schedules change, so confirm the current tier before a large trade.</p>
 
     <h2>OKX Australia retail spot fee tiers</h2>
     <p>Your retail tier can increase based on either your <strong>AUD asset balance</strong> or your <strong>30-day trading volume</strong>.</p>
@@ -674,7 +705,7 @@
         </tbody>
       </table>
     </div>
-    <p>This table explains another reason the <strong>0.08%</strong> figure appears online: even within the retail schedule, the maker fee reaches 0.08% &mdash; but only at <strong>VIP 5</strong>, which requires millions of Australian dollars in assets or trading volume. For ordinary users, that is very different from saying &ldquo;OKX charges 0.08%.&rdquo;</p>
+    <p>This table explains another reason the <strong>0.08%</strong> figure appears online: even within the retail schedule, the maker fee reaches 0.08% &mdash; but only at <strong>VIP 5</strong>, which requires millions of Australian dollars in assets or trading volume.<sup class="fn"><a href="#fn2" id="fnref2">[2]</a></sup> For ordinary users, that is very different from saying &ldquo;OKX charges 0.08%.&rdquo;</p>
 
     <h2>What would a 0.70% fee actually cost?</h2>
     <p>The percentage looks small until you translate it into dollars.</p>
@@ -762,7 +793,7 @@
         </tbody>
       </table>
     </div>
-    <p>This is the other place where the familiar <strong>0.08% maker / 0.10% taker</strong> figure appears. But it applies to <strong>VIP 3 non-AUD wholesale trading</strong>, not to the default account used by most Australian retail customers.</p>
+    <p>This is the other place where the familiar <strong>0.08% maker / 0.10% taker</strong> figure appears. But it applies to <strong>VIP 3 non-AUD wholesale trading</strong>, not to the default account used by most Australian retail customers.<sup class="fn"><a href="#fn3" id="fnref3">[3]</a></sup></p>
 
     <h2>OKX fees vs other Australian exchanges</h2>
     <p>For someone mainly comparing ordinary spot trading fees, the headline rates differ considerably.</p>
@@ -802,11 +833,20 @@
     <p>The comparison needs some context. A low trading fee does not automatically mean the final execution will always be cheaper &mdash; liquidity, spread, deposit method and the market price when the order executes can all affect the final amount of crypto you receive. For a meaningful comparison, look at the <strong>final AUD cost and the crypto delivered</strong>, not only one percentage on the fee page. See our <a href="/exchanges/best-crypto-exchanges-australia/">exchange comparison</a> and <a href="/exchanges/okx-vs-coinspot/">OKX vs CoinSpot</a> for the wider picture.</p>
 
     <h2>AUD deposit fees</h2>
-    <p>For bank-transfer deposits, OKX does not charge its own AUD deposit fee. Your bank or payment provider may still apply its own charge, so check the amount displayed before sending money. Card-funded transactions can have separate charges; OKX displays applicable costs before confirmation.</p>
-    <p>One important restriction is that AUD should not be sent directly to OKX from another cryptocurrency exchange. If you are moving Australian dollars from another exchange, the safer flow is generally <strong>crypto exchange &rarr; your Australian bank account &rarr; OKX</strong>, rather than sending fiat directly exchange-to-exchange. Our <a href="/buy-crypto/aud/okx-aud-deposit/">guide to depositing AUD into OKX</a> covers the flow in detail.</p>
+    <p>For bank-transfer deposits, OKX does not charge its own AUD deposit fee.<sup class="fn"><a href="#fn4" id="fnref4">[4]</a></sup> Your bank or payment provider may still apply its own charge, so check the amount displayed before sending money. Card-funded transactions can have separate charges; OKX displays applicable costs before confirmation.</p>
+    <p>One important restriction is that AUD should not be sent directly to OKX from another cryptocurrency exchange.<sup class="fn"><a href="#fn5" id="fnref5">[5]</a></sup> If you are moving Australian dollars from another exchange, the safer flow is generally <strong>crypto exchange &rarr; your Australian bank account &rarr; OKX</strong>, rather than sending fiat directly exchange-to-exchange. Our <a href="/buy-crypto/aud/okx-aud-deposit/">guide to depositing AUD into OKX</a> covers the flow in detail.</p>
+
+    <h2>Risk: sizing trades on the 0.08% headline when your retail account is billed 0.70%</h2>
+    <p>This is a planning error rather than a security one, but it costs real money. You read that OKX spot trading costs around 0.1%, size a strategy around that number, and then every fill on your Australian retail account is charged at 0.70% &mdash; roughly seven times what you budgeted.</p>
+    <p>It happens because more than one OKX schedule circulates online. The 0.08%/0.10% figures belong to the wholesale schedule and to high retail VIP tiers, while a normal Australian retail account starts at 0.70% maker and taker. Articles that quote a global OKX fee table without the Australian tier context are the usual source of the confusion.</p>
+    <p>Reduce the risk before you trade rather than after. Open your OKX Australia fee page and confirm your current tier, price the fee on the order size you actually place (a A$5,000 spot buy at 0.70% is A$35), and re-check the tier whenever your balance or 30-day volume moves. For anything larger than a test trade, compare the all-in AUD cost against a venue whose standard rate you have verified yourself.</p>
+    <div class="callout">
+      <h4>If you have already traded on the wrong assumption</h4>
+      <p>Trading fees already charged are not refunded, so treat it as a costing lesson rather than a dispute. Pull the fee history from your order and transaction records, confirm which tier applied, and if that tier looks wrong for your balance or volume, raise it with OKX support before your next trade.</p>
+    </div>
 
     <h2>AUD withdrawal fees</h2>
-    <p>OKX states that it does not charge a fee when withdrawing AUD to an Australian bank account. That makes fiat withdrawals relatively straightforward compared with crypto withdrawals, where the blockchain network affects the cost. Always verify the amount shown in the withdrawal preview before confirming.</p>
+    <p>OKX states that it does not charge a fee when withdrawing AUD to an Australian bank account.<sup class="fn"><a href="#fn6" id="fnref6">[6]</a></sup> That makes fiat withdrawals relatively straightforward compared with crypto withdrawals, where the blockchain network affects the cost. Always verify the amount shown in the withdrawal preview before confirming.</p>
 
     <h2>Crypto deposit fees</h2>
     <p>OKX does not charge a network fee for receiving a normal crypto deposit. Two other conditions still matter:</p>
@@ -852,6 +892,45 @@
         <summary>Can I get lower than the 0.70% retail fee?</summary>
         <p>Yes. Retail fees decrease at higher VIP tiers, and selected pairs can also be designated zero-fee. Qualification requirements apply.</p>
       </details>
+    </div>
+
+    <div class="fact-check">
+      <h2>Data check: what we verified and where</h2>
+      <ol>
+        <li id="fn1">OKX Australia's published retail schedule lists <strong>0.70% maker / 0.70% taker</strong> at the Regular tier, which applies to Australian retail accounts unless a pair is designated zero-fee. This is the number to use for a normal personal account, not the global 0.08% figure. Source: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref1" class="fn-back">&#8617;</a></li>
+        <li id="fn2">Within the Australian retail schedule, the maker fee reaches <strong>0.08% only at VIP 5</strong>, which requires millions of Australian dollars in qualifying assets or 30-day volume. A Regular retail account stays at 0.70%, so quoting 0.08% as "the OKX fee" is wrong for ordinary users. Source: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref2" class="fn-back">&#8617;</a></li>
+        <li id="fn3">The familiar <strong>0.08% maker / 0.10% taker</strong> pairing appears in OKX Australia's separate <strong>wholesale</strong> schedule, at VIP 3 non-AUD pairs. Wholesale status is a client classification with eligibility requirements, not a fee setting you switch on in the app. Source: <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a>. Checked 16 October 2026. <a href="#fnref3" class="fn-back">&#8617;</a></li>
+        <li id="fn4">OKX states it charges no fee of its own on AUD bank-transfer deposits (as published on its Australian deposit help page); the sending bank may still charge its own fee. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref4" class="fn-back">&#8617;</a></li>
+        <li id="fn5">OKX states that AUD deposits from other cryptocurrency exchange platforms and from cross-border payment providers are not supported, that only local Australian banks are accepted, and that the name on the sending account must match the OKX account name. The correct route is exchange &rarr; your own bank account &rarr; OKX. Source: <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref5" class="fn-back">&#8617;</a></li>
+        <li id="fn6">OKX states it charges no fee for AUD withdrawals via BSB and account number, that a first cash withdrawal requires verifying ownership of the receiving bank account, and that your bank may charge its own transfer fee. Source: <a href="https://www.okx.com/en-au/help/how-do-i-withdraw-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I withdraw AUD with bank transfer?</a>. Checked 16 October 2026. <a href="#fnref6" class="fn-back">&#8617;</a></li>
+      </ol>
+    </div>
+
+    <div class="sources">
+      <h2>Sources and verification</h2>
+      <ul>
+        <li><strong>OKX Australia retail 0.70% spot rate and VIP tier table</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a></li>
+        <li><strong>OKX wholesale schedule (where 0.08% / 0.10% comes from)</strong> &mdash; <a href="https://www.okx.com/help/updates-to-au-fee-framework" rel="noopener noreferrer" target="_blank">OKX &mdash; Australian fee framework</a></li>
+        <li><strong>AUD deposit fees and accepted deposit sources</strong> &mdash; <a href="https://www.okx.com/en-au/help/how-do-i-deposit-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I deposit AUD with bank transfer?</a></li>
+        <li><strong>AUD withdrawal fees and first-withdrawal verification</strong> &mdash; <a href="https://www.okx.com/en-au/help/how-do-i-withdraw-aud-with-bank-transfer" rel="noopener noreferrer" target="_blank">OKX &mdash; How do I withdraw AUD with bank transfer?</a></li>
+        <li><strong>OKX Australia entities and AFSL 379035 for derivatives</strong> &mdash; <a href="https://www.okx.com/help/okx-australia-launch-what-can-i-use-in-australia" rel="noopener noreferrer" target="_blank">OKX &mdash; what can I use in Australia?</a></li>
+        <li><strong>Binance standard spot rate (comparison table)</strong> &mdash; <a href="https://www.binance.com/en/fee/trading" rel="noopener noreferrer" target="_blank">Binance trading fee schedule</a></li>
+        <li><strong>CoinSpot Markets 0.10% (comparison table)</strong> &mdash; <a href="https://www.coinspot.com.au/fees" rel="noopener noreferrer" target="_blank">CoinSpot &mdash; Fees</a></li>
+        <li><strong>Swyftx 0.60% standard fee plus a separate spread (comparison table)</strong> &mdash; <a href="https://support.swyftx.com/en/articles/12005536-our-trading-fees" rel="noopener noreferrer" target="_blank">Swyftx &mdash; Trading fee tiers</a> and <a href="https://swyftx.com/spreads/" rel="noopener noreferrer" target="_blank">Swyftx &mdash; spreads</a></li>
+      </ul>
+      <p class="sources-log"><strong>Update log:</strong> 16 October 2026 &mdash; added in-text citations and a data-check section; retail, wholesale and AUD fee lines re-checked against the sources below. 29 September 2026 &mdash; first published.</p>
+      <p>Exchange fee tiers, AUD deposit availability and bank policies change. Figures above are the published standard or regular-user rates, checked against official sources on 16 October 2026.</p>
+    </div>
+
+    <div class="related">
+      <h2>Related guides</h2>
+      <ul>
+        <li><a href="/exchanges/okx/">OKX Australia review &mdash; licensing, products and AUD funding</a></li>
+        <li><a href="/buy-crypto/aud/okx-aud-deposit/">How to deposit AUD into OKX Australia &mdash; and which transfers get rejected</a></li>
+        <li><a href="/exchanges/okx-vs-coinspot/">OKX vs CoinSpot Australia &mdash; fees, products and licensing compared</a></li>
+        <li><a href="/exchanges/binance-vs-okx-australia/">Binance vs OKX Australia &mdash; cost and feature comparison</a></li>
+        <li><a href="/transfers/exchanges/coinspot-to-okx/">Moving crypto from CoinSpot to OKX, step by step</a></li>
+      </ul>
     </div>
 
     <div class="cta-box">
